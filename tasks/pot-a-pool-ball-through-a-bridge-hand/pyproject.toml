@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yam-pool-bridge"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["inspect-robots==1.0.0", "inspect-robots-yam==0.38.0", "yam-arena==0.1.0", "numpy>=1.26", "scipy>=1.11", "pillow>=10", "imageio[ffmpeg]"]
+
+[project.entry-points."inspect_robots.embodiments"]
+yam_pool_bridge = "rdb_pool_bridge.adapter:make_embodiment"
+
+[project.entry-points."inspect_robots.policies"]
+pool_bridge_scripted = "rdb_pool_bridge.adapter:make_scripted"
+
+[project.entry-points."inspect_robots.scorers"]
+pool_bridge_score = "rdb_pool_bridge.grading:make_scorer"
+
+[tool.setuptools.packages.find]
+include = ["rdb_pool_bridge*"]
+
+[tool.setuptools.package-data]
+rdb_pool_bridge = ["pool_table.usda"]

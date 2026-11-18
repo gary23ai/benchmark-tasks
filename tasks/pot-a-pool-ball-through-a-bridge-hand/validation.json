@@ -1,0 +1,73 @@
+{
+  "seed": 0,
+  "object_jitter": 0,
+  "control_hz": 20,
+  "recorded_input_archive_sha256": "1a1aadbbc2527ca6da1f192f3b50f7131f5fd58c731c06411d9d5ed1c679d551",
+  "runtime_files_matching_recorded_bundle": 10,
+  "recorded_hashes": {
+    "scene_sha256": "b204bed6c3a2c1ea840b51979a9378592891b4f897b154b64b677205aff51e32",
+    "asset_sha256": "c26c88a748cbdf218cfd4b8838f189f8f576ebce2b1ebb25b343456c7fcffc61",
+    "layout_sha256": "b4e965f85ce4993edfb740fae5050bdd1e1363ac27465e1b7f199f1bfebe3d93",
+    "grader_sha256": "5eefcd47473f5bfc5f25d63951fdf64893c7ba0c754a9b4be69b9a1fd227969a"
+  },
+  "runs": {
+    "scripted": {
+      "score": 1.0,
+      "executed_steps": 620,
+      "step_limit": 1600,
+      "elapsed_s": 159.17
+    },
+    "dream": {
+      "score": 0.0,
+      "executed_steps": 1600,
+      "step_limit": 1600,
+      "elapsed_s": 283.26
+    }
+  },
+  "scripted_reference_reads_simulator_state": true,
+  "model_observation": "320x176 overhead and two wrist RGB images; joint and gripper positions",
+  "scripted_final_grade": {
+    "score": 1.0,
+    "struck": true,
+    "strike_tick": 551,
+    "legal": true,
+    "fouls": [],
+    "first_hit": "one",
+    "jaws": true,
+    "potted": {
+      "one": "near_left"
+    },
+    "finished": true,
+    "strike": {
+      "bridge": {
+        "on_cloth": true,
+        "in_loop": true,
+        "resting": true,
+        "fingertip_z_mm": 27.0,
+        "loop_x_mm": 0.3,
+        "axis_above_tips_mm": 65.4,
+        "bridge_s_m": 0.3274
+      },
+      "grip": {
+        "on_axis": true,
+        "closed": true,
+        "grip_s_m": 0.7946,
+        "grip_off_axis_mm": 14.4,
+        "opening_mm": 21.6
+      },
+      "window_ok": true,
+      "bridge_moved_mm": 6.0,
+      "slid_mm": 157.0,
+      "grip_slip_mm": 1.5,
+      "bridge_touch_share": 1.0,
+      "legal": true
+    },
+    "impulse_ns": 0.1445,
+    "peak_tip_force_n": 34.7,
+    "peak_speed_m_s": {
+      "cue": 0.747,
+      "one": 1.138,
+      "three": 0.0
+    }
+  }
+}

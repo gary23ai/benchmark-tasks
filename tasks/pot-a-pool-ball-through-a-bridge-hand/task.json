@@ -1,0 +1,23 @@
+{
+  "title": "Pot the 1-ball: one hand bridges the cue on the cloth, the other strokes it",
+  "category": "Societal relatability",
+  "keywords": [
+    "pool",
+    "billiards",
+    "cue",
+    "bridge hand",
+    "stroke",
+    "cut shot",
+    "bimanual",
+    "tool use"
+  ],
+  "instruction": "Pot the yellow 1-ball in the corner pocket marked by the chalk cube. Take the cue from the rail, bridge it on the cloth with your left hand, hold it further back with your right and stroke the white into the 1-ball. Touch no ball except with the tip on the white.",
+  "context": "Potting a ball, pool's basic act, is familiar to most people. The front hand bridges the 1.47 m, 0.54 kg cue on the cloth, fixing the tip's line and height; the back hand sets the speed. Held 0.2 m ahead of its balance point, the cue's weight turns it with 1.1 N m, several times what a gripper pinch resists, so one hand cannot aim it.",
+  "setup": "Units mm; x forward from the arm bases' line, y left, z up from the robot's bench. Two YAM arms, bases (0, +-305), at the near long rail of a 7-ft home slate table (WPA heights and pocket cuts, corner mouths 127; cushion noses at x = 200 and y = 764). Balls 57.15, 163 g: white (369, 372), yellow 1-ball (341, 542), red 3-ball (840, -420). Target: near-left corner pocket, chalk cube beside it. Cue: 58-in house cue, 539 g, on the near rail, tip at y = 400. Fixed layout. Cost: a home slate table, $1,200-3,500 new, $300-1,200 used.",
+  "scoring": "At the strike (first tip-white contact): Legal: left fingertips on the cloth (within 12 mm), shaft resting between its fingers above pads closer than the shaft (8 mm); in the prior 0.5 s the left hand moved at most 15 mm while the cue slid 40 mm or more through it, touching it; the right hand closed on the cue, within 20 mm of its axis, slipping at most 12 mm. Fouls (0): hand touches a ball; cue touches a ball except tip on white; second tip contact; a ball moves over 5 mm before the strike; white pocketed or off the table. Tiers: 0.1 legal strike; 0.4 white hits the 1-ball first; 0.7 it crosses the marked pocket's mouth; 1.0 it drops there, white on table. Illegal strike: 0. Scores: 0, 0.1, 0.4, 0.7, 1.0.",
+  "run_limit": "1,600 steps (80 s at 20 Hz)",
+  "reset_notes": "Re-spot the balls and lay the cue on the rail at their marks. Seed 0.",
+  "fidelity": "PhysX 240 Hz rigid bodies. Cloth rolling resistance (0.01) and spin friction are per-step forces. Ball-cloth friction 0.2; ball-ball 0.06, restitution 0.93; cushions 0.75; tip 0.72. Pockets and jaws are real colliders; the bridge is the gripper's own fingers; no rule moves anything. Cue balance and pocket depth are estimates.",
+  "scores": "Dream-1 run: 0.0 (1,600 steps; it moved both arms above the table and never touched the cue or a ball); demo: 1.0 (620 steps)",
+  "media": "M-BHRXYQ"
+}
