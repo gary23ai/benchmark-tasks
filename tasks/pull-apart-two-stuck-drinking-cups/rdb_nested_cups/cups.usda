@@ -1,0 +1,2054 @@
+#usda 1.0
+(
+    defaultPrim = "Fixture"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Fixture"
+{
+    def Scope "Actors"
+    {
+        def Xform "outer" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysxContactReportAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.03
+            bool physics:rigidBodyEnabled = 1
+            float physxContactReport:threshold = 0
+            float physxRigidBody:maxDepenetrationVelocity = 0.75
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.275, 0.035, 0.7477)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "outer_wall0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.999071219, 0, 0.0430894417, 0)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0357558465, 0, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.999071219, 0, 0.0430894417, 0)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0357558465, 0, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.990524026, -0.00562430074, 0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0345374956, 0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.990524026, -0.00562430074, 0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0345374956, 0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall2" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.965028692, -0.0111523681, 0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0309654714, 0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin2" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.965028692, -0.0111523681, 0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0309654714, 0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall3" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.92302145, -0.0164896154, 0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0252832016, 0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin3" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.92302145, -0.0164896154, 0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0252832016, 0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall4" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.865221056, -0.0215447208, 0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0178779233, 0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin4" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.865221056, -0.0215447208, 0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0178779233, 0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall5" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.792616489, -0.0262311901, 0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.00925429406, 0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin5" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.792616489, -0.0262311901, 0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.00925429406, 0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall6" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.706450034, -0.0304688364, 0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (2.18941415e-18, 0.0357558465, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin6" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.706450034, -0.0304688364, 0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (2.18941415e-18, 0.0357558465, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall7" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.608196023, -0.0341851525, 0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.00925429406, 0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin7" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.608196023, -0.0341851525, 0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.00925429406, 0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall8" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.499535609, -0.0373165511, 0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0178779233, 0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin8" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.499535609, -0.0373165511, 0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0178779233, 0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall9" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.382328003, -0.0398094532, 0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0252832016, 0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin9" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.382328003, -0.0398094532, 0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0252832016, 0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall10" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.258578659, -0.0416212045, 0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0309654714, 0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin10" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.258578659, -0.0416212045, 0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0309654714, 0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall11" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.130404962, -0.0427208055, 0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0345374956, 0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin11" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (0.130404962, -0.0427208055, 0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0345374956, 0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall12" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (6.11754685e-17, -0.0430894417, 2.63846734e-18, 0.999071219)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0357558465, 4.3788283e-18, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin12" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (6.11754685e-17, -0.0430894417, 2.63846734e-18, 0.999071219)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0357558465, 4.3788283e-18, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall13" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.130404962, -0.0427208055, -0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0345374956, -0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin13" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.130404962, -0.0427208055, -0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0345374956, -0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall14" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.258578659, -0.0416212045, -0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0309654714, -0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin14" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.258578659, -0.0416212045, -0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0309654714, -0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall15" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.382328003, -0.0398094532, -0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0252832016, -0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin15" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.382328003, -0.0398094532, -0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0252832016, -0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall16" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.499535609, -0.0373165511, -0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.0178779233, -0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin16" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.499535609, -0.0373165511, -0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0178779233, -0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall17" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.608196023, -0.0341851525, -0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-0.00925429406, -0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin17" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.608196023, -0.0341851525, -0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.00925429406, -0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall18" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.706450034, -0.0304688364, -0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (-6.56824245e-18, -0.0357558465, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin18" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.706450034, -0.0304688364, -0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-6.56824245e-18, -0.0357558465, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall19" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.792616489, -0.0262311901, -0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.00925429406, -0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin19" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.792616489, -0.0262311901, -0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.00925429406, -0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall20" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.865221056, -0.0215447208, -0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0178779233, -0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin20" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.865221056, -0.0215447208, -0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0178779233, -0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall21" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.92302145, -0.0164896154, -0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0252832016, -0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin21" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.92302145, -0.0164896154, -0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0252832016, -0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall22" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.965028692, -0.0111523681, -0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0309654714, -0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin22" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.965028692, -0.0111523681, -0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0309654714, -0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_wall23" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                rel material:binding:physics = </Fixture/Materials/outer_wall>
+                float physics:mass = 0.00105620125
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.990524026, -0.00562430074, -0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0405505805)
+                double3 xformOp:translate = (0.0345374956, -0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "outer_skin23" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/outer_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.990524026, -0.00562430074, -0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0345374956, -0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cylinder "outer_base" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.0015
+                double radius = 0.0315
+                rel material:binding = </Fixture/Materials/outer_base>
+                rel material:binding:physics = </Fixture/Materials/outer_base>
+                float physics:mass = 0.00465116996
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                quatf xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:translate = (0, 0, 0.00075)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+            }
+
+        }
+
+        def Xform "inner" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysxContactReportAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.03
+            bool physics:rigidBodyEnabled = 1
+            float physxContactReport:threshold = 0
+            float physxRigidBody:maxDepenetrationVelocity = 0.75
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.275, 0.035, 0.765621837)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "inner_wall0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.999071219, 0, 0.0430894417, 0)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0351422663, 0, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.999071219, 0, 0.0430894417, 0)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0333726983, 0, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.999071219, 0, 0.0430894417, 0)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0357558465, 0, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.990524026, -0.00562430074, 0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0339448226, 0.00909548781, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.990524026, -0.00562430074, 0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0322355512, 0.0086374899, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.990524026, -0.00562430074, 0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0345374956, 0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall2" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.965028692, -0.0111523681, 0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0304340954, 0.0175711331, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band2" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.965028692, -0.0111523681, 0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0289016045, 0.0166863491, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin2" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.965028692, -0.0111523681, 0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0309654714, 0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall3" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.92302145, -0.0164896154, 0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0248493348, 0.0248493348, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band3" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.92302145, -0.0164896154, 0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0235980613, 0.0235980613, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin3" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.92302145, -0.0164896154, 0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0252832016, 0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall4" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.865221056, -0.0215447208, 0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0175711331, 0.0304340954, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band4" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.865221056, -0.0215447208, 0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0166863491, 0.0289016045, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin4" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.865221056, -0.0215447208, 0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0178779233, 0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall5" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.792616489, -0.0262311901, 0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.00909548781, 0.0339448226, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band5" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.792616489, -0.0262311901, 0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0086374899, 0.0322355512, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin5" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.792616489, -0.0262311901, 0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.00925429406, 0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall6" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.706450034, -0.0304688364, 0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (2.1518432e-18, 0.0351422663, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band6" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.706450034, -0.0304688364, 0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (2.04348841e-18, 0.0333726983, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin6" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.706450034, -0.0304688364, 0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (2.18941415e-18, 0.0357558465, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall7" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.608196023, -0.0341851525, 0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.00909548781, 0.0339448226, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band7" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.608196023, -0.0341851525, 0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0086374899, 0.0322355512, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin7" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.608196023, -0.0341851525, 0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.00925429406, 0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall8" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.499535609, -0.0373165511, 0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0175711331, 0.0304340954, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band8" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.499535609, -0.0373165511, 0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0166863491, 0.0289016045, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin8" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.499535609, -0.0373165511, 0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0178779233, 0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall9" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.382328003, -0.0398094532, 0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0248493348, 0.0248493348, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band9" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.382328003, -0.0398094532, 0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0235980613, 0.0235980613, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin9" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.382328003, -0.0398094532, 0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0252832016, 0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall10" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.258578659, -0.0416212045, 0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0304340954, 0.0175711331, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band10" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.258578659, -0.0416212045, 0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0289016045, 0.0166863491, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin10" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.258578659, -0.0416212045, 0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0309654714, 0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall11" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.130404962, -0.0427208055, 0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0339448226, 0.00909548781, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band11" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (0.130404962, -0.0427208055, 0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0322355512, 0.0086374899, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin11" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (0.130404962, -0.0427208055, 0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0345374956, 0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall12" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (6.11754685e-17, -0.0430894417, 2.63846734e-18, 0.999071219)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0351422663, 4.30368639e-18, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band12" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (6.11754685e-17, -0.0430894417, 2.63846734e-18, 0.999071219)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0333726983, 4.08697681e-18, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin12" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (6.11754685e-17, -0.0430894417, 2.63846734e-18, 0.999071219)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0357558465, 4.3788283e-18, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall13" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.130404962, -0.0427208055, -0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0339448226, -0.00909548781, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band13" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.130404962, -0.0427208055, -0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0322355512, -0.0086374899, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin13" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.130404962, -0.0427208055, -0.00562430074, 0.990524026)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0345374956, -0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall14" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.258578659, -0.0416212045, -0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0304340954, -0.0175711331, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band14" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.258578659, -0.0416212045, -0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0289016045, -0.0166863491, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin14" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.258578659, -0.0416212045, -0.0111523681, 0.965028692)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0309654714, -0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall15" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.382328003, -0.0398094532, -0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0248493348, -0.0248493348, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band15" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.382328003, -0.0398094532, -0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0235980613, -0.0235980613, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin15" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.382328003, -0.0398094532, -0.0164896154, 0.92302145)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0252832016, -0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall16" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.499535609, -0.0373165511, -0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.0175711331, -0.0304340954, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band16" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.499535609, -0.0373165511, -0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0166863491, -0.0289016045, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin16" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.499535609, -0.0373165511, -0.0215447208, 0.865221056)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.0178779233, -0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall17" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.608196023, -0.0341851525, -0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-0.00909548781, -0.0339448226, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band17" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.608196023, -0.0341851525, -0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-0.0086374899, -0.0322355512, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin17" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.608196023, -0.0341851525, -0.0262311901, 0.792616489)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-0.00925429406, -0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall18" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.706450034, -0.0304688364, -0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (-6.45552959e-18, -0.0351422663, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band18" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.706450034, -0.0304688364, -0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (-6.13046522e-18, -0.0333726983, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin18" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.706450034, -0.0304688364, -0.0304688364, 0.706450034)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (-6.56824245e-18, -0.0357558465, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall19" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.792616489, -0.0262311901, -0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.00909548781, -0.0339448226, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band19" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.792616489, -0.0262311901, -0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0086374899, -0.0322355512, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin19" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.792616489, -0.0262311901, -0.0341851525, 0.608196023)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.00925429406, -0.0345374956, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall20" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.865221056, -0.0215447208, -0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0175711331, -0.0304340954, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band20" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.865221056, -0.0215447208, -0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0166863491, -0.0289016045, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin20" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.865221056, -0.0215447208, -0.0373165511, 0.499535609)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0178779233, -0.0309654714, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall21" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.92302145, -0.0164896154, -0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0248493348, -0.0248493348, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band21" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.92302145, -0.0164896154, -0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0235980613, -0.0235980613, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin21" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.92302145, -0.0164896154, -0.0398094532, 0.382328003)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0252832016, -0.0252832016, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall22" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.965028692, -0.0111523681, -0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0304340954, -0.0175711331, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band22" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.965028692, -0.0111523681, -0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0289016045, -0.0166863491, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin22" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.965028692, -0.0111523681, -0.0416212045, 0.258578659)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0309654714, -0.0178779233, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_wall23" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                rel material:binding:physics = </Fixture/Materials/inner_wall>
+                float physics:mass = 0.000873647949
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.990524026, -0.00562430074, -0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.00075, 0.0043468079, 0.0334241171)
+                double3 xformOp:translate = (0.0339448226, -0.00909548781, 0.0335)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_band23" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.000182553303
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                double size = 2
+                quatf xformOp:orient = (-0.990524026, -0.00562430074, -0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.006, 0.00510681663, 0.00702609068)
+                double3 xformOp:translate = (0.0322355512, -0.0086374899, 0.074)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "inner_skin23" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/inner_wall>
+                double size = 2
+                quatf xformOp:orient = (-0.990524026, -0.00562430074, -0.0427208055, 0.130404962)
+                float3 xformOp:scale = (0.00075, 0.0052660999, 0.0405505805)
+                double3 xformOp:translate = (0.0345374956, -0.00925429406, 0.0406)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cylinder "inner_base" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.0015
+                double radius = 0.0315
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.00425116996
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                quatf xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:translate = (0, 0, 0.00075)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+            }
+
+            def Cylinder "inner_plug0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.016125
+                double radius = 0.0313240388
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.0001
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                quatf xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:translate = (0, 0, 0.0095625)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+            }
+
+            def Cylinder "inner_plug1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.016125
+                double radius = 0.0327175573
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.0001
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                quatf xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:translate = (0, 0, 0.0256875)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+            }
+
+            def Cylinder "inner_plug2" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.016125
+                double radius = 0.0341110758
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.0001
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                quatf xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:translate = (0, 0, 0.0418125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+            }
+
+            def Cylinder "inner_plug3" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMassAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.016125
+                double radius = 0.0355045943
+                rel material:binding = </Fixture/Materials/inner_base>
+                rel material:binding:physics = </Fixture/Materials/inner_base>
+                float physics:mass = 0.0001
+                float physxCollision:contactOffset = 0.0015
+                float physxCollision:restOffset = 0
+                token visibility = "invisible"
+                quatf xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:translate = (0, 0, 0.0579375)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+            }
+
+        }
+
+    }
+
+    def Scope "Static"
+    {
+    }
+
+    def Scope "Joints"
+    {
+        def PhysicsFixedJoint "fit"
+        {
+            rel physics:body0 = </Fixture/Actors/outer>
+            rel physics:body1 = </Fixture/Actors/inner>
+            float physics:breakForce = 6
+            float physics:breakTorque = 0.3
+            bool physics:collisionEnabled = 1
+            uniform bool physics:excludeFromArticulation = 1
+            bool physics:jointEnabled = 1
+            point3f physics:localPos0 = (0, 0, 0.049)
+            point3f physics:localPos1 = (0, 0, 0.0310781629)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+    }
+
+    def Scope "Materials"
+    {
+        def Material "outer_wall" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </Fixture/Materials/outer_wall/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.35
+            float physics:restitution = 0
+            float physics:staticFriction = 0.35
+            uniform token physxMaterial:frictionCombineMode = "min"
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.0196, 0.1329, 0.253)
+                float inputs:roughness = 0.54
+                token outputs:surface
+            }
+        }
+
+        def Material "outer_base" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </Fixture/Materials/outer_base/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.35
+            float physics:restitution = 0
+            float physics:staticFriction = 0.35
+            uniform token physxMaterial:frictionCombineMode = "min"
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.0196, 0.1329, 0.253)
+                float inputs:roughness = 0.54
+                token outputs:surface
+            }
+        }
+
+        def Material "inner_wall" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </Fixture/Materials/inner_wall/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.35
+            float physics:restitution = 0
+            float physics:staticFriction = 0.35
+            uniform token physxMaterial:frictionCombineMode = "min"
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.913, 0.578, 0.021)
+                float inputs:roughness = 0.54
+                token outputs:surface
+            }
+        }
+
+        def Material "inner_base" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </Fixture/Materials/inner_base/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.35
+            float physics:restitution = 0
+            float physics:staticFriction = 0.35
+            uniform token physxMaterial:frictionCombineMode = "min"
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.913, 0.578, 0.021)
+                float inputs:roughness = 0.54
+                token outputs:surface
+            }
+        }
+
+    }
+}

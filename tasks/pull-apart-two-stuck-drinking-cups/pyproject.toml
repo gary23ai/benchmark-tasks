@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yam-nested-cups"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["inspect-robots==1.0.0", "inspect-robots-yam==0.38.0", "yam-arena==0.1.0", "numpy>=1.26", "scipy>=1.11", "pillow>=10", "imageio[ffmpeg]"]
+
+[project.entry-points."inspect_robots.embodiments"]
+yam_nested_cups = "rdb_nested_cups.adapter:make_embodiment"
+
+[project.entry-points."inspect_robots.policies"]
+nested_cups_scripted = "rdb_nested_cups.adapter:make_scripted"
+
+[project.entry-points."inspect_robots.scorers"]
+nested_cups_score = "rdb_nested_cups.grading:make_scorer"
+
+[tool.setuptools.packages.find]
+include = ["rdb_nested_cups*"]
+
+[tool.setuptools.package-data]
+rdb_nested_cups = ["cups.usda"]
