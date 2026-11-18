@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yam-window-wall-magnetic-cleaner"
+version = "0.3.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["inspect-robots==1.0.0", "inspect-robots-yam==0.38.0", "yam-arena==0.1.0", "numpy>=1.26", "scipy>=1.11", "pillow>=10", "imageio[ffmpeg]"]
+
+[project.entry-points."inspect_robots.embodiments"]
+yam_window_wall = "rdb_window_wall.adapter:make_embodiment"
+
+[project.entry-points."inspect_robots.policies"]
+window_wall_scripted = "rdb_window_wall.adapter:make_scripted"
+
+[project.entry-points."inspect_robots.scorers"]
+window_wall_score = "rdb_window_wall.grading:make_scorer"
+
+[tool.setuptools.packages.find]
+include = ["rdb_window_wall*"]
+
+[tool.setuptools.package-data]
+rdb_window_wall = ["window.usda"]
