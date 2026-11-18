@@ -17,6 +17,6 @@
   "run_limit": "4,800 steps (4 minutes at 20 Hz)",
   "reset_notes": "Nothing is used up. Tip the cup, the cap and any strays back into the bottle and check it holds 30 whole tablets (replace chipped ones). With real ibuprofen, wear gloves for the reset and wipe the cap, the cup and the gripper pads afterwards. Stand the open bottle, the upside-down cap and the empty cup back on their three marks (tape rings on the table make this quick).",
   "fidelity": "PhysX, 240 Hz physics/20 Hz control. Tablets move by gravity and contact. Bottle/cup colliders use 16 staves: bottle walls 4 mm (real about 1 mm; bore 6 mm narrower), cup 2.5 mm. Smooth meshes are display only. No threads, cap liner or child-resistant mechanism. Convex tablets, friction 0.35; internal dimensions and masses estimated. No chipping or dust. Full assumptions: REFERENCE-SPEC.json and TECHNICAL.md.",
-  "scores": "Dream-1 run: 0.0 (4,800 steps; it moved both arms about over the table, brushed the bottle and the cap (at most 1.2 N) without moving them, and never lifted or tipped anything, so all 30 tablets stayed in the bottle); demo: 1.0 (1,382 steps; the left hand pinched the cap 80 mm up, about 8.4 N on each fingertip, while the right tipped the bottle over it; one metered pour gave exactly two, both then tipped into the cup). Both runs on the final scene and scorer.",
+  "scores": "Dream-1 run: 0.0 (4,800 steps); demo: 1.0 (1,382 steps). Same scene and scorer; full run details in TECHNICAL.md.",
   "media": "M-4C94NN"
 }

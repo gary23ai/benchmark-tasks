@@ -48,7 +48,7 @@ PhysX, 240 Hz physics/20 Hz control. Tablets move by gravity and contact. Bottle
 [TECHNICAL.md](TECHNICAL.md) contains the detailed build list, product/dimension sources, low-cost
 reproduction options, physical scoring procedure, controller stages and measured limitations.
 [REFERENCE-SPEC.json](REFERENCE-SPEC.json) preserves the full specification used for the recordings.
-Only the card title, context and fidelity summary were shortened; instruction, setup, scoring, reset and run limit are unchanged.
+Only the card title, context, fidelity and scores summaries were shortened; instruction, setup, scoring, reset and run limit are unchanged.
 
 ## License and tests
 
