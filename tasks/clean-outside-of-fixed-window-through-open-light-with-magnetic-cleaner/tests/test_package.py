@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(Path(__file__).resolve().parent)]
 from rdb_window_wall import cleaner_model as m, grading  # noqa: E402
 
-TASK = json.loads((ROOT / "task.json").read_text())
+TASK = json.loads((ROOT / "REFERENCE-SPEC.json").read_text())
 README = (ROOT / "README.md").read_text() + "\n" + (ROOT / "TECHNICAL.md").read_text()
 FIXED_SCENE = (ROOT / "rdb_window_wall" / "fixed_scene.py").read_text()
 
