@@ -1,0 +1,76 @@
+{
+  "seed": 0,
+  "object_jitter": 0,
+  "control_hz": 20,
+  "recorded_input_archive_sha256": "9dac5e570b3541ace6b5df56f2ee5122c694ef956ceb26f3e5d15614aaf9b298",
+  "runtime_files_matching_recorded_bundle": [
+    "rdb_sprayer_relief/__init__.py",
+    "rdb_sprayer_relief/adapter.py",
+    "rdb_sprayer_relief/dream_audit.py",
+    "rdb_sprayer_relief/fixed_scene.py",
+    "rdb_sprayer_relief/grading.py",
+    "rdb_sprayer_relief/layout.py",
+    "rdb_sprayer_relief/recording.py",
+    "rdb_sprayer_relief/run.py",
+    "rdb_sprayer_relief/scripted.py",
+    "rdb_sprayer_relief/sprayer.usda"
+  ],
+  "recorded_hashes": {
+    "scene_sha256": "4be3161ed375eb1b3a4ebb1d6451ad3fdfc0f1bdb698ef89b3828f137b651246",
+    "asset_sha256": "6d5aa07ca4ffdce9ece2c256c18d92276094f13755088852e236c85073d21787",
+    "layout_sha256": "e52880596cdf6cc3a501c8cd192e69e5f8b31400992611de00169a5ccd1b8108",
+    "grader_sha256": "7a2c448cdae3a466412f2e21a9ec832e33c36df7174ffe1ab93aaa8f458900f7"
+  },
+  "runs": {
+    "scripted": {
+      "score": 1.0,
+      "executed_steps": 2970,
+      "step_limit": 5000,
+      "elapsed_s": 523.53
+    },
+    "dream": {
+      "score": 0.0,
+      "executed_steps": 467,
+      "step_limit": 5000,
+      "elapsed_s": 99.04
+    }
+  },
+  "scripted_final_grade": {
+    "score": 1.0,
+    "bar": 0.0,
+    "safe": true,
+    "vented_first": true,
+    "hazard": false,
+    "fallen": false,
+    "valve_lift_mm": -0.0,
+    "valve_shut": true,
+    "head_deg": 540.0,
+    "head_free": true,
+    "offset_mm": 12.1,
+    "tilt_deg": 0.0,
+    "standing": true,
+    "grippers_clear": true,
+    "rest_ticks": 20,
+    "void": null
+  },
+  "dream_final_grade": {
+    "score": 0.0,
+    "bar": 2.0,
+    "safe": false,
+    "vented_first": false,
+    "hazard": true,
+    "fallen": false,
+    "valve_lift_mm": -0.0,
+    "valve_shut": true,
+    "head_deg": 10.0,
+    "head_free": false,
+    "offset_mm": 0.0,
+    "tilt_deg": 0.81,
+    "standing": true,
+    "grippers_clear": false,
+    "rest_ticks": 0,
+    "void": "the spray head was loosened under pressure"
+  },
+  "reference_reads_simulator_state": true,
+  "model_observations": "Overhead and two wrist RGB, joint and gripper positions; no pressure value or side camera."
+}

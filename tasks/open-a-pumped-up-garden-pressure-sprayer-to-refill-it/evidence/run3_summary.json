@@ -1,0 +1,194 @@
+{
+ "source": "Isaac run 3 of this package (scene, asset, layout and grader hashes equal to this folder's files), RESULT.json of each policy",
+ "scripted": {
+  "score": 1.0,
+  "steps": 2967,
+  "termination": "success",
+  "wall_s": 543.41,
+  "peak_interarm_contact_n": 0.0,
+  "needle_at_start_deg": 180.0,
+  "valve_max_lift_mm": 4.81,
+  "vent_hold_s": 4.25,
+  "bar_after_hold": 0.0351,
+  "knob_holds": [
+   {
+    "arm": "right",
+    "pads_mm": 47.6,
+    "push_n": [
+     0.2,
+     0.2,
+     -6.9
+    ]
+   },
+   {
+    "arm": "left",
+    "pads_mm": 47.8,
+    "push_n": [
+     0.4,
+     -0.4,
+     -7.0
+    ]
+   },
+   {
+    "arm": "right",
+    "pads_mm": 47.8,
+    "push_n": [
+     0.2,
+     0.3,
+     -7.0
+    ]
+   }
+  ],
+  "strokes": [
+   {
+    "arm": "left",
+    "head_deg": 66.6,
+    "led_deg": 73.2,
+    "pads_mm": 11.9,
+    "tank_turned_deg": 6.6,
+    "holder_push_n": [
+     0.9,
+     -0.9,
+     -6.8
+    ]
+   },
+   {
+    "arm": "left",
+    "head_deg": 136.2,
+    "led_deg": 70.4,
+    "pads_mm": 11.9,
+    "tank_turned_deg": 0.8,
+    "holder_push_n": [
+     1.2,
+     -0.6,
+     -6.9
+    ]
+   },
+   {
+    "arm": "left",
+    "head_deg": 202.7,
+    "led_deg": 67.0,
+    "pads_mm": 11.9,
+    "tank_turned_deg": 0.6,
+    "holder_push_n": [
+     1.1,
+     -0.5,
+     -6.9
+    ]
+   },
+   {
+    "arm": "right",
+    "head_deg": 275.7,
+    "led_deg": 76.4,
+    "pads_mm": 11.9,
+    "tank_turned_deg": 3.4,
+    "holder_push_n": [
+     -0.3,
+     -0.5,
+     -6.9
+    ]
+   },
+   {
+    "arm": "right",
+    "head_deg": 345.9,
+    "led_deg": 74.4,
+    "pads_mm": 11.9,
+    "tank_turned_deg": 4.3,
+    "holder_push_n": [
+     -1.3,
+     -0.6,
+     -6.7
+    ]
+   },
+   {
+    "arm": "left",
+    "head_deg": 415.0,
+    "led_deg": 73.2,
+    "pads_mm": 11.9,
+    "tank_turned_deg": 4.1,
+    "holder_push_n": [
+     0.7,
+     -0.4,
+     -6.9
+    ]
+   },
+   {
+    "arm": "left",
+    "head_deg": 484.2,
+    "led_deg": 70.9,
+    "pads_mm": 11.9,
+    "tank_turned_deg": 1.7,
+    "holder_push_n": [
+     1.1,
+     -0.0,
+     -7.0
+    ]
+   },
+   {
+    "arm": "left",
+    "head_deg": 540.0,
+    "led_deg": 56.5,
+    "pads_mm": 11.9,
+    "tank_turned_deg": 0.8,
+    "holder_push_n": [
+     1.1,
+     0.2,
+     -7.1
+    ]
+   }
+  ],
+  "max_tilt_deg": 1.38,
+  "max_offset_mm": 10.5,
+  "final_offset_mm": 9.5,
+  "final_tank_yaw_deg": 22.38,
+  "holding_arm_on_head_max_n": 0.0,
+  "final_grade": {
+   "score": 1.0,
+   "bar": 0.0,
+   "safe": true,
+   "vented_first": true,
+   "hazard": false,
+   "fallen": false,
+   "valve_lift_mm": -0.0,
+   "valve_shut": true,
+   "head_deg": 540.0,
+   "head_free": true,
+   "offset_mm": 9.5,
+   "tilt_deg": 0.0,
+   "standing": true,
+   "grippers_clear": true,
+   "rest_ticks": 20,
+   "void": null
+  }
+ },
+ "dream": {
+  "score": 0.0,
+  "steps": 5000,
+  "termination": "max_steps",
+  "wall_s": 748.46,
+  "action_requests": 104,
+  "list_price_estimate_usd": 0.138667,
+  "max_offset_mm": 285.7,
+  "max_tank_yaw_deg": 114.16,
+  "max_hand_on_knob_n": 99.41,
+  "max_hand_on_valve_n": 0.0,
+  "final_grade": {
+   "score": 0.0,
+   "bar": 2.0,
+   "safe": false,
+   "vented_first": false,
+   "hazard": false,
+   "fallen": false,
+   "valve_lift_mm": -0.0,
+   "valve_shut": true,
+   "head_deg": 1.1,
+   "head_free": false,
+   "offset_mm": 253.3,
+   "tilt_deg": 0.0,
+   "standing": false,
+   "grippers_clear": false,
+   "rest_ticks": 0,
+   "void": null
+  }
+ }
+}
