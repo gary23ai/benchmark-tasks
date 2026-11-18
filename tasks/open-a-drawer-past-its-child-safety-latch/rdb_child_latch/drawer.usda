@@ -1,0 +1,415 @@
+#usda 1.0
+(
+    defaultPrim = "Fixture"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Fixture"
+{
+    def Scope "Actors"
+    {
+        def Xform "drawer" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysxContactReportAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 0.5
+            bool physics:rigidBodyEnabled = 1
+            float physxContactReport:threshold = 0
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            float physxRigidBody:sleepThreshold = 0
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.39, 0, 0.7475)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "front" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/drawer>
+                rel material:binding:physics = </Fixture/Materials/drawer>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.0015, 0.1715, 0.068)
+                double3 xformOp:translate = (0.0015, 0, 0.08)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "pull" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/pull>
+                rel material:binding:physics = </Fixture/Materials/pull>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.006, 0.06, 0.004)
+                double3 xformOp:translate = (-0.006, 0, 0.132)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "floor" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/drawer>
+                rel material:binding:physics = </Fixture/Materials/drawer>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.2095, 0.159, 0.004)
+                double3 xformOp:translate = (0.2125, 0, 0.018)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_left" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/drawer>
+                rel material:binding:physics = </Fixture/Materials/drawer>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.2095, 0.004, 0.062)
+                double3 xformOp:translate = (0.2125, 0.155, 0.084)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_right" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/drawer>
+                rel material:binding:physics = </Fixture/Materials/drawer>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.2095, 0.004, 0.062)
+                double3 xformOp:translate = (0.2125, -0.155, 0.084)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_back" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/drawer>
+                rel material:binding:physics = </Fixture/Materials/drawer>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.0015, 0.151, 0.062)
+                double3 xformOp:translate = (0.4205, 0, 0.084)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "latch_base" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/latch>
+                rel material:binding:physics = </Fixture/Materials/latch>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.0015, 0.01905, 0.0127)
+                double3 xformOp:translate = (0.0045, 0, 0.1343)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+        }
+
+        def Xform "latch" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysxContactReportAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            rel physics:filteredPairs = [
+                </Fixture/Actors/drawer>,
+            ]
+            float physics:mass = 0.012
+            bool physics:rigidBodyEnabled = 1
+            float physxContactReport:threshold = 0
+            float physxRigidBody:maxDepenetrationVelocity = 1
+            float physxRigidBody:sleepThreshold = 0
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.396, 0, 0.883)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "arm" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/latch>
+                rel material:binding:physics = </Fixture/Materials/latch>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.03025, 0.01905, 0.0025)
+                double3 xformOp:translate = (0.03025, 0, 2.1684e-18)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "hook" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/latch>
+                rel material:binding:physics = </Fixture/Materials/latch>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.0025, 0.01905, 0.0045)
+                double3 xformOp:translate = (0.058, 0, 0.007)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "ramp" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </Fixture/Materials/latch>
+                rel material:binding:physics = </Fixture/Materials/latch>
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 2
+                float3 xformOp:scale = (0.00636396, 0.01905, 0.00636396)
+                double3 xformOp:translate = (0.0605, 0, 0.0025)
+                quatf xformOp:orient = (0.923879533, 0, 0.382683432, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+        }
+
+    }
+
+    def Scope "Static"
+    {
+        def Cube "top" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </Fixture/Materials/frame>
+            rel material:binding:physics = </Fixture/Materials/frame>
+            float physxCollision:contactOffset = 0.001
+            float physxCollision:restOffset = 0
+            double size = 2
+            float3 xformOp:scale = (0.216, 0.1825, 0.0115)
+            double3 xformOp:translate = (0.606, 0, 0.911)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "side_left" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </Fixture/Materials/frame>
+            rel material:binding:physics = </Fixture/Materials/frame>
+            float physxCollision:contactOffset = 0.001
+            float physxCollision:restOffset = 0
+            double size = 2
+            float3 xformOp:scale = (0.216, 0.004, 0.076)
+            double3 xformOp:translate = (0.606, 0.1785, 0.8235)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "side_right" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </Fixture/Materials/frame>
+            rel material:binding:physics = </Fixture/Materials/frame>
+            float physxCollision:contactOffset = 0.001
+            float physxCollision:restOffset = 0
+            double size = 2
+            float3 xformOp:scale = (0.216, 0.004, 0.076)
+            double3 xformOp:translate = (0.606, -0.1785, 0.8235)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "back" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </Fixture/Materials/frame>
+            rel material:binding:physics = </Fixture/Materials/frame>
+            float physxCollision:contactOffset = 0.001
+            float physxCollision:restOffset = 0
+            double size = 2
+            float3 xformOp:scale = (0.001, 0.1745, 0.076)
+            double3 xformOp:translate = (0.821, 0, 0.8235)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "base" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </Fixture/Materials/frame>
+            rel material:binding:physics = </Fixture/Materials/frame>
+            float physxCollision:contactOffset = 0.001
+            float physxCollision:restOffset = 0
+            double size = 2
+            float3 xformOp:scale = (0.216, 0.1745, 0.005)
+            double3 xformOp:translate = (0.606, 0, 0.7525)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "catch" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </Fixture/Materials/latch>
+            rel material:binding:physics = </Fixture/Materials/latch>
+            float physxCollision:contactOffset = 0.001
+            float physxCollision:restOffset = 0
+            double size = 2
+            float3 xformOp:scale = (0.005, 0.0125, 0.005)
+            double3 xformOp:translate = (0.4084, 0, 0.8945)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+    }
+
+    def Scope "Joints"
+    {
+        def PhysicsPrismaticJoint "drawer_slide" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 30000
+            float drive:linear:physics:maxForce = 3
+            float drive:linear:physics:stiffness = 0
+            float drive:linear:physics:targetPosition = 0
+            float drive:linear:physics:targetVelocity = 0
+            uniform token drive:linear:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body1 = </Fixture/Actors/drawer>
+            bool physics:collisionEnabled = 0
+            uniform bool physics:excludeFromArticulation = 1
+            point3f physics:localPos0 = (0.39, 0, 0.7475)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0, 0, 0.70710677, 0.70710677)
+            quatf physics:localRot1 = (0, 0, 0.70710677, 0.70710677)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.3
+        }
+
+        def PhysicsRevoluteJoint "latch_pin" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 5.23599e-05
+            float drive:angular:physics:stiffness = 0.00523599
+            float drive:angular:physics:targetPosition = -11.4592
+            float drive:angular:physics:targetVelocity = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </Fixture/Actors/drawer>
+            rel physics:body1 = </Fixture/Actors/latch>
+            bool physics:collisionEnabled = 0
+            uniform bool physics:excludeFromArticulation = 1
+            point3f physics:localPos0 = (0.006, 0, 0.1355)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 10
+        }
+
+    }
+
+    def Scope "Materials"
+    {
+        def Material "frame" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </Fixture/Materials/frame/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.2
+            float physics:restitution = 0
+            float physics:staticFriction = 0.2
+            uniform token physxMaterial:frictionCombineMode = "average"
+            uniform token physxMaterial:restitutionCombineMode = "min"
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.93, 0.93, 0.91)
+                float inputs:opacity = 1.0
+                float inputs:roughness = 0.35
+                token outputs:surface
+            }
+        }
+
+        def Material "drawer" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </Fixture/Materials/drawer/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.2
+            float physics:restitution = 0
+            float physics:staticFriction = 0.2
+            uniform token physxMaterial:frictionCombineMode = "average"
+            uniform token physxMaterial:restitutionCombineMode = "min"
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.9, 0.93, 0.95)
+                float inputs:opacity = 0.22
+                float inputs:roughness = 0.08
+                token outputs:surface
+            }
+        }
+
+        def Material "latch" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </Fixture/Materials/latch/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.3
+            float physics:restitution = 0
+            float physics:staticFriction = 0.3
+            uniform token physxMaterial:frictionCombineMode = "average"
+            uniform token physxMaterial:restitutionCombineMode = "min"
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.97, 0.97, 0.95)
+                float inputs:opacity = 1.0
+                float inputs:roughness = 0.45
+                token outputs:surface
+            }
+        }
+
+        def Material "pull" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </Fixture/Materials/pull/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.6
+            float physics:restitution = 0
+            float physics:staticFriction = 0.6
+            uniform token physxMaterial:frictionCombineMode = "average"
+            uniform token physxMaterial:restitutionCombineMode = "min"
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.9, 0.93, 0.95)
+                float inputs:opacity = 0.22
+                float inputs:roughness = 0.08
+                token outputs:surface
+            }
+        }
+
+    }
+}
