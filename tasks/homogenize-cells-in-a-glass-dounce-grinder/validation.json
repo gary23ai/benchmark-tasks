@@ -1,0 +1,24 @@
+{
+  "seed": 0,
+  "control_hz": 20,
+  "object_jitter": 0,
+  "recorded_hashes": {
+    "scene_sha256": "9e0020a828d0ef3b3bd9903d85f4529b154dad8bcedde451798bb7e999e8b082",
+    "asset_sha256": "cdaf7b28bafadf9cd62767c79cf1e3d6676507fd63aebcd5150528e477fd7313",
+    "layout_sha256": "cbf795365ae2d01c5b786a8c79371b00c7c7939bcf5387c7aa2785b15e0bf791",
+    "grader_sha256": "807c4d20183788abe690f18b5de4552dfc1e0777bfba12aff3fbe22b176172ca"
+  },
+  "scripted": {
+    "score": 1.0,
+    "executed_steps": 1451,
+    "step_limit": 3000,
+    "elapsed_s": 343.07,
+    "scripted_demo_reads_simulator_state": true
+  },
+  "dream": {
+    "score": 0.0,
+    "executed_steps": 3000,
+    "step_limit": 3000,
+    "elapsed_s": 746.83
+  }
+}
