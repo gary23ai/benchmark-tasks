@@ -17,6 +17,6 @@
   "run_limit": "2,400 steps (120 s at 20 Hz)",
   "reset_notes": "Push the stops back except the main stop (pulled out 20 mm), close the drones, let the bellows board spring open and let the reservoir run empty (hold a key until it falls silent). Stand the harmonium back on its tape marks. Return both arms to ready with grippers open. Nothing is consumed. In simulation: seed 0, no jitter; the harmonium is put back on its marks with its board open, keys up and reservoir empty, and the scorer starts fresh.",
   "fidelity": "Isaac Lab-Arena rigid bodies at listed size and mass; 240 Hz physics, 20 Hz control. The case, all 39 keys and bellows board move through contact, with no loop joints or gripper attachments. Air is a rule: constant 2.19 N m at 200 Pa; swept feed (9.5 L) into a 1.2 L reservoir at 160 to 230 Pa; each reed uses about 0.4 L/s. Sound and bellows folds are synthesized. Forces, flow and spring rates are estimates. See TECHNICAL.md for details and real-audio scoring.",
-  "scores": "Dream-1 run: 0.0 (2,400 steps; it moved both grippers, mostly closed, over the harmonium, pressed on the top of the case and pushed two black keys (F#3, A#3) part way down, but never touched the bellows board, so no air went in and no note sounded); demo: 1.0 (464 steps). Both runs on the final package files.",
+  "scores": "Dream-1 run: 0.0 (2,400 steps; partly pressed keys but never pumped the bellows, so no note sounded); demo: 1.0 (464 steps). Same fixed scene, air rule and simulation scorer.",
   "media": "M-LEE5Q9"
 }
