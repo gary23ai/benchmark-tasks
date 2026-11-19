@@ -1,0 +1,89 @@
+{
+  "seed": 0,
+  "object_jitter": 0,
+  "control_hz": 20,
+  "recorded_input_archive_sha256": "5330f40bc056a6097d04f2328da97d5891b320a539877ae3aabcfed4e9aafe59",
+  "recorded_hashes": {
+    "scene_sha256": "2ce0d4698c69d479d7581f7f30bca660d1cce940c07aaf5212a9907f0db4d6e8",
+    "asset_sha256": "81ba3647d20e22d22eb43bbdae2071d9620cce27bc30ce14d38ea23762b2d01a",
+    "layout_sha256": "7bdebae33a31b33c2026a091eca05270e4c6193ce55d66f20aa41be1b036cc4e",
+    "air_sha256": "4f4b8a2e0a767fcf626b96c280137aae83ac6a41311a50e66a573b6b538138aa",
+    "grader_sha256": "538c01a18681e10e6b6aa7e528a8e003aad6d092ea00be361ccc21b722343c05"
+  },
+  "runtime_files_matching_recorded_bundle": [
+    "rdb_harmonium/__init__.py",
+    "rdb_harmonium/adapter.py",
+    "rdb_harmonium/air.py",
+    "rdb_harmonium/dream_audit.py",
+    "rdb_harmonium/fixed_scene.py",
+    "rdb_harmonium/grading.py",
+    "rdb_harmonium/harmonium.usda",
+    "rdb_harmonium/layout.py",
+    "rdb_harmonium/recording.py",
+    "rdb_harmonium/run.py",
+    "rdb_harmonium/scripted.py",
+    "rdb_harmonium/skin.py"
+  ],
+  "post_run_changes": {
+    "rdb_harmonium/audio.py": "Real-trial pitch judge and calibration extended to all 39 keys; backward-compatible with the recorded 11-key calibration. Not used by the primary simulation scorer."
+  },
+  "runs": {
+    "scripted": {
+      "score": 1.0,
+      "executed_steps": 464,
+      "step_limit": 2400,
+      "elapsed_s": 133.75
+    },
+    "dream": {
+      "score": 0.0,
+      "executed_steps": 2400,
+      "step_limit": 2400,
+      "elapsed_s": 555.02
+    }
+  },
+  "scripted_final_grade": {
+    "score": 1.0,
+    "played": 1.0,
+    "held_in_order": 0.75,
+    "joined": "legato",
+    "joins_s": [
+      -0.35,
+      -0.35
+    ],
+    "longest_s": {
+      "C4": 4.7,
+      "D4": 4.7,
+      "E4": 4.4
+    },
+    "sounding": [],
+    "other_keys_s": 0.0,
+    "moved_mm": 0.81,
+    "moved_max_mm": 0.81,
+    "tilt_max_deg": 0.0,
+    "released": true,
+    "void": null,
+    "fed": true
+  },
+  "dream_final_grade": {
+    "score": 0.0,
+    "played": 0.0,
+    "held_in_order": 0.0,
+    "joined": null,
+    "joins_s": null,
+    "longest_s": {
+      "C4": 0.0,
+      "D4": 0.0,
+      "E4": 0.0
+    },
+    "sounding": [],
+    "other_keys_s": 0.0,
+    "moved_mm": 0.0,
+    "moved_max_mm": 0.0,
+    "tilt_max_deg": 0.0,
+    "released": true,
+    "void": null,
+    "fed": false
+  },
+  "reference_reads_simulator_state": true,
+  "model_observation": "Overhead and two wrist RGB 320x176; joint and gripper positions; no audio, pressure or review camera"
+}

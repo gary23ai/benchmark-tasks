@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yam-harmonium-pump"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["inspect-robots==1.0.0", "inspect-robots-yam==0.38.0", "yam-arena==0.1.0", "numpy>=1.26", "scipy>=1.11", "pillow>=10", "imageio[ffmpeg]"]
+
+[project.entry-points."inspect_robots.embodiments"]
+yam_harmonium_pump = "rdb_harmonium.adapter:make_embodiment"
+
+[project.entry-points."inspect_robots.policies"]
+harmonium_scripted = "rdb_harmonium.adapter:make_scripted"
+
+[project.entry-points."inspect_robots.scorers"]
+harmonium_phrase_score = "rdb_harmonium.grading:make_scorer"
+
+[tool.setuptools.packages.find]
+include = ["rdb_harmonium*"]
+
+[tool.setuptools.package-data]
+rdb_harmonium = ["harmonium.usda"]
