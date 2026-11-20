@@ -15,5 +15,6 @@
   "run_limit": "1100 steps (55 seconds at 20 Hz)",
   "fidelity": "Full-size generic two-slot toaster and steel tray; free native rigid bodies. Dimensions, lumped housing inertia, bread density and friction are engineering estimates. Forty actual-size analytic bread boxes avoid convex-cooking shrinkage. Straight guides and a rear stop; no OEM click-lock claim. No heat, electricity, washing, adhering residue, fine dust, bread deformation or hardware calibration. Static bin and cord; no task drives or attachments.",
   "reset_notes": "Restore all 42 task-body transforms and zero native velocities only at episode reset, with the loaded tray inserted and bread 0.6 mm above its floor for gravity settling. Return unchanged stock robots to READY. Thereafter native gravity and contact evolve all task bodies. Reference feedback changes ordinary robot joint/jaw targets; no task-body writes, snapping, injected task forces or proximity attachments.",
-  "scores": "Scripted: 2/2 fresh fixed-start trials scored 1.0, 971/1100 actions each. Dream-1 beta: one complete fixed-start trial scored 0.0, 1100/1100 actions; tray never extracted. Same instruction, scene and scorer; independent audits passed. No official upload or hardware validation."
+  "scores": "Scripted: 2/2 fresh fixed-start trials scored 1.0, 971/1100 actions each. Dream-1 beta: one complete fixed-start trial scored 0.0, 1100/1100 actions; tray never extracted. Same instruction, scene and scorer; independent audits passed. No official upload or hardware validation.",
+  "media": "M-BP3VU8"
 }
