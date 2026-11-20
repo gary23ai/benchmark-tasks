@@ -1,5 +1,5 @@
 """Full-score demonstration: the left hand seats the funnel on the base and holds it down; the right hand takes
-the clamp by its handles, squeezes it open, pushes it round both flanges and lets it close; then both let go.
+the clamp by its handles, squeezes it open, pushes it round both flanges and lets it close; then the left hand proof-lifts the assembly, sets it down and releases it.
 
 The demonstration reads the robot's own joint and gripper readings and, as the review rules allow for a
 scripted demonstration, simulator state: the poses of the holder, the funnel and the clamp and the jaws' angles.
@@ -25,6 +25,7 @@ from yam_arena import ik
 from yam_arena.constants import FINGER_OPEN, READY
 
 from . import layout as L
+from .grading import flask_clearance
 from .fixed_scene import ARMS, BASES, CONTROL_HZ
 
 OPEN = abs(float(FINGER_OPEN))
@@ -402,6 +403,62 @@ class FilterClampReference:
         yield from self.grip(arm, 1., .3)
         return ring["jaws_closed"]
 
+    def proof_lift(self):
+        """Move only the hand. Read the free flask and the funnel independently."""
+        arm = "left"
+        self.phase("proof lift by upper funnel")
+        start, _ = self.part("funnel")
+        start_foot, _ = self.part("holder")
+        # The extra load pitches the soft wrist. Correct absolute vertical rather than
+        # relative alignment between two pieces that can lean together.
+        yaw = 0.
+        airborne = False
+        held_ticks = 0
+        for k in range(16 * CONTROL_HZ):
+            foot, body = self.part("holder")
+            gap = flask_clearance(foot, body)
+            if self.seat()["gap"] > .006:
+                self.event("proof lift stopped: glass flanges separated")
+                break
+            airborne = airborne or gap > .003
+            held_ticks = held_ticks + 1 if gap >= .022 else 0
+            if held_ticks == 1:
+                self.phase("proof hold")
+            if held_ticks >= 28:
+                break
+            if k % 4 == 0:
+                point, rotation = self.target[arm]
+                funnel, _ = self.part("funnel")
+                # Keep the grasp over the mark. In flight a modest yaw draws the
+                # elbow inward and makes the loaded upper workspace reachable.
+                xy = np.clip(.45 * (start[:2] - funnel[:2]), -.0012, .0012)
+                dz = np.clip(.45 * (.025 - gap), -.0012, .0026)
+                turn = .32 * np.cross(body[:, 2], (0., 0., 1.))
+                size = np.linalg.norm(turn)
+                if size > np.radians(.65):
+                    turn *= np.radians(.65) / size
+                dyaw = min(np.radians(.7), np.radians(16.) - yaw) if airborne else 0.
+                yaw += dyaw
+                rotation = Rotation.from_rotvec(turn + (0., 0., dyaw)).as_matrix() @ rotation
+                self.command(arm, point + np.r_[xy, dz], rotation)
+            yield self.emit()
+        self.event("proof hold ended", foot_clearance_mm=round(1000 * gap, 2), held_ticks=held_ticks)
+        self.phase("lower assembly")
+        # Descend onto the original foot mark and maintain world-up orientation.
+        for k in range(10 * CONTROL_HZ):
+            foot, body = self.part("holder")
+            gap = flask_clearance(foot, body)
+            if gap < .0005 and L.tilt_deg(body) < 1.5:
+                break
+            if k % 4 == 0:
+                point, rotation = self.target[arm]
+                xy = np.clip(.35 * (start_foot[:2] - foot[:2]), -.001, .001)
+                dz = -np.clip(.40 * gap, .00035, .0024)
+                turn = np.clip(.22 * np.cross(body[:, 2], (0., 0., 1.)), -.009, .009)
+                self.command(arm, point + np.r_[xy, dz], Rotation.from_rotvec(turn).as_matrix() @ rotation)
+            yield self.emit()
+        yield from self.hold(.5)
+
     def let_go_of_funnel(self):
         arm = "left"
         self.phase("funnel release")
@@ -430,6 +487,8 @@ class FilterClampReference:
             self.event("could not take the clamp")
             yield from self.glide("right", 2., np.asarray(READY, dtype=float))
         if VARIANT != "no_hold":
+            if self.ring()["jaws_closed"]:
+                yield from self.proof_lift()
             yield from self.let_go_of_funnel()
         self.phase("hands off")
         while True:

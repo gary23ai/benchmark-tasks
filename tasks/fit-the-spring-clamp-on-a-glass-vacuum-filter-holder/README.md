@@ -1,13 +1,10 @@
-# Assemble a glass vacuum filter holder with its spring clamp
+# Fit and test the spring clamp on a glass vacuum filter holder
 
-Assemble the vacuum filter holder. Pick up the glass funnel and set it square on the fritted base, over the white membrane. Keep holding the funnel down with that hand while the other hand squeezes the aluminium spring clamp open, fits it round both glass flanges and lets it close. Then let go of everything and move both arms back.
+Seat the glass funnel over the membrane and secure both flanges with the spring clamp. Prove that the joint carries the load by lifting the entire dry assembly by the upper funnel. The other arm must stay clear. Hold the bottom of the flask at least 20 mm above the bench for one second, then set it down upright and release it.
 
 ## Run one trial
 
-Use Python 3.12, Isaac Sim 6.1, Isaac Lab-Arena 0.3.1, Inspect Robots 1.0.0,
-inspect-robots-yam 0.38.0 and yam-arena 0.1.0 on Linux with an NVIDIA GPU.
-The stock YAM station, arm meshes and cameras are runtime dependencies; they are not bundled.
-Install this folder in that environment:
+Use Python 3.12, Isaac Sim 6.1, Isaac Lab-Arena 0.3.1, Inspect Robots 1.0.0, inspect-robots-yam 0.38.0 and yam-arena 0.1.0 on Linux with an NVIDIA GPU. The stock YAM station, arm meshes and cameras are runtime dependencies. In the task folder, run:
 
 ```sh
 uv pip install --no-deps .
@@ -15,44 +12,27 @@ python -m rdb_filter_clamp.run scripted --out out/scripted
 python -m rdb_filter_clamp.run dream --out out/dream
 ```
 
-The Dream run requires a Dream Labs credential configured through its client. No credential is included.
-Both runs use Inspect Robots, the same scene and scorer, seed 0 and zero object jitter.
-Run limit: 2,400 steps (120 s at 20 Hz). Use the default layout; additional diagnostic variants are not the submitted trial.
+Use a fresh output directory for each run. The Dream-1 client needs a configured credential. Both runs start from the same scene with seed 0 and zero object jitter. The limit is 2,400 actions at 20 Hz, or 120 seconds of simulation. Dream-1 receives overhead and wrist RGB at 320 × 176 plus robot joint and gripper positions. The scripted controller reads object poses and jaw angles and commands only robot joints and grippers.
 
-| Recorded run | Score | Steps | Wall time |
-| --- | --- | --- | --- |
-| Scripted physical-feasibility reference | 1.0 | 993 | 250 s |
-| Dream-1 | 0.0 | 2,400 | 658 s |
+## Score and replay
 
-Dream-1 receives only 320 x 176 RGB from the overhead and two wrist cameras, plus joint and gripper positions.
-The scripted reference uses simulator object state for feedback; it is not an observation-matched model baseline
-or a demonstration of perception from RGB. It commands robot joints and grippers without writing object poses.
-The review-only side camera is never a model input.
+The terminal score is in `RESULT.json`. A seated and clamped assembly earns 0.5. A one-handed proof lift followed by upright set-down and release earns 1.0. Other assemblies and latched failures earn 0. The exact geometry, time and contact conditions are in `task.json`.
 
-Each run writes `RESULT.json`, `media/setup.png`, `media/top_cam.mp4`, `media/side_cam.mp4`
-and `media/grader-trace.jsonl`. Read `score` in `RESULT.json` for the final score.
-The scripted command exits successfully only at full score. Startup and model latency add wall time.
+Use `media/side_cam.mp4` to inspect the flask foot against the stationary 20 mm stripe, then check that the joined parts return to the bench. The per-step `media/grader-trace.jsonl` records measured foot clearance, sole supporting arm, consecutive lift ticks and hands-off ticks. The setup image, overhead video and model images accompany the trial. Contact forces and independent funnel, clamp and flask poses appear in the result diagnostics.
 
-## Fixed setup, scoring and reset
+## Setup, reset and tests
 
-`task.json` gives every object, the fixed starting layout, numeric partial-credit/failure rules and reset steps.
-The setup screenshot uploaded with this task is the recorded starting scene.
-`validation.json` records the two scores and matching scene/scorer hashes.
+`task.json` and `REFERENCE-SPEC.json` describe the fixed scene and reset. Return the flask to its mark, replace the dry membrane, stand the funnel on its wipe and leave the spring clamp shut on its mark. Reset clears proof-lift history. See `TECHNICAL.md` for dimensions, physics and the physical scoring procedure.
 
-Reset: Take the clamp off (press the handles), lift the funnel off, replace the membrane with a new dry one centred on the frit, stand the funnel on its wipe and lay the clamp shut at its mark; check the flask stands on its mark. In simulation: seed 0, zero object jitter; holder, funnel and clamp return to their start poses and the scorer's memory starts fresh.
+```sh
+python -m pytest -q tests
+```
 
-## Physics and reproduction
+The optional YAM kinematic test checks controller reach. Only the native PhysX trial tests load transfer through the clamp. Task code and generated geometry are MIT licensed.
 
-PhysX, 240 Hz physics/20 Hz control. Flask, stopper and base form one free body; the clamp has sprung jaws (0.30 N m/rad, estimated). Convex colliders; funnel bore closed for collision. A stated rule tracks membrane displacement when the seated funnel slides; no membrane deformation. Grasping is by contact, not attachment. Clamp force and friction are estimates, not hardware measurements. Full assumptions: REFERENCE-SPEC.json and TECHNICAL.md.
+## Native qualification
 
-[TECHNICAL.md](TECHNICAL.md) contains the detailed build list, product/dimension sources, low-cost
-reproduction options, physical scoring procedure, controller stages and measured limitations.
-[REFERENCE-SPEC.json](REFERENCE-SPEC.json) preserves the full specification used for the recordings.
-Only the card title, context and fidelity summary were shortened; instruction, setup, scoring, reset and run limit are unchanged.
-
-## License and tests
-
-Task code and procedural assets: MIT, see `LICENSE`. No manufacturer CAD, images or meshes are included.
-Third-party runtime dependencies retain their own licenses, listed in TECHNICAL.md.
-Run `python -m pytest -q tests` for the local checks. Dry runs are unit-level checks, not simulator evidence;
-the scores above come from the recorded Isaac runs.
+| Run | Score | Control steps | Wall time |
+| --- | ---: | ---: | ---: |
+| Scripted reference | 1 | 1,205 | 276 s |
+| Dream-1 | 0 | 2,400 | 686 s |

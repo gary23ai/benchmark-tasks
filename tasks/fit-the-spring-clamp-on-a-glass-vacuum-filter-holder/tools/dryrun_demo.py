@@ -42,13 +42,12 @@ def dry_run(*, max_steps=None, clearance=None, verbose=False, variant="", idle=F
         result = grade.update(world.grade_state())
         if verbose and tick % 40 == 0:
             print(tick, world.funnel_mode, world.clamp_mode, result["score"], result["funnel_offset_mm"],
-                  result["clamp_off_axis_mm"], result["held"])
-        if grade.finished:
+                  result["clamp_off_axis_mm"], result["upper_support"])
+        if grade.finished or (not idle and reference.phases and reference.phases[-1][1] == "hands off"):
             break
     report = dict(world.report)
     report.update(score=result["score"], steps=tick, worst_ik_mm=round(1000 * reference.worst_ik, 3),
-                  final={k: result[k] for k in ("funnel_offset_mm", "membrane_offset_mm", "membrane_peak_mm", "clamp_on", "unheld_fitting",
-                                                 "fitting_ticks", "held_fitting_ticks", "failed")},
+                  final={k: result[k] for k in ("assembled", "foot_clearance_mm", "lift_verified", "failed")},
                   phases=reference.phases, grasps=reference.log["grasps"], seatings=reference.log["seatings"],
                   fittings=reference.log["fittings"], ref_events=reference.log["events"])
     return report

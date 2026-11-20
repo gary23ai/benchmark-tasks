@@ -3,22 +3,24 @@
   "control_hz": 20,
   "object_jitter": 0,
   "recorded_hashes": {
-    "scene_sha256": "84058b9c79e7080e286028332eab1b73f965e47bb36692cf3aad514532f72ab9",
-    "asset_sha256": "07b9c3ada2a3dae7b1d89f98c6aa366f117c8e11c3c8309657a420f13d0cfc85",
-    "layout_sha256": "b497be6d14e11ac2725d7a745b4dcfff2a8e96ab714e2fac166a8f47a744f7f5",
-    "grader_sha256": "ff5d648aa4af060b8c652701e0935e2d2a3dbeba30153ab2f17e25be88c8a0ee"
+    "scene_sha256": "964fd670e35af95c469f37f1ad2f9cfd6d85c1418ac38b757859324952bd5b89",
+    "asset_sha256": "f62a4b341a82bbc7f84054031dcb7e1151746d1d879da3b1a0f5101c867f2608",
+    "grader_sha256": "6f994cce331a59ec7b550d2280efc2103b6293b945102a268d698be892956573",
+    "layout_sha256": "b497be6d14e11ac2725d7a745b4dcfff2a8e96ab714e2fac166a8f47a744f7f5"
   },
+  "native_sources_sha256": "5928db4deed4dbf9eefebcad2279da17106f0b5ceda0851f5bf76bd759682270",
   "scripted": {
     "score": 1.0,
-    "executed_steps": 993,
+    "executed_steps": 1205,
     "step_limit": 2400,
-    "elapsed_s": 250.48,
+    "elapsed_s": 275.65,
     "scripted_demo_reads_simulator_state": true
   },
   "dream": {
     "score": 0.0,
     "executed_steps": 2400,
     "step_limit": 2400,
-    "elapsed_s": 657.86
+    "elapsed_s": 685.75,
+    "scripted_demo_reads_simulator_state": false
   }
 }

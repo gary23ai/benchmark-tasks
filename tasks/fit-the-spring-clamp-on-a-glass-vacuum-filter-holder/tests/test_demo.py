@@ -1,8 +1,7 @@
-"""The demonstration in the stand-in world, scored by the real scorer (needs yam_arena and SciPy)."""
+"""The kinematic reach check lacks contact forces and cannot certify a proof lift."""
 
 import os
 import sys
-
 import pytest
 
 pytest.importorskip("scipy")
@@ -10,19 +9,18 @@ if os.environ.get("YAM_ARENA"):
     sys.path.insert(0, os.environ["YAM_ARENA"])
 pytest.importorskip("yam_arena")
 
-from dryrun_demo import dry_run  # noqa: E402
+from dryrun_demo import dry_run
 
 
-def test_demonstration_scores_one():
+def test_gripper_reaches_the_proof_lift_and_attempts_to_restore_the_assembly():
     report = dry_run()
-    assert report["score"] == 1. and report["steps"] < 1200
-    assert report["worst_ik_mm"] < 1. and report["worst_limit_margin_deg"] > 3.
-    assert report["final"]["held_fitting_ticks"] == report["final"]["fitting_ticks"] > 0
-
-
-def test_control_without_the_holding_hand_scores_at_most_06():
-    report = dry_run(variant="no_hold")
-    assert report["score"] <= .6 and report["final"]["unheld_fitting"]
+    phases = [name for _, name in report["phases"]]
+    assert phases.index("proof lift by upper funnel") < phases.index("lower assembly")
+    assert any("glass flanges separated" in e["event"] for e in report["ref_events"])
+    assert "proof hold" not in phases
+    assert phases.index("lower assembly") < phases.index("funnel release")
+    assert report["worst_ik_mm"] < 1.
+    assert not report["final"]["lift_verified"] and report["score"] < 1.
 
 
 def test_idle_robot_scores_zero():

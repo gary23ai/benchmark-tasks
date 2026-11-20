@@ -279,10 +279,13 @@ def usd():
                          com=(0., 0., L.FUNNEL_COM), inertia=(L.FUNNEL_MASS * (3 * r * r + h * h) / 12,) * 2 + (L.FUNNEL_MASS * r * r,))
     # display only: the clean wipe the funnel stands on
     wipe = box_display("wipe", (*L.FUNNEL_START, .00025), (.055, .045, .00025), "wipe", indent=2)
+    # A fixed side-view gauge beside the flask. The upper edge of the stripe is 20 mm above the bench.
+    gauge = box_display("lift_gauge", (.330, -.109, scene.TOP + .013), (.012, .001, .013), "wipe", indent=2)
+    gauge += box_display("lift_mark", (.330, -.1101, scene.TOP + .019), (.012, .0002, .001), "anodised", indent=2)
     return ('#usda 1.0\n(\n    defaultPrim = "Fixture"\n    metersPerUnit = 1\n    upAxis = "Z"\n)\n\n'
             'def Xform "Fixture"\n{\n'
             '    def Scope "Actors"\n    {\n' + actors + "    }\n\n"
-            + clamp_parts() + wipe
+            + clamp_parts() + wipe + gauge
             + '    def Scope "Materials"\n    {\n' + "".join(material(name) for name in MATERIALS) + "    }\n}\n")
 
 

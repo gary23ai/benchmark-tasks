@@ -226,17 +226,17 @@ class FilterClampArena(YamArenaEmbodiment):
         hp, hr = self.pose("holder")
         fp, fr = self.pose("funnel")
         cp, cr = self.pose("clamp")
+        contacts = self._contacts()
         grade = self.grading.update({"holder_pos": hp, "holder_rot": hr, "funnel_pos": fp, "funnel_rot": fr,
                                      "clamp_pos": cp, "clamp_rot": cr, "jaw_open_deg": self.jaw_open_deg(),
-                                     "tcp": tcps, "tcp_rot": rots, "opening_mm": openings})
+                                     "tcp": tcps, "contacts": contacts})
         self.final_grade = grade
         self._publish_demo_state()
-        contacts = self._contacts()
         self.demo_state["funnel_on_holder_n"] = round(contacts["funnel_on_holder"], 2)     # for the demo's log only
         for key, value in contacts.items():
             peak = float(np.max(np.abs(value))) if np.size(value) else 0.
             self.peaks[key] = round(max(self.peaks.get(key, 0.), peak), 2)
-        busy = grade["clamp_near"] or (grade["seated"] and not grade["clamp_on"] and self.tick % 2 == 0)
+        busy = grade["assembled"] or grade["seated"] and self.tick % 2 == 0
         if busy or self.tick % TRACE_EVERY == 0:
             self.contact_trace.append(self._trace_row(grade, contacts, fp, cp, openings))
         if self.tick % 5 == 0:
@@ -248,7 +248,7 @@ class FilterClampArena(YamArenaEmbodiment):
                           info={"filter_clamp_grade": grade})
 
     def _contacts(self):
-        """Normal contact forces (N) of the last physics step. Diagnostics only."""
+        """Normal contact forces (N) at the last physics step of the control interval."""
         forces = np.linalg.norm(array(self.arm_contacts.get_contact_force_matrix(dt=PHYSICS_DT)), axis=-1)
         count = len(forces) // 2
         col = {n: i for i, n in enumerate(self.targets)}
@@ -268,8 +268,8 @@ class FilterClampArena(YamArenaEmbodiment):
         return {"tick": self.tick, "score": grade["score"], "jaw_deg": grade["jaw_open_deg"],
                 "funnel_mm": [r(1000 * v) for v in fp], "clamp_mm": [r(1000 * v) for v in cp],
                 "funnel_offset_mm": grade["funnel_offset_mm"], "funnel_gap_mm": grade["funnel_gap_mm"],
-                "membrane_offset_mm": grade["membrane_offset_mm"], "clamp_off_axis_mm": grade["clamp_off_axis_mm"],
-                "clamp_height_mm": grade["clamp_height_mm"], "held": grade["held"], "opening_mm": [r(o) for o in openings],
+                "foot_clearance_mm": grade["foot_clearance_mm"], "clamp_off_axis_mm": grade["clamp_off_axis_mm"],
+                "clamp_height_mm": grade["clamp_height_mm"], "upper_support": grade["upper_support"], "opening_mm": [r(o) for o in openings],
                 "left_tips_on_funnel_n": [r(v) for v in contacts["left_tips_on_funnel"]],
                 "right_tips_on_jaws_n": [r(v) for v in contacts["right_tips_on_jaws"]],
                 **{f"{k}_n": r(v) for k, v in contacts.items() if "_on_" in k and k.split("_on_")[0] in ("funnel", "jawL", "jawR", "knuckle")}}
@@ -280,11 +280,7 @@ class FilterClampArena(YamArenaEmbodiment):
         cp, cr = self.pose("clamp")
         hp, hr = self.pose("holder")
         rnd = lambda v, k=1: [round(1000 * float(x), k) for x in v]
-        row = {"tick": self.tick, **{k: grade[k] for k in ("score", "failed", "seated", "centred", "funnel_offset_mm",
-                                                            "funnel_gap_mm", "funnel_tilt_deg", "membrane_offset_mm", "membrane_peak_mm", "membrane_dragged",
-                                                            "clamp_on", "clamp_near", "clamp_off_axis_mm", "clamp_height_mm",
-                                                            "clamp_tilt_deg", "jaw_open_deg", "held", "unheld_fitting",
-                                                            "clear", "still", "holder_tilt_deg")},
+        row = {"tick": self.tick, **grade,
                "holder_mm": rnd(hp), "funnel_mm": rnd(fp), "clamp_mm": rnd(cp),
                "tcp_mm": [rnd(p) for p in tcps], "opening_mm": [round(o, 2) for o in openings],
                "funnel_in_left_hand_mm": rnd(rots[0].T @ (fp - tcps[0])),

@@ -32,10 +32,10 @@ CLAMP_BODIES = ("knuckle", "jawL", "jawR")
 CLAMP_JOINTS = ("hingeL", "hingeR")                          # opening = +hingeL = -hingeR
 
 INSTRUCTION = (
-    "Assemble the vacuum filter holder. Pick up the glass funnel and set it square on the fritted base, over the "
-    "white membrane. Keep holding the funnel down with that hand while the other hand squeezes the aluminium "
-    "spring clamp open, fits it round both glass flanges and lets it close. Then let go of everything and move "
-    "both arms back."
+    "Seat the glass funnel over the membrane on the fritted base. Hold it steady while fitting the spring clamp "
+    "around both flanges. Take the other hand clear. Grasp only the upper funnel and lift the entire dry assembly "
+    "until the bottom of the flask clears the bench by at least 20 mm for one second. Lower it upright onto its "
+    "mark, release it and withdraw both hands."
 )
 
 

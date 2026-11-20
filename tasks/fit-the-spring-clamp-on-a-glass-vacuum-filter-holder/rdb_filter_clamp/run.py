@@ -1,7 +1,7 @@
 """Run one fixed trial in Inspect Robots and preserve its independently scored evidence.
 
 ``python -m rdb_filter_clamp.run scripted|dream --out DIR``. ``DEMO_VARIANT=no_hold`` (scripted only) is the
-control: the hand that seated the funnel lets go of it before the clamp is fitted; it must not score above 0.6.
+control: the hand that seated the funnel lets go of it before the clamp is fitted; it cannot demonstrate the upper-only lift.
 RESULT.json is written even when the trial fails with an error (``error`` and the diagnostics gathered so far).
 """
 
