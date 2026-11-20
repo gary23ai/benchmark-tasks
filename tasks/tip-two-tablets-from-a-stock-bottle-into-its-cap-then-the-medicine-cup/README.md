@@ -35,12 +35,14 @@ tip the two tablets into the cup. The task card gives the dimensions, coordinate
 ## Reproduction and tests
 
 The passive interlock uses two tabs, neck ledges, detents and an external spring-loaded collar.
-The cap can separate only through an opening in the ledges. The controller commands the robot, and the
+The gripper aligns the cap lugs with openings in the ledges to lift the cap free. The controller commands the robot, and the
 opening scorer reads the relative motion of the bottle and cap and contact forces at the fingertips.
 See [TECHNICAL.md](TECHNICAL.md) for the geometry, task scoring and sources.
 [REFERENCE-SPEC.json](REFERENCE-SPEC.json) contains the full task specification.
 
-Run `python -m pytest -q tests` for the local checks. The revised native scores and media must come from
-new closed-start recordings. The earlier open-start recordings belong to the previous task version.
+The seed-0 scripted trial scored 1.0 in 2,363 steps. The robot opened the cap, caught five tablets, returned
+three to the bottle, then delivered two to the cup. [Recorded opening and transfer measurements](TECHNICAL.md#recorded-scripted-trial)
+
+Run `python -m pytest -q tests` for the geometry, opening-sequence, dose-scoring and package checks.
 
 Task code and procedural assets use the MIT license. See [LICENSE](LICENSE).

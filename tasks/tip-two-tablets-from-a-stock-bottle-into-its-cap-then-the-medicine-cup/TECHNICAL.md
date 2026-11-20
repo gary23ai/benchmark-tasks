@@ -36,32 +36,32 @@ or cup as external support. The card defines the dose tiers, release and stillne
 trial, video from above and from the side can show the alignment stripe, axial travel, grip, tablet path
 and final inventory. Two fingernail-sized witness marks and a ruler beside the station give distance and angle references.
 
-## Where the method comes from, and who uses stock bottles
+## Recorded scripted trial
 
-- Nursing Skills (Open RN, Chippewa Valley Technical College, CC BY), "Checklist for Oral Medication
-  Administration", step "Prepare the required medications": "When removing tablets or capsules from a multi-dose
-  bottle, pour the necessary number into the bottle cap and then place the tablets or capsules in a medication
-  cup. If it is necessary to touch the tablets, wear gloves."
-  <https://med.libretexts.org/Courses/University_of_South_Carolina_Upstate/Nursing_Skills_(OpenRN)/05%3A_Administration_of_Enteral_Medications/5.04%3A_Checklist_for_Oral_Medication_Administration>
-- Iowa Department of Education, School Nurse Toolkit, "General Medication Administration Skills Checklist:
-  Tablets & Capsules": "Remove the bottle cap. Hold cap in one hand, bottle in the other. Pour the correct number
-  of capsules or pills into the cap. Pour the correct capsules or pills from the cap to a clean medicine cup."
-  <https://educate.iowa.gov/pk-12/student-supports/specialized-support/school-nurse-toolkit/section-8-medication-administration-delegation-school-nurse/general-medication-administration-skills-checklist/tablets-capsules>
-- OpenStax Clinical Nursing Skills, 12.1: bottles "contain multiple doses of the medication (multidose
-  packages)" and "Medications that come prepared in a bottle require handling", against blister packs that
-  "protect the pills from being handled". <https://openstax.org/books/clinical-nursing-skills/pages/12-1-administering-oral-medications>
-- Where loose stock bottles are used: Maryland Department of Health, Office of Health Care Quality, transmittal
-  to all nursing homes of 25 March 2026, "2017 Revised List of Approved Over the Counter Medications that Nursing
-  Homes May Purchase in Bulk" (acetaminophen 325 and 500 mg, aspirin 81 and 325 mg, senna, docusate, vitamins
-  and others, "exempt from resident specific labeling requirements").
-  <https://health.maryland.gov/ohcq/docs/Transmittals/TRANSMITTAL_LTC-2017-Revised-List-OTC-Bulk-Medications-03.25.2026-A.pdf>
-- O*NET Core tasks: 29-2061.00 licensed practical and licensed vocational nurses, "Administer prescribed
-  medications or start intravenous fluids, noting times and amounts on patients' charts"; 31-9092.00 medical
-  assistants, "Prepare and administer medications as directed by a physician"; 29-1141.00 registered nurses,
-  "Administer medications to patients and monitor patients for reactions or side effects".
+In the seed-0 Isaac Sim trial, all 30 tablets started in the bottle, and the seated cap's outer top was
+94.6 mm above the bottle base. Inspect Robots awarded 1.0 at control step 2,363 (118.15 s of simulated
+time, 528.91 s wall time). The trace records the following sequence.
 
-What these sources do not give is a count of how often a nurse pours from a stock bottle rather than opening a
-unit-dose pack. Hospitals mostly dispense unit doses. The task card says so.
+| Step | Observed motion or count |
+| ---: | --- |
+| 395 | The left gripper depressed the cap by 1.69 mm. Its fingertips pressed with 9.00 and 8.77 N while the right gripper held the bottle. |
+| 440 | The cap turned 20.03° counterclockwise while compressed by 3.11 mm. |
+| 463 | The lugs reached the release window at 34.13° of turn and 2.91 mm of compression. |
+| 507 | At 51.58° of turn, the gripper had lifted the cap 17.57 mm. The opening scorer registered removal with both hands still gripping. |
+| 1,503 | After turning the empty cap over and regrasping it, the robot poured five tablets into the held cap. All 25 others remained bottled. |
+| 1,946 / 1,959 / 1,973 | The robot tipped three extra tablets from the cap back into the bottle, one at a time. Two remained in the held cap. |
+| 2,186 / 2,190 | The two remaining tablets entered the medicine cup, one at a time. |
+| 2,363 | Both grippers were clear and the objects were still. The upright cup held two tablets, the upright bottle held 28, and the cap was empty. |
+
+The peak recorded arm-to-tablet force and arm-to-arm force were both 0.0 N. The return of three extras
+is visible in the per-step bottle and cap counts in `media/grader-trace.jsonl`.
+
+## Dispensing method
+
+The school-nurse checklist calls for opening the bottle, holding the cap in one hand, pouring a counted dose
+into it with the other hand, then transferring the tablets to a clean medicine cup.
+The Open RN checklist also describes using the cap to transfer tablets from a multidose bottle into the cup.
+[School Nurse Toolkit](https://educate.iowa.gov/pk-12/student-supports/specialized-support/school-nurse-toolkit/section-8-medication-administration-delegation-school-nurse/general-medication-administration-skills-checklist/tablets-capsules) · [Open RN checklist](https://med.libretexts.org/Courses/University_of_South_Carolina_Upstate/Nursing_Skills_(OpenRN)/05%3A_Administration_of_Enteral_Medications/5.04%3A_Checklist_for_Oral_Medication_Administration)
 
 ## The objects, and where their numbers come from
 
@@ -77,12 +77,10 @@ unit-dose pack. Hospitals mostly dispense unit doses. The task card says so.
 | Cup mass | 1.1 g | the same page: 12.52 lb shipping weight for 5,000 cups | upper bound |
 | Friction | tablet on plastic and tablet on tablet 0.35; plastic 0.6 | none | estimates |
 
-The bottle named is an empty packer bottle of the kind over-the-counter tablets are sold in, and the cap is one
-that fits its neck; the tablets are put into it for the trial. Any 100- to 250-count bottle of round 10 mm
-tablets with a screw cap about 45 mm across would do as well, with its own measurements. Ibuprofen tablets are
-named because their label gives the size and because brown tablets show against a white cap; nothing depends on
-the drug. No part number is claimed beyond the three item numbers above, and no product image is in this folder.
-
+For a hardware trial, use a matching bottle and push-down-and-turn safety cap, along with 30 inert
+placebo tablets of the listed size. The product label supplies the tablet dimensions and brown colour
+used for visibility in the white cap. Check the cap's actual travel and opening angle against the marked
+closed position, and record those measurements alongside the trial.
 
 ## Third-party assets and licenses
 
