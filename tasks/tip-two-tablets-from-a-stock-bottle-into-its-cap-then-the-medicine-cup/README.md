@@ -46,3 +46,10 @@ three to the bottle, then delivered two to the cup. [Recorded opening and transf
 Run `python -m pytest -q tests` for the geometry, opening-sequence, dose-scoring and package checks.
 
 Task code and procedural assets use the MIT license. See [LICENSE](LICENSE).
+
+## Native qualification
+
+| Run | Score | Control steps | Wall time |
+| --- | ---: | ---: | ---: |
+| Scripted reference | 1 | 2,363 | 529 s |
+| Dream-1 | 0 | 4,800 | 888 s |

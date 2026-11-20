@@ -17,5 +17,6 @@
   "run_limit": "4,800 steps (4 minutes at 20 Hz)",
   "reset_notes": "Return all 30 intact inert tablets to the bottle and empty the cup. Turn the cap opening down, align its lugs with the neck windows, push it down, turn clockwise to the stop and let it spring up. Check that the cap stays seated under a light upward pull. Return the capped bottle and empty cup to their starting marks and both grippers to their ready poses.",
   "fidelity": "Two cap lugs, retaining ledges, detents and a spring-loaded collar approximate a push-and-turn safety closure. Free rigid bodies respond to gripper contact and gravity. Modelled lug geometry, spring stiffness, internal dimensions and masses are estimates. The bottle and cup use thickened convex wall segments. PhysX runs at 240 Hz and control at 20 Hz. See REFERENCE-SPEC.json and TECHNICAL.md.",
-  "scores": "Revised closed-start native trial results pending."
+  "scores": "Dream-1 run: 0 (4,800 steps). Scripted demo: 1.0 (2,363 steps).",
+  "media": "M-VYV4LK"
 }

@@ -17,5 +17,5 @@
   "run_limit": "4,800 steps (4 minutes at 20 Hz)",
   "reset_notes": "Return all 30 intact inert tablets to the bottle and empty the cup. Turn the cap opening down, align its lugs with the neck windows, push it down, turn clockwise to the stop and let it spring up. Check that the cap stays seated under a light upward pull. Return the capped bottle and empty cup to their starting marks and both grippers to their ready poses.",
   "fidelity": "A push-and-turn bayonet approximates the retail safety closure. Two rigid lugs run under retaining ledges and clear detents when a spring-loaded collar is depressed. The robot moves the cap by contact. Bottle and cup walls use 16 flat staves, 4 mm thick in the bottle (inside 6 mm narrower) and 2.5 mm in the cup. Convex tablets use friction 0.35. Spring stiffness, lug geometry, internal dimensions and masses are estimates. Retail threads, two-shell clutch, chipping and dust are omitted.",
-  "scores": "Revised closed-start native trial results pending."
+  "scores": "Dream-1 run: 0 (4,800 steps). Scripted demo: 1.0 (2,363 steps)."
 }
