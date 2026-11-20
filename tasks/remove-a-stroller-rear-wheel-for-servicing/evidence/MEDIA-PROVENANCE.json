@@ -1,0 +1,26 @@
+{
+  "media": {
+    "demo.mp4": {
+      "sha256": "dc288f188ef74c6781cbedab9edae63c4e39067a1763a7d8fd2a60d849b38c28",
+      "bytes": 1383012,
+      "packaged_path": "../../uploads/remove-a-stroller-rear-wheel-for-servicing/demo.mp4",
+      "transformation": "Byte-identical copy of the full recorded media"
+    },
+    "model_run.mp4": {
+      "sha256": "ec39ebb504e7fdbe5477e825f5d8933e1735722a3b98e524f7086c4543017455",
+      "bytes": 1990352,
+      "packaged_path": "../../uploads/remove-a-stroller-rear-wheel-for-servicing/model_run.mp4",
+      "transformation": "Byte-identical copy of the full recorded media"
+    },
+    "setup.png": {
+      "sha256": "285f836902a7eab9e01ad7bc4fa20997c3cd91a899471bac784d47f47b9a055c",
+      "bytes": 147086,
+      "packaged_path": "../../uploads/remove-a-stroller-rear-wheel-for-servicing/setup.png",
+      "transformation": "Byte-identical copy of the full recorded media"
+    }
+  },
+  "model_video_source": "Full side-view episode with synchronized top-camera inset",
+  "temporal_cuts": false,
+  "retimed": false,
+  "generated_scene_content": false
+}

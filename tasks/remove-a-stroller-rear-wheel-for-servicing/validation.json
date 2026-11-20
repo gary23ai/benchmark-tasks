@@ -1,0 +1,59 @@
+{
+  "status": "local_scripted_and_dream_evaluated",
+  "submitted": false,
+  "accepted": false,
+  "fixed_start_only": true,
+  "control_hz": 20,
+  "physics_hz": 240.0,
+  "max_steps": 700,
+  "source_sha256": {
+    "adapter.py": "797a7eb46728e4f3defc4b9845d3306c86f8cf64b5318a814be7ec6cf10e3ff1",
+    "fixed_scene.py": "6fa224dec32c073643d952bab52446a0c3bb9dba25468306c659fe8940bebb6d",
+    "grading.py": "0fd29438a22f1c0b251695eb06ce7720737a4015d7f4215fb87024db44956550",
+    "layout.py": "24c122262ab5f01b75bff734c9aa40b3848a670c0ff859e16696252aed16f9d3",
+    "recording.py": "1d75845fcd29402077b2ac008ca9aae2e5382b102eeed9b2ca0936e89c1cb578",
+    "run.py": "320d4007806242aa7aa8b36295591c9f44f6cdf4c5396d6fa09a0bb29235313b",
+    "scripted.py": "f19a2682f0b30508ab94d829a592b3c6dcb95201a7d64b5864588bf3fb6d5a76",
+    "stroller_remove.usda": "da39ac7c8ed076eaaf18a0ee8a190f6dce9e42ef942421c0aeff704ec4010b0d"
+  },
+  "runs": {
+    "scripted": {
+      "score": 1.0,
+      "executed_steps": 604,
+      "step_limit": 700,
+      "trials": 2,
+      "successful_trials": 2,
+      "seed": 0,
+      "source_unchanged": true,
+      "smoke_only": false,
+      "trial_paths": [
+        "evidence/scripted-001/RESULT-SUMMARY.json",
+        "evidence/scripted-002/RESULT-SUMMARY.json"
+      ]
+    },
+    "dream": {
+      "model": "dreamlabs/dream-1-beta",
+      "score": 0.0,
+      "executed_steps": 700,
+      "step_limit": 700,
+      "seed": 0,
+      "trials": 1,
+      "action_requests": 27,
+      "successful_replies": 14,
+      "session_expiration_errors": 13,
+      "guard_modified_steps": 144,
+      "result_path": "evidence/dream/RESULT-SUMMARY.json",
+      "source_unchanged": true
+    }
+  },
+  "media_sha256": {
+    "demo.mp4": "dc288f188ef74c6781cbedab9edae63c4e39067a1763a7d8fd2a60d849b38c28",
+    "model_run.mp4": "ec39ebb504e7fdbe5477e825f5d8933e1735722a3b98e524f7086c4543017455",
+    "setup.png": "285f836902a7eab9e01ad7bc4fa20997c3cd91a899471bac784d47f47b9a055c"
+  },
+  "limitations": [
+    "One fixed initial state; no hardware or randomized robustness claim.",
+    "Service session renewal and stock joint-bound clamping are recorded in the Dream result.",
+    "No official media upload, PR receipt or acceptance is claimed."
+  ]
+}

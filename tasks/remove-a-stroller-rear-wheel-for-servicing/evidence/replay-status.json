@@ -1,0 +1,53 @@
+{
+  "summary_only": true,
+  "scripted": [
+    {
+      "policy": "scripted",
+      "score": 1.0,
+      "executed_steps": 604,
+      "native_samples": 7248,
+      "original_result": {
+        "sha256": "d8318347f2e89bca975d7a6a651d4276f883978bd6d2d6b4b7113f030f4c61f6",
+        "bytes": 1188374
+      },
+      "original_replay_report": {
+        "sha256": "65351af776c0511e8a9be581d2147ae097f4778d90dac4038e8772fc223a92bb",
+        "bytes": 2458
+      },
+      "all_native_grades_exact": true,
+      "packaged_source_matches_recorded_result": true
+    },
+    {
+      "policy": "scripted",
+      "score": 1.0,
+      "executed_steps": 604,
+      "native_samples": 7248,
+      "original_result": {
+        "sha256": "7cb61498cf3cf4beaa067b46d043719d79c293e1fc2efc0096ccb933a041f971",
+        "bytes": 1188373
+      },
+      "original_replay_report": {
+        "sha256": "f4d296e4054c02d0597a73fbe4ee7e41c50d511baca36133829a51b92e9b5558",
+        "bytes": 2458
+      },
+      "all_native_grades_exact": true,
+      "packaged_source_matches_recorded_result": true
+    }
+  ],
+  "dream": {
+    "score": 0.0,
+    "native_samples": 8400,
+    "all_native_grades_exact": true,
+    "source_identical": true,
+    "model_input_and_action_provenance_passed": true,
+    "original_native_replay_report": {
+      "sha256": "26438d6b841b2cb802c8507721e923bab145b622ee2619b1247252887d41433d",
+      "bytes": 3311
+    },
+    "original_model_provenance_report": {
+      "sha256": "c35b32bb6988e8a9491a94f356920e7013726bf20de032e53e363efc43c6b42f",
+      "bytes": 3219
+    }
+  },
+  "scope": "Portable summaries of completed original audits. Complete raw physical/model input archives are retained separately; these summaries cannot replay missing raw inputs."
+}

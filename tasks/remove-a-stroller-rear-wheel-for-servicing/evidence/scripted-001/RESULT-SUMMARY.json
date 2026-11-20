@@ -1,0 +1,113 @@
+{
+  "policy": "scripted",
+  "model": null,
+  "score": 1.0,
+  "executed_steps": 604,
+  "step_limit": 700,
+  "declared_step_limit": 700,
+  "control_hz": 20,
+  "seed": 0,
+  "elapsed_s": 215.78,
+  "smoke_only": false,
+  "observations": {
+    "cameras": [
+      "top_cam",
+      "left_cam",
+      "right_cam"
+    ],
+    "state": [
+      "joint_pos"
+    ],
+    "rgb_size": [
+      320,
+      176
+    ]
+  },
+  "scripted_reads_simulator_state": true,
+  "source_sha256": {
+    "adapter.py": "797a7eb46728e4f3defc4b9845d3306c86f8cf64b5318a814be7ec6cf10e3ff1",
+    "fixed_scene.py": "6fa224dec32c073643d952bab52446a0c3bb9dba25468306c659fe8940bebb6d",
+    "grading.py": "0fd29438a22f1c0b251695eb06ce7720737a4015d7f4215fb87024db44956550",
+    "layout.py": "24c122262ab5f01b75bff734c9aa40b3848a670c0ff859e16696252aed16f9d3",
+    "recording.py": "1d75845fcd29402077b2ac008ca9aae2e5382b102eeed9b2ca0936e89c1cb578",
+    "run.py": "320d4007806242aa7aa8b36295591c9f44f6cdf4c5396d6fa09a0bb29235313b",
+    "scripted.py": "f19a2682f0b30508ab94d829a592b3c6dcb95201a7d64b5864588bf3fb6d5a76",
+    "stroller_remove.usda": "da39ac7c8ed076eaaf18a0ee8a190f6dce9e42ef942421c0aeff704ec4010b0d"
+  },
+  "source_unchanged": true,
+  "runtime": {
+    "isaacsim": "6.1.0.0",
+    "inspect-robots": "1.0.0",
+    "inspect-robots-yam": "0.38.0",
+    "yam-arena": "0.1.0"
+  },
+  "physics_hz": 240.0,
+  "physics_samples": 7248,
+  "dream_requests": 0,
+  "final_grade": {
+    "score": 1.0,
+    "finished": true,
+    "void": null,
+    "release_seen": true,
+    "old_removed": true,
+    "stable_samples": 244,
+    "sample_hz": 240.0,
+    "pin_travel_m": 3.3378600994282692e-09,
+    "axle_tip_x_m": 0.632297580302922,
+    "wheel_in_rack": true,
+    "quiet": true,
+    "retainer_returned": true,
+    "released": true,
+    "stable_seconds": 1.0125
+  },
+  "reference_phases": [
+    [
+      0,
+      "grasp the real lower release lever from its open outer side"
+    ],
+    [
+      91,
+      "grasp the old full-size rear wheel by its spoke"
+    ],
+    [
+      165,
+      "hold the spring retainer clear of the steel axle groove"
+    ],
+    [
+      205,
+      "support the wheel and straighten its cantilevered spindle"
+    ],
+    [
+      225,
+      "withdraw the supported old wheel and axle completely"
+    ],
+    [
+      291,
+      "release the unloaded spring lever"
+    ],
+    [
+      323,
+      "place the old wheel into the empty padded cradle"
+    ],
+    [
+      433,
+      "square the suspended old wheel before entering the narrow cradle"
+    ],
+    [
+      577,
+      "leave the unmounted wheel stable for axle and hub servicing"
+    ]
+  ],
+  "summary_only": true,
+  "original_result": {
+    "sha256": "d8318347f2e89bca975d7a6a651d4276f883978bd6d2d6b4b7113f030f4c61f6",
+    "bytes": 1188374
+  },
+  "omitted_fields": [
+    "diagnostics",
+    "guard_changes",
+    "dream_transcript"
+  ],
+  "machine_paths_omitted": true,
+  "presentation_labels_anonymized": true
+}
