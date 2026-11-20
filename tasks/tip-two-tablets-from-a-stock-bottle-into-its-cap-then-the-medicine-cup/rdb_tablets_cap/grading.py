@@ -84,8 +84,43 @@ def standing(pose):
     return bool(np.asarray(rotation)[2, 2] > UPRIGHT_COS and abs(float(origin[2])) < STANDING_M)
 
 
+class SafetyCapOpening:
+    """Track the cap relative to the bottle. Both quantities are invariant to arm or bottle motion."""
+    def __init__(self):
+        self.stage = "locked"
+
+    def observe(self, bottle, cap, bimanual):
+        p = _local(bottle, np.asarray(cap[0])[None])[0]
+        r = np.asarray(bottle[1]).T @ np.asarray(cap[1])
+        press = L.CLOSED_Z - p[2]
+        yaw = float(np.degrees(np.arctan2(r[1, 0], r[0, 0])))
+        coaxial = np.hypot(*p[:2]) <= .006 and r[2, 2] < -np.cos(np.radians(15.))
+        if self.stage != "opened":
+            if self.stage == "turned":
+                if bimanual and coaxial and -press >= .015 and 30 <= yaw <= 69:
+                    self.stage = "opened"
+                elif not bimanual or abs(yaw) < 4:
+                    self.stage = "locked"
+            elif not bimanual or not coaxial:
+                self.stage = "locked"
+            elif self.stage == "locked":
+                if press >= .0015 and abs(yaw) <= 8:
+                    self.stage = "pressed"
+            elif self.stage == "pressed":
+                if press < .001 or yaw < -8:
+                    self.stage = "locked"
+                elif yaw >= 20:
+                    self.stage = "past_stop"
+            elif self.stage == "past_stop" and L.WINDOW_START + L.LUG_HALF_ANGLE <= yaw <= 68:
+                self.stage = "turned"
+        return {"opening_stage": self.stage, "cap_press_mm": round(1000 * float(press), 2),
+                "cap_lift_mm": round(-1000 * float(press), 2), "cap_turn_deg": round(yaw, 2),
+                "opening_bimanual": bool(bimanual)}
+
+
 class TabletGrade:
     def __init__(self):
+        self.opening = SafetyCapOpening()
         self.cap_ticks = np.zeros(N, dtype=int)
         self.lay_in_cap = np.zeros(N, dtype=bool)
         self.touch_ticks = np.zeros(N, dtype=int)
@@ -94,13 +129,21 @@ class TabletGrade:
         self.history = []
         self.done_ticks = 0
 
-    def update(self, tablets, bottle, cap, cup, touching, grippers, cap_held=None, cap_supported=False):
+    def update(self, tablets, bottle, cap, cup, touching, grippers, cap_held=None, cap_supported=False, opening_bimanual=False):
         """tablets: (N, 3) centres; bottle, cap, cup: (origin, rotation); touching: N booleans, a gripper is in
         contact with that tablet now; grippers: the two gripper centre points, or None if they cannot be read;
         cap_held: both fingertips of one gripper press on the cap (None when it cannot be read: counts as not
         held); cap_supported: the bottle or the cup pushes on the cap (it is resting on one of them)."""
         tablets = np.asarray(tablets, dtype=float)
         bottled, capped, cupped = regions(bottle, cap, cup, tablets)
+        closure = self.opening.observe(bottle, cap, opening_bimanual)
+        if self.opening.stage != "opened":
+            # While closed the inverted cap overlaps the upper neck. Tablets
+            # inside that neck belong to the bottle, even if the bottle is tilted.
+            bottled = in_bottle(bottle, tablets)
+            capped &= ~bottled
+            if self.void is None and not bottled.all():
+                self.void = "tablet_left_before_robot_opened_safety_cap"
         # sticky conditions first, on every call
         self.cap_ticks = np.where(capped, self.cap_ticks + 1, 0)
         self.lay_in_cap |= self.cap_ticks >= LIE_TICKS
@@ -142,6 +185,8 @@ class TabletGrade:
         self.done_ticks = self.done_ticks + 1 if done else 0
         if self.void is not None:
             outcome, tier = "void", 0.
+        elif self.opening.stage != "opened":
+            outcome = "safety_cap_closed"
         elif n_cup == L.DOSE and cup_up and not_back == 0 and bottle_up:
             outcome = "dose_given_and_tidy"
         elif n_cup == L.DOSE and cup_up and not_back <= MAX_STRAYS:
@@ -155,7 +200,7 @@ class TabletGrade:
         if self.void is None:
             tier = TIERS.get(outcome, 0.)
         score = tier if done else min(tier, CAP_NOT_DONE)
-        return {"score": float(score), "outcome": outcome, "void": self.void, "in_cup": n_cup, "in_cap": n_cap,
+        return {**closure, "score": float(score), "outcome": outcome, "void": self.void, "in_cup": n_cup, "in_cap": n_cap,
                 "in_bottle": n_bottle, "strays": strays, "lay_in_cap": int(self.lay_in_cap.sum()),
                 "cup_standing": cup_up, "bottle_standing": bottle_up, "released": released, "still": bool(still),
                 "max_touch_ticks": int(self.touch_ticks.max()),

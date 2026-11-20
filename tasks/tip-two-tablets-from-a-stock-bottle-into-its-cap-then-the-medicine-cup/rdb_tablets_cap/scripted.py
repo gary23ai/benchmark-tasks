@@ -1,21 +1,4 @@
-"""Full-score demonstration: the right arm pours from the bottle, the left arm handles the cap.
-
-The demonstration reads the robot's joint and gripper readings and, as the review rules allow for a scripted
-demonstration, simulator state: the poses of the bottle, the cap and the cup and the position of every tablet.
-It changes nothing in the simulation. Tablets move only by gravity and contact.
-
-Plan. The right gripper takes the bottle by its body from the right-hand side (hand 30 degrees below level),
-lifts it and tips it over the cap, which lies open side up on the table: quickly to 70 degrees, then slowly,
-holding the tilt whenever a tablet is in the neck, and back upright as soon as enough tablets have left the bottle
-or lie at its lip. If the cap then holds two tablets the bottle is put down. If it holds fewer, the pour is
-repeated for the missing ones. If it holds more, the right gripper stands the bottle on the table, clear of the
-cap, and lets go; the left gripper picks the cap up by its skirt, holds its inner rim 12 mm above the bottle's
-mouth and tips it, slowly past 80 degrees, until only two tablets are left in it, then tips it back level. (A
-dish has to be tipped past 90 degrees before its wall slopes down to the rim: in the first Isaac run two tablets
-stayed in the cap tipped to 65 degrees.) If fewer than two are left, the cap is put down and the bottle taken
-and poured again. Last, the left gripper tips the cap over the medicine cup the same way until it is empty, and
-puts the cap down. Pouring stops if two or more tablets have missed the cap or the bottle is not standing.
-"""
+"""Joint-space reference for opening the safety cap, metering the dose and transferring it to the cup."""
 
 from inspect_robots import Action, ActionChunk
 import numpy as np
@@ -27,6 +10,10 @@ from . import grading
 from . import layout as L
 from .fixed_scene import ARMS, BASES, BOTTLE_XY, CAP_XY, CONTROL_HZ
 
+OPENING_STATION = (.345, .000, .065)
+OPENING_TURN_DEG = 48.
+TURNOVER_DEG = 122.
+TURNOVER_RELEASE_Z = .034
 CAP_DOWN_XY = CAP_XY                     # where the cap is put down at the end
 
 OPEN = float(FINGER_OPEN)
@@ -79,6 +66,7 @@ def grasp_rotation(azimuth, pitch):
 
 BOTTLE_GRIP = grasp_rotation(np.radians(105.), np.radians(20.)) @ np.diag((-1., -1., 1.))   # from the right and a little
                                          # behind, 20 degrees below level, wrist camera underneath (keeps joint 6 in range)
+OPENING_GRIP = grasp_rotation(np.radians(-108.), np.radians(30.))
 CAP_GRIP = grasp_rotation(np.radians(-60.), np.radians(30.))        # from the left and the robot's side, 30 degrees below level
 # The cap is tipped about a level axis, its rim on the side (axis x up) going down. 345 degrees is the axis the
 # arm can follow to 130 degrees both over the cup and over the bottle's mouth (from the reach study).
@@ -400,6 +388,67 @@ class TabletReference:
         self.level = self.held["left"][1]                       # the cap's attitude as it lay on the table
         yield from self.carry("left", "cap", self.held["left"][0] + (0., 0., .06), self.level, 1.2)
 
+    def open_bottle(self):
+        """Depress and turn the cap with the left gripper while the right holds the bottle."""
+        self.phase("opening_position")
+        station = np.asarray(OPENING_STATION)
+        yield from self.carry("right", "bottle", station, np.eye(3), 1.8, np.zeros(3), True)
+        origin, r = self.pose("cap")
+        grasp = origin + r @ (0., 0., .007)
+        reach = OPENING_GRIP
+        self.aperture["left"] = -(L.CAP_R + .010)
+        yield from self.glide("left", grasp + (0., 0., .050), reach, 2.3)
+        yield from self.trim("left")
+        self.phase("opening_grasp")
+        yield from self.move("left", grasp, reach, 1.2)
+        yield from self.trim("left")
+        yield from self.close("left", -(L.CAP_R - .0025))
+        self.take("left", "cap")
+        self.held["left"] = self.pose("cap")
+        origin, cap_r = self.held["left"]
+        bottle, bottle_r = self.pose("bottle")
+        # Compress the passive collar and keep the upper lug below the detent
+        # during the first part of the turn. Feedback is on the physical poses.
+        self.phase("opening_press")
+        target = bottle + bottle_r @ (0., 0., L.CLOSED_Z - .0035)
+        yield from self.carry("left", "cap", target, cap_r, 1., np.zeros(3), True)
+        self.phase("opening_turn")
+        for angle in np.linspace(0., OPENING_TURN_DEG, 81):
+            bottle, _ = self.pose("bottle")
+            pressed = bottle + bottle_r @ (0., 0., L.CLOSED_Z - .0035)
+            twist = bottle_r @ Rotation.from_euler("z", angle, degrees=True).as_matrix() @ bottle_r.T
+            self.set_held("left", "cap", pressed, twist @ cap_r, np.zeros(3), True)
+            self.set_held("right", "bottle", station, bottle_r, np.zeros(3), True)
+            yield self.emit()
+        cap_r = twist @ cap_r
+        self.phase("opening_lift")
+        bottle, _ = self.pose("bottle")
+        yield from self.carry("left", "cap", bottle + bottle_r @ (0., 0., L.CLOSED_Z + .042),
+                              cap_r, 1.3, np.zeros(3), True)
+        if self.state["opening_stage"] != "opened":
+            self.log["events"].append({"tick": self.tick, "opening_failed": self.state["opening_stage"]})
+            return False
+        # Move the bottle well clear before turning the removed cap over.
+        yield from self.carry("right", "bottle", HOLD_AT, np.eye(3), 1.8)
+        self.phase("turn_cap_over")
+        # Tilt the empty cap over its landing point. Once the open side is up,
+        # lower the rim to the table and release; gravity settles the cap on its
+        # flat top face. Regrasp in the normal dispensing orientation.
+        yield from self.carry("left", "cap", (*CAP_DOWN_XY, .145), cap_r, 1.4)
+        axis = TIP_AXIS_CUP
+        for degrees in np.linspace(0., TURNOVER_DEG, 81):
+            turn = cap_rotation(np.radians(degrees), axis) @ cap_r
+            self.set_held("left", "cap", (*CAP_DOWN_XY, .145), turn)
+            yield self.emit()
+        # Keep fingers clear of the table; the empty cap drops a short distance.
+        yield from self.carry("left", "cap", (*CAP_DOWN_XY, TURNOVER_RELEASE_Z), turn, 1.7)
+        yield from self.release("left")
+        yield from self.hold(.6)
+        if self.pose("cap")[1][2, 2] < .94:
+            self.log["events"].append({"tick": self.tick, "empty_cap_failed_to_settle_open_side_up": True})
+            return False
+        return True
+
     def tip_cap(self, opening, into, keep, drop, axis):
         """Hold the cap's low inner rim over ``opening`` (centre of the bottle's mouth or the cup's top) and tip the cap
         until it holds ``keep`` tablets or fewer, closed loop on the counted tablets; then tip it back level."""
@@ -491,9 +540,13 @@ class TabletReference:
             yield self.emit()
         # Both hands work together for the pour: the left holds the cap level under the bottle's lip while the
         # right tips the bottle. The cap stays in the left hand until it has been emptied into the cup.
+        yield from self.take_bottle()
+        if not self.bottle_ok or not (yield from self.open_bottle()):
+            self.phase("opening_failed")
+            while True:
+                yield self.emit()
         yield from self.take_cap()
         yield from self.hold_cap()
-        yield from self.take_bottle()
         bottle_in_hand = self.bottle_ok
         for attempt in range(MAX_POURS):
             now = self.counts()

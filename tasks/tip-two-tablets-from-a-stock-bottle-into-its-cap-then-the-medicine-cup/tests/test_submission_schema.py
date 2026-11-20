@@ -11,6 +11,9 @@ def test_submission_card_matches_recorded_task():
     if 'media' in card: assert re.fullmatch('M-[A-Z0-9]+',card['media'])
     assert 'REFERENCE-SPEC.json' in card['fidelity']
 
+    if "pending" in card["scores"]:
+        assert card["scores"] == reference["scores"] and "media" not in card
+        return
     for field in ("Dream-1 run", "demo"):
         pattern=re.escape(field)+r":\s*([0-9.]+)"
         assert re.search(pattern,card["scores"])[1]==re.search(pattern,reference["scores"])[1]

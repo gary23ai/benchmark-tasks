@@ -93,7 +93,7 @@ def tablet_mesh():
     return mesh("tablet", "tablet", points, faces, collide=True, offset=.0008)
 
 
-def body(name, mass, position, children, *, small=False):
+def body(name, mass, position, children, *, small=False, orient="(1, 0, 0, 0)"):
     apis = '"PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysxContactReportAPI", "PhysicsMassAPI"'
     extra = ("            bool physxRigidBody:enableCCD = 1\n            float physxRigidBody:angularDamping = 0.5\n"
              "            float physxRigidBody:linearDamping = 0.05\n"
@@ -105,7 +105,7 @@ def body(name, mass, position, children, *, small=False):
             f"            float physics:mass = {_F(mass)}\n            bool physics:rigidBodyEnabled = 1\n" + extra +
             "            float physxContactReport:threshold = 0\n            float physxRigidBody:sleepThreshold = 0\n"
             "            int physxRigidBody:solverVelocityIterationCount = 4\n"
-            "            quatf xformOp:orient = (1, 0, 0, 0)\n"
+            f"            quatf xformOp:orient = {orient}\n"
             f"            double3 xformOp:translate = ({_F(position[0])}, {_F(position[1])}, {_F(position[2])})\n"
             '            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]\n\n'
             f"{children}        }}\n\n")
@@ -126,10 +126,62 @@ def material(name):
             f"                float inputs:roughness = {roughness}\n                token outputs:surface\n            }}\n        }}\n\n")
 
 
+def sector(name, material, lo, hi, ri, ro, bottom, top, *, collide=True):
+    """Convex annular sector; split long ledges into short facets."""
+    points = [(r * math.cos(math.radians(a)), r * math.sin(math.radians(a)), z)
+              for z in (bottom, top) for r, a in ((ri, lo), (ro, lo), (ro, hi), (ri, hi))]
+    faces = [[3, 2, 1, 0], [4, 5, 6, 7], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7]]
+    return mesh(name, material, points, faces, collide=collide, offset=.0002)
+
+
+def neck_lock():
+    pieces = []
+    for i, start in enumerate((0., 180.)):
+        # Unbroken retaining ledge except at the two extraction windows.
+        span = 180 + L.WINDOW_START - L.WINDOW_END
+        for j in range(10):
+            lo = start + L.WINDOW_END + j * span / 10
+            pieces.append(sector(f"ledge_{i}_{j}", "hdpe", lo, lo + span / 10,
+                                 .0170, .0195, L.LEDGE_Z, L.LEDGE_Z + .0014))
+        pieces.append(sector(f"turn_stop_{i}", "hdpe", start + 8, start + 17,
+                             .0170, .0195, L.STOP_Z, L.LEDGE_Z))
+        pieces.append(sector(f"back_stop_{i}", "hdpe", start - 14, start - 8,
+                             .0170, .0195, L.LUG_TOP - .0065, L.LEDGE_Z))
+    return "".join(pieces)
+
+
+def sprung_collar():
+    """A bottle-mounted external annulus bears against the bottom edge of the cap."""
+    ring = "".join(sector(f"ring_{i}", "label_band", i*22.5, (i+1)*22.5,
+                          .0181, .0216, -.0018, 0.) for i in range(16))
+    bx, by, _ = scene.START["bottle"]
+    return body("spring_collar", L.COLLAR_MASS, (bx, by, scene.TOP + L.COLLAR_Z + .0003), ring)
+
+
+def collar_joint():
+    return f'''        def PhysicsPrismaticJoint "collar_slide" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear"]
+        )
+        {{
+            rel physics:body0 = </Fixture/Actors/bottle>
+            rel physics:body1 = </Fixture/Closure/spring_collar>
+            point3f physics:localPos0 = (0, 0, {L.COLLAR_Z})
+            point3f physics:localPos1 = (0, 0, 0)
+            uniform token physics:axis = "Z"
+            float physics:lowerLimit = {-L.COLLAR_TRAVEL}
+            float physics:upperLimit = 0.001
+            uniform token drive:linear:physics:type = "force"
+            float drive:linear:physics:targetPosition = 0.001
+            float drive:linear:physics:stiffness = {L.COLLAR_STIFFNESS}
+            float drive:linear:physics:damping = 0.35
+        }}
+'''
+
+
 def bottle_parts():
     R, H, w = L.BOTTLE_R, L.BOTTLE_H, L.BOTTLE_WALL
     neck_wall = L.NECK_R_OUT - L.NECK_R_IN
-    parts = [disc("floor", "hdpe", R, 0., L.BOTTLE_FLOOR)]
+    parts = [disc("floor", "hdpe", R, 0., L.BOTTLE_FLOOR), neck_lock()]
     for k in range(S):
         parts.append(stave(f"body_{k:02d}", "hdpe", k, R, L.BOTTLE_FLOOR, R, L.BODY_H, w, True))
         parts.append(stave(f"shoulder_{k:02d}", "hdpe", k, R, L.BODY_H, L.NECK_R_OUT, L.SHOULDER_H, neck_wall + .001, True))
@@ -145,6 +197,8 @@ def bottle_parts():
     parts.append(lathe("label", "label", [(R + .0003, .012), (R + .0003, .052)]))
     parts.append(lathe("label_band", "label_band", [(R + .0005, .040), (R + .0005, .050)]))
     parts.append(lathe("label_text", "ink", [(R + .0005, .020), (R + .0005, .0215)]))
+    parts.append(sector("bottle_alignment_mark", "label_band", -5., 5., R, R + .0006,
+                        .051, .060, collide=False))
     parts.append(lathe("label_text2", "ink", [(R + .0005, .026), (R + .0005, .0275)]))
     return "".join(parts)
 
@@ -153,8 +207,16 @@ def cap_parts():
     """The cap as it lies upside down: origin at the centre of its outer top face, open side toward +z."""
     R, H = L.CAP_R, L.CAP_H
     parts = [disc("top", "cap_pp", R, 0., L.CAP_FLOOR)]
-    parts += [stave(f"skirt_{k:02d}", "cap_pp", k, R, L.CAP_FLOOR, R, H, R - L.CAP_R_IN, True) for k in range(S)]
-    profile = [(0, 0), (R - .001, 0), (R, .001), (R, H), (L.CAP_R_IN, H), (L.CAP_R_IN, L.CAP_FLOOR), (0, L.CAP_FLOOR)]
+    # Lower skirt clears the neck ledges; two inward-facing lugs run beneath them.
+    for k in range(S):
+        parts.append(stave(f"skirt_{k:02d}", "cap_pp", k, R, L.CAP_FLOOR, R, H,
+                           R - .0203, True))
+    for i, angle in enumerate((0., 180.)):
+        parts.append(sector(f"lock_lug_{i}", "cap_pp", angle-L.LUG_HALF_ANGLE, angle+L.LUG_HALF_ANGLE,
+                            .0179, .0210, L.CLOSED_Z-L.LUG_TOP,
+                            L.CLOSED_Z-L.LUG_TOP+L.LUG_THICKNESS))
+    parts.append(sector("alignment_mark", "label_band", -5., 5., .009, R-.001, -.00016, 0., collide=False))
+    profile = [(0, 0), (R - .001, 0), (R, .001), (R, H), (.0203, H), (.0203, L.CAP_FLOOR), (0, L.CAP_FLOOR)]
     parts.append(lathe("shell", "cap_pp", profile))
     ribs, faces = [], []
     for k in range(36):                                       # the ribbed skirt
@@ -190,12 +252,13 @@ def usd():
         return (x, y, z + top + lift)
 
     bodies = body("bottle", L.BOTTLE_MASS, place("bottle", .0003), bottle_parts())
-    bodies += body("cap", L.CAP_MASS, place("cap", .0003), cap_parts())
+    bodies += body("cap", L.CAP_MASS, place("cap", .0003), cap_parts(), orient="(0, 1, 0, 0)")
     bodies += body("cup", L.CUP_MASS, place("cup", .0003), cup_parts())
     for name in scene.TABLETS:
         bodies += body(name, L.TABLET_MASS, place(name, .0003), tablet_mesh(), small=True)
     return ('#usda 1.0\n(\n    defaultPrim = "Fixture"\n    metersPerUnit = 1\n    upAxis = "Z"\n)\n\n'
             'def Xform "Fixture"\n{\n    def Scope "Actors"\n    {\n' + bodies + "    }\n\n"
+            '    def Scope "Closure"\n    {\n' + sprung_collar() + collar_joint() + '    }\n\n'
             '    def Scope "Materials"\n    {\n' + "".join(material(name) for name in MATERIALS) + "    }\n}\n")
 
 

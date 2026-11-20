@@ -23,15 +23,19 @@ def test_asset_is_what_the_generator_writes():
 
 def test_bodies_and_masses():
     names = re.findall(r'def Xform "(\w+)" \(\n            prepend apiSchemas = \["PhysicsRigidBodyAPI"', USD)
-    assert tuple(names) == fixture.BODIES and len(names) == 3 + L.N_TABLETS
+    assert tuple(names) == (*fixture.BODIES, "spring_collar")
     masses = [float(v) for v in re.findall(r"float physics:mass = ([\d.e-]+)", USD)]
-    assert np.allclose(masses, fixture.MASSES)
-    assert "PhysicsJoint" not in USD and "kinematicEnabled" not in USD          # free rigid bodies only
+    assert np.allclose(masses, (*fixture.MASSES, L.COLLAR_MASS))
+    assert "kinematicEnabled" not in USD
+    assert USD.count("def PhysicsPrismaticJoint") == 1
+    assert "rel physics:body1 = </Fixture/Closure/spring_collar>" in USD
+    assert "rel physics:body0 = </Fixture/Actors/bottle>" in USD
+    assert "rel physics:body1 = </Fixture/Actors/cap>" not in USD
 
 
 def test_every_collider_is_convex_and_display_meshes_do_not_collide():
     assert USD.count('physics:approximation = "convexHull"') == USD.count('"PhysicsCollisionAPI"')
-    assert USD.count('"PhysicsCollisionAPI"') == 3 * L.SIDES + 1 + L.SIDES + 1 + L.SIDES + 1 + L.N_TABLETS
+    assert USD.count('"PhysicsCollisionAPI"') == 5 * L.SIDES + 3 + L.N_TABLETS + 16 + 24 + 2
     for block in re.findall(r'def Mesh "(?:shell|label\w*|ribs|mark_\d)" \((.*?)\)', USD, flags=re.S):
         assert "PhysicsCollisionAPI" not in block
 
@@ -54,3 +58,34 @@ def test_things_fit_the_gripper_and_each_other():
     assert L.cup_inner_radius(L.CUP_H) > 2 * 2 * L.TABLET_R
     gaps = [np.hypot(*(np.subtract(a, b))) for a, b in ((fixture.BOTTLE_XY, fixture.CAP_XY), (fixture.CAP_XY, fixture.CUP_XY))]
     assert min(gaps) > .085
+
+
+def test_closure_geometry_has_an_axial_stop_a_detent_and_an_extraction_window():
+    import build_assets
+    import math
+
+    def interval_at(mesh, degrees):
+        # Cast a vertical line through the lug path using the actual vertices
+        # of each convex sector. A point in a four-sided footprint is inside if
+        # each edge's signed cross product has the same sign.
+        hit = []
+        ray = .0186 * np.array((math.cos(math.radians(degrees)), math.sin(math.radians(degrees))))
+        for block in re.findall(r"point3f\[\] points = \[(.*?)\]", mesh):
+            pts = np.array([list(map(float, p.split(","))) for p in re.findall(r"\((.*?)\)", block)])
+            floor = pts[:4,:2]
+            edges = np.roll(floor, -1, axis=0) - floor
+            delta = ray - floor
+            cross = edges[:, 0] * delta[:, 1] - edges[:, 1] * delta[:, 0]
+            if (cross >= 0).all() or (cross <= 0).all():
+                hit.append((pts[:,2].min(), pts[:,2].max()))
+        return hit
+
+    lock = build_assets.neck_lock()
+    assert min(x[0] for x in interval_at(lock, 0.)) >= L.LUG_TOP
+    assert min(x[0] for x in interval_at(lock, 12.)) < L.LUG_TOP
+    assert min(x[0] for x in interval_at(lock, 12.)) > L.LUG_TOP - .003
+    assert min(x[0] for x in interval_at(lock, -11.)) < L.LUG_TOP - .004
+    for yaw in (41., 47., 53., 221., 227., 233.):
+        assert not interval_at(lock, yaw)
+    assert fixture.START["cap"] == (*fixture.BOTTLE_XY, L.CLOSED_Z)
+    assert 'quatf xformOp:orient = (0, 1, 0, 0)' in USD

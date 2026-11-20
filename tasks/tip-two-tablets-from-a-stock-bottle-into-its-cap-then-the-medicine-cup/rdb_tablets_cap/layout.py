@@ -27,6 +27,21 @@ CAP_R_IN = .018              # EST: 36 mm across inside
 CAP_FLOOR = .004             # EST: inside 13.2 mm deep
 CAP_DEPTH = CAP_H - CAP_FLOOR
 
+# Two opposed bayonet lugs run under neck ledges. A spring collar seats them
+# against the ledges. Depressing the cap clears the counterclockwise stop.
+CLOSED_Z = BOTTLE_H + CAP_FLOOR + .004     # top of cap, in bottle coordinates
+COLLAR_Z = CLOSED_Z - CAP_H                 # z of the sprung rim contacting the cap skirt
+COLLAR_TRAVEL = .004
+COLLAR_MASS = .001
+COLLAR_STIFFNESS = 110.                     # N/m; model parameters, not product measurements
+LUG_TOP = .0828
+LUG_THICKNESS = .0014
+LEDGE_Z = LUG_TOP + .0002
+STOP_Z = LUG_TOP - .0017
+LUG_HALF_ANGLE = 5.                         # degrees
+WINDOW_START = 29.
+WINDOW_END = 70.
+
 # -- tablets: round brown film-coated 200 mg ibuprofen tablets ----------------------------------------------
 TABLET_R = .005              # PAGE: 10 mm, round, brown
 TABLET_T = .005              # EST: thickness at the middle

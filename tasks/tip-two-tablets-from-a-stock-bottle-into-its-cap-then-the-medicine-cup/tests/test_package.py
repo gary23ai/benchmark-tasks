@@ -68,16 +68,21 @@ def test_text_does_not_identify_anyone():
         assert not re.search(r"/Users/|/home/|@[a-z]+\.(edu|com)\b", text)
 
 
-def test_scores_are_the_measured_runs_with_earlier_runs_kept():
-    scores = TASK["scores"]
-    assert scores.startswith("Dream-1 run: 0.0 (4,800 steps") and "demo: 1.0 (1,382 steps" in scores
-    assert "| 1.0 | 1,382 (ended on success) | 314 s" in README and "| 0.0 | 4,800 (step limit) | 881 s" in README
-    assert "8.41 to 8.43 N (the scorer needs 1 N on each)" in README and "`void` null throughout" in README
-    assert "Run 4 (same scene and demonstration" in README and "Run 3 (previous version" in README
-    assert "Run 1 (score 0.0)" in README
-    assert "did not run in Isaac**, in run 5 or in any earlier run" in README
-    for text in (json.dumps(TASK), README):
-        assert "PENDING" not in text and "not yet" not in text.lower()
+def test_reported_scores_match_the_evidence_for_the_closed_start_revision():
+    evidence = json.loads((ROOT / "validation.json").read_text())
+    if evidence.get("status") == "awaiting_closed_start_native_evidence":
+        assert "pending" in TASK["scores"]
+        assert "recorded_hashes" not in evidence
+    else:
+        import hashlib
+        from rdb_tablets_cap import fixed_scene, grading, layout
+
+        for key, source in (("scene", fixed_scene.__file__), ("asset", fixed_scene.USD),
+                            ("layout", layout.__file__), ("grader", grading.__file__)):
+            assert evidence["recorded_hashes"][f"{key}_sha256"] == hashlib.sha256(Path(source).read_bytes()).hexdigest()
+        for field, name in (("Dream-1 run", "dream"), ("demo", "scripted")):
+            reported = re.search(re.escape(field) + r":\s*([0-9.]+)", TASK["scores"])
+            assert reported and float(reported[1]) == evidence[name]["score"]
 
 
 def test_held_cap_rule_matches_the_code():

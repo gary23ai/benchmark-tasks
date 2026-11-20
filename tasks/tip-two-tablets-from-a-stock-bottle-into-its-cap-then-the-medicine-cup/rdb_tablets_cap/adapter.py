@@ -35,7 +35,7 @@ class TabletArena(YamArenaEmbodiment):
         self.info = replace(self.info, name="yam_tablets_cap",
                             environment_id="isaaclab-arena-0.3.1-yam-tablets-cap",
                             supported_target_kinds=frozenset(),
-                            docs="Calibrated dual-arm YAM station with an open bottle of tablets, its cap and a "
+                            docs="Calibrated dual-arm YAM station with a safety-capped bottle of tablets, its cap and a "
                                  "medicine cup. Observations are overhead RGB, both wrist RGB views, and robot joint "
                                  "and jaw positions.")
         self.media_dir = Path(media_dir) if media_dir else None
@@ -90,6 +90,7 @@ class TabletArena(YamArenaEmbodiment):
         self.physics = tensors.create_simulation_view("torch")
         self.physics.set_subspace_roots("/")
         self.body_view = self.physics.create_rigid_body_view(actors + "/*")
+        self.collar_view = self.physics.create_rigid_body_view(actors.rsplit("/", 1)[0] + "/Closure/spring_collar")
         paths = list(self.body_view.prim_paths)
         self.rows = np.array([paths.index(f"{actors}/{name}") for name in BODIES])
         links = asset_link_paths()
@@ -103,7 +104,7 @@ class TabletArena(YamArenaEmbodiment):
         # Contact force of every arm link on each of the scene's bodies, columns in BODIES order.
         self.arm_contacts = self.physics.create_rigid_contact_view(all_links, [targets] * len(all_links),
                                                                    max_contact_data_count=8192)
-        self.all_ids = self._torch.as_tensor(self.rows, dtype=self._torch.int32, device=self._base.device)
+        self.all_ids = self._torch.arange(len(paths), dtype=self._torch.int32, device=self._base.device)
         # Which rows of arm_contacts are the two fingertips of each gripper (for "the cap is held").
         count = len(self.link_names)
         missing = [name for name in FINGERTIPS if name not in self.link_names]
@@ -142,9 +143,15 @@ class TabletArena(YamArenaEmbodiment):
         poses = self.body_view.get_transforms().clone()
         for row, name in zip(self.rows, BODIES, strict=True):
             x, y, z = fixture.START[name]
-            poses[row] = torch.tensor((x, y, z + fixture.TOP + .0003, 0., 0., 0., 1.), device=poses.device, dtype=poses.dtype)
+            orientation = (1., 0., 0., 0.) if name == "cap" else (0., 0., 0., 1.)
+            poses[row] = torch.tensor((x, y, z + fixture.TOP + .0003, *orientation), device=poses.device, dtype=poses.dtype)
         self.body_view.set_transforms(poses, self.all_ids)
         self.body_view.set_velocities(torch.zeros_like(self.body_view.get_velocities()), self.all_ids)
+        collar = self.collar_view.get_transforms().clone()
+        collar[0] = poses[self.rows[0]]
+        collar[0, 2] += layout.COLLAR_Z
+        self.collar_view.set_transforms(collar, self.all_ids[:1])
+        self.collar_view.set_velocities(torch.zeros_like(self.collar_view.get_velocities()), self.all_ids[:1])
         observation = super().reset(scene, seed=seed)
         self._read()
         for index, name in enumerate(BODIES[:3]):
@@ -155,6 +162,8 @@ class TabletArena(YamArenaEmbodiment):
             raise RuntimeError("A body's mass differs from the declared scene")
         if set(observation.images) != {"top_cam", "left_cam", "right_cam"} or set(observation.state) != {"joint_pos"}:
             raise RuntimeError("Unexpected policy observation fields")
+        if self.pose(1)[1][2, 2] > -.99:
+            raise RuntimeError("Cap did not reset closed over the neck")
         self.grading = TabletGrade()
         self.tick = 0
         self.peak_interarm_n = 0.
@@ -163,6 +172,7 @@ class TabletArena(YamArenaEmbodiment):
         self.joint_pos = np.asarray(observation.state["joint_pos"], dtype=float).copy()
         self.diagnostics = []
         self.start_report = {"tablets_in_bottle_at_start": int(np.sum(in_bottle(self.pose(0), self.poses[3:, :3]))),
+            "safety_cap_initial_height_mm": round(1000 * float(self.poses[1, 2]-self.poses[0, 2]), 2),
             "tablet_height_range_mm": [round(1000 * float(self.poses[3:, 2].min()), 1), round(1000 * float(self.poses[3:, 2].max()), 1)]}
         self._publish_demo_state()
         self.recorder = Recorder(self, self.media_dir) if self.media_dir else None
@@ -173,7 +183,7 @@ class TabletArena(YamArenaEmbodiment):
     def _publish_demo_state(self):
         """Simulator state for the scripted demonstration only. No policy observation contains it."""
         self.demo_state = {"bottle": self.pose(0), "cap": self.pose(1), "cup": self.pose(2),
-                           "tablets": self.poses[3:, :3].copy()}
+                           "tablets": self.poses[3:, :3].copy(), "opening_stage": self.grading.opening.stage}
 
     def step(self, action):
         observation = super().step(action).observation
@@ -190,11 +200,14 @@ class TabletArena(YamArenaEmbodiment):
         cap_column = BODIES.index("cap")
         tips_on_cap = {arm: [float(forces[row, cap_column]) for row in rows] for arm, rows in self.tip_rows.items()}
         cap_held = any(min(values) >= HELD_N for values in tips_on_cap.values())
+        bottle_held = {arm: min(forces[row, 0] for row in rows) >= HELD_N for arm, rows in self.tip_rows.items()}
+        bimanual = any(min(tips_on_cap[arm]) >= HELD_N and bottle_held[other]
+                       for arm, other in (("left", "right"), ("right", "left")))
         support = np.linalg.norm(array(self.cap_support.get_contact_force_matrix(dt=PHYSICS_DT)), axis=-1).reshape(-1)
         self.tips_on_cap, self.cap_support_n = tips_on_cap, [float(v) for v in support]
         grade = self.grading.update(self.poses[3:, :3], self.pose(0), self.pose(1), self.pose(2), touching,
                                     self.grippers(joints), cap_held=cap_held,
-                                    cap_supported=bool(support.max() >= SUPPORT_N))
+                                    cap_supported=bool(support.max() >= SUPPORT_N), opening_bimanual=bimanual)
         self.final_grade = grade
         self.tick += 1
         self._publish_demo_state()
@@ -236,7 +249,8 @@ class TabletArena(YamArenaEmbodiment):
             "lowest_tablet_mm": round(1000 * float(lowest), 1),
             **{key: grade[key] for key in ("in_bottle", "in_cap", "in_cup", "strays", "lay_in_cap", "max_touch_ticks",
                                            "released", "still", "outcome", "score", "cap_lowest_mm", "cap_held", "cap_supported",
-                                           "void")},
+                                           "opening_stage", "opening_bimanual", "cap_press_mm", "cap_turn_deg",
+                                           "cap_lift_mm", "void")},
         }
 
     def close(self):
