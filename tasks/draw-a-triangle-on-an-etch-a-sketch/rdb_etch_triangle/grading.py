@@ -1,10 +1,8 @@
 """Score the triangle drawn on the Etch A Sketch.
 
-Everything here can be read off the toy's screen after the trial with a ruler and a close-up photo (a loupe or a
-phone's macro photo shows the real line, about 0.5 mm wide): which parts of the three sides the line covers,
-whether any of it strays more than 2 mm from the triangle, and whether the slanted side has steps (straight runs
-along one axis alone); and from the trial video: whether the toy was lifted or pushed about and whether the
-grippers let go. In simulation the same rules are applied to the stylus path. The module needs only NumPy.
+The simulator samples the logged stylus path. The photo tool supplies rectified
+centreline samples to the same drawing checks. Trial video supplies the real
+toy-motion and final release checks. The module needs only NumPy.
 
 Drawing frame: millimetres from the start dot, X to the right, Y up the screen. The ideal triangle is
 A = (0, 0), B = (80, 0), C = (80, 60).
@@ -64,7 +62,8 @@ class TriangleGrade:
     last: np.ndarray = field(default_factory=lambda: np.zeros(2))
     path_mm: float = 0.
 
-    def _sample(self, point):
+    def sample(self, point):
+        """Accumulate one centreline sample in mm, in order along a continuous stroke."""
         if triangle_distance(point) > NEAR_MM:
             if not self.stray:
                 self.stray, self.stray_at_mm = True, [round(float(v), 2) for v in point]
@@ -99,12 +98,28 @@ class TriangleGrade:
             return
         count = max(1, int(np.ceil(length / SAMPLE_MM)))
         for k in range(1, count + 1):
-            self._sample(self.last + step * k / count)
+            self.sample(self.last + step * k / count)
         self.path_mm += length
         self.last = point
 
     def counts(self):
         return {side: int(bins.sum()) for side, bins in self.covered.items()}
+
+    def drawing_result(self):
+        """Drawing diagnostics before applying the separately observed trial conditions."""
+        covered = self.counts()
+        tier = 0.
+        if covered["bottom"] >= NEEDED_MM["bottom"]:
+            tier = .25
+            if covered["upright"] >= NEEDED_MM["upright"]:
+                tier = .5
+                if covered["slant"] >= NEEDED_MM["slant"] and self.longest_step_mm <= STEP_MM:
+                    tier = 1.
+        self.tier = tier
+        drawn = min(tier, STRAY_CAP) if self.stray else tier
+        return {"tier": tier, "drawn_score": drawn, "covered_mm": covered, "stray": self.stray,
+                "stray_at_mm": self.stray_at_mm, "longest_step_mm": round(self.longest_step_mm, 2),
+                "step_at_mm": self.step_at_mm}
 
     def update(self, stylus_point_m, toy_position, toy_rotation, arm_touching_toy):
         """One 20 Hz tick. stylus_point_m: where the stylus is, metres from the start dot (right, up);
@@ -122,22 +137,11 @@ class TriangleGrade:
                 self.void = "toy lifted or tilted"
             elif offset > MOVED_M or turned > TURNED_RAD:
                 self.void = "toy pushed off its marks"
-        covered = self.counts()
-        tier = 0.
-        if covered["bottom"] >= NEEDED_MM["bottom"]:
-            tier = .25
-            if covered["upright"] >= NEEDED_MM["upright"]:
-                tier = .5
-                if covered["slant"] >= NEEDED_MM["slant"] and self.longest_step_mm <= STEP_MM:
-                    tier = 1.
-        self.tier = tier
-        drawn = min(tier, STRAY_CAP) if self.stray else tier
+        drawing = self.drawing_result()
         self.let_go_ticks = 0 if arm_touching_toy else self.let_go_ticks + 1
         let_go = self.let_go_ticks >= LET_GO_TICKS
-        score = 0. if self.void is not None or not let_go else drawn
-        return {"score": score, "tier": tier, "drawn_score": drawn, "covered_mm": covered, "stray": self.stray,
-                "stray_at_mm": self.stray_at_mm, "longest_step_mm": round(self.longest_step_mm, 2),
-                "step_at_mm": self.step_at_mm, "stylus_mm": [round(float(v), 2) for v in self.last],
+        score = 0. if self.void is not None or not let_go else drawing["drawn_score"]
+        return {"score": score, **drawing, "stylus_mm": [round(float(v), 2) for v in self.last],
                 "let_go": let_go, "void": self.void, "toy_offset_mm": round(1000 * offset, 2),
                 "toy_turned_deg": round(float(np.degrees(turned)), 2), "toy_highest_corner_mm": round(1000 * highest, 2),
                 "line_mm": round(self.path_mm, 1)}

@@ -9,6 +9,7 @@ def test_submission_card_fields_and_limits():
     assert len(card['title'])<=120
     assert len(card['setup'])<=4000
     assert len(card['fidelity'])<=500
+    assert len(card['context'])<=1000
     if 'media' in card:assert re.fullmatch(r'M-[A-Z0-9]+',card['media'])
 def test_recorded_instruction_score_and_reset_are_preserved():
     card=json.loads((ROOT/'task.json').read_text())

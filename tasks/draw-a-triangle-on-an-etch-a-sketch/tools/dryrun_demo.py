@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def dry_run(*, arm_lag_s=.12, follow=1., backlash_deg=20., knob_shift_mm=(0., 0.), clearance=None,
-            max_steps=None, verbose=False):
+            max_steps=None, verbose=False, path_mm=None):
     from yam_arena import ik
     from yam_arena.constants import FINGER_OPEN, READY
 
@@ -101,6 +101,8 @@ def dry_run(*, arm_lag_s=.12, follow=1., backlash_deg=20., knob_shift_mm=(0., 0.
                     report["min_frame_gap_mm"] = min(report["min_frame_gap_mm"], 1000 * float(above.min()))
         report["min_tcp_gap_mm"] = min(report["min_tcp_gap_mm"], 1000 * float(np.linalg.norm(tcps[0] - tcps[1])))
         stylus.update(knobs)
+        if path_mm is not None:
+            path_mm.append(1000 * stylus.point.copy())
         result = grade.update(stylus.point, (*fixture.TOY_XY, 0.), fixture.TOY_ROTATION, touching)
         if verbose and tick % 100 == 0:
             print(tick, result["score"], result["tier"], result["covered_mm"], result["stylus_mm"],

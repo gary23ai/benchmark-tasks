@@ -16,9 +16,43 @@ Coordinates are millimetres: x forward from the line through the arm bases, y to
 
 [task.json](task.json) gives the complete start poses, dimensions and materials. [TECHNICAL.md](TECHNICAL.md) lists product sources, estimated parameters, the build procedure and asset licences.
 
-## Successful outcome
+## Score a real trial
 
-Cover the bottom and vertical sides, then the full 100 mm diagonal within the 2 mm corridor, without staircase segments over 1 mm. Keep the toy within the position and tilt limits and release it for the final second.
+**Set up once.** Print the [four marker labels](docs/markers.svg) on matte white adhesive paper at actual size. Check the 50 mm scale bar. Keep each 2 mm white border. With the knobs toward you, stick the labels upright on the flat frame at the positions below. Measure from the start dot, with X right and Y up. The black squares are 12 mm wide and their faces sit 2 mm above the drawing plane.
+
+| Marker ID | Frame corner | Centre (X, Y), mm |
+|---|---|---|
+| 0 | Upper left | (−44, 92) |
+| 1 | Upper right | (145, 92) |
+| 2 | Lower right | (145, −16) |
+| 3 | Lower left | (−44, −16) |
+
+Fix the lens 300 mm directly above the centre of the screen, pointing straight down. Use the distortion-corrected **1× main lens** at native resolution. Lock focus on the screen and turn flash off. Two diffuse lights aimed from opposite sides at 45° should illuminate the clean glass evenly without reflections. Frame the entire screen and all four labels. Each black edge must span at least 72 image pixels.
+
+1. At trial end, take **one photo** once the screen is unobstructed, before anyone moves the toy. Save the original JPEG or PNG.
+2. Review the trial video. Choose `fail` if any bottom corner rose ≥2 mm, the centre moved ≥10 mm from its marks, the toy turned ≥5°, or any part of either arm touched the frame or knobs in the final second. Otherwise choose `pass`.
+3. From this task folder, run the command below in a Python environment with NumPy and `opencv-python` (4.8 or later with ArUco). Substitute `fail` when applicable.
+
+```sh
+python tools/score_photo.py final.jpg --video pass --out photo-grade
+```
+
+**Read `score` in `photo-grade/score.json`.** The same JSON prints to the terminal. In `annotated.png`, blue is the measured centreline, green and orange are covered and missing bins, and red circles flag the first stray or step. A marker error calls for a fresh photo of the same drawing. The script is authoritative for drawing credit.
+
+| Score | Required coverage within 2 mm |
+|---|---|
+| 0 | Fewer than 70 bottom bins, or a failed video check |
+| 0.25 | At least 70 of 80 bottom bins |
+| 0.5 | Also at least 50 of 60 upright bins |
+| 1.0 | Also all 100 diagonal bins, with no step between the 5 and 95 mm ticks |
+
+Use the highest qualifying tier. Any centreline point more than 2 mm from all three finite sides caps the score at 0.25. Each bin is 1 mm long. A step is a run within 10° of horizontal or vertical whose displacement along that axis exceeds 1 mm. The script checks the diagonal automatically.
+
+### Transparent overlay fallback
+
+1. Print the [overlay and detachable step gauge](docs/overlay.svg) on clear film at **100%**. Check the 50 mm bar with a ruler. Cut out the gauge. Lay the overlay on the finished toy, align the screen outline with its edges and A with the start dot, and look straight down.
+2. Count each 1 mm cell touched by the **centre** of the drawn line inside each tinted band once. The long ticks mark tens. Round caps count toward the end cell. A point exactly on a dividing tick counts in the preceding cell going A→B, B→C or C→A. Record the three totals and apply the table.
+3. Between the two orange diagonal ticks, follow the centreline with the gauge origin on the start of each run. Hold its axis parallel to the bottom or upright side in the direction of travel. If the line leaves both axis windows after reaching the short 0.2 mm tick, move the origin to that point and repeat. A run that stays in either ±10° window past the long 1 mm bar is a step. Look across the whole screen for ink centres outside all bands and apply the stray cap and video check.
 
 ## Coordinated operation
 
@@ -55,32 +89,10 @@ These are individual recorded simulation trials. [validation.json](validation.js
 Tests without launching Isaac Sim, using the installed YAM Python environment:
 
 ```sh
-uv pip install pytest
+uv pip install pytest opencv-python
 python -m pytest tests -q
 ```
 
-
-## Scoring
-
-`grading.py` scores every control step from the stylus path (mm from the dot, X right, Y up), the toy's pose
-and the arm-toy contacts; the final score is the last step's.
-
-- A side is covered over a 1 mm piece of its length when a point of the line within 2 mm of the side lies over
-  that piece (the path between logged points is checked every 0.25 mm).
-- 0.25: bottom side covered over at least 70 of 80 mm. 0.5: and upright side over at least 50 of 60 mm.
-  1.0: and slanted side over all of its 100 mm (the line back to within about 3 mm of the dot) with no step:
-  away from its last 5 mm at each end, no straight piece of the line longer than 1 mm runs within 10 degrees of
-  horizontal or vertical (the slanted side runs at 37 degrees). In simulation a piece is followed from where the
-  path last ran at a slant and judged once it is 0.2 mm long.
-- A stray line (a point more than 2 mm from every side) caps the score at 0.25.
-- 0 if the toy is lifted or tilted (a bottom corner 2 mm up), pushed 10 mm, turned 5 degrees, or if either arm
-  touches the toy during the last second (20 steps).
-
-In a real trial all the drawing checks are made on the screen after the trial with a ruler and a close-up photo
-or a loupe (the real line is about 0.5 mm wide, so a 1 mm step, two line widths, is plain to see, and its angle can be read
-with a protractor overlay on the photo; no sub-millimetre measurement is needed); the overhead video is needed only
-to check that the toy stayed on its marks and that the grippers let go. In simulation the same rules run on the
-stylus path; the 3 mm drawn ribbon is for the cameras only.
 
 ## Reset
 
@@ -110,4 +122,4 @@ See the full `fidelity` field in [task.json](task.json) and [TECHNICAL.md](TECHN
 
 Task-specific source and generated geometry are provided under [MIT](LICENSE). No third-party product meshes or textures are bundled. Robot, station and simulator dependencies retain their upstream licences; see the asset list in [TECHNICAL.md](TECHNICAL.md).
 
-The submission card uses short title/setup/fidelity fields to meet the board’s length limits. [REFERENCE-SPEC.json](REFERENCE-SPEC.json) retains the full specification used by the recorded trials; [TECHNICAL.md](TECHNICAL.md) explains its dimensions and modelling assumptions. The instruction and scoring are unchanged.
+The submission card uses short title/setup/fidelity fields to meet the board’s length limits. [REFERENCE-SPEC.json](REFERENCE-SPEC.json) gives the full scene dimensions and fidelity statement for the recorded trials; [TECHNICAL.md](TECHNICAL.md) explains its dimensions and modelling assumptions. Both specifications include the real-trial photo procedure. The recorded instruction and simulator scoring rule are unchanged.

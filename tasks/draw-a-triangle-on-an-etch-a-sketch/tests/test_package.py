@@ -68,8 +68,8 @@ def test_scoring_numbers_match_the_code():
     for side, key, total in (("bottom side AB", "bottom", 80), ("upright side BC", "upright", 60)):
         assert f"{side} covered over at least {grading.NEEDED_MM[key]} of its {total} mm" in scoring
     assert grading.NEEDED_MM["slant"] == 100 and "slanted side CA covered over all of its 100 mm" in scoring
-    assert f"longer than {grading.STEP_MM:.0f} mm runs within {grading.STEP_DEG:.0f} degrees of horizontal or vertical" in scoring
-    assert f"more than {grading.CORNER_CLEAR_MM:.0f} mm from its two ends" in scoring
+    assert f"longer than {grading.STEP_MM:.0f} mm along either axis within {grading.STEP_DEG:.0f} degrees of horizontal or vertical" in scoring
+    assert f"Between the {grading.CORNER_CLEAR_MM:.0f} and {100 - grading.CORNER_CLEAR_MM:.0f} mm ticks" in scoring
     assert f"caps the score at {grading.STRAY_CAP}" in scoring
     assert f"{1000 * grading.LIFTED_M:.0f} mm or more off the table" in scoring
     assert f"{1000 * grading.MOVED_M:.0f} mm or more from its marks" in scoring
