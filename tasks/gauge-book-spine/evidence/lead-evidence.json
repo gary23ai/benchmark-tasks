@@ -1,0 +1,706 @@
+{
+  "schemaVersion": 1,
+  "units": "Positions in m, contact normal force magnitudes in N, angles in degrees.",
+  "coordinateSignals": [
+    {
+      "name": "output_centres",
+      "kind": "distance",
+      "a": "lower_arm",
+      "b": "upper_arm",
+      "pa": [
+        -0.08,
+        -0.04,
+        0
+      ],
+      "pb": [
+        -0.08,
+        0.04,
+        0
+      ]
+    },
+    {
+      "name": "a_plus",
+      "kind": "contact_n",
+      "a": "pad_a",
+      "b": "face_plus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_minus",
+      "kind": "contact_n",
+      "a": "pad_a",
+      "b": "face_minus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_plus",
+      "kind": "contact_n",
+      "a": "pad_b",
+      "b": "face_plus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_minus",
+      "kind": "contact_n",
+      "a": "pad_b",
+      "b": "face_minus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_depth",
+      "kind": "dx",
+      "a": "pad_a",
+      "b": "face_plus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_depth",
+      "kind": "dx",
+      "a": "pad_b",
+      "b": "face_minus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_side",
+      "kind": "dy",
+      "a": "pad_a",
+      "b": "face_plus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_side",
+      "kind": "dy",
+      "a": "pad_b",
+      "b": "face_minus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_height",
+      "kind": "dz",
+      "a": "pad_a",
+      "b": "face_plus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_height",
+      "kind": "dz",
+      "a": "pad_b",
+      "b": "face_minus",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_first_load",
+      "kind": "contact_n",
+      "a": "left_pad_left",
+      "b": "upper_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_second_load",
+      "kind": "contact_n",
+      "a": "left_pad_right",
+      "b": "upper_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_first_load",
+      "kind": "contact_n",
+      "a": "right_pad_left",
+      "b": "lower_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_second_load",
+      "kind": "contact_n",
+      "a": "right_pad_right",
+      "b": "lower_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_shank_z",
+      "kind": "dz",
+      "a": "upper_arm",
+      "b": "table",
+      "pa": [
+        -0.066,
+        0.033,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_shank_z",
+      "kind": "dz",
+      "a": "lower_arm",
+      "b": "table",
+      "pa": [
+        -0.066,
+        -0.033,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_tcp_x",
+      "kind": "dx",
+      "a": "left_tcp",
+      "b": "upper_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        -0.066,
+        0.033,
+        0
+      ]
+    },
+    {
+      "name": "left_tcp_y",
+      "kind": "dy",
+      "a": "left_tcp",
+      "b": "upper_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        -0.066,
+        0.033,
+        0
+      ]
+    },
+    {
+      "name": "left_tcp_z",
+      "kind": "dz",
+      "a": "left_tcp",
+      "b": "upper_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        -0.066,
+        0.033,
+        0
+      ]
+    },
+    {
+      "name": "right_tcp_x",
+      "kind": "dx",
+      "a": "right_tcp",
+      "b": "lower_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        -0.066,
+        -0.033,
+        0
+      ]
+    },
+    {
+      "name": "right_tcp_y",
+      "kind": "dy",
+      "a": "right_tcp",
+      "b": "lower_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        -0.066,
+        -0.033,
+        0
+      ]
+    },
+    {
+      "name": "right_tcp_z",
+      "kind": "dz",
+      "a": "right_tcp",
+      "b": "lower_arm",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        -0.066,
+        -0.033,
+        0
+      ]
+    }
+  ],
+  "channelSums": {},
+  "wholeEpisodeInvalidatingConditions": [],
+  "stages": {
+    "scripted-first": {
+      "score": 1.0,
+      "steps": 600,
+      "elapsedSeconds": 266.72,
+      "traceSha256": "f1519eeb72625ee556465efc2e88f5964edd199fd11cef8fdb357b2cd9154e0f",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 600,
+          "last": 600,
+          "samples": 1,
+          "requiredSamples": 1,
+          "requiredMilestones": [
+            "end_of_trial",
+            "a_on_plus_dwell"
+          ],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "a_plus": {
+              "min": 1.8859392404556274,
+              "max": 1.8859392404556274,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "b_minus": {
+              "min": 1.7868540287017822,
+              "max": 1.7868540287017822,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "output_centres": {
+              "min": 0.059610477042037424,
+              "max": 0.059610477042037424,
+              "lo": 0.058,
+              "hi": 0.062,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        },
+        {
+          "first": 600,
+          "last": 600,
+          "samples": 1,
+          "requiredSamples": 1,
+          "requiredMilestones": [
+            "end_of_trial",
+            "a_on_minus_dwell"
+          ],
+          "prerequisitesEverySample": false,
+          "invalidationFree": true,
+          "observedRanges": {
+            "a_minus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "b_plus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "output_centres": {
+              "min": 0.059610477042037424,
+              "max": 0.059610477042037424,
+              "lo": 0.058,
+              "hi": 0.062,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    },
+    "idle": {
+      "score": 0.0,
+      "steps": 600,
+      "elapsedSeconds": 234.34,
+      "traceSha256": "7d198d8fec9c5e255ae0cc5f8e2897a8f2dd15e1e3d474d8d9380e6d5507b49e",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 600,
+          "last": 600,
+          "samples": 1,
+          "requiredSamples": 1,
+          "requiredMilestones": [
+            "end_of_trial",
+            "a_on_plus_dwell"
+          ],
+          "prerequisitesEverySample": false,
+          "invalidationFree": true,
+          "observedRanges": {
+            "a_plus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "b_minus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "output_centres": {
+              "min": 0.07999994630222466,
+              "max": 0.07999994630222466,
+              "lo": 0.058,
+              "hi": 0.062,
+              "passedEverySample": false
+            }
+          },
+          "passed": false
+        },
+        {
+          "first": 600,
+          "last": 600,
+          "samples": 1,
+          "requiredSamples": 1,
+          "requiredMilestones": [
+            "end_of_trial",
+            "a_on_minus_dwell"
+          ],
+          "prerequisitesEverySample": false,
+          "invalidationFree": true,
+          "observedRanges": {
+            "a_minus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "b_plus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "output_centres": {
+              "min": 0.07999994630222466,
+              "max": 0.07999994630222466,
+              "lo": 0.058,
+              "hi": 0.062,
+              "passedEverySample": false
+            }
+          },
+          "passed": false
+        }
+      ]
+    },
+    "scripted-repeat": {
+      "score": 1.0,
+      "steps": 600,
+      "elapsedSeconds": 257.51,
+      "traceSha256": "f1519eeb72625ee556465efc2e88f5964edd199fd11cef8fdb357b2cd9154e0f",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 600,
+          "last": 600,
+          "samples": 1,
+          "requiredSamples": 1,
+          "requiredMilestones": [
+            "end_of_trial",
+            "a_on_plus_dwell"
+          ],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "a_plus": {
+              "min": 1.8859392404556274,
+              "max": 1.8859392404556274,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "b_minus": {
+              "min": 1.7868540287017822,
+              "max": 1.7868540287017822,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "output_centres": {
+              "min": 0.059610477042037424,
+              "max": 0.059610477042037424,
+              "lo": 0.058,
+              "hi": 0.062,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        },
+        {
+          "first": 600,
+          "last": 600,
+          "samples": 1,
+          "requiredSamples": 1,
+          "requiredMilestones": [
+            "end_of_trial",
+            "a_on_minus_dwell"
+          ],
+          "prerequisitesEverySample": false,
+          "invalidationFree": true,
+          "observedRanges": {
+            "a_minus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "b_plus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "output_centres": {
+              "min": 0.059610477042037424,
+              "max": 0.059610477042037424,
+              "lo": 0.058,
+              "hi": 0.062,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    },
+    "dream": {
+      "score": 0.0,
+      "steps": 600,
+      "elapsedSeconds": 244.69,
+      "traceSha256": "833811d4f43440c7e48bc642934e66d65ece10596e4590c2a8b35723f07c344c",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 600,
+          "last": 600,
+          "samples": 1,
+          "requiredSamples": 1,
+          "requiredMilestones": [
+            "end_of_trial",
+            "a_on_plus_dwell"
+          ],
+          "prerequisitesEverySample": false,
+          "invalidationFree": true,
+          "observedRanges": {
+            "a_plus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "b_minus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "output_centres": {
+              "min": 0.07999994630222466,
+              "max": 0.07999994630222466,
+              "lo": 0.058,
+              "hi": 0.062,
+              "passedEverySample": false
+            }
+          },
+          "passed": false
+        },
+        {
+          "first": 600,
+          "last": 600,
+          "samples": 1,
+          "requiredSamples": 1,
+          "requiredMilestones": [
+            "end_of_trial",
+            "a_on_minus_dwell"
+          ],
+          "prerequisitesEverySample": false,
+          "invalidationFree": true,
+          "observedRanges": {
+            "a_minus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "b_plus": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.05,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "output_centres": {
+              "min": 0.07999994630222466,
+              "max": 0.07999994630222466,
+              "lo": 0.058,
+              "hi": 0.062,
+              "passedEverySample": false
+            }
+          },
+          "passed": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Set a bookbinder’s spine gauge on a rounded book block",
+  "category": "Impact on jobs",
+  "keywords": [
+    "bookbinding",
+    "case making",
+    "rounded book block",
+    "spine gauge",
+    "spine inlay"
+  ],
+  "instruction": "Fit the narrow end of the gauge across the rounded book block. Leave one brass tip touching each flat side so the opening between the steel buttons gives the spine-inlay width. You may hold the gauge.",
+  "context": "A bookbinder preparing a replacement case needs the width of its flexible spine inlay. The two gauge leaves turn about a common pivot, so fitting the brass end sets the opening at the steel end.",
+  "setup": "The block stands on its tail with its spine facing the operator. It is 150 mm tall, 40 mm thick and 95 mm from crown to fore-edge, including the 10 mm crown. The crownward edge of each dark band marks the start of a flat. The gauge lies level on two 75 mm rests with its brass tips centered on the spine, 55 mm apart at their inner surfaces. Their leading surfaces start 50 mm from the crown.",
+  "scoring": "The grade is binary. Throughout the final second, each brass tip must bear on a different exterior flat and the clear steel opening must stay within 2 mm of the reference for a square fit on a 40 mm block. The modeled reference is 53 mm and the inclusive range is 51–55 mm. The simulator counts bearing from 0.05 N per tip. Either tip may meet either face, and seating at the start of the flat qualifies.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Seat the tail in the foot clamp against the fore-edge stop. Lay the rear shanks and forward tines on their respective rests. Center the pivot on the block, point the brass tips toward the crown and restore the specified opening and clearance. Return both robot arms to their standard home pose.",
+  "fidelity": "Two rigid steel leaves carry spherical buttons on a passive pivot. The hardwood specimen represents a rounded book block with parallel sides. The simulated reference comes from the declared tool geometry. Calibration of a physical gauge uses its measured opposite opening on the parallel reference block.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (600 steps).",
+  "media": "M-44L4WL"
+}
