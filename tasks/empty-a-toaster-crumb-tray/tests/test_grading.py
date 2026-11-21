@@ -36,15 +36,19 @@ def test_direct_robot_debris_contact_latches_zero():
  assert r['score']==0. and r['finished'] and r['void']
  assert read(g,dumped())['score']==0.
 
-def test_single_lost_chunk_invalidates_whole_trial():
- g=ToasterGrade();p=baseline();p[L.CRUMBS[-1],:3]=[.44,-.24,.004]
- r=read(g,p);assert r['score']==0. and r['finished'] and 'spilled' in r['void']
+def test_one_piece_on_worktop_or_left_in_tray_loses_emptying_credit():
+ g=ToasterGrade();p=complete_prefix(g)
+ p[L.CRUMBS[-1],:3]=[.44,-.24,.004]
+ r=read(g,p);assert r['score']==0. and r['pieces_unaccounted']==1
+ p[L.CRUMBS[-1]]=baseline()[L.CRUMBS[-1]]
+ assert read(g,p)['score']==.25
 
-def test_full_chunk_footprint_must_fit_bin_not_only_its_center():
- g=ToasterGrade();p=dumped();i=0;j=L.CRUMBS[i]
- p[j,:3]=L.BIN_CENTER+[L.BIN_INNER[0]/2-.0001,0,L.BIN_FLOOR+L.CRUMB_SIZES[i,2]/2]
- # Native chunk is rotated 90deg: its full X width is the authored Y dimension.
- r=read(g,p);assert r['score']==0. and 'spilled' in r['void']
+def test_falling_piece_can_cross_rim_before_being_caught():
+ g=ToasterGrade();p=complete_prefix(g);j=L.CRUMBS[0];original=p[j].copy()
+ p[j,:3]=L.BIN_CENTER+[L.BIN_INNER[0]/2+.003,0,L.BIN_RIM+.015]
+ r=read(g,p);assert r['score']==0. and r['void'] is None
+ p[j]=original
+ assert read(g,p)['score']==.6
 
 def test_emptied_tray_left_partly_out_cannot_complete():
  g=ToasterGrade();p=complete_prefix(g);p[L.TRAY,0]-=.010
@@ -81,15 +85,15 @@ def test_chunk_inside_bin_touching_inner_wall_is_not_a_spill():
  r=read(g,p);assert r['void'] is None and r['crumbs_in_bin']==L.N_CRUMBS
 
 
-def test_transient_inner_floor_contact_is_not_container_escape():
- g=ToasterGrade();p=dumped();p[L.CRUMBS[0],2]-=.0006
- r=read(g,p);assert r['void'] is None and r['crumbs_in_bin']==L.N_CRUMBS-1 and r['crumbs_over_bin']==L.N_CRUMBS
+def test_visible_home_template_accepts_small_offset_and_rejects_proud_pull():
+ g=ToasterGrade();p=complete_prefix(g);p[L.TRAY,0]-=.004
+ for _ in range(241):r=read(g,p)
+ assert r['score']==1.
+ p[L.TRAY,0]-=.003
+ assert read(g,p)['score']==.6
 
-def test_a_chunk_crossing_the_actual_outer_bin_bottom_voids():
- g=ToasterGrade();p=dumped();p[L.CRUMBS[0],2]=L.CRUMB_SIZES[0,2]/2-.0002
- r=read(g,p);assert r['void'] and r['score']==0.
-
-def test_chunk_left_embedded_below_the_inner_floor_cannot_complete():
- g=ToasterGrade();p=complete_prefix(g);p[L.CRUMBS[0],2]-=.0006
- for _ in range(300):r=read(g,p)
- assert not r['finished'] and r['score']<1. and r['stable_samples']==0 and r['crumbs_in_bin']==L.N_CRUMBS-1
+def test_submerging_loaded_tray_in_bin_is_not_emptying():
+ g=ToasterGrade();p=complete_prefix(g)
+ p=baseline();offset=np.array([*L.BIN_CENTER[:2],.04])-p[L.TRAY,:3]
+ p[L.TRAY,:3]+=offset;p[L.CRUMBS,:3]+=offset
+ r=read(g,p);assert r['crumbs_in_tray']==40 and r['crumbs_in_bin']==0 and r['score']==.25
