@@ -1,0 +1,453 @@
+{
+  "slug": "seat-pan-handle",
+  "runs": {
+    "scripted-first": {
+      "task": "seat-pan-handle",
+      "policy": "scripted",
+      "seed": 0,
+      "model": null,
+      "scorer": "physical_task_score",
+      "score": 1.0,
+      "steps": 494,
+      "step_limit": 600,
+      "declaredStepLimit": 600,
+      "diagnosticOnly": false,
+      "elapsed_s": 251.7,
+      "control_hz": 20,
+      "initialBoundsPixels": {
+        "worktop": [
+          197.6,
+          102.7,
+          431.9,
+          253.5
+        ],
+        "deck": [
+          274.5,
+          149.7,
+          355.4,
+          217.7
+        ],
+        "feet": [
+          368.2,
+          165.6,
+          387.3,
+          196.9
+        ],
+        "holder": [
+          376.1,
+          154.4,
+          384.6,
+          187.2
+        ],
+        "pan": [
+          283.9,
+          142.7,
+          345.8,
+          252.5
+        ]
+      },
+      "initialMarkBoundsPixels": {
+        "deck:0": [
+          280.1,
+          153.8,
+          349.8,
+          211.9
+        ]
+      },
+      "initialMeasurements": {
+        "center_error": 1.5622809712567687e-09,
+        "base_gap": -1.7642974853640525e-08,
+        "rim_tilt": 7.597146371019853e-05,
+        "deck_load": 5.493605613708496,
+        "left_load": 0.0,
+        "right_load": 0.0,
+        "linear_speed": 0.0002025440044235438,
+        "angular_speed": 0.3828842043876648,
+        "inner_x": -0.11500004332397787,
+        "outer_x": -0.2270000433239779,
+        "inner_y": 0.16999992970179617,
+        "outer_y": 0.16999992871865033,
+        "inner_z": 0.03799984411984882,
+        "outer_z": -0.024000198516446858,
+        "center_y": 1.5622809712567687e-09,
+        "left_pad_l_load": 0.0,
+        "left_pad_r_load": 0.0,
+        "right_pad_l_load": 0.0,
+        "right_pad_r_load": 0.0
+      },
+      "initialGaugePoses": {},
+      "initialWedgeColliderProbes": {},
+      "finalWedgeBodyPositions": {},
+      "video_frames": 248,
+      "cameraPixels": {
+        "nativeOverview": [
+          640,
+          360
+        ],
+        "policyRGB": [
+          320,
+          176
+        ]
+      },
+      "nativeVersions": {
+        "isaacsim": "6.1.0.0",
+        "isaaclab": "17.0.2",
+        "isaaclab-arena": "0.3.0",
+        "inspect-robots": "1.0.0",
+        "yam-arena": "0.1.0",
+        "inspect-robots-dream": "0.1.0",
+        "dreamlabs-client": "1.0.14"
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "observedSourceHashes": {
+        "task_impl/fixture.json": "e6f9cfb1cae43894032c408d5c818bee447424149a1bc81c44680370c3b05807",
+        "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+        "task_impl/adapter.py": "88cb360dd1eee5d566903160f8d306213b67e00018341c2e6b5cf32c28f3080d",
+        "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+        "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+        "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+        "task_impl/scripted.py": "ebb5623f5d9bb865f740d0a8d307547859f30d5e8a9cb663f6aef498fc1fdb98"
+      },
+      "inspect_robots": "1.0.0",
+      "yam_arena": "0.1.0"
+    },
+    "idle": {
+      "task": "seat-pan-handle",
+      "policy": "idle",
+      "seed": 0,
+      "model": null,
+      "scorer": "physical_task_score",
+      "score": 0.0,
+      "steps": 600,
+      "step_limit": 600,
+      "declaredStepLimit": 600,
+      "diagnosticOnly": false,
+      "elapsed_s": 206.53,
+      "control_hz": 20,
+      "initialBoundsPixels": {
+        "worktop": [
+          197.6,
+          102.7,
+          431.9,
+          253.5
+        ],
+        "deck": [
+          274.5,
+          149.7,
+          355.4,
+          217.7
+        ],
+        "feet": [
+          368.2,
+          165.6,
+          387.3,
+          196.9
+        ],
+        "holder": [
+          376.1,
+          154.4,
+          384.6,
+          187.2
+        ],
+        "pan": [
+          283.9,
+          142.7,
+          345.8,
+          252.5
+        ]
+      },
+      "initialMarkBoundsPixels": {
+        "deck:0": [
+          280.1,
+          153.8,
+          349.8,
+          211.9
+        ]
+      },
+      "initialMeasurements": {
+        "center_error": 1.5622809712567687e-09,
+        "base_gap": -1.7642974853640525e-08,
+        "rim_tilt": 7.597146371019853e-05,
+        "deck_load": 5.493605613708496,
+        "left_load": 0.0,
+        "right_load": 0.0,
+        "linear_speed": 0.0002025440044235438,
+        "angular_speed": 0.3828842043876648,
+        "inner_x": -0.11500004332397787,
+        "outer_x": -0.2270000433239779,
+        "inner_y": 0.16999992970179617,
+        "outer_y": 0.16999992871865033,
+        "inner_z": 0.03799984411984882,
+        "outer_z": -0.024000198516446858,
+        "center_y": 1.5622809712567687e-09,
+        "left_pad_l_load": 0.0,
+        "left_pad_r_load": 0.0,
+        "right_pad_l_load": 0.0,
+        "right_pad_r_load": 0.0
+      },
+      "initialGaugePoses": {},
+      "initialWedgeColliderProbes": {},
+      "finalWedgeBodyPositions": {},
+      "video_frames": 301,
+      "cameraPixels": {
+        "nativeOverview": [
+          640,
+          360
+        ],
+        "policyRGB": [
+          320,
+          176
+        ]
+      },
+      "nativeVersions": {
+        "isaacsim": "6.1.0.0",
+        "isaaclab": "17.0.2",
+        "isaaclab-arena": "0.3.0",
+        "inspect-robots": "1.0.0",
+        "yam-arena": "0.1.0",
+        "inspect-robots-dream": "0.1.0",
+        "dreamlabs-client": "1.0.14"
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "observedSourceHashes": {
+        "task_impl/fixture.json": "e6f9cfb1cae43894032c408d5c818bee447424149a1bc81c44680370c3b05807",
+        "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+        "task_impl/adapter.py": "88cb360dd1eee5d566903160f8d306213b67e00018341c2e6b5cf32c28f3080d",
+        "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+        "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+        "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+        "task_impl/scripted.py": "ebb5623f5d9bb865f740d0a8d307547859f30d5e8a9cb663f6aef498fc1fdb98"
+      },
+      "inspect_robots": "1.0.0",
+      "yam_arena": "0.1.0"
+    },
+    "scripted-repeat": {
+      "task": "seat-pan-handle",
+      "policy": "scripted",
+      "seed": 0,
+      "model": null,
+      "scorer": "physical_task_score",
+      "score": 1.0,
+      "steps": 494,
+      "step_limit": 600,
+      "declaredStepLimit": 600,
+      "diagnosticOnly": false,
+      "elapsed_s": 229.35,
+      "control_hz": 20,
+      "initialBoundsPixels": {
+        "worktop": [
+          197.6,
+          102.7,
+          431.9,
+          253.5
+        ],
+        "deck": [
+          274.5,
+          149.7,
+          355.4,
+          217.7
+        ],
+        "feet": [
+          368.2,
+          165.6,
+          387.3,
+          196.9
+        ],
+        "holder": [
+          376.1,
+          154.4,
+          384.6,
+          187.2
+        ],
+        "pan": [
+          283.9,
+          142.7,
+          345.8,
+          252.5
+        ]
+      },
+      "initialMarkBoundsPixels": {
+        "deck:0": [
+          280.1,
+          153.8,
+          349.8,
+          211.9
+        ]
+      },
+      "initialMeasurements": {
+        "center_error": 1.5622809712567687e-09,
+        "base_gap": -1.7642974853640525e-08,
+        "rim_tilt": 7.597146371019853e-05,
+        "deck_load": 5.493605613708496,
+        "left_load": 0.0,
+        "right_load": 0.0,
+        "linear_speed": 0.0002025440044235438,
+        "angular_speed": 0.3828842043876648,
+        "inner_x": -0.11500004332397787,
+        "outer_x": -0.2270000433239779,
+        "inner_y": 0.16999992970179617,
+        "outer_y": 0.16999992871865033,
+        "inner_z": 0.03799984411984882,
+        "outer_z": -0.024000198516446858,
+        "center_y": 1.5622809712567687e-09,
+        "left_pad_l_load": 0.0,
+        "left_pad_r_load": 0.0,
+        "right_pad_l_load": 0.0,
+        "right_pad_r_load": 0.0
+      },
+      "initialGaugePoses": {},
+      "initialWedgeColliderProbes": {},
+      "finalWedgeBodyPositions": {},
+      "video_frames": 248,
+      "cameraPixels": {
+        "nativeOverview": [
+          640,
+          360
+        ],
+        "policyRGB": [
+          320,
+          176
+        ]
+      },
+      "nativeVersions": {
+        "isaacsim": "6.1.0.0",
+        "isaaclab": "17.0.2",
+        "isaaclab-arena": "0.3.0",
+        "inspect-robots": "1.0.0",
+        "yam-arena": "0.1.0",
+        "inspect-robots-dream": "0.1.0",
+        "dreamlabs-client": "1.0.14"
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "observedSourceHashes": {
+        "task_impl/fixture.json": "e6f9cfb1cae43894032c408d5c818bee447424149a1bc81c44680370c3b05807",
+        "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+        "task_impl/adapter.py": "88cb360dd1eee5d566903160f8d306213b67e00018341c2e6b5cf32c28f3080d",
+        "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+        "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+        "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+        "task_impl/scripted.py": "ebb5623f5d9bb865f740d0a8d307547859f30d5e8a9cb663f6aef498fc1fdb98"
+      },
+      "inspect_robots": "1.0.0",
+      "yam_arena": "0.1.0"
+    },
+    "dream": {
+      "task": "seat-pan-handle",
+      "policy": "dream",
+      "seed": 0,
+      "model": "dreamlabs/dream-1-beta",
+      "scorer": "physical_task_score",
+      "score": 0.0,
+      "steps": 600,
+      "step_limit": 600,
+      "declaredStepLimit": 600,
+      "diagnosticOnly": false,
+      "elapsed_s": 229.67,
+      "control_hz": 20,
+      "initialBoundsPixels": {
+        "worktop": [
+          197.6,
+          102.7,
+          431.9,
+          253.5
+        ],
+        "deck": [
+          274.5,
+          149.7,
+          355.4,
+          217.7
+        ],
+        "feet": [
+          368.2,
+          165.6,
+          387.3,
+          196.9
+        ],
+        "holder": [
+          376.1,
+          154.4,
+          384.6,
+          187.2
+        ],
+        "pan": [
+          283.9,
+          142.7,
+          345.8,
+          252.5
+        ]
+      },
+      "initialMarkBoundsPixels": {
+        "deck:0": [
+          280.1,
+          153.8,
+          349.8,
+          211.9
+        ]
+      },
+      "initialMeasurements": {
+        "center_error": 1.5622809712567687e-09,
+        "base_gap": -1.7642974853640525e-08,
+        "rim_tilt": 7.597146371019853e-05,
+        "deck_load": 5.493605613708496,
+        "left_load": 0.0,
+        "right_load": 0.0,
+        "linear_speed": 0.0002025440044235438,
+        "angular_speed": 0.3828842043876648,
+        "inner_x": -0.11500004332397787,
+        "outer_x": -0.2270000433239779,
+        "inner_y": 0.16999992970179617,
+        "outer_y": 0.16999992871865033,
+        "inner_z": 0.03799984411984882,
+        "outer_z": -0.024000198516446858,
+        "center_y": 1.5622809712567687e-09,
+        "left_pad_l_load": 0.0,
+        "left_pad_r_load": 0.0,
+        "right_pad_l_load": 0.0,
+        "right_pad_r_load": 0.0
+      },
+      "initialGaugePoses": {},
+      "initialWedgeColliderProbes": {},
+      "finalWedgeBodyPositions": {},
+      "video_frames": 301,
+      "cameraPixels": {
+        "nativeOverview": [
+          640,
+          360
+        ],
+        "policyRGB": [
+          320,
+          176
+        ]
+      },
+      "nativeVersions": {
+        "isaacsim": "6.1.0.0",
+        "isaaclab": "17.0.2",
+        "isaaclab-arena": "0.3.0",
+        "inspect-robots": "1.0.0",
+        "yam-arena": "0.1.0",
+        "inspect-robots-dream": "0.1.0",
+        "dreamlabs-client": "1.0.14"
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "observedSourceHashes": {
+        "task_impl/fixture.json": "e6f9cfb1cae43894032c408d5c818bee447424149a1bc81c44680370c3b05807",
+        "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+        "task_impl/adapter.py": "88cb360dd1eee5d566903160f8d306213b67e00018341c2e6b5cf32c28f3080d",
+        "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+        "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+        "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+        "task_impl/scripted.py": "ebb5623f5d9bb865f740d0a8d307547859f30d5e8a9cb663f6aef498fc1fdb98"
+      },
+      "inspect_robots": "1.0.0",
+      "yam_arena": "0.1.0",
+      "usage": {
+        "model": "dreamlabs/dream-1-beta",
+        "attempts": 13,
+        "served": 12,
+        "episodes": 1,
+        "cap": 16,
+        "serviceError": "DreamServerError"
+      }
+    }
+  }
+}

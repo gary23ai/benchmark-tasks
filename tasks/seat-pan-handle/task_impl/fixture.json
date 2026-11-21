@@ -1,0 +1,1793 @@
+{
+  "limit": 600,
+  "actors": [
+    {
+      "name": "worktop",
+      "bolted": true,
+      "material": "Cold laminate-faced worktop surround",
+      "mass_kg": 1.6,
+      "friction": 0.42,
+      "rgb": [
+        0.76,
+        0.74,
+        0.68
+      ],
+      "position": [
+        0.4,
+        0,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.094,
+            0.58,
+            0.012
+          ],
+          "offset": [
+            -0.193,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.174,
+            0.58,
+            0.012
+          ],
+          "offset": [
+            0.153,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.212,
+            0.184,
+            0.012
+          ],
+          "offset": [
+            -0.04,
+            -0.198,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.212,
+            0.184,
+            0.012
+          ],
+          "offset": [
+            -0.04,
+            0.198,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "deck",
+      "bolted": true,
+      "material": "Laminate-faced aluminum weighing plate on a bench-mounted base",
+      "mass_kg": 0.94,
+      "friction": 0.42,
+      "rgb": [
+        0.76,
+        0.74,
+        0.68
+      ],
+      "position": [
+        0.36,
+        0,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.21,
+            0.21,
+            0.006
+          ],
+          "offset": [
+            0,
+            0,
+            0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.18,
+            0.18,
+            0.006
+          ],
+          "offset": [
+            0,
+            0,
+            -0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.182,
+            0.182,
+            0.00012
+          ],
+          "offset": [
+            0,
+            0,
+            0.00607
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.29,
+            0.42,
+            0.43
+          ]
+        }
+      ]
+    },
+    {
+      "name": "feet",
+      "bolted": true,
+      "material": "Attached rubber suction feet and mounting bosses",
+      "mass_kg": 0.032,
+      "friction": 0.85,
+      "rgb": [
+        0.12,
+        0.13,
+        0.14
+      ],
+      "position": [
+        0.36,
+        -0.17,
+        0.012
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.044,
+            0.044,
+            0.007
+          ],
+          "offset": [
+            -0.025,
+            0,
+            0.0035
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.044,
+            0.044,
+            0.007
+          ],
+          "offset": [
+            0.025,
+            0,
+            0.0035
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.015,
+            0.015,
+            0.014
+          ],
+          "offset": [
+            -0.025,
+            0,
+            0.014
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.015,
+            0.015,
+            0.014
+          ],
+          "offset": [
+            0.025,
+            0,
+            0.014
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "holder",
+      "bolted": true,
+      "material": "Bent steel wire secured to the suction mount",
+      "mass_kg": 0.071,
+      "friction": 0.35,
+      "rgb": [
+        0.47,
+        0.51,
+        0.55
+      ],
+      "position": [
+        0.36,
+        -0.17,
+        0.012
+      ],
+      "parts": [
+        {
+          "type": "capsule",
+          "size": [
+            0.008,
+            0.008,
+            0.058
+          ],
+          "offset": [
+            0,
+            0,
+            0.025
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "type": "capsule",
+          "size": [
+            0.008,
+            0.008,
+            0.07
+          ],
+          "offset": [
+            -0.025,
+            0,
+            0.056
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "capsule",
+          "size": [
+            0.008,
+            0.008,
+            0.07
+          ],
+          "offset": [
+            0.025,
+            0,
+            0.056
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pan",
+      "bolted": false,
+      "material": "Empty hard-anodized aluminum saucepan with rigid phenolic handle",
+      "mass_kg": 0.56,
+      "friction": 0.48,
+      "rgb": [
+        0.16,
+        0.19,
+        0.22
+      ],
+      "position": [
+        0.36,
+        0,
+        0.012
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.16,
+            0.16,
+            0.004
+          ],
+          "offset": [
+            0,
+            0,
+            0.002
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0.0775,
+            0,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0.0716,
+            0.02966,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            22.5
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0.0548,
+            0.0548,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0.02966,
+            0.0716,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            67.5
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0,
+            0.0775,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            -0.02966,
+            0.0716,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            112.5
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            -0.0548,
+            0.0548,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            135
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            -0.0716,
+            0.02966,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            157.5
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            -0.0775,
+            0,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            180
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            -0.0716,
+            -0.02966,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            202.5
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            -0.0548,
+            -0.0548,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            225
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            -0.02966,
+            -0.0716,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            247.5
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0,
+            -0.0775,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            270
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0.02966,
+            -0.0716,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            292.5
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0.0548,
+            -0.0548,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            315
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0028,
+            0.0315,
+            0.068
+          ],
+          "offset": [
+            0.0716,
+            -0.02966,
+            0.038
+          ],
+          "euler_deg": [
+            0,
+            0,
+            337.5
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.032,
+            0.02,
+            0.014
+          ],
+          "offset": [
+            -0.092,
+            0,
+            0.063
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.122,
+            0.024,
+            0.02
+          ],
+          "offset": [
+            -0.159,
+            0,
+            0.063
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [],
+  "metrics": [
+    {
+      "name": "center_error",
+      "kind": "planar",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "base_gap",
+      "kind": "dz",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "rim_tilt",
+      "kind": "angle_deg",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "deck_load",
+      "kind": "contact_n",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_load",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_load",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "linear_speed",
+      "kind": "speed",
+      "a": "pan",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "angular_speed",
+      "kind": "spin_deg_s",
+      "a": "pan",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "inner_x",
+      "kind": "dx",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.14,
+        0,
+        0.063
+      ],
+      "pb": [
+        -0.025,
+        0,
+        0.025
+      ]
+    },
+    {
+      "name": "outer_x",
+      "kind": "dx",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.202,
+        0,
+        0.063
+      ],
+      "pb": [
+        0.025,
+        0,
+        0.087
+      ]
+    },
+    {
+      "name": "inner_y",
+      "kind": "dy",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.14,
+        0,
+        0.063
+      ],
+      "pb": [
+        -0.025,
+        0,
+        0.025
+      ]
+    },
+    {
+      "name": "outer_y",
+      "kind": "dy",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.202,
+        0,
+        0.063
+      ],
+      "pb": [
+        0.025,
+        0,
+        0.087
+      ]
+    },
+    {
+      "name": "inner_z",
+      "kind": "dz",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.14,
+        0,
+        0.063
+      ],
+      "pb": [
+        -0.025,
+        0,
+        0.025
+      ]
+    },
+    {
+      "name": "outer_z",
+      "kind": "dz",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.202,
+        0,
+        0.063
+      ],
+      "pb": [
+        0.025,
+        0,
+        0.087
+      ]
+    },
+    {
+      "name": "center_y",
+      "kind": "dy",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "left_pad_l_load",
+      "kind": "contact_n",
+      "a": "left_pad_left",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_pad_r_load",
+      "kind": "contact_n",
+      "a": "left_pad_right",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_pad_l_load",
+      "kind": "contact_n",
+      "a": "right_pad_left",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_pad_r_load",
+      "kind": "contact_n",
+      "a": "right_pad_right",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "invalidate": [],
+  "milestones": [],
+  "tiers": [
+    {
+      "score": 1,
+      "needs": [],
+      "all": [
+        {
+          "metric": "center_error",
+          "lo": 0,
+          "hi": 0.015
+        },
+        {
+          "metric": "base_gap",
+          "lo": -0.002,
+          "hi": 0.002
+        },
+        {
+          "metric": "rim_tilt",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "deck_load",
+          "lo": 4.95,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_load",
+          "lo": 0,
+          "hi": 0.1
+        },
+        {
+          "metric": "right_load",
+          "lo": 0,
+          "hi": 0.1
+        },
+        {
+          "metric": "linear_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "angular_speed",
+          "lo": 0,
+          "hi": 2
+        },
+        {
+          "metric": "inner_x",
+          "lo": 0,
+          "hi": 0.05
+        },
+        {
+          "metric": "outer_x",
+          "lo": -0.05,
+          "hi": 0
+        },
+        {
+          "metric": "inner_y",
+          "lo": 0.004,
+          "hi": 1000000
+        },
+        {
+          "metric": "outer_y",
+          "lo": -1000000,
+          "hi": -0.004
+        },
+        {
+          "metric": "inner_z",
+          "lo": 0.005,
+          "hi": 0.057
+        },
+        {
+          "metric": "outer_z",
+          "lo": -0.057,
+          "hi": -0.005
+        }
+      ],
+      "ticks": 20
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 50,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.4148,
+          0.0548,
+          0.15
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.045
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.228,
+          0,
+          0.15
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    },
+    {
+      "ticks": 36,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.4148,
+          0.0548,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.045
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.228,
+          0,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    },
+    {
+      "ticks": 28,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.4148,
+          0.0548,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.228,
+          0,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 34,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.4148,
+          0.0973,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.228,
+          0.0425,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 34,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.4148,
+          0.1398,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.228,
+          0.085,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 31,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.39875,
+          0.15212,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0.5,
+          0.866025,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.2325,
+          0.05084,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.258819,
+          0.965926,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 31,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.38006,
+          0.15986,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0.258819,
+          0.965926,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.24568,
+          0.019,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.5,
+          0.866025,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 31,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.1625,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.26666,
+          -0.00834,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 31,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.33994,
+          0.15986,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.258819,
+          0.965926,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.294,
+          -0.02932,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.866025,
+          0.5,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 31,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.32125,
+          0.15212,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.5,
+          0.866025,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.32584,
+          -0.0425,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.965926,
+          0.258819,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 31,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.3052,
+          0.1398,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.047,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -1,
+          0,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.3052,
+          0.1148,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.072,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -1,
+          0,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.3052,
+          0.0898,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.097,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -1,
+          0,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 22,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.3052,
+          0.0698,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.117,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -1,
+          0,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 22,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.3052,
+          0.0548,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.001
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.132,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -1,
+          0,
+          0
+        ],
+        "opening_m": 0.014
+      }
+    },
+    {
+      "ticks": 14,
+      "left": null,
+      "right": null
+    },
+    {
+      "ticks": 22,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.3052,
+          0.0548,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.045
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.132,
+          0.058
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -1,
+          0,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    },
+    {
+      "ticks": 35,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.3052,
+          0.0548,
+          0.15
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.707107,
+          0.707107,
+          0
+        ],
+        "opening_m": 0.045
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.132,
+          0.15
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -1,
+          0,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    }
+  ]
+}

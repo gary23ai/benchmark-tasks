@@ -1,0 +1,794 @@
+{
+  "schemaVersion": 1,
+  "units": "Positions in m, contact normal force magnitudes in N, angles in degrees.",
+  "coordinateSignals": [
+    {
+      "name": "center_error",
+      "kind": "planar",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "base_gap",
+      "kind": "dz",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "rim_tilt",
+      "kind": "angle_deg",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "deck_load",
+      "kind": "contact_n",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_load",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_load",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "linear_speed",
+      "kind": "speed",
+      "a": "pan",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "angular_speed",
+      "kind": "spin_deg_s",
+      "a": "pan",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "inner_x",
+      "kind": "dx",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.14,
+        0,
+        0.063
+      ],
+      "pb": [
+        -0.025,
+        0,
+        0.025
+      ]
+    },
+    {
+      "name": "outer_x",
+      "kind": "dx",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.202,
+        0,
+        0.063
+      ],
+      "pb": [
+        0.025,
+        0,
+        0.087
+      ]
+    },
+    {
+      "name": "inner_y",
+      "kind": "dy",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.14,
+        0,
+        0.063
+      ],
+      "pb": [
+        -0.025,
+        0,
+        0.025
+      ]
+    },
+    {
+      "name": "outer_y",
+      "kind": "dy",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.202,
+        0,
+        0.063
+      ],
+      "pb": [
+        0.025,
+        0,
+        0.087
+      ]
+    },
+    {
+      "name": "inner_z",
+      "kind": "dz",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.14,
+        0,
+        0.063
+      ],
+      "pb": [
+        -0.025,
+        0,
+        0.025
+      ]
+    },
+    {
+      "name": "outer_z",
+      "kind": "dz",
+      "a": "pan",
+      "b": "holder",
+      "pa": [
+        -0.202,
+        0,
+        0.063
+      ],
+      "pb": [
+        0.025,
+        0,
+        0.087
+      ]
+    },
+    {
+      "name": "center_y",
+      "kind": "dy",
+      "a": "pan",
+      "b": "deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "left_pad_l_load",
+      "kind": "contact_n",
+      "a": "left_pad_left",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_pad_r_load",
+      "kind": "contact_n",
+      "a": "left_pad_right",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_pad_l_load",
+      "kind": "contact_n",
+      "a": "right_pad_left",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_pad_r_load",
+      "kind": "contact_n",
+      "a": "right_pad_right",
+      "b": "pan",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "channelSums": {},
+  "wholeEpisodeInvalidatingConditions": [],
+  "stages": {
+    "scripted-first": {
+      "score": 1.0,
+      "steps": 494,
+      "elapsedSeconds": 251.7,
+      "traceSha256": "104f072e6ae217fc02302a78f09bd578b7bd47d524d9c2518fefb101613e6fe7",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 475,
+          "last": 494,
+          "samples": 20,
+          "requiredSamples": 20,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "center_error": {
+              "min": 0.010606166132771898,
+              "max": 0.010606166132771898,
+              "lo": 0,
+              "hi": 0.015,
+              "passedEverySample": true
+            },
+            "base_gap": {
+              "min": 4.19616699217501e-08,
+              "max": 4.19616699217501e-08,
+              "lo": -0.002,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "rim_tilt": {
+              "min": 4.035378999302849e-05,
+              "max": 4.035378999302849e-05,
+              "lo": 0,
+              "hi": 3,
+              "passedEverySample": true
+            },
+            "deck_load": {
+              "min": 5.49359655380249,
+              "max": 5.493597507476807,
+              "lo": 4.95,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "left_load": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.1,
+              "passedEverySample": true
+            },
+            "right_load": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.1,
+              "passedEverySample": true
+            },
+            "linear_speed": {
+              "min": 0.00017374484741594642,
+              "max": 0.0001737458078423515,
+              "lo": 0,
+              "hi": 0.005,
+              "passedEverySample": true
+            },
+            "angular_speed": {
+              "min": 0.2874871790409088,
+              "max": 0.28748875856399536,
+              "lo": 0,
+              "hi": 2,
+              "passedEverySample": true
+            },
+            "inner_x": {
+              "min": 0.02678832055299002,
+              "max": 0.02678832055299002,
+              "lo": 0,
+              "hi": 0.05,
+              "passedEverySample": true
+            },
+            "outer_x": {
+              "min": -0.02238770388396072,
+              "max": -0.02238770388396072,
+              "lo": -0.05,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "inner_y": {
+              "min": 0.04061823805710457,
+              "max": 0.04061823805710457,
+              "lo": 0.004,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "outer_y": {
+              "min": -0.02137629262069085,
+              "max": -0.02137629262069085,
+              "lo": -1000000,
+              "hi": -0.004,
+              "passedEverySample": true
+            },
+            "inner_z": {
+              "min": 0.03799992547435226,
+              "max": 0.03799992547435226,
+              "lo": 0.005,
+              "hi": 0.057,
+              "passedEverySample": true
+            },
+            "outer_z": {
+              "min": -0.024000107529863146,
+              "max": -0.024000107529863146,
+              "lo": -0.057,
+              "hi": -0.005,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        }
+      ]
+    },
+    "idle": {
+      "score": 0.0,
+      "steps": 600,
+      "elapsedSeconds": 206.53,
+      "traceSha256": "c7af0db0a5ca0e2bf3f36af2c3bd97e9424377d1f2f14681cc96046c1899ea90",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 581,
+          "last": 600,
+          "samples": 20,
+          "requiredSamples": 20,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "center_error": {
+              "min": 1.0030021257989574e-10,
+              "max": 1.8307666493910801e-09,
+              "lo": 0,
+              "hi": 0.015,
+              "passedEverySample": true
+            },
+            "base_gap": {
+              "min": -1.7642974853640525e-08,
+              "max": -1.7642974853640525e-08,
+              "lo": -0.002,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "rim_tilt": {
+              "min": 7.597146371019853e-05,
+              "max": 7.597146371019853e-05,
+              "lo": 0,
+              "hi": 3,
+              "passedEverySample": true
+            },
+            "deck_load": {
+              "min": 5.493594646453857,
+              "max": 5.493605613708496,
+              "lo": 4.95,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "left_load": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.1,
+              "passedEverySample": true
+            },
+            "right_load": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.1,
+              "passedEverySample": true
+            },
+            "linear_speed": {
+              "min": 0.00020254365517757833,
+              "max": 0.00020285778737161309,
+              "lo": 0,
+              "hi": 0.005,
+              "passedEverySample": true
+            },
+            "angular_speed": {
+              "min": 0.38288331031799316,
+              "max": 0.38294747471809387,
+              "lo": 0,
+              "hi": 2,
+              "passedEverySample": true
+            },
+            "inner_x": {
+              "min": -0.11500004332397787,
+              "max": -0.11500004332397787,
+              "lo": 0,
+              "hi": 0.05,
+              "passedEverySample": false
+            },
+            "outer_x": {
+              "min": -0.2270000433239779,
+              "max": -0.2270000433239779,
+              "lo": -0.05,
+              "hi": 0,
+              "passedEverySample": false
+            },
+            "inner_y": {
+              "min": 0.16999992691609916,
+              "max": 0.16999992997028185,
+              "lo": 0.004,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "outer_y": {
+              "min": 0.16999992593295332,
+              "max": 0.169999928987136,
+              "lo": -1000000,
+              "hi": -0.004,
+              "passedEverySample": false
+            },
+            "inner_z": {
+              "min": 0.03799984411984882,
+              "max": 0.03799984411984882,
+              "lo": 0.005,
+              "hi": 0.057,
+              "passedEverySample": true
+            },
+            "outer_z": {
+              "min": -0.024000198516446858,
+              "max": -0.024000198516446858,
+              "lo": -0.057,
+              "hi": -0.005,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    },
+    "scripted-repeat": {
+      "score": 1.0,
+      "steps": 494,
+      "elapsedSeconds": 229.35,
+      "traceSha256": "104f072e6ae217fc02302a78f09bd578b7bd47d524d9c2518fefb101613e6fe7",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 475,
+          "last": 494,
+          "samples": 20,
+          "requiredSamples": 20,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "center_error": {
+              "min": 0.010606166132771898,
+              "max": 0.010606166132771898,
+              "lo": 0,
+              "hi": 0.015,
+              "passedEverySample": true
+            },
+            "base_gap": {
+              "min": 4.19616699217501e-08,
+              "max": 4.19616699217501e-08,
+              "lo": -0.002,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "rim_tilt": {
+              "min": 4.035378999302849e-05,
+              "max": 4.035378999302849e-05,
+              "lo": 0,
+              "hi": 3,
+              "passedEverySample": true
+            },
+            "deck_load": {
+              "min": 5.49359655380249,
+              "max": 5.493597507476807,
+              "lo": 4.95,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "left_load": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.1,
+              "passedEverySample": true
+            },
+            "right_load": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.1,
+              "passedEverySample": true
+            },
+            "linear_speed": {
+              "min": 0.00017374484741594642,
+              "max": 0.0001737458078423515,
+              "lo": 0,
+              "hi": 0.005,
+              "passedEverySample": true
+            },
+            "angular_speed": {
+              "min": 0.2874871790409088,
+              "max": 0.28748875856399536,
+              "lo": 0,
+              "hi": 2,
+              "passedEverySample": true
+            },
+            "inner_x": {
+              "min": 0.02678832055299002,
+              "max": 0.02678832055299002,
+              "lo": 0,
+              "hi": 0.05,
+              "passedEverySample": true
+            },
+            "outer_x": {
+              "min": -0.02238770388396072,
+              "max": -0.02238770388396072,
+              "lo": -0.05,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "inner_y": {
+              "min": 0.04061823805710457,
+              "max": 0.04061823805710457,
+              "lo": 0.004,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "outer_y": {
+              "min": -0.02137629262069085,
+              "max": -0.02137629262069085,
+              "lo": -1000000,
+              "hi": -0.004,
+              "passedEverySample": true
+            },
+            "inner_z": {
+              "min": 0.03799992547435226,
+              "max": 0.03799992547435226,
+              "lo": 0.005,
+              "hi": 0.057,
+              "passedEverySample": true
+            },
+            "outer_z": {
+              "min": -0.024000107529863146,
+              "max": -0.024000107529863146,
+              "lo": -0.057,
+              "hi": -0.005,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        }
+      ]
+    },
+    "dream": {
+      "score": 0.0,
+      "steps": 600,
+      "elapsedSeconds": 229.67,
+      "traceSha256": "1ad44b145b85a4e3ea35dde2d46a038c8ab95450bc5b8834b22aabd1ad3d4c0d",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 581,
+          "last": 600,
+          "samples": 20,
+          "requiredSamples": 20,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "center_error": {
+              "min": 1.0030021257989574e-10,
+              "max": 1.8307666493910801e-09,
+              "lo": 0,
+              "hi": 0.015,
+              "passedEverySample": true
+            },
+            "base_gap": {
+              "min": -1.7642974853640525e-08,
+              "max": -1.7642974853640525e-08,
+              "lo": -0.002,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "rim_tilt": {
+              "min": 7.597146371019853e-05,
+              "max": 7.597146371019853e-05,
+              "lo": 0,
+              "hi": 3,
+              "passedEverySample": true
+            },
+            "deck_load": {
+              "min": 5.493594646453857,
+              "max": 5.493605613708496,
+              "lo": 4.95,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "left_load": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.1,
+              "passedEverySample": true
+            },
+            "right_load": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.1,
+              "passedEverySample": true
+            },
+            "linear_speed": {
+              "min": 0.00020254365517757833,
+              "max": 0.00020285778737161309,
+              "lo": 0,
+              "hi": 0.005,
+              "passedEverySample": true
+            },
+            "angular_speed": {
+              "min": 0.38288331031799316,
+              "max": 0.38294747471809387,
+              "lo": 0,
+              "hi": 2,
+              "passedEverySample": true
+            },
+            "inner_x": {
+              "min": -0.11500004332397787,
+              "max": -0.11500004332397787,
+              "lo": 0,
+              "hi": 0.05,
+              "passedEverySample": false
+            },
+            "outer_x": {
+              "min": -0.2270000433239779,
+              "max": -0.2270000433239779,
+              "lo": -0.05,
+              "hi": 0,
+              "passedEverySample": false
+            },
+            "inner_y": {
+              "min": 0.16999992691609916,
+              "max": 0.16999992997028185,
+              "lo": 0.004,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "outer_y": {
+              "min": 0.16999992593295332,
+              "max": 0.169999928987136,
+              "lo": -1000000,
+              "hi": -0.004,
+              "passedEverySample": false
+            },
+            "inner_z": {
+              "min": 0.03799984411984882,
+              "max": 0.03799984411984882,
+              "lo": 0.005,
+              "hi": 0.057,
+              "passedEverySample": true
+            },
+            "outer_z": {
+              "min": -0.024000198516446858,
+              "max": -0.024000198516446858,
+              "lo": -0.057,
+              "hi": -0.005,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    }
+  }
+}

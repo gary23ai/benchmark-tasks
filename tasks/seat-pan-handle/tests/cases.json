@@ -1,0 +1,666 @@
+[
+  {
+    "label": "Reset with both hands clear",
+    "phases": [
+      {
+        "ticks": 600,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": -0.115,
+          "outer_x": -0.227,
+          "inner_y": 0.17,
+          "outer_y": 0.17,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Offset seat released for exactly one second",
+    "phases": [
+      {
+        "ticks": 7,
+        "measurements": {
+          "center_error": 0.01,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0.46,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.019,
+          "outer_x": -0.031,
+          "inner_y": 0.038,
+          "outer_y": -0.024,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0.008,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0.23,
+          "right_pad_r_load": 0.23
+        }
+      },
+      {
+        "ticks": 20,
+        "measurements": {
+          "center_error": 0.01,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.019,
+          "outer_x": -0.031,
+          "inner_y": 0.038,
+          "outer_y": -0.024,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0.008,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Grip touches the inside of a post",
+    "phases": [
+      {
+        "ticks": 20,
+        "measurements": {
+          "center_error": 0.009,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.034,
+          "outer_x": -0.016,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Oblique grip tangent to the outside of the positive-X post",
+    "phases": [
+      {
+        "ticks": 27,
+        "measurements": {
+          "center_error": 0.0111803398875,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.0592,
+          "outer_x": 0.02656,
+          "inner_y": 0.0256,
+          "outer_y": -0.03392,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": -0.01,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Oblique grip tangent to the outside of the negative-X post",
+    "phases": [
+      {
+        "ticks": 27,
+        "measurements": {
+          "center_error": 0.0111803398875,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": -0.0092,
+          "outer_x": -0.07656,
+          "inner_y": 0.0256,
+          "outer_y": -0.03392,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": -0.01,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Handle aligned overhead while the pan is lifted",
+    "phases": [
+      {
+        "ticks": 30,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0.054,
+          "rim_tilt": 0,
+          "deck_load": 0,
+          "left_load": 8,
+          "right_load": 8,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.092,
+          "outer_z": 0.03,
+          "center_y": 0,
+          "left_pad_l_load": 4,
+          "left_pad_r_load": 4,
+          "right_pad_l_load": 4,
+          "right_pad_r_load": 4
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Plate support at the inclusive threshold",
+    "phases": [
+      {
+        "ticks": 20,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 4.95,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Plate support below threshold",
+    "phases": [
+      {
+        "ticks": 20,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 4.94,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Contact interruption between two short released intervals",
+    "phases": [
+      {
+        "ticks": 19,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0.101,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0.101,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      },
+      {
+        "ticks": 19,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Inclusive arm load on the twentieth sample",
+    "phases": [
+      {
+        "ticks": 19,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "center_error": 0,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0.1,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.03,
+          "outer_y": -0.032,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0.1,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Captured at the edge of the marked-spot tolerance",
+    "phases": [
+      {
+        "ticks": 20,
+        "measurements": {
+          "center_error": 0.015,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.045,
+          "outer_y": -0.017,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0.015,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Captured just beyond the marked-spot tolerance",
+    "phases": [
+      {
+        "ticks": 20,
+        "measurements": {
+          "center_error": 0.0151,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.4936,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.0451,
+          "outer_y": -0.0169,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0.0151,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Inside tangent with base offset minus 9 mm in X and plus 12 mm in Y, released after rim pinch",
+    "phases": [
+      {
+        "ticks": 8,
+        "measurements": {
+          "center_error": 0.015,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.49,
+          "left_load": 0.72,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.016,
+          "outer_x": -0.034,
+          "inner_y": 0.042,
+          "outer_y": -0.02,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0.012,
+          "left_pad_l_load": 0.36,
+          "left_pad_r_load": 0.36,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      },
+      {
+        "ticks": 23,
+        "measurements": {
+          "center_error": 0.015,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.49,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.016,
+          "outer_x": -0.034,
+          "inner_y": 0.042,
+          "outer_y": -0.02,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0.012,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Exterior tangent at positive-X post, base offset plus 3.15 mm in X, grip direction (9,-40,0)/41",
+    "phases": [
+      {
+        "ticks": 37,
+        "measurements": {
+          "center_error": 0.00315,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.49,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.058881707317,
+          "outer_x": 0.022491463415,
+          "inner_y": 0.033414634146,
+          "outer_y": -0.027073170732,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": 0,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Captured grip with base 15.2 mm toward holder from spot center",
+    "phases": [
+      {
+        "ticks": 32,
+        "measurements": {
+          "center_error": 0.0152,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.49,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.025,
+          "outer_x": -0.025,
+          "inner_y": 0.0148,
+          "outer_y": -0.0472,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": -0.0152,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Twenty released samples split by one measured rim pinch at the same seated endpoint",
+    "phases": [
+      {
+        "ticks": 11,
+        "measurements": {
+          "center_error": 0.005,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.49,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.028,
+          "outer_x": -0.022,
+          "inner_y": 0.026,
+          "outer_y": -0.036,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": -0.004,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "center_error": 0.005,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.49,
+          "left_load": 0.12,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.028,
+          "outer_x": -0.022,
+          "inner_y": 0.026,
+          "outer_y": -0.036,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": -0.004,
+          "left_pad_l_load": 0.06,
+          "left_pad_r_load": 0.06,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      },
+      {
+        "ticks": 9,
+        "measurements": {
+          "center_error": 0.005,
+          "base_gap": 0,
+          "rim_tilt": 0,
+          "deck_load": 5.49,
+          "left_load": 0,
+          "right_load": 0,
+          "linear_speed": 0,
+          "angular_speed": 0,
+          "inner_x": 0.028,
+          "outer_x": -0.022,
+          "inner_y": 0.026,
+          "outer_y": -0.036,
+          "inner_z": 0.038,
+          "outer_z": -0.024,
+          "center_y": -0.004,
+          "left_pad_l_load": 0,
+          "left_pad_r_load": 0,
+          "right_pad_l_load": 0,
+          "right_pad_r_load": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  }
+]

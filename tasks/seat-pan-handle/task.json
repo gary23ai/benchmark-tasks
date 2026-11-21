@@ -1,0 +1,19 @@
+{
+  "title": "Seat a saucepan handle in its holder for one-handed stirring",
+  "category": "Societal relatability",
+  "keywords": [
+    "one-handed stirring",
+    "saucepan",
+    "wire handle holder",
+    "accessible kitchen equipment"
+  ],
+  "instruction": "Set the empty saucepan flat on the marked cooking spot with its handle in the wire holder, ready for one-handed stirring. Let go.",
+  "context": "The worktop carries the pan’s weight. When the handle sits between the wires, either wire can stop the pan from turning during stirring.",
+  "setup": "The empty pan starts on the circular mark with its handle pointing toward the front edge. The holder is secured to the right of the mark on the cold worktop.",
+  "scoring": "Earn one point when the released pan stays settled and flat on the marked spot for one continuous second. The base must support the pan, and the grip must pass between the wires at a height where they can restrain a turn in either direction. Touching the inside of a wire is allowed. A handle perched on a wire or passing outside the slot earns zero.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Center the base on the disk, point the handle straight toward the front edge, check both suction-foot positions and return the arms to their standard home poses.",
+  "fidelity": "The model represents an open rigid saucepan and a steel-wire slot with secured suction feet. The modeled wire profile and clearance are engineering dimensions pending measurement of a fitted NC28221 holder.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (494 steps).",
+  "media": "M-3XBL7W"
+}
