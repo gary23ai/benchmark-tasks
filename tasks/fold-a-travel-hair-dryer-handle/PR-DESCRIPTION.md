@@ -4,7 +4,7 @@ Folding a compact hair dryer reduces its volume before drawer or suitcase storag
 
 The package includes the fixed scene, native scorer, reset, original task assets,
 reference controller, portable model entry point, source manifest and meaningful
-offline grader tests. Physics and task behavior match the recorded source.
+offline grader tests. The revision regrades the recorded motions with observable trial criteria.
 
 Validation: scripted reference 1.0 in two fixed-start trials; Dream-1 beta
 0 in one complete 1000-action

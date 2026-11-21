@@ -66,6 +66,15 @@ def verify(root, extra_results=()):
     root = Path(root).resolve(strict=True)
     validation, card = read(root / 'validation.json'), read(root / 'task.json')
     manifest = validation['source_sha256']
+    recorded = validation['recorded_source_sha256']
+    source_file = read(root / 'SOURCE-MANIFEST.json')
+    require(source_file['source_sha256'] == manifest and source_file['recorded_source_sha256'] == recorded,
+            'Package and validation manifests disagree')
+    require(set(recorded) == set(manifest) and {n for n in manifest if recorded[n] != manifest[n]} == {'grading.py'},
+            'Expected a scorer-only runtime revision')
+    revision = read(root / validation['revision_evidence'])
+    require(revision['scoring_source_sha256'] == manifest['grading.py'], 'Revision report uses a different scorer')
+    require(revision['media_sha256'] == validation['media_sha256'], 'Revision media differs from recording')
     require(isinstance(manifest, dict) and bool(manifest), 'Empty source manifest')
     package = (root / MODULE).resolve(strict=True)
     require(package.is_relative_to(root) and package.is_dir(), 'Unsafe module directory')
@@ -83,23 +92,23 @@ def verify(root, extra_results=()):
     require(card['instruction'] == fixed['INSTRUCTION'], 'Task instruction differs from frozen fixed_scene')
     require(validation['control_hz'] == hz and validation['max_steps'] == budget,
             'Validation clock/budget differs from frozen source')
-    result_paths = list(extra_results)
+    result_paths = []
     for kind in ('scripted', 'dream'):
         run = validation['runs'][kind]
         require(run['step_limit'] == budget, f'{kind} budget differs from source')
         if 'control_hz' in run:
             require(run['control_hz'] == hz, f'{kind} clock differs from source')
         if 'source_sha256' in run:
-            require(run['source_sha256'] == manifest, f'{kind} source manifest differs')
+            require(run['source_sha256'] == recorded, f'{kind} source manifest differs')
         result_paths.extend(run.get('trial_paths', []))
         if run.get('result_path'):
             result_paths.append(run['result_path'])
     require(bool(result_paths), 'No local recorded result paths in validation')
     checked, policies = [], set()
-    for relative in dict.fromkeys(result_paths):
+    for relative in dict.fromkeys([*result_paths, *extra_results]):
         path = local(root, relative)
         result = read(path)
-        require(result['source_sha256'] == manifest, f'Recorded source manifest differs: {relative}')
+        require(result['source_sha256'] == (recorded if relative in result_paths else manifest), f'Result source manifest differs: {relative}')
         require(result['control_hz'] == hz and result['step_limit'] == result['declared_step_limit'] == budget,
                 f'Recorded clock/budget differs: {relative}')
         require(result.get('candidate_slug', SLUG) == SLUG and result.get('module', MODULE) == MODULE,

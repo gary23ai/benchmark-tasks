@@ -12,7 +12,7 @@ Stock calibrated bimanual YAM station: unchanged robot bodies, gains, limits and
 
 ## Scoring
 
-Full score requires the actual handle angle to be 80–93 degrees, the hinge axes and anchor to remain connected, all seven cable joints to remain attached, physical counter support, no robot contact with any device/cable body, low motion, and no more than 0.1 degree hinge drift for a continuous full second sampled at 240 Hz. Partial credit is 0.4 after 45 degrees and 0.7 for the fully folded hinge. Invalid state, separation or leaving the counter permanently voids the episode.
+Score the current hinge fold from its open position: below 45° earns 0, 45° or more earns 0.4, and the folded zone (80–93°, around the 90° storage stop) earns 0.7. Award 1.0 once the intact dryer rests entirely on the counter, both hands are clear of the dryer and cord, and the handle stays in that zone for one continuous second. During that second each visible barrel end must stay within 1 cm of where it began. Restart the clock on loss of fold, release or support, or from a new rest position if the barrel moves farther. Detachment, leaving the counter or invalid simulation input overrides all credit with 0.
 
 ## Action limit
 

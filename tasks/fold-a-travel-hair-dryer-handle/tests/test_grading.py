@@ -48,19 +48,23 @@ class Rubric(unittest.TestCase):
     def test_supported_not_hovering(self):
         p,v,c=state();p[:,:3]+=[0,0,.025]
         r=hold(DryerGrade(),p,v,c);self.assertFalse(r['supported']);self.assertNotEqual(r['score'],1.)
-    def test_motion_restarts_hold(self):
-        p,v,c=state();g=DryerGrade();hold(g,p,v,c,230);v[0,0]=.020
-        r=g.update(p,v,**c);self.assertEqual(r['stable_seconds'],0.)
-        v[0,0]=0.;r=hold(g,p,v,c,240);self.assertNotEqual(r['score'],1.)
-    def test_slow_hinge_drift_is_not_settled(self):
-        # A slowly reopening hinge can satisfy every instantaneous velocity
-        # threshold. Its actual angle must also remain stable over the hold.
+    def test_barrel_sliding_restarts_hold(self):
+        p,v,c=state();g=DryerGrade();hold(g,p,v,c,230)
+        p[:,0]+=.015
+        self.assertEqual(g.update(p,v,**c)['stable_seconds'],0.)
+        self.assertEqual(hold(g,p,v,c,239)['score'],.7)
+        self.assertEqual(g.update(p,v,**c)['score'],1.)
+    def test_visible_fold_zone_allows_motion_within_band(self):
         g=DryerGrade()
-        for i in range(720):
-            p,v,c=state(angle=85.-.4*i/240.)
+        for i in range(241):
+            p,v,c=state(angle=88.-4.*i/240.)
             r=g.update(p,v,**c)
-            self.assertNotEqual(r['score'],1.)
-        self.assertTrue(r['folded']);self.assertTrue(r['quiet'])
+        self.assertEqual(r['score'],1.)
+    def test_leaving_fold_zone_resets_full_second(self):
+        g=DryerGrade();p,v,c=state(85);hold(g,p,v,c,200)
+        q,w,k=state(75);self.assertEqual(g.update(q,w,**k)['score'],.4)
+        self.assertEqual(hold(g,p,v,c,240)['score'],.7)
+        self.assertEqual(g.update(p,v,**c)['score'],1.)
     def test_disconnected_hinge_is_terminal_failure(self):
         p,v,c=state();p[L.HANDLE,0]+=.02;r=hold(DryerGrade(),p,v,c)
         self.assertEqual(r['score'],0.);self.assertEqual(r['void'],'folding hinge separated')

@@ -1,5 +1,5 @@
 """Judge the real native hinge and released support, without controlling bodies."""
-from dataclasses import dataclass,field
+from dataclasses import dataclass
 import numpy as np
 from . import layout as L,fixed_scene as F
 from .support_geometry import world_device_vertices
@@ -7,7 +7,7 @@ from .support_geometry import world_device_vertices
 class DryerGrade:
  sample_hz:float=240.
  stable_samples:int=0
- hinge_angles:list[float]=field(default_factory=list)
+ rest_reference:np.ndarray|None=None
  void:str|None=None
  def update(self,poses,velocities,*,body_contact_counts,robot_contact_counts,body_contact_forces):
   p=np.asarray(poses,float);v=np.asarray(velocities,float)
@@ -33,7 +33,7 @@ class DryerGrade:
   cord_errors += [np.linalg.norm(ends[i][1]-ends[i+1][0]) for i in range(5)]
   cord_errors += [np.linalg.norm(ends[-1][1]-(p[L.BUNDLE,:3]+L.quat_matrix(p[L.BUNDLE,3:])@np.array((-.04,0,0))))]
   if max(cord_errors)>.008:self.void=self.void or 'cable detached'
-  folded=bool(80<=angle<=93 and hinge_error<.002 and aligned)
+  folded=bool(80<=angle<=93 and not self.void)
   # All actual authored convex collision geometry participates in support.
   # Storage does not require an arbitrary barrel roll or head-root height.
   device,labels=world_device_vertices(p[:2],(H,B));lowest_index=int(np.argmin(device[:,2]));lowest=float(device[lowest_index,2])
@@ -41,20 +41,20 @@ class DryerGrade:
   inside_table=bool(np.all((device[:,0]>=tx0)&(device[:,0]<=tx1)&(device[:,1]>=ty0)&(device[:,1]<=ty1)))
   supported=bool(-.001<lowest<.0012 and inside_table)
   free=bool(not r.any())
-  quiet=bool(np.max(np.linalg.norm(v[:2,:3],axis=1))<.012 and np.max(np.linalg.norm(v[:2,3:],axis=1))<.15 and np.linalg.norm(v[L.BUNDLE,:3])<.025 and np.max(np.linalg.norm(v[2:8,:3],axis=1))<.050)
-  basic=bool(folded and supported and free and quiet and not self.void)
-  if basic:
-   self.hinge_angles.append(angle)
-   self.hinge_angles=self.hinge_angles[-(round(self.sample_hz)+1):]
-  else:self.hinge_angles.clear()
-  drift=float(max(self.hinge_angles)-min(self.hinge_angles)) if self.hinge_angles else 0.
-  hinge_steady=bool(drift<=.1)
-  qualified=bool(basic and hinge_steady)
-  self.stable_samples=self.stable_samples+1 if qualified else 0
-  if basic and not hinge_steady:self.hinge_angles=[angle]
+  # The two visible barrel ends can be compared with a centimetre scale in video.
+  barrel_ends = p[L.HEAD, :3] + np.array([[-.077, 0, 0], [.077, 0, 0]]) @ H.T
+  qualified = folded and supported and free and not self.void
+  if qualified:
+   if self.rest_reference is None or np.any(np.linalg.norm(barrel_ends - self.rest_reference, axis=1) > .010):
+    self.rest_reference = barrel_ends.copy()
+    self.stable_samples = 0
+   self.stable_samples += 1
+  else:
+   self.rest_reference = None
+   self.stable_samples = 0
   stable=max(0,self.stable_samples-1)/self.sample_hz
   score=1. if stable>=1 else .7 if folded else .4 if angle>=45 else 0.
-  return self.result(score,angle_deg=angle,folded=folded,supported=supported,free=free,quiet=quiet,qualified=qualified,stable_seconds=stable,support_clearance_mm=lowest*1000,support_primitive=labels[lowest_index],device_inside_table=inside_table,hinge_error_mm=hinge_error*1000,max_cord_joint_error_mm=max(cord_errors)*1000,hinge_window_range_deg=drift,hinge_steady=hinge_steady)
+  return self.result(score,angle_deg=angle,folded=folded,supported=supported,free=free,qualified=qualified,stable_seconds=stable,support_clearance_mm=lowest*1000,support_primitive=labels[lowest_index],device_inside_table=inside_table,hinge_error_mm=hinge_error*1000,max_cord_joint_error_mm=max(cord_errors)*1000)
  def result(self,score,**data):return dict(score=0. if self.void else float(score),finished=bool(self.void or score==1),void=self.void,**data)
 @dataclass(frozen=True)
 class DryerScorer:
