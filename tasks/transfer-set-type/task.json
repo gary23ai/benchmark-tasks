@@ -1,0 +1,20 @@
+{
+  "title": "Transfer a line of loose wood type from a composing stick to a galley",
+  "category": "Impact on jobs",
+  "keywords": [
+    "letterpress",
+    "composing stick",
+    "galley",
+    "wood type",
+    "multi-object grasping"
+  ],
+  "instruction": "Move the four letters together from the composing stick onto the galley. Keep them aligned in their original order throughout the move. Leave the line standing on the galley with the printing faces up.",
+  "context": "Moving a composed line frees the stick for the next line of type. If an interior letter slips out, the printer has to set the line again.",
+  "setup": "Four loose maple letters form a 48 mm line on the smaller fixture. Their colored sides face the open front of the galley. The two floors stand 40 mm above the bench with a 45 mm gap between their parallel lips. The galley is 100 mm wide and 70 mm deep.",
+  "scoring": "At any sample, a separation of 4 mm or more between the matching side-face centers of neighbors, or a difference of 15° or more between their front or up directions, breaks the line. Putting it back together still counts as a failed transfer. The line may turn or tilt together. At receipt, the foot centers of B, C and D must be within 2 mm of their original positions relative to A. All four letters must be within 8° of upright, fully on the floor, supported, released and settled together for one second. Any position that fits on the receiving floor qualifies.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Empty the galley. Seat the letters against the back of the composing stick with their flat feet down and marked sides toward the galley. Place red A against the fixed end, then blue B, green C and ochre D, with neighboring sides touching. Leave 4 mm between D and the released knee.",
+  "fidelity": "Each letter has its own mass, flat foot, raised glyph and painted side mark. End pressure can transmit friction through the loose line. Either interior letter can slip while the two ends remain in the grasp. Each letter has a separate reading for contact with the galley plate. Fence contact contributes nothing to that reading.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (474 steps).",
+  "media": "M-2BVRRB"
+}

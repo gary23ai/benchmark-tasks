@@ -1,0 +1,2374 @@
+{
+  "schemaVersion": 1,
+  "units": "Positions in m, contact normal force magnitudes in N, angles in degrees.",
+  "coordinateSignals": [
+    {
+      "name": "ab",
+      "kind": "distance",
+      "a": "A",
+      "b": "B",
+      "pa": [
+        0,
+        -0.006,
+        0.01115
+      ],
+      "pb": [
+        0,
+        0.006,
+        0.01115
+      ]
+    },
+    {
+      "name": "bc",
+      "kind": "distance",
+      "a": "B",
+      "b": "C",
+      "pa": [
+        0,
+        -0.006,
+        0.01115
+      ],
+      "pb": [
+        0,
+        0.006,
+        0.01115
+      ]
+    },
+    {
+      "name": "cd",
+      "kind": "distance",
+      "a": "C",
+      "b": "D",
+      "pa": [
+        0,
+        -0.006,
+        0.01115
+      ],
+      "pb": [
+        0,
+        0.006,
+        0.01115
+      ]
+    },
+    {
+      "name": "ab_front",
+      "kind": "angle_deg",
+      "a": "A",
+      "b": "B",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bc_front",
+      "kind": "angle_deg",
+      "a": "B",
+      "b": "C",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "cd_front",
+      "kind": "angle_deg",
+      "a": "C",
+      "b": "D",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ab_up",
+      "kind": "angle_deg",
+      "a": "A",
+      "b": "B",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "bc_up",
+      "kind": "angle_deg",
+      "a": "B",
+      "b": "C",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "cd_up",
+      "kind": "angle_deg",
+      "a": "C",
+      "b": "D",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "b_setting",
+      "kind": "distance",
+      "a": "B",
+      "b": "A",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        -0.012,
+        0
+      ]
+    },
+    {
+      "name": "c_setting",
+      "kind": "distance",
+      "a": "C",
+      "b": "A",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        -0.024,
+        0
+      ]
+    },
+    {
+      "name": "d_setting",
+      "kind": "distance",
+      "a": "D",
+      "b": "A",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        -0.036,
+        0
+      ]
+    },
+    {
+      "name": "a_up",
+      "kind": "angle_deg",
+      "a": "A",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "b_up",
+      "kind": "angle_deg",
+      "a": "B",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "c_up",
+      "kind": "angle_deg",
+      "a": "C",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "d_up",
+      "kind": "angle_deg",
+      "a": "D",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "a_z",
+      "kind": "dz",
+      "a": "A",
+      "b": "galley",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_z",
+      "kind": "dz",
+      "a": "B",
+      "b": "galley",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_z",
+      "kind": "dz",
+      "a": "C",
+      "b": "galley",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_z",
+      "kind": "dz",
+      "a": "D",
+      "b": "galley",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_x1",
+      "kind": "dx",
+      "a": "A",
+      "b": "galley",
+      "pa": [
+        -0.0085,
+        -0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_x2",
+      "kind": "dx",
+      "a": "A",
+      "b": "galley",
+      "pa": [
+        -0.0085,
+        0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_x3",
+      "kind": "dx",
+      "a": "A",
+      "b": "galley",
+      "pa": [
+        0.0085,
+        -0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_x4",
+      "kind": "dx",
+      "a": "A",
+      "b": "galley",
+      "pa": [
+        0.0085,
+        0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_x1",
+      "kind": "dx",
+      "a": "B",
+      "b": "galley",
+      "pa": [
+        -0.0085,
+        -0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_x2",
+      "kind": "dx",
+      "a": "B",
+      "b": "galley",
+      "pa": [
+        -0.0085,
+        0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_x3",
+      "kind": "dx",
+      "a": "B",
+      "b": "galley",
+      "pa": [
+        0.0085,
+        -0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_x4",
+      "kind": "dx",
+      "a": "B",
+      "b": "galley",
+      "pa": [
+        0.0085,
+        0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_x1",
+      "kind": "dx",
+      "a": "C",
+      "b": "galley",
+      "pa": [
+        -0.0085,
+        -0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_x2",
+      "kind": "dx",
+      "a": "C",
+      "b": "galley",
+      "pa": [
+        -0.0085,
+        0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_x3",
+      "kind": "dx",
+      "a": "C",
+      "b": "galley",
+      "pa": [
+        0.0085,
+        -0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_x4",
+      "kind": "dx",
+      "a": "C",
+      "b": "galley",
+      "pa": [
+        0.0085,
+        0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_x1",
+      "kind": "dx",
+      "a": "D",
+      "b": "galley",
+      "pa": [
+        -0.0085,
+        -0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_x2",
+      "kind": "dx",
+      "a": "D",
+      "b": "galley",
+      "pa": [
+        -0.0085,
+        0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_x3",
+      "kind": "dx",
+      "a": "D",
+      "b": "galley",
+      "pa": [
+        0.0085,
+        -0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_x4",
+      "kind": "dx",
+      "a": "D",
+      "b": "galley",
+      "pa": [
+        0.0085,
+        0.006,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_floor",
+      "kind": "contact_n",
+      "a": "A",
+      "b": "galley",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_floor",
+      "kind": "contact_n",
+      "a": "B",
+      "b": "galley",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_floor",
+      "kind": "contact_n",
+      "a": "C",
+      "b": "galley",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_floor",
+      "kind": "contact_n",
+      "a": "D",
+      "b": "galley",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_left",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "A",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_left",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "B",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_left",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "C",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_left",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "D",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_right",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "A",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_right",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "B",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_right",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "C",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_right",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "D",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_speed",
+      "kind": "speed",
+      "a": "A",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_speed",
+      "kind": "speed",
+      "a": "B",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_speed",
+      "kind": "speed",
+      "a": "C",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_speed",
+      "kind": "speed",
+      "a": "D",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "a_spin",
+      "kind": "spin_deg_s",
+      "a": "A",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "b_spin",
+      "kind": "spin_deg_s",
+      "a": "B",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c_spin",
+      "kind": "spin_deg_s",
+      "a": "C",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d_spin",
+      "kind": "spin_deg_s",
+      "a": "D",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "channelSums": {},
+  "wholeEpisodeInvalidatingConditions": [
+    [
+      {
+        "metric": "ab",
+        "lo": 0.004,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "bc",
+        "lo": 0.004,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "cd",
+        "lo": 0.004,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "ab_front",
+        "lo": 15,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "bc_front",
+        "lo": 15,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "cd_front",
+        "lo": 15,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "ab_up",
+        "lo": 15,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "bc_up",
+        "lo": 15,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "cd_up",
+        "lo": 15,
+        "hi": 1000000
+      }
+    ]
+  ],
+  "stages": {
+    "scripted-first": {
+      "score": 1.0,
+      "steps": 474,
+      "elapsedSeconds": 223.78,
+      "traceSha256": "0610cd87e3bb400a711cdbe6311b556754c5d4a3cd03c46cab995306a9922f0a",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 455,
+          "last": 474,
+          "samples": 20,
+          "requiredSamples": 20,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "b_setting": {
+              "min": 3.932471142793582e-05,
+              "max": 3.936423295181854e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_setting": {
+              "min": 6.531959852453217e-05,
+              "max": 6.536767360334332e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_setting": {
+              "min": 0.00012833248190455144,
+              "max": 0.00012835040392094362,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_up": {
+              "min": 0.00032326129759263845,
+              "max": 0.00041514123516025195,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "b_up": {
+              "min": 4.071345655140077e-05,
+              "max": 8.388733399287999e-05,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "c_up": {
+              "min": 8.736069612065117e-05,
+              "max": 0.00022394272795870214,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "d_up": {
+              "min": 0.00020206136627074522,
+              "max": 0.0002218530450151582,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "a_z": {
+              "min": -5.960464477539063e-08,
+              "max": -5.960464477539063e-08,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "b_z": {
+              "min": -5.960464477539063e-08,
+              "max": 0.0,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "c_z": {
+              "min": -5.960464477539063e-08,
+              "max": -5.960464477539063e-08,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "d_z": {
+              "min": -5.960464477539063e-08,
+              "max": -5.960464477539063e-08,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "a_x1": {
+              "min": -0.011156502852216366,
+              "max": -0.011156498258933445,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "a_x2": {
+              "min": -0.011295295769348734,
+              "max": -0.011295291176065814,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "a_x3": {
+              "min": 0.005842360248789202,
+              "max": 0.005842364842072123,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "a_x4": {
+              "min": 0.005703567331656834,
+              "max": 0.005703571924939754,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "b_x1": {
+              "min": -0.010983201920986174,
+              "max": -0.010983164826408043,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "b_x2": {
+              "min": -0.0111132515184581,
+              "max": -0.011113219453021905,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "b_x3": {
+              "min": 0.00601579999923707,
+              "max": 0.006015837093815202,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "b_x4": {
+              "min": 0.005885750401765089,
+              "max": 0.005885782467201339,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "c_x1": {
+              "min": -0.010818199958652241,
+              "max": -0.010818169910460695,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "c_x2": {
+              "min": -0.010948337454348811,
+              "max": -0.010948307087644937,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "c_x3": {
+              "min": 0.0061807999350130816,
+              "max": 0.006180829983204628,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "c_x4": {
+              "min": 0.006050662439316512,
+              "max": 0.006050692806020386,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "d_x1": {
+              "min": -0.010686854848638183,
+              "max": -0.010686854289844616,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "d_x2": {
+              "min": -0.010816359532997033,
+              "max": -0.010816358974203466,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "d_x3": {
+              "min": 0.006312155177816747,
+              "max": 0.006312155736610314,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "d_x4": {
+              "min": 0.006182650493457897,
+              "max": 0.006182651052251464,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "a_floor": {
+              "min": 0.03061501495540142,
+              "max": 0.031358085572719574,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "b_floor": {
+              "min": 0.031426649540662766,
+              "max": 0.03216793015599251,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "c_floor": {
+              "min": 0.03138880059123039,
+              "max": 0.031395118683576584,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "d_floor": {
+              "min": 0.03138888254761696,
+              "max": 0.03138986974954605,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "a_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "b_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "b_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_speed": {
+              "min": 0.0003388861077837646,
+              "max": 0.00034976680763065815,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "b_speed": {
+              "min": 0.00019101657380815595,
+              "max": 0.00019473046995699406,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "c_speed": {
+              "min": 0.0002406687126494944,
+              "max": 0.00026142268325202167,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "d_speed": {
+              "min": 0.00025877414736896753,
+              "max": 0.0002628582005854696,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "a_spin": {
+              "min": 1.0169785022735596,
+              "max": 1.0561178922653198,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "b_spin": {
+              "min": 0.8918939828872681,
+              "max": 0.9109612703323364,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "c_spin": {
+              "min": 1.0112248659133911,
+              "max": 1.04984712600708,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "d_spin": {
+              "min": 1.0506173372268677,
+              "max": 1.056221604347229,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        }
+      ]
+    },
+    "idle": {
+      "score": 0.0,
+      "steps": 600,
+      "elapsedSeconds": 210.71,
+      "traceSha256": "2fdf3a4de752130bd92cd9e8a24b804fc8619a12a397130774cd958ec2a010c6",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 581,
+          "last": 600,
+          "samples": 20,
+          "requiredSamples": 20,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "b_setting": {
+              "min": 2.480778472872514e-08,
+              "max": 5.094710486265188e-08,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_setting": {
+              "min": 3.1011566029493886e-08,
+              "max": 6.726878458188453e-08,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_setting": {
+              "min": 1.3995348411005353e-08,
+              "max": 5.6301511331958515e-08,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_up": {
+              "min": 0.0001300205043448063,
+              "max": 0.00018014016977601315,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "b_up": {
+              "min": 9.368974492892097e-05,
+              "max": 0.00012776972926560674,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "c_up": {
+              "min": 0.00011413775420260968,
+              "max": 0.0001460327349205742,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "d_up": {
+              "min": 8.642112607656263e-05,
+              "max": 0.00012580348159056234,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "a_z": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "b_z": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "c_z": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "d_z": {
+              "min": 5.960464477539063e-08,
+              "max": 5.960464477539063e-08,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "a_x1": {
+              "min": -0.11299999843853936,
+              "max": -0.11299999443145231,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "a_x2": {
+              "min": -0.11299999698547886,
+              "max": -0.1129999929783918,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "a_x3": {
+              "min": -0.09599999843853935,
+              "max": -0.0959999944314523,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "a_x4": {
+              "min": -0.09599999698547884,
+              "max": -0.09599999297839179,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "b_x1": {
+              "min": -0.11299999688913215,
+              "max": -0.11299996651060595,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "b_x2": {
+              "min": -0.11299999658862575,
+              "max": -0.11299996382363298,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "b_x3": {
+              "min": -0.09599999688913213,
+              "max": -0.095999966510606,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "b_x4": {
+              "min": -0.09599999658862579,
+              "max": -0.09599996382363296,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "c_x1": {
+              "min": -0.11299999886487933,
+              "max": -0.11299999478614653,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "c_x2": {
+              "min": -0.11299999663078458,
+              "max": -0.11299999255205184,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "c_x3": {
+              "min": -0.09599999886487931,
+              "max": -0.09599999478614657,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "c_x4": {
+              "min": -0.09599999663078462,
+              "max": -0.09599999255205183,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "d_x1": {
+              "min": -0.11299999734616945,
+              "max": -0.11299996632387238,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "d_x2": {
+              "min": -0.11299999700858043,
+              "max": -0.11299996404297513,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "d_x3": {
+              "min": -0.09599999734616943,
+              "max": -0.09599996632387242,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "d_x4": {
+              "min": -0.09599999700858042,
+              "max": -0.09599996404297512,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "a_floor": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "b_floor": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "c_floor": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "d_floor": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "a_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "b_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "b_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_speed": {
+              "min": 0.0001687484182184562,
+              "max": 0.00021608491078950465,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "b_speed": {
+              "min": 0.00019244277791585773,
+              "max": 0.00022528569388668984,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "c_speed": {
+              "min": 0.0001905021199490875,
+              "max": 0.00021879385167267174,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "d_speed": {
+              "min": 0.00019979737407993525,
+              "max": 0.00023319994215853512,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "a_spin": {
+              "min": 1.1670793294906616,
+              "max": 1.3071166276931763,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "b_spin": {
+              "min": 0.8463476896286011,
+              "max": 1.012046456336975,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "c_spin": {
+              "min": 0.891555666923523,
+              "max": 0.9504713416099548,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "d_spin": {
+              "min": 0.907960057258606,
+              "max": 1.068811058998108,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    },
+    "scripted-repeat": {
+      "score": 1.0,
+      "steps": 474,
+      "elapsedSeconds": 227.01,
+      "traceSha256": "0610cd87e3bb400a711cdbe6311b556754c5d4a3cd03c46cab995306a9922f0a",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 455,
+          "last": 474,
+          "samples": 20,
+          "requiredSamples": 20,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "b_setting": {
+              "min": 3.932471142793582e-05,
+              "max": 3.936423295181854e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_setting": {
+              "min": 6.531959852453217e-05,
+              "max": 6.536767360334332e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_setting": {
+              "min": 0.00012833248190455144,
+              "max": 0.00012835040392094362,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_up": {
+              "min": 0.00032326129759263845,
+              "max": 0.00041514123516025195,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "b_up": {
+              "min": 4.071345655140077e-05,
+              "max": 8.388733399287999e-05,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "c_up": {
+              "min": 8.736069612065117e-05,
+              "max": 0.00022394272795870214,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "d_up": {
+              "min": 0.00020206136627074522,
+              "max": 0.0002218530450151582,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "a_z": {
+              "min": -5.960464477539063e-08,
+              "max": -5.960464477539063e-08,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "b_z": {
+              "min": -5.960464477539063e-08,
+              "max": 0.0,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "c_z": {
+              "min": -5.960464477539063e-08,
+              "max": -5.960464477539063e-08,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "d_z": {
+              "min": -5.960464477539063e-08,
+              "max": -5.960464477539063e-08,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "a_x1": {
+              "min": -0.011156502852216366,
+              "max": -0.011156498258933445,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "a_x2": {
+              "min": -0.011295295769348734,
+              "max": -0.011295291176065814,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "a_x3": {
+              "min": 0.005842360248789202,
+              "max": 0.005842364842072123,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "a_x4": {
+              "min": 0.005703567331656834,
+              "max": 0.005703571924939754,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "b_x1": {
+              "min": -0.010983201920986174,
+              "max": -0.010983164826408043,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "b_x2": {
+              "min": -0.0111132515184581,
+              "max": -0.011113219453021905,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "b_x3": {
+              "min": 0.00601579999923707,
+              "max": 0.006015837093815202,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "b_x4": {
+              "min": 0.005885750401765089,
+              "max": 0.005885782467201339,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "c_x1": {
+              "min": -0.010818199958652241,
+              "max": -0.010818169910460695,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "c_x2": {
+              "min": -0.010948337454348811,
+              "max": -0.010948307087644937,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "c_x3": {
+              "min": 0.0061807999350130816,
+              "max": 0.006180829983204628,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "c_x4": {
+              "min": 0.006050662439316512,
+              "max": 0.006050692806020386,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "d_x1": {
+              "min": -0.010686854848638183,
+              "max": -0.010686854289844616,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "d_x2": {
+              "min": -0.010816359532997033,
+              "max": -0.010816358974203466,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "d_x3": {
+              "min": 0.006312155177816747,
+              "max": 0.006312155736610314,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "d_x4": {
+              "min": 0.006182650493457897,
+              "max": 0.006182651052251464,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": true
+            },
+            "a_floor": {
+              "min": 0.03061501495540142,
+              "max": 0.031358085572719574,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "b_floor": {
+              "min": 0.031426649540662766,
+              "max": 0.03216793015599251,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "c_floor": {
+              "min": 0.03138880059123039,
+              "max": 0.031395118683576584,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "d_floor": {
+              "min": 0.03138888254761696,
+              "max": 0.03138986974954605,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "a_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "b_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "b_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_speed": {
+              "min": 0.0003388861077837646,
+              "max": 0.00034976680763065815,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "b_speed": {
+              "min": 0.00019101657380815595,
+              "max": 0.00019473046995699406,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "c_speed": {
+              "min": 0.0002406687126494944,
+              "max": 0.00026142268325202167,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "d_speed": {
+              "min": 0.00025877414736896753,
+              "max": 0.0002628582005854696,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "a_spin": {
+              "min": 1.0169785022735596,
+              "max": 1.0561178922653198,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "b_spin": {
+              "min": 0.8918939828872681,
+              "max": 0.9109612703323364,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "c_spin": {
+              "min": 1.0112248659133911,
+              "max": 1.04984712600708,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "d_spin": {
+              "min": 1.0506173372268677,
+              "max": 1.056221604347229,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        }
+      ]
+    },
+    "dream": {
+      "score": 0.0,
+      "steps": 600,
+      "elapsedSeconds": 229.24,
+      "traceSha256": "2244317620663185976a7f1c244b91c36f317f1b76b68675ace83ccfdaf5d14d",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 581,
+          "last": 600,
+          "samples": 20,
+          "requiredSamples": 20,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "b_setting": {
+              "min": 7.093519813740027e-05,
+              "max": 7.098267990924443e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_setting": {
+              "min": 9.482837503275075e-05,
+              "max": 9.48943450939586e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_setting": {
+              "min": 0.002005546641518271,
+              "max": 0.0020056570913818054,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "a_up": {
+              "min": 0.001831064037912377,
+              "max": 0.0019772590306865383,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "b_up": {
+              "min": 0.0005921324949822149,
+              "max": 0.0006723704619433506,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "c_up": {
+              "min": 0.000662732959521254,
+              "max": 0.0007498407702076354,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "d_up": {
+              "min": 9.883144480910192e-05,
+              "max": 0.00016407565950625507,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "a_z": {
+              "min": -5.960464477539063e-08,
+              "max": -5.960464477539063e-08,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "b_z": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "c_z": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "d_z": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": -0.0015,
+              "hi": 0.0015,
+              "passedEverySample": true
+            },
+            "a_x1": {
+              "min": -0.11279190493747593,
+              "max": -0.11279186668619512,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "a_x2": {
+              "min": -0.11299821751564743,
+              "max": -0.11299818240478637,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "a_x3": {
+              "min": -0.09579441786929965,
+              "max": -0.09579437961801884,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "a_x4": {
+              "min": -0.09600073044747115,
+              "max": -0.0960006953366101,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "b_x1": {
+              "min": -0.11251388668641449,
+              "max": -0.11251387991383671,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "b_x2": {
+              "min": -0.11272169552370903,
+              "max": -0.11272168875113131,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "b_x3": {
+              "min": -0.0955164360962808,
+              "max": -0.09551642932370308,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "b_x4": {
+              "min": -0.0957242449335754,
+              "max": -0.09572423816099762,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "c_x1": {
+              "min": -0.11228325774520637,
+              "max": -0.11228321915864947,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "c_x2": {
+              "min": -0.11249186250567439,
+              "max": -0.1124918315410614,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "c_x3": {
+              "min": -0.09528582640737293,
+              "max": -0.09528578782081604,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "c_x4": {
+              "min": -0.09549443116784095,
+              "max": -0.09549440020322797,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "d_x1": {
+              "min": -0.11016515005379918,
+              "max": -0.11016511638462545,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "d_x2": {
+              "min": -0.1103759529069066,
+              "max": -0.11037592272460461,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "d_x3": {
+              "min": -0.09316777343302968,
+              "max": -0.09316773976385595,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "d_x4": {
+              "min": -0.0933785762861371,
+              "max": -0.09337854610383511,
+              "lo": -0.035,
+              "hi": 0.035,
+              "passedEverySample": false
+            },
+            "a_floor": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "b_floor": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "c_floor": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "d_floor": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0.015,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "a_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "b_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_left": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "b_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "c_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "d_right": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "a_speed": {
+              "min": 0.0002240026806248352,
+              "max": 0.0002358220226597041,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "b_speed": {
+              "min": 0.0010036153253167868,
+              "max": 0.0010298192501068115,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "c_speed": {
+              "min": 0.0011186370393261313,
+              "max": 0.001125827431678772,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "d_speed": {
+              "min": 0.000241678164456971,
+              "max": 0.000243373608100228,
+              "lo": 0,
+              "hi": 0.008,
+              "passedEverySample": true
+            },
+            "a_spin": {
+              "min": 1.0643904209136963,
+              "max": 1.1203441619873047,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "b_spin": {
+              "min": 2.617175579071045,
+              "max": 2.6854398250579834,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "c_spin": {
+              "min": 3.196300506591797,
+              "max": 3.237015962600708,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            },
+            "d_spin": {
+              "min": 1.015518069267273,
+              "max": 1.0192973613739014,
+              "lo": 0,
+              "hi": 8,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    }
+  }
+}
