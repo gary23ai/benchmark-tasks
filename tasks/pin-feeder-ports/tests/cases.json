@@ -1,0 +1,879 @@
+[
+  {
+    "label": "Untouched feeder",
+    "phases": [
+      {
+        "ticks": 600,
+        "measurements": {
+          "upper_gap": 0.013,
+          "lower_gap": 0.013,
+          "upper_top": 0.013,
+          "upper_bottom": 0.013,
+          "lower_top": 0.013,
+          "lower_bottom": 0.013,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Ports seated separately and released for two seconds",
+    "phases": [
+      {
+        "ticks": 12,
+        "measurements": {
+          "upper_gap": 0.013,
+          "lower_gap": 0.0014,
+          "upper_top": 0.013,
+          "upper_bottom": 0.013,
+          "lower_top": 0.0014,
+          "lower_bottom": 0.0014,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0.36,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 17,
+        "measurements": {
+          "upper_gap": 0.0008,
+          "lower_gap": 0.0014,
+          "upper_top": 0.0008,
+          "upper_bottom": 0.0008,
+          "lower_top": 0.0014,
+          "lower_bottom": 0.0014,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0.42,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 9,
+        "measurements": {
+          "upper_gap": 0.0008,
+          "lower_gap": 0.0014,
+          "upper_top": 0.0008,
+          "upper_bottom": 0.0008,
+          "lower_top": 0.0014,
+          "lower_bottom": 0.0014,
+          "foot_gap": 0.00028,
+          "tip_projection": 0.00572,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0.31
+        }
+      },
+      {
+        "ticks": 40,
+        "measurements": {
+          "upper_gap": 0.0008,
+          "lower_gap": 0.0014,
+          "upper_top": 0.0008,
+          "upper_bottom": 0.0008,
+          "lower_top": 0.0014,
+          "lower_bottom": 0.0014,
+          "foot_gap": 0.00028,
+          "tip_projection": 0.00572,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Blue tongue beside lowered shaft",
+    "phases": [
+      {
+        "ticks": 16,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0.013,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0.013,
+          "lower_bottom": 0.013,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 13,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0.013,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0.013,
+          "lower_bottom": 0.013,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0.28,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 11,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0.011,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0.011,
+          "lower_bottom": 0.011,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0.17,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 51,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0.011,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0.011,
+          "lower_bottom": 0.011,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Orange tongue beside lowered shaft",
+    "phases": [
+      {
+        "ticks": 16,
+        "measurements": {
+          "upper_gap": 0.013,
+          "lower_gap": 0,
+          "upper_top": 0.013,
+          "upper_bottom": 0.013,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 13,
+        "measurements": {
+          "upper_gap": 0.013,
+          "lower_gap": 0,
+          "upper_top": 0.013,
+          "upper_bottom": 0.013,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0.28
+        }
+      },
+      {
+        "ticks": 11,
+        "measurements": {
+          "upper_gap": 0.011,
+          "lower_gap": 0,
+          "upper_top": 0.011,
+          "upper_bottom": 0.011,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0.17,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 51,
+        "measurements": {
+          "upper_gap": 0.011,
+          "lower_gap": 0,
+          "upper_top": 0.011,
+          "upper_bottom": 0.011,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Inclusive radial clearance and stop edge",
+    "phases": [
+      {
+        "ticks": 40,
+        "measurements": {
+          "upper_gap": 0.002,
+          "lower_gap": 0.002,
+          "upper_top": 0.002,
+          "upper_bottom": 0.002,
+          "lower_top": 0.002,
+          "lower_bottom": 0.002,
+          "foot_gap": 0.0005,
+          "tip_projection": 0.0055,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Shoulder in band but shaft exceeds bore clearance",
+    "phases": [
+      {
+        "ticks": 40,
+        "measurements": {
+          "upper_gap": 0.0021,
+          "lower_gap": 0,
+          "upper_top": 0.0021,
+          "upper_bottom": 0.0021,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Both eyes threaded but foot held high",
+    "phases": [
+      {
+        "ticks": 60,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0.003,
+          "tip_projection": 0.003,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Touch splits two short released intervals",
+    "phases": [
+      {
+        "ticks": 39,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0.2,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 39,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Fresh full hold after an interrupted release",
+    "phases": [
+      {
+        "ticks": 39,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0.00048,
+          "tip_projection": 0.00552,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 2,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0.00052,
+          "tip_projection": 0.00548,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0.24,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 40,
+        "measurements": {
+          "upper_gap": 0,
+          "lower_gap": 0,
+          "upper_top": 0,
+          "upper_bottom": 0,
+          "lower_top": 0,
+          "lower_bottom": 0,
+          "foot_gap": 0.00048,
+          "tip_projection": 0.00552,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Orange first, then blue, forty released samples",
+    "phases": [
+      {
+        "ticks": 7,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.013,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.013,
+          "lower_bottom": 0.013,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0.27,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 21,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.00055,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.00055,
+          "lower_bottom": 0.00055,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0.19,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 8,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.00055,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.00055,
+          "lower_bottom": 0.00055,
+          "foot_gap": 0.0013,
+          "tip_projection": 0.0047,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0.33,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 5,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.00055,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.00055,
+          "lower_bottom": 0.00055,
+          "foot_gap": 0.00019,
+          "tip_projection": 0.00581,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0.33,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 40,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.00055,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.00055,
+          "lower_bottom": 0.00055,
+          "foot_gap": 0.00019,
+          "tip_projection": 0.00581,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Orange nose tangent at eleven millimetres",
+    "phases": [
+      {
+        "ticks": 19,
+        "measurements": {
+          "upper_gap": 0.013,
+          "lower_gap": 0.00075,
+          "upper_top": 0.013,
+          "upper_bottom": 0.013,
+          "lower_top": 0.00075,
+          "lower_bottom": 0.00075,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0.26,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 22,
+        "measurements": {
+          "upper_gap": 0.013,
+          "lower_gap": 0.00075,
+          "upper_top": 0.013,
+          "upper_bottom": 0.013,
+          "lower_top": 0.00075,
+          "lower_bottom": 0.00075,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0.29
+        }
+      },
+      {
+        "ticks": 9,
+        "measurements": {
+          "upper_gap": 0.011,
+          "lower_gap": 0.00075,
+          "upper_top": 0.011,
+          "upper_bottom": 0.011,
+          "lower_top": 0.00075,
+          "lower_bottom": 0.00075,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0.23,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 67,
+        "measurements": {
+          "upper_gap": 0.011,
+          "lower_gap": 0.00075,
+          "upper_top": 0.011,
+          "upper_bottom": 0.011,
+          "lower_top": 0.00075,
+          "lower_bottom": 0.00075,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Blue remains free at the same stop height",
+    "phases": [
+      {
+        "ticks": 18,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.013,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.013,
+          "lower_bottom": 0.013,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0.31,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 14,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.013,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.013,
+          "lower_bottom": 0.013,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0.37,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 11,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.0113,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.0113,
+          "lower_bottom": 0.0113,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0.16,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 54,
+        "measurements": {
+          "upper_gap": 0.00165,
+          "lower_gap": 0.0113,
+          "upper_top": 0.00165,
+          "upper_bottom": 0.00165,
+          "lower_top": 0.0113,
+          "lower_bottom": 0.0113,
+          "foot_gap": 0,
+          "tip_projection": 0.006,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Fortieth sample arrives one tick after the deadline",
+    "phases": [
+      {
+        "ticks": 552,
+        "measurements": {
+          "upper_gap": 0.013,
+          "lower_gap": 0.013,
+          "upper_top": 0.013,
+          "upper_bottom": 0.013,
+          "lower_top": 0.013,
+          "lower_bottom": 0.013,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 9,
+        "measurements": {
+          "upper_gap": 0.00095,
+          "lower_gap": 0.00125,
+          "upper_top": 0.00095,
+          "upper_bottom": 0.00095,
+          "lower_top": 0.00125,
+          "lower_bottom": 0.00125,
+          "foot_gap": 0.00051,
+          "tip_projection": 0.00549,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0.18
+        }
+      },
+      {
+        "ticks": 39,
+        "measurements": {
+          "upper_gap": 0.00095,
+          "lower_gap": 0.00125,
+          "upper_top": 0.00095,
+          "upper_bottom": 0.00095,
+          "lower_top": 0.00125,
+          "lower_bottom": 0.00125,
+          "foot_gap": 0.00049,
+          "tip_projection": 0.00551,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Released rod stops just above the foot band",
+    "phases": [
+      {
+        "ticks": 25,
+        "measurements": {
+          "upper_gap": 0.0011,
+          "lower_gap": 0.00035,
+          "upper_top": 0.0011,
+          "upper_bottom": 0.0011,
+          "lower_top": 0.00035,
+          "lower_bottom": 0.00035,
+          "foot_gap": 0.032,
+          "tip_projection": -0.026,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 16,
+        "measurements": {
+          "upper_gap": 0.0011,
+          "lower_gap": 0.00035,
+          "upper_top": 0.0011,
+          "upper_bottom": 0.0011,
+          "lower_top": 0.00035,
+          "lower_bottom": 0.00035,
+          "foot_gap": 0.00051,
+          "tip_projection": 0.00549,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0.22,
+          "right_ring": 0
+        }
+      },
+      {
+        "ticks": 83,
+        "measurements": {
+          "upper_gap": 0.0011,
+          "lower_gap": 0.00035,
+          "upper_top": 0.0011,
+          "upper_bottom": 0.0011,
+          "lower_top": 0.00035,
+          "lower_bottom": 0.00035,
+          "foot_gap": 0.00051,
+          "tip_projection": 0.00549,
+          "left_upper": 0,
+          "right_upper": 0,
+          "left_lower": 0,
+          "right_lower": 0,
+          "left_ring": 0,
+          "right_ring": 0
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  }
+]

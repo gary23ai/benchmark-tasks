@@ -1,0 +1,714 @@
+{
+  "schemaVersion": 1,
+  "units": "Positions in m, contact normal force magnitudes in N, angles in degrees.",
+  "coordinateSignals": [
+    {
+      "name": "upper_gap",
+      "kind": "dy",
+      "a": "upper_port",
+      "b": "feeder",
+      "pa": [
+        0,
+        0.028,
+        -0.006
+      ],
+      "pb": [
+        0,
+        0.028,
+        0.055
+      ]
+    },
+    {
+      "name": "lower_gap",
+      "kind": "dy",
+      "a": "feeder",
+      "b": "lower_port",
+      "pa": [
+        0,
+        -0.028,
+        0.055
+      ],
+      "pb": [
+        0,
+        -0.028,
+        0.006
+      ]
+    },
+    {
+      "name": "upper_top",
+      "kind": "planar",
+      "a": "upper_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0.022
+      ]
+    },
+    {
+      "name": "upper_bottom",
+      "kind": "planar",
+      "a": "upper_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        -0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0.018
+      ]
+    },
+    {
+      "name": "lower_top",
+      "kind": "planar",
+      "a": "lower_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0.01
+      ]
+    },
+    {
+      "name": "lower_bottom",
+      "kind": "planar",
+      "a": "lower_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        -0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "foot_gap",
+      "kind": "dz",
+      "a": "ring_rod",
+      "b": "feeder",
+      "pa": [
+        0,
+        0,
+        0.053
+      ],
+      "pb": [
+        0,
+        0,
+        0.094
+      ]
+    },
+    {
+      "name": "tip_projection",
+      "kind": "dz",
+      "a": "lower_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        -0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_upper",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "upper_port",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_upper",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "upper_port",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_lower",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "lower_port",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_lower",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "lower_port",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_ring",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_ring",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "channelSums": {},
+  "wholeEpisodeInvalidatingConditions": [],
+  "stages": {
+    "scripted-first": {
+      "score": 1.0,
+      "steps": 506,
+      "elapsedSeconds": 214.36,
+      "traceSha256": "e7b6788ba7072e522adadf9d82db16d5c3264da936dca3241e66f8be08254df2",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 467,
+          "last": 506,
+          "samples": 40,
+          "requiredSamples": 40,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "upper_gap": {
+              "min": 3.291991002398603e-05,
+              "max": 3.379162795382612e-05,
+              "lo": -0.0005,
+              "hi": 0.003,
+              "passedEverySample": true
+            },
+            "lower_gap": {
+              "min": 1.763193966587695e-06,
+              "max": 2.634911896427783e-06,
+              "lo": -0.0005,
+              "hi": 0.003,
+              "passedEverySample": true
+            },
+            "upper_top": {
+              "min": 3.292386273035535e-05,
+              "max": 3.379559037698362e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "upper_bottom": {
+              "min": 3.2925669003395935e-05,
+              "max": 3.379739648755989e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "lower_top": {
+              "min": 1.75909111040828e-06,
+              "max": 2.6291747677642755e-06,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "lower_bottom": {
+              "min": 1.7579095124642784e-06,
+              "max": 2.62784637949586e-06,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "foot_gap": {
+              "min": -0.000380090236663827,
+              "max": -0.000380090236663827,
+              "lo": -0.0005,
+              "hi": 0.0005,
+              "passedEverySample": true
+            },
+            "tip_projection": {
+              "min": 0.006380115032196043,
+              "max": 0.006380115032196043,
+              "lo": 0.0055,
+              "hi": 0.0065,
+              "passedEverySample": true
+            },
+            "left_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "left_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "left_ring": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_ring": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        }
+      ]
+    },
+    "idle": {
+      "score": 0.0,
+      "steps": 600,
+      "elapsedSeconds": 197.12,
+      "traceSha256": "3cf5a30cfa147df57a8537c541a5f316030e091b7bc5373f12c009237c732fbd",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 561,
+          "last": 600,
+          "samples": 40,
+          "requiredSamples": 40,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "upper_gap": {
+              "min": 0.013000000246828642,
+              "max": 0.013000000246828642,
+              "lo": -0.0005,
+              "hi": 0.003,
+              "passedEverySample": false
+            },
+            "lower_gap": {
+              "min": 0.013000000263233492,
+              "max": 0.013000000263233492,
+              "lo": -0.0005,
+              "hi": 0.003,
+              "passedEverySample": false
+            },
+            "upper_top": {
+              "min": 0.01299994931781354,
+              "max": 0.013000026796051847,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "upper_bottom": {
+              "min": 0.012999966088607654,
+              "max": 0.013000032425409473,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "lower_top": {
+              "min": 0.012999953799939637,
+              "max": 0.013000000879912151,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "lower_bottom": {
+              "min": 0.012999944251949041,
+              "max": 0.012999984162478979,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "foot_gap": {
+              "min": 0.03198308610916137,
+              "max": 0.031983920574188224,
+              "lo": -0.0005,
+              "hi": 0.0005,
+              "passedEverySample": false
+            },
+            "tip_projection": {
+              "min": -0.025983895778656008,
+              "max": -0.025983061313629152,
+              "lo": 0.0055,
+              "hi": 0.0065,
+              "passedEverySample": false
+            },
+            "left_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "left_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "left_ring": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_ring": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    },
+    "scripted-repeat": {
+      "score": 1.0,
+      "steps": 506,
+      "elapsedSeconds": 211.63,
+      "traceSha256": "e7b6788ba7072e522adadf9d82db16d5c3264da936dca3241e66f8be08254df2",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 467,
+          "last": 506,
+          "samples": 40,
+          "requiredSamples": 40,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "upper_gap": {
+              "min": 3.291991002398603e-05,
+              "max": 3.379162795382612e-05,
+              "lo": -0.0005,
+              "hi": 0.003,
+              "passedEverySample": true
+            },
+            "lower_gap": {
+              "min": 1.763193966587695e-06,
+              "max": 2.634911896427783e-06,
+              "lo": -0.0005,
+              "hi": 0.003,
+              "passedEverySample": true
+            },
+            "upper_top": {
+              "min": 3.292386273035535e-05,
+              "max": 3.379559037698362e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "upper_bottom": {
+              "min": 3.2925669003395935e-05,
+              "max": 3.379739648755989e-05,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "lower_top": {
+              "min": 1.75909111040828e-06,
+              "max": 2.6291747677642755e-06,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "lower_bottom": {
+              "min": 1.7579095124642784e-06,
+              "max": 2.62784637949586e-06,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": true
+            },
+            "foot_gap": {
+              "min": -0.000380090236663827,
+              "max": -0.000380090236663827,
+              "lo": -0.0005,
+              "hi": 0.0005,
+              "passedEverySample": true
+            },
+            "tip_projection": {
+              "min": 0.006380115032196043,
+              "max": 0.006380115032196043,
+              "lo": 0.0055,
+              "hi": 0.0065,
+              "passedEverySample": true
+            },
+            "left_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "left_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "left_ring": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_ring": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        }
+      ]
+    },
+    "dream": {
+      "score": 0.0,
+      "steps": 600,
+      "elapsedSeconds": 220.51,
+      "traceSha256": "bc5d53149f2a72e214c7edd6327d49c89d0730b164af8b2581d5ff302b0f7ea6",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 561,
+          "last": 600,
+          "samples": 40,
+          "requiredSamples": 40,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "upper_gap": {
+              "min": 0.013000000246828642,
+              "max": 0.013000000246828642,
+              "lo": -0.0005,
+              "hi": 0.003,
+              "passedEverySample": false
+            },
+            "lower_gap": {
+              "min": 0.013000000263233492,
+              "max": 0.013000000263233492,
+              "lo": -0.0005,
+              "hi": 0.003,
+              "passedEverySample": false
+            },
+            "upper_top": {
+              "min": 0.01299994931781354,
+              "max": 0.013000026796051847,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "upper_bottom": {
+              "min": 0.012999966088607654,
+              "max": 0.013000032425409473,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "lower_top": {
+              "min": 0.012999953799939637,
+              "max": 0.013000000879912151,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "lower_bottom": {
+              "min": 0.012999944251949041,
+              "max": 0.012999984162478979,
+              "lo": 0,
+              "hi": 0.002,
+              "passedEverySample": false
+            },
+            "foot_gap": {
+              "min": 0.03198308610916137,
+              "max": 0.031983920574188224,
+              "lo": -0.0005,
+              "hi": 0.0005,
+              "passedEverySample": false
+            },
+            "tip_projection": {
+              "min": -0.025983895778656008,
+              "max": -0.025983061313629152,
+              "lo": 0.0055,
+              "hi": 0.0065,
+              "passedEverySample": false
+            },
+            "left_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "left_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "left_ring": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            },
+            "right_ring": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0.01,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    }
+  }
+}

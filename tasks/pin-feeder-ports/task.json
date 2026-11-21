@@ -1,0 +1,19 @@
+{
+  "title": "Refit both feeding ports in a bird feeder",
+  "category": "Societal relatability",
+  "keywords": [
+    "bird feeder",
+    "cleaning and reassembly",
+    "feeding ports",
+    "retaining rod"
+  ],
+  "instruction": "Refit both feeding ports in the empty feeder. Leave them secured by the ring rod and let go.",
+  "context": "Raising the rod releases the ports for cleaning. During reassembly the ring can reach its stop while one port is still loose.",
+  "setup": "The empty, uncapped feeder stands upright on a fixed base. Measured from the base top, the orange eye is 61 mm high and the blue eye is 49 mm high. Each shoulder starts 13 mm outward from its seat. The raised rod tip is 73 mm high.",
+  "scoring": "Both ports must stay secured for two continuous seconds after release. Each shoulder must be within 3 mm of its seat. The rod must pass through both closed eyes, with at most 2 mm of center offset at each face. The ring foot must be within 0.5 mm of flush with the bridge, with 5.5–6.5 mm of rod projecting below the lower eye. Either loose port fails the task.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Raise the rod to its upper stop. Set both shoulders 13 mm outward. Check for 86 mm across their outer faces and 10 mm between the rod tip and the top of the orange tongue. Check that all three parts stay at their reset positions after release. Restore the standard arm reset.",
+  "fidelity": "This single-pair service fixture reproduces retention of two independently movable ports by one rod. Inspection windows expose the contrasting tongues and rod tip. The staggered tongues, keyed slides and ring foot are bench-adapter details.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (506 steps).",
+  "media": "M-6F589P"
+}

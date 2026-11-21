@@ -1,0 +1,135 @@
+{
+  "task": "pin-feeder-ports",
+  "policy": "scripted",
+  "seed": 0,
+  "model": null,
+  "scorer": "physical_task_score",
+  "score": 1.0,
+  "steps": 506,
+  "step_limit": 600,
+  "declaredStepLimit": 600,
+  "diagnosticOnly": false,
+  "elapsed_s": 214.36,
+  "control_hz": 20,
+  "initialBoundsPixels": {
+    "feeder": [
+      300.1,
+      154.9,
+      330.0,
+      198.3
+    ],
+    "upper_port": [
+      298.2,
+      166.4,
+      313.0,
+      177.6
+    ],
+    "lower_port": [
+      316.9,
+      166.4,
+      331.6,
+      177.6
+    ],
+    "ring_rod": [
+      309.7,
+      150.4,
+      319.6,
+      169.5
+    ],
+    "positive_shoe": [
+      312.1,
+      163.9,
+      313.7,
+      166.4
+    ],
+    "negative_shoe": [
+      316.0,
+      163.9,
+      317.6,
+      166.4
+    ]
+  },
+  "initialMarkBoundsPixels": {
+    "feeder:0": [
+      312.4,
+      173.7,
+      317.2,
+      174.1
+    ],
+    "feeder:1": [
+      311.5,
+      185.1,
+      318.4,
+      185.5
+    ],
+    "upper_port:0": [
+      309.1,
+      173.2,
+      310.7,
+      173.9
+    ],
+    "lower_port:0": [
+      319.2,
+      175.5,
+      320.7,
+      176.2
+    ],
+    "ring_rod:0": [
+      313.7,
+      166.8,
+      316.1,
+      169.5
+    ]
+  },
+  "initialMeasurements": {
+    "upper_gap": 0.013000000246828642,
+    "lower_gap": 0.013000000263233492,
+    "upper_top": 0.012999950724014482,
+    "upper_bottom": 0.01299996718810328,
+    "lower_top": 0.013000000393827952,
+    "lower_bottom": 0.012999983929746101,
+    "foot_gap": 0.031983145713806144,
+    "tip_projection": -0.025983120918273928,
+    "left_upper": 0.0,
+    "right_upper": 0.0,
+    "left_lower": 0.0,
+    "right_lower": 0.0,
+    "left_ring": 0.0,
+    "right_ring": 0.0
+  },
+  "initialGaugePoses": {},
+  "initialWedgeColliderProbes": {},
+  "finalWedgeBodyPositions": {},
+  "video_frames": 254,
+  "cameraPixels": {
+    "nativeOverview": [
+      640,
+      360
+    ],
+    "policyRGB": [
+      320,
+      176
+    ]
+  },
+  "nativeVersions": {
+    "isaacsim": "6.1.0.0",
+    "isaaclab": "17.0.2",
+    "isaaclab-arena": "0.3.0",
+    "inspect-robots": "1.0.0",
+    "yam-arena": "0.1.0",
+    "inspect-robots-dream": "0.1.0",
+    "dreamlabs-client": "1.0.14"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "observedSourceHashes": {
+    "task_impl/fixture.json": "8ed211f5e1fa3e3e27f9f9b38d23d3b46d09968b26119d2d6d267b7b2e7878a7",
+    "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+    "task_impl/adapter.py": "88cb360dd1eee5d566903160f8d306213b67e00018341c2e6b5cf32c28f3080d",
+    "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+    "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+    "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+    "task_impl/scripted.py": "ebb5623f5d9bb865f740d0a8d307547859f30d5e8a9cb663f6aef498fc1fdb98"
+  },
+  "inspect_robots": "1.0.0",
+  "yam_arena": "0.1.0"
+}

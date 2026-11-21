@@ -1,0 +1,2152 @@
+{
+  "limit": 600,
+  "actors": [
+    {
+      "name": "feeder",
+      "bolted": true,
+      "material": "Bench-mounted aluminum base, windowed polycarbonate sleeve, acetal port guides and split rod-guide bridge",
+      "mass_kg": 0.24,
+      "friction": 0.35,
+      "rgb": [
+        0.42,
+        0.51,
+        0.53
+      ],
+      "position": [
+        0.36,
+        0,
+        0.008
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.09,
+            0.08,
+            0.008
+          ],
+          "offset": [
+            0,
+            0,
+            -0.004
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.0224,
+            0.035
+          ],
+          "offset": [
+            -0.027,
+            0,
+            0.0175
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.0224,
+            0.018
+          ],
+          "offset": [
+            -0.027,
+            0,
+            0.081
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.0224,
+            0.035
+          ],
+          "offset": [
+            0.027,
+            0,
+            0.0175
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.0224,
+            0.018
+          ],
+          "offset": [
+            0.027,
+            0,
+            0.081
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.0224,
+            0.09
+          ],
+          "offset": [
+            0.01909,
+            0.01909,
+            0.045
+          ],
+          "euler_deg": [
+            0,
+            0,
+            45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.0224,
+            0.09
+          ],
+          "offset": [
+            -0.01909,
+            -0.01909,
+            0.045
+          ],
+          "euler_deg": [
+            0,
+            0,
+            45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.0224,
+            0.09
+          ],
+          "offset": [
+            -0.01909,
+            0.01909,
+            0.045
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.0224,
+            0.09
+          ],
+          "offset": [
+            0.01909,
+            -0.01909,
+            0.045
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0224,
+            0.002,
+            0.0588
+          ],
+          "offset": [
+            0,
+            0.027,
+            0.0294
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0224,
+            0.002,
+            0.0268
+          ],
+          "offset": [
+            0,
+            0.027,
+            0.0766
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0224,
+            0.002,
+            0.0468
+          ],
+          "offset": [
+            0,
+            -0.027,
+            0.0234
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0224,
+            0.002,
+            0.0388
+          ],
+          "offset": [
+            0,
+            -0.027,
+            0.0706
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.02,
+            0.008,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.024,
+            0.0578
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.02,
+            0.008,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.024,
+            0.0642
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0018,
+            0.008,
+            0.0044
+          ],
+          "offset": [
+            0.0091,
+            0.024,
+            0.061
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0018,
+            0.008,
+            0.0044
+          ],
+          "offset": [
+            -0.0091,
+            0.024,
+            0.061
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.02,
+            0.008,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.024,
+            0.0458
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.02,
+            0.008,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.024,
+            0.0522
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0018,
+            0.008,
+            0.0044
+          ],
+          "offset": [
+            0.0091,
+            -0.024,
+            0.049
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0018,
+            0.008,
+            0.0044
+          ],
+          "offset": [
+            -0.0091,
+            -0.024,
+            0.049
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0247,
+            0.016,
+            0.01
+          ],
+          "offset": [
+            0.01565,
+            0,
+            0.089
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0247,
+            0.016,
+            0.01
+          ],
+          "offset": [
+            -0.01565,
+            0,
+            0.089
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0066,
+            0.0047,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.00565,
+            0.085
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0066,
+            0.0047,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.00565,
+            0.085
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0066,
+            0.0047,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.00565,
+            0.093
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0066,
+            0.0047,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.00565,
+            0.093
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.0002,
+            0.012,
+            0.002
+          ],
+          "offset": [
+            -0.0281,
+            0,
+            0.093
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.96,
+            0.88,
+            0.29
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0002,
+            0.018,
+            0.002
+          ],
+          "offset": [
+            -0.0281,
+            0,
+            0.034
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.92,
+            0.93,
+            0.86
+          ]
+        }
+      ]
+    },
+    {
+      "name": "upper_port",
+      "bolted": false,
+      "material": "Orange acetal port with integral eye and shoulder",
+      "mass_kg": 0.005,
+      "friction": 0.42,
+      "rgb": [
+        0.93,
+        0.42,
+        0.12
+      ],
+      "position": [
+        0.36,
+        0.013,
+        0.069
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.016,
+            0.023,
+            0.004
+          ],
+          "offset": [
+            0,
+            0.0165,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.016,
+            0.003,
+            0.004
+          ],
+          "offset": [
+            0,
+            -0.0065,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            0.0065,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            -0.0065,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.005,
+            0.004
+          ],
+          "offset": [
+            0.004243,
+            0.004243,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.005,
+            0.004
+          ],
+          "offset": [
+            -0.004243,
+            -0.004243,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.005,
+            0.004
+          ],
+          "offset": [
+            -0.004243,
+            0.004243,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.005,
+            0.004
+          ],
+          "offset": [
+            0.004243,
+            -0.004243,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.02,
+            0.002,
+            0.024
+          ],
+          "offset": [
+            0,
+            0.029,
+            -0.006
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.0002,
+            0.004,
+            0.003
+          ],
+          "offset": [
+            -0.0081,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.99,
+            0.91,
+            0.61
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lower_port",
+      "bolted": false,
+      "material": "Blue acetal port with integral eye and shoulder",
+      "mass_kg": 0.005,
+      "friction": 0.42,
+      "rgb": [
+        0.12,
+        0.54,
+        0.82
+      ],
+      "position": [
+        0.36,
+        -0.013,
+        0.057
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.016,
+            0.023,
+            0.004
+          ],
+          "offset": [
+            0,
+            -0.0165,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.016,
+            0.003,
+            0.004
+          ],
+          "offset": [
+            0,
+            0.0065,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            0.0065,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            -0.0065,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.005,
+            0.004
+          ],
+          "offset": [
+            0.004243,
+            0.004243,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.005,
+            0.004
+          ],
+          "offset": [
+            -0.004243,
+            -0.004243,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.005,
+            0.004
+          ],
+          "offset": [
+            -0.004243,
+            0.004243,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.005,
+            0.004
+          ],
+          "offset": [
+            0.004243,
+            -0.004243,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.02,
+            0.002,
+            0.024
+          ],
+          "offset": [
+            0,
+            -0.029,
+            0.006
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.0002,
+            0.004,
+            0.003
+          ],
+          "offset": [
+            -0.0081,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.72,
+            0.96,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ring_rod",
+      "bolted": false,
+      "material": "Blunt stainless shaft with bonded rigid pull ring and stop foot",
+      "mass_kg": 0.018,
+      "friction": 0.5,
+      "rgb": [
+        0.92,
+        0.91,
+        0.79
+      ],
+      "position": [
+        0.36,
+        0,
+        0.081
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.006,
+            0.006,
+            0.053
+          ],
+          "offset": [
+            0,
+            0,
+            0.0265
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.008,
+            0.012,
+            0.002
+          ],
+          "offset": [
+            0,
+            0,
+            0.054
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.00994,
+            0.006
+          ],
+          "offset": [
+            0,
+            0,
+            0.0755
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.00994,
+            0.006
+          ],
+          "offset": [
+            0,
+            0,
+            0.0575
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.00994,
+            0.006
+          ],
+          "offset": [
+            0,
+            0.009,
+            0.0665
+          ],
+          "euler_deg": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.00994,
+            0.006
+          ],
+          "offset": [
+            0,
+            -0.009,
+            0.0665
+          ],
+          "euler_deg": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.00994,
+            0.006
+          ],
+          "offset": [
+            0,
+            0.006364,
+            0.072864
+          ],
+          "euler_deg": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.00994,
+            0.006
+          ],
+          "offset": [
+            0,
+            -0.006364,
+            0.060136
+          ],
+          "euler_deg": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.00994,
+            0.006
+          ],
+          "offset": [
+            0,
+            -0.006364,
+            0.072864
+          ],
+          "euler_deg": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.00994,
+            0.006
+          ],
+          "offset": [
+            0,
+            0.006364,
+            0.060136
+          ],
+          "euler_deg": [
+            45,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.0061,
+            0.0061,
+            0.003
+          ],
+          "offset": [
+            0,
+            0,
+            0.0016
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.19
+          ]
+        }
+      ]
+    },
+    {
+      "name": "positive_shoe",
+      "bolted": false,
+      "material": "Dry friction shoe on a lateral guide spring",
+      "mass_kg": 0.001,
+      "friction": 0.65,
+      "rgb": [
+        0.23,
+        0.25,
+        0.24
+      ],
+      "position": [
+        0.36,
+        0.00502,
+        0.097
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.005,
+            0.004,
+            0.004
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "negative_shoe",
+      "bolted": false,
+      "material": "Dry friction shoe on a lateral guide spring",
+      "mass_kg": 0.001,
+      "friction": 0.65,
+      "rgb": [
+        0.23,
+        0.25,
+        0.24
+      ],
+      "position": [
+        0.36,
+        -0.00502,
+        0.097
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.005,
+            0.004,
+            0.004
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "type": "slider",
+      "a": "feeder",
+      "b": "upper_port",
+      "axis": "Y",
+      "anchor_a": [
+        0,
+        0.013,
+        0.061
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -0.013,
+      "max": 0.011,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0.25
+    },
+    {
+      "type": "slider",
+      "a": "feeder",
+      "b": "lower_port",
+      "axis": "Y",
+      "anchor_a": [
+        0,
+        -0.013,
+        0.049
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -0.011,
+      "max": 0.013,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0.25
+    },
+    {
+      "type": "slider",
+      "a": "feeder",
+      "b": "ring_rod",
+      "axis": "Z",
+      "anchor_a": [
+        0,
+        0,
+        0.073
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -0.0324,
+      "max": 0,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0.35
+    },
+    {
+      "type": "slider",
+      "a": "feeder",
+      "b": "positive_shoe",
+      "axis": "Y",
+      "anchor_a": [
+        0,
+        0.00502,
+        0.089
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -0.0012,
+      "max": 0.0005,
+      "rest": -0.00085,
+      "stiffness": 850,
+      "damping": 1.2
+    },
+    {
+      "type": "slider",
+      "a": "feeder",
+      "b": "negative_shoe",
+      "axis": "Y",
+      "anchor_a": [
+        0,
+        -0.00502,
+        0.089
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -0.0005,
+      "max": 0.0012,
+      "rest": 0.00085,
+      "stiffness": 850,
+      "damping": 1.2
+    }
+  ],
+  "metrics": [
+    {
+      "name": "upper_gap",
+      "kind": "dy",
+      "a": "upper_port",
+      "b": "feeder",
+      "pa": [
+        0,
+        0.028,
+        -0.006
+      ],
+      "pb": [
+        0,
+        0.028,
+        0.055
+      ]
+    },
+    {
+      "name": "lower_gap",
+      "kind": "dy",
+      "a": "feeder",
+      "b": "lower_port",
+      "pa": [
+        0,
+        -0.028,
+        0.055
+      ],
+      "pb": [
+        0,
+        -0.028,
+        0.006
+      ]
+    },
+    {
+      "name": "upper_top",
+      "kind": "planar",
+      "a": "upper_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0.022
+      ]
+    },
+    {
+      "name": "upper_bottom",
+      "kind": "planar",
+      "a": "upper_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        -0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0.018
+      ]
+    },
+    {
+      "name": "lower_top",
+      "kind": "planar",
+      "a": "lower_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0.01
+      ]
+    },
+    {
+      "name": "lower_bottom",
+      "kind": "planar",
+      "a": "lower_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        -0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "foot_gap",
+      "kind": "dz",
+      "a": "ring_rod",
+      "b": "feeder",
+      "pa": [
+        0,
+        0,
+        0.053
+      ],
+      "pb": [
+        0,
+        0,
+        0.094
+      ]
+    },
+    {
+      "name": "tip_projection",
+      "kind": "dz",
+      "a": "lower_port",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        -0.002
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_upper",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "upper_port",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_upper",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "upper_port",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_lower",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "lower_port",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_lower",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "lower_port",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_ring",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_ring",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "ring_rod",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "invalidate": [],
+  "milestones": [],
+  "tiers": [
+    {
+      "score": 1,
+      "needs": [],
+      "all": [
+        {
+          "metric": "upper_gap",
+          "lo": -0.0005,
+          "hi": 0.003
+        },
+        {
+          "metric": "lower_gap",
+          "lo": -0.0005,
+          "hi": 0.003
+        },
+        {
+          "metric": "upper_top",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "upper_bottom",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "lower_top",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "lower_bottom",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "foot_gap",
+          "lo": -0.0005,
+          "hi": 0.0005
+        },
+        {
+          "metric": "tip_projection",
+          "lo": 0.0055,
+          "hi": 0.0065
+        },
+        {
+          "metric": "left_upper",
+          "lo": 0,
+          "hi": 0.01
+        },
+        {
+          "metric": "right_upper",
+          "lo": 0,
+          "hi": 0.01
+        },
+        {
+          "metric": "left_lower",
+          "lo": 0,
+          "hi": 0.01
+        },
+        {
+          "metric": "right_lower",
+          "lo": 0,
+          "hi": 0.01
+        },
+        {
+          "metric": "left_ring",
+          "lo": 0,
+          "hi": 0.01
+        },
+        {
+          "metric": "right_ring",
+          "lo": 0,
+          "hi": 0.01
+        }
+      ],
+      "ticks": 40
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 65,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.09,
+          0.075
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.09,
+          0.075
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      }
+    },
+    {
+      "ticks": 32,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.051,
+          0.063
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.051,
+          0.063
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      }
+    },
+    {
+      "ticks": 20,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.043,
+          0.063
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.043,
+          0.063
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      }
+    },
+    {
+      "ticks": 42,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.0296,
+          0.063
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.0296,
+          0.063
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      }
+    },
+    {
+      "ticks": 20,
+      "left": null,
+      "right": null
+    },
+    {
+      "ticks": 28,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.08,
+          0.063
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      },
+      "right": null
+    },
+    {
+      "ticks": 32,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.085,
+          0.173
+        ],
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      },
+      "right": null
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.08,
+          0.173
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 34,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.002,
+          0.1695
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 18,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.002,
+          0.1615
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 14,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.002,
+          0.1585
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.002,
+          0.1505
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.002,
+          0.1425
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.002,
+          0.1345
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.002,
+          0.1265
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 14,
+      "left": null,
+      "right": null
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.002,
+          0.155
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": null
+    },
+    {
+      "ticks": 36,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          0.085,
+          0.166
+        ],
+        "forward": [
+          0,
+          -0.96592583,
+          -0.25881905
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.002
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.36,
+          -0.085,
+          0.063
+        ],
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.004
+      }
+    }
+  ]
+}
