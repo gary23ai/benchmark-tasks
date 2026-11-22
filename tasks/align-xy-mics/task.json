@@ -1,0 +1,20 @@
+{
+  "title": "Aim and align an X/Y stereo microphone pair",
+  "category": "Other",
+  "keywords": [
+    "audio recording",
+    "X/Y stereo",
+    "coincident pair",
+    "capsule alignment",
+    "stereo bar"
+  ],
+  "instruction": "Turn and slide the upper microphone for X/Y recording. Aim the two pickup ends inward at a right angle and place the upper capsule directly above the lower one. Let go with both microphones supported by their clips.",
+  "context": "A recording technician sets this pair before connecting the microphones. The two pickup directions give stereo coverage, and closely spaced capsules reduce cancellation when the channels are combined into mono.",
+  "setup": "Two unpowered microphones with 20 mm diameter, 100 mm long barrels sit on a bolted stereo bar. Their clip centers are 100 mm apart from left to right. The fixed left microphone is 65 mm above the bench and points 45° inward, with its capsule 70.7 mm ahead of its clip center. The upper right microphone is 90 mm above the bench and points straight forward, with its capsule 45 mm ahead of the swivel center. Its clip turns and the barrel slides through it. Gold bands mark the capsule centers along the barrels.",
+  "scoring": "Score 1 if, throughout the final two seconds, both pickup directions face forward and inward at an included angle of 85° to 95° and the capsule centers are at most 5 mm apart in plan view. Both microphones must stay supported by their clips and both grippers must stay clear of the assembly throughout that interval. Score 0 otherwise.",
+  "run_limit": "1200 steps (60 seconds at 20 Hz)",
+  "reset_notes": "Keep the bar bolted and the lower clip locked. Set the upper barrel straight forward with a 41 mm gap from the rear sleeve face to the rear rim. Remove the square and spacer before starting. The station commands both arms to their fixed ready pose with fully open jaws.",
+  "fidelity": "The inert barrels, offset captive clips and capsule marks reproduce the geometry used to set up this X/Y pair before recording. Separate dry-friction surfaces retain the swivel and slide settings after release.",
+  "scores": "Dream-1 run: 0 (1200 steps); demo: 1.0 (1200 steps).",
+  "media": "M-CSGH3M"
+}

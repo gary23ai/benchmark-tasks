@@ -1,0 +1,970 @@
+{
+  "schemaVersion": 1,
+  "units": "Positions in m, contact normal force magnitudes in N, angles in degrees.",
+  "coordinateSignals": [
+    {
+      "name": "included",
+      "kind": "angle_deg",
+      "a": "upper",
+      "b": "lower",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        0.70710678,
+        -0.70710678,
+        0
+      ]
+    },
+    {
+      "name": "separation",
+      "kind": "planar",
+      "a": "upper",
+      "b": "lower",
+      "pa": [
+        0.042,
+        0,
+        0
+      ],
+      "pb": [
+        0.05,
+        -0.05,
+        0
+      ]
+    },
+    {
+      "name": "upper_forward",
+      "kind": "dx",
+      "a": "upper",
+      "b": "upper",
+      "pa": [
+        0.042,
+        0,
+        0
+      ],
+      "pb": [
+        0.012,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upper_left",
+      "kind": "dy",
+      "a": "upper",
+      "b": "upper",
+      "pa": [
+        0.042,
+        0,
+        0
+      ],
+      "pb": [
+        0.012,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lower_forward",
+      "kind": "dx",
+      "a": "lower",
+      "b": "lower",
+      "pa": [
+        0.05,
+        -0.05,
+        0
+      ],
+      "pb": [
+        0.028786797,
+        -0.028786797,
+        0
+      ]
+    },
+    {
+      "name": "lower_left",
+      "kind": "dy",
+      "a": "lower",
+      "b": "lower",
+      "pa": [
+        0.05,
+        -0.05,
+        0
+      ],
+      "pb": [
+        0.028786797,
+        -0.028786797,
+        0
+      ]
+    },
+    {
+      "name": "left_upper",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "upper",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_upper",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "upper",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_lower",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "lower",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_lower",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "lower",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_swivel",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "swivel",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_swivel",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "swivel",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_bar",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "bar",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_bar",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "bar",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slide_shoe",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "slide_shoe",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slide_shoe",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "slide_shoe",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_yaw_brake",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "yaw_brake",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_yaw_brake",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "yaw_brake",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "slide_shoe_load",
+      "kind": "contact_n",
+      "a": "slide_shoe",
+      "b": "upper",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yaw_brake_load",
+      "kind": "contact_n",
+      "a": "yaw_brake",
+      "b": "swivel",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "capsule_radius",
+      "kind": "planar",
+      "a": "upper",
+      "b": "swivel",
+      "pa": [
+        0.042,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upper_speed",
+      "kind": "speed",
+      "a": "upper",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "swivel_spin",
+      "kind": "spin_deg_s",
+      "a": "swivel",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "channelSums": {},
+  "wholeEpisodeInvalidatingConditions": [],
+  "stages": {
+    "scripted-first": {
+      "score": 1.0,
+      "steps": 1200,
+      "elapsedSeconds": 357.55,
+      "traceSha256": "1071bdcc7d0e210263304f8fc801c6f763e36593f165d71d018c0a705cadefb3",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 1161,
+          "last": 1200,
+          "samples": 40,
+          "requiredSamples": 40,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "included": {
+              "min": 89.57927539094541,
+              "max": 89.57943236883932,
+              "lo": 85,
+              "hi": 95,
+              "passedEverySample": true
+            },
+            "separation": {
+              "min": 0.003424456673970754,
+              "max": 0.003424534189463541,
+              "lo": 0,
+              "hi": 0.005,
+              "passedEverySample": true
+            },
+            "upper_forward": {
+              "min": 0.021368340253829998,
+              "max": 0.021368397474288925,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "upper_left": {
+              "min": 0.02105686068534851,
+              "max": 0.021056919693946838,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "lower_forward": {
+              "min": 0.021213202382837915,
+              "max": 0.021213202382837915,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "lower_left": {
+              "min": -0.02121320361716209,
+              "max": -0.02121320361716209,
+              "lo": -1000000,
+              "hi": -1e-06,
+              "passedEverySample": true
+            },
+            "left_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_swivel": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_swivel": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_bar": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_bar": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_slide_shoe": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_slide_shoe": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_yaw_brake": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_yaw_brake": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        }
+      ]
+    },
+    "idle": {
+      "score": 0.0,
+      "steps": 1200,
+      "elapsedSeconds": 333.79,
+      "traceSha256": "22bc26401641bb77aafda3c148c801592d649dd64511808e28806ebb580cba19",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 1161,
+          "last": 1200,
+          "samples": 40,
+          "requiredSamples": 40,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "included": {
+              "min": 44.99912607113075,
+              "max": 45.00207061258937,
+              "lo": 85,
+              "hi": 95,
+              "passedEverySample": false
+            },
+            "separation": {
+              "min": 0.05024562675046898,
+              "max": 0.05024793095644717,
+              "lo": 0,
+              "hi": 0.005,
+              "passedEverySample": false
+            },
+            "upper_forward": {
+              "min": 0.02999999999999997,
+              "max": 0.02999999999999997,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "upper_left": {
+              "min": -4.584947419020158e-07,
+              "max": 1.0832645057287649e-06,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": false
+            },
+            "lower_forward": {
+              "min": 0.021213202382837915,
+              "max": 0.021213202382837915,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "lower_left": {
+              "min": -0.02121320361716209,
+              "max": -0.02121320361716209,
+              "lo": -1000000,
+              "hi": -1e-06,
+              "passedEverySample": true
+            },
+            "left_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_swivel": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_swivel": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_bar": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_bar": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_slide_shoe": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_slide_shoe": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_yaw_brake": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_yaw_brake": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    },
+    "scripted-repeat": {
+      "score": 1.0,
+      "steps": 1200,
+      "elapsedSeconds": 346.26,
+      "traceSha256": "1071bdcc7d0e210263304f8fc801c6f763e36593f165d71d018c0a705cadefb3",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 1161,
+          "last": 1200,
+          "samples": 40,
+          "requiredSamples": 40,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "included": {
+              "min": 89.57927539094541,
+              "max": 89.57943236883932,
+              "lo": 85,
+              "hi": 95,
+              "passedEverySample": true
+            },
+            "separation": {
+              "min": 0.003424456673970754,
+              "max": 0.003424534189463541,
+              "lo": 0,
+              "hi": 0.005,
+              "passedEverySample": true
+            },
+            "upper_forward": {
+              "min": 0.021368340253829998,
+              "max": 0.021368397474288925,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "upper_left": {
+              "min": 0.02105686068534851,
+              "max": 0.021056919693946838,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "lower_forward": {
+              "min": 0.021213202382837915,
+              "max": 0.021213202382837915,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "lower_left": {
+              "min": -0.02121320361716209,
+              "max": -0.02121320361716209,
+              "lo": -1000000,
+              "hi": -1e-06,
+              "passedEverySample": true
+            },
+            "left_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_swivel": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_swivel": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_bar": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_bar": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_slide_shoe": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_slide_shoe": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_yaw_brake": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_yaw_brake": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            }
+          },
+          "passed": true
+        }
+      ]
+    },
+    "dream": {
+      "score": 0.0,
+      "steps": 1200,
+      "elapsedSeconds": 360.24,
+      "traceSha256": "906facd1baa1742b4ebde01db229c7179884fbb403dcf727d10533ad83b9e040",
+      "headcapAllEpisodePeakN": {},
+      "events": {},
+      "endOfEpisodeFullScoreRoutes": [
+        {
+          "first": 1161,
+          "last": 1200,
+          "samples": 40,
+          "requiredSamples": 40,
+          "requiredMilestones": [],
+          "prerequisitesEverySample": true,
+          "invalidationFree": true,
+          "observedRanges": {
+            "included": {
+              "min": 59.23008343674026,
+              "max": 59.23023501360016,
+              "lo": 85,
+              "hi": 95,
+              "passedEverySample": false
+            },
+            "separation": {
+              "min": 0.03945382997359493,
+              "max": 0.0394539323428563,
+              "lo": 0,
+              "hi": 0.005,
+              "passedEverySample": false
+            },
+            "upper_forward": {
+              "min": 0.029079473018646218,
+              "max": 0.029079492688179,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "upper_left": {
+              "min": 0.007374490052461623,
+              "max": 0.007374566942453378,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "lower_forward": {
+              "min": 0.021213202382837915,
+              "max": 0.021213202382837915,
+              "lo": 1e-06,
+              "hi": 1000000,
+              "passedEverySample": true
+            },
+            "lower_left": {
+              "min": -0.02121320361716209,
+              "max": -0.02121320361716209,
+              "lo": -1000000,
+              "hi": -1e-06,
+              "passedEverySample": true
+            },
+            "left_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_upper": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_lower": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_swivel": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_swivel": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_bar": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_bar": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_slide_shoe": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_slide_shoe": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "left_yaw_brake": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            },
+            "right_yaw_brake": {
+              "min": 0.0,
+              "max": 0.0,
+              "lo": 0,
+              "hi": 0,
+              "passedEverySample": true
+            }
+          },
+          "passed": false
+        }
+      ]
+    }
+  }
+}

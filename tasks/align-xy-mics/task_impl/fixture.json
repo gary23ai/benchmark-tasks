@@ -1,0 +1,1729 @@
+{
+  "limit": 1200,
+  "score_at_end": true,
+  "actors": [
+    {
+      "name": "bar",
+      "bolted": true,
+      "material": "Bench-mounted aluminum stereo bar with integral risers and central spindle support",
+      "mass_kg": 1.35,
+      "friction": 0.55,
+      "rgb": [
+        0.29,
+        0.33,
+        0.37
+      ],
+      "position": [
+        0.35,
+        0,
+        0.004
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.24,
+            0.24,
+            0.008
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.02,
+            0.02,
+            0.045
+          ],
+          "offset": [
+            0,
+            0.05,
+            0.0265
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.024,
+            0.024,
+            0.042
+          ],
+          "offset": [
+            0,
+            -0.05,
+            0.025
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.012,
+            0.012,
+            0.0175
+          ],
+          "offset": [
+            0,
+            -0.05,
+            0.05475
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lower",
+      "bolted": false,
+      "material": "Unpowered graphite-finished metal microphone with a locked aluminum collar",
+      "mass_kg": 0.092,
+      "friction": 0.48,
+      "rgb": [
+        0.28,
+        0.31,
+        0.35
+      ],
+      "position": [
+        0.35,
+        0.05,
+        0.065
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.02,
+            0.02,
+            0.1
+          ],
+          "offset": [
+            0.020301515,
+            -0.020301515,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            -45
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.024,
+            0.024,
+            0.012
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            -45
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.02016,
+            0.02016,
+            0.003
+          ],
+          "offset": [
+            0.05,
+            -0.05,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            -45
+          ],
+          "rgb": [
+            1,
+            0.81,
+            0.23
+          ]
+        }
+      ]
+    },
+    {
+      "name": "swivel",
+      "bolted": false,
+      "material": "Anodized aluminum swivel with a flat thrust disk and captive faceted slide sleeve",
+      "mass_kg": 0.024,
+      "friction": 0.46,
+      "rgb": [
+        0.57,
+        0.61,
+        0.64
+      ],
+      "position": [
+        0.35,
+        -0.05,
+        0.09
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.028,
+            0.028,
+            0.006
+          ],
+          "offset": [
+            0,
+            0,
+            -0.018
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.009,
+            0.00112
+          ],
+          "offset": [
+            0,
+            0,
+            -0.01444
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.0103,
+            0.0024
+          ],
+          "offset": [
+            0,
+            -0.008966114,
+            0.008966114
+          ],
+          "euler_deg": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.0103,
+            0.0024
+          ],
+          "offset": [
+            0,
+            -0.01268,
+            0
+          ],
+          "euler_deg": [
+            90,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.0103,
+            0.0024
+          ],
+          "offset": [
+            0,
+            -0.008966114,
+            -0.008966114
+          ],
+          "euler_deg": [
+            135,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.0103,
+            0.0024
+          ],
+          "offset": [
+            0,
+            0,
+            -0.01268
+          ],
+          "euler_deg": [
+            180,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.0103,
+            0.0024
+          ],
+          "offset": [
+            0,
+            0.008966114,
+            -0.008966114
+          ],
+          "euler_deg": [
+            -135,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.0103,
+            0.0024
+          ],
+          "offset": [
+            0,
+            0.01268,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.0103,
+            0.0024
+          ],
+          "offset": [
+            0,
+            0.008966114,
+            0.008966114
+          ],
+          "euler_deg": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.01835,
+            0.0012
+          ],
+          "offset": [
+            0,
+            0,
+            0.0136
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "upper",
+      "bolted": false,
+      "material": "Unpowered matte blue steel end-address microphone with an integral longitudinal brake land",
+      "mass_kg": 0.078,
+      "friction": 0.58,
+      "rgb": [
+        0.21,
+        0.42,
+        0.57
+      ],
+      "position": [
+        0.353,
+        -0.05,
+        0.09
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.02,
+            0.02,
+            0.1
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.054,
+            0.004,
+            0.001
+          ],
+          "offset": [
+            -0.017,
+            0,
+            0.0102
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.02016,
+            0.02016,
+            0.003
+          ],
+          "offset": [
+            0.042,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ],
+          "rgb": [
+            1,
+            0.81,
+            0.23
+          ]
+        }
+      ]
+    },
+    {
+      "name": "slide_shoe",
+      "bolted": false,
+      "material": "Steel-backed flat dry-friction shoe guided by the sleeve",
+      "mass_kg": 0.0012,
+      "friction": 0.46,
+      "rgb": [
+        0.21,
+        0.23,
+        0.24
+      ],
+      "position": [
+        0.35,
+        -0.05,
+        0.10185
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.0034,
+            0.0015
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "yaw_brake",
+      "bolted": false,
+      "material": "Keyed brass brake carrier with four bonded dry-friction pads",
+      "mass_kg": 0.009,
+      "friction": 0.5,
+      "rgb": [
+        0.63,
+        0.47,
+        0.26
+      ],
+      "position": [
+        0.35,
+        -0.05,
+        0.0646
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            0.01,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            0.007071068,
+            0.007071068,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            0,
+            0.01,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            -0.007071068,
+            0.007071068,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            135
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            -0.01,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            180
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            -0.007071068,
+            -0.007071068,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -135
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            0,
+            -0.01,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.01,
+            0.004
+          ],
+          "offset": [
+            0.007071068,
+            -0.007071068,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -45
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0046,
+            0.008,
+            0.002
+          ],
+          "offset": [
+            0.0107,
+            0,
+            0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0046,
+            0.008,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.0107,
+            0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0046,
+            0.008,
+            0.002
+          ],
+          "offset": [
+            -0.0107,
+            0,
+            0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            180
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0046,
+            0.008,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.0107,
+            0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "type": "fixed",
+      "a": "bar",
+      "b": "lower",
+      "anchor_a": [
+        0,
+        0.05,
+        0.061
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "hinge",
+      "a": "bar",
+      "b": "swivel",
+      "axis": "Z",
+      "anchor_a": [
+        0,
+        -0.05,
+        0.086
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -10,
+      "max": 55,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0
+    },
+    {
+      "type": "slider",
+      "a": "swivel",
+      "b": "upper",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0,
+        0
+      ],
+      "anchor_b": [
+        -0.003,
+        0,
+        0
+      ],
+      "min": -0.01,
+      "max": 0.037,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0
+    },
+    {
+      "type": "slider",
+      "a": "swivel",
+      "b": "slide_shoe",
+      "axis": "Z",
+      "anchor_a": [
+        0,
+        0,
+        0.01185
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -0.007,
+      "max": 0.0003,
+      "rest": -0.0064,
+      "stiffness": 750,
+      "damping": 2.2
+    },
+    {
+      "type": "slider",
+      "a": "bar",
+      "b": "yaw_brake",
+      "axis": "Z",
+      "anchor_a": [
+        0,
+        -0.05,
+        0.0606
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -0.001,
+      "max": 0.013,
+      "rest": 0.0124,
+      "stiffness": 650,
+      "damping": 4.8
+    }
+  ],
+  "metrics": [
+    {
+      "name": "included",
+      "kind": "angle_deg",
+      "a": "upper",
+      "b": "lower",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        0.70710678,
+        -0.70710678,
+        0
+      ]
+    },
+    {
+      "name": "separation",
+      "kind": "planar",
+      "a": "upper",
+      "b": "lower",
+      "pa": [
+        0.042,
+        0,
+        0
+      ],
+      "pb": [
+        0.05,
+        -0.05,
+        0
+      ]
+    },
+    {
+      "name": "upper_forward",
+      "kind": "dx",
+      "a": "upper",
+      "b": "upper",
+      "pa": [
+        0.042,
+        0,
+        0
+      ],
+      "pb": [
+        0.012,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upper_left",
+      "kind": "dy",
+      "a": "upper",
+      "b": "upper",
+      "pa": [
+        0.042,
+        0,
+        0
+      ],
+      "pb": [
+        0.012,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lower_forward",
+      "kind": "dx",
+      "a": "lower",
+      "b": "lower",
+      "pa": [
+        0.05,
+        -0.05,
+        0
+      ],
+      "pb": [
+        0.028786797,
+        -0.028786797,
+        0
+      ]
+    },
+    {
+      "name": "lower_left",
+      "kind": "dy",
+      "a": "lower",
+      "b": "lower",
+      "pa": [
+        0.05,
+        -0.05,
+        0
+      ],
+      "pb": [
+        0.028786797,
+        -0.028786797,
+        0
+      ]
+    },
+    {
+      "name": "left_upper",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "upper",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_upper",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "upper",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_lower",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "lower",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_lower",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "lower",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_swivel",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "swivel",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_swivel",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "swivel",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_bar",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "bar",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_bar",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "bar",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slide_shoe",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "slide_shoe",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slide_shoe",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "slide_shoe",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_yaw_brake",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "yaw_brake",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_yaw_brake",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "yaw_brake",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "slide_shoe_load",
+      "kind": "contact_n",
+      "a": "slide_shoe",
+      "b": "upper",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yaw_brake_load",
+      "kind": "contact_n",
+      "a": "yaw_brake",
+      "b": "swivel",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "capsule_radius",
+      "kind": "planar",
+      "a": "upper",
+      "b": "swivel",
+      "pa": [
+        0.042,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upper_speed",
+      "kind": "speed",
+      "a": "upper",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "swivel_spin",
+      "kind": "spin_deg_s",
+      "a": "swivel",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "invalidate": [],
+  "milestones": [],
+  "tiers": [
+    {
+      "score": 1,
+      "needs": [],
+      "ticks": 40,
+      "all": [
+        {
+          "metric": "included",
+          "lo": 85,
+          "hi": 95
+        },
+        {
+          "metric": "separation",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "upper_forward",
+          "lo": 1e-06,
+          "hi": 1000000
+        },
+        {
+          "metric": "upper_left",
+          "lo": 1e-06,
+          "hi": 1000000
+        },
+        {
+          "metric": "lower_forward",
+          "lo": 1e-06,
+          "hi": 1000000
+        },
+        {
+          "metric": "lower_left",
+          "lo": -1000000,
+          "hi": -1e-06
+        },
+        {
+          "metric": "left_upper",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "right_upper",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "left_lower",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "right_lower",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "left_swivel",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "right_swivel",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "left_bar",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "right_bar",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "left_slide_shoe",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "right_slide_shoe",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "left_yaw_brake",
+          "lo": 0,
+          "hi": 0
+        },
+        {
+          "metric": "right_yaw_brake",
+          "lo": 0,
+          "hi": 0
+        }
+      ]
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 100,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.35,
+          0.05,
+          0.115
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.05
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.35,
+          -0.05,
+          0.14
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.05
+      }
+    },
+    {
+      "ticks": 65,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.335,
+          0.145,
+          0.17
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.05
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.373,
+          -0.05,
+          0.125
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.05
+      }
+    },
+    {
+      "ticks": 55,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.373,
+          -0.05,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.05
+      }
+    },
+    {
+      "ticks": 40,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.373,
+          -0.05,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 60,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3722163,
+          -0.0440472,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.258819,
+          0.965926,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 60,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3699186,
+          -0.0385,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.5,
+          0.8660254,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 60,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3662635,
+          -0.0337365,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 55,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3719203,
+          -0.0280797,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 55,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3775772,
+          -0.0224228,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 55,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3818198,
+          -0.0181802,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 70,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3844437,
+          -0.0155563,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 100,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3844437,
+          -0.0155563,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.017
+      }
+    },
+    {
+      "ticks": 45,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3844437,
+          -0.0155563,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.027
+      }
+    },
+    {
+      "ticks": 50,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3844437,
+          -0.0155563,
+          0.087
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.05
+      }
+    },
+    {
+      "ticks": 50,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3775772,
+          -0.0224228,
+          0.099
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.05
+      }
+    },
+    {
+      "ticks": 65,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3676777,
+          -0.0323223,
+          0.116
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          -0.70710678,
+          0.70710678,
+          0
+        ],
+        "opening_m": 0.05
+      }
+    },
+    {
+      "ticks": 65,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.35,
+          -0.05,
+          0.14
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.05
+      }
+    }
+  ]
+}

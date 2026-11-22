@@ -1,0 +1,152 @@
+{
+  "task": "align-xy-mics",
+  "policy": "scripted",
+  "seed": 0,
+  "model": null,
+  "scorer": "physical_task_score",
+  "score": 1.0,
+  "steps": 1200,
+  "step_limit": 1200,
+  "declaredStepLimit": 1200,
+  "diagnosticOnly": false,
+  "elapsed_s": 346.26,
+  "control_hz": 20,
+  "initialBoundsPixels": {
+    "bar": [
+      268.3,
+      149.1,
+      361.5,
+      227.5
+    ],
+    "lower": [
+      286.8,
+      152.7,
+      319.8,
+      184.2
+    ],
+    "swivel": [
+      328.7,
+      165.0,
+      340.1,
+      178.8
+    ],
+    "upper": [
+      330.2,
+      150.5,
+      339.1,
+      188.1
+    ],
+    "slide_shoe": [
+      333.9,
+      166.5,
+      335.4,
+      168.8
+    ],
+    "yaw_brake": [
+      329.2,
+      169.9,
+      339.3,
+      179.2
+    ]
+  },
+  "initialMarkBoundsPixels": {
+    "lower:0": [
+      311.9,
+      154.1,
+      318.1,
+      163.4
+    ],
+    "upper:0": [
+      330.2,
+      152.6,
+      338.2,
+      157.8
+    ]
+  },
+  "initialMeasurements": {
+    "included": 45.000110113566826,
+    "separation": 0.050247164253480116,
+    "upper_forward": 0.02999999999999997,
+    "upper_left": 5.674913040876195e-08,
+    "lower_forward": 0.021213202382837915,
+    "lower_left": -0.02121320361716209,
+    "left_upper": 0.0,
+    "right_upper": 0.0,
+    "left_lower": 0.0,
+    "right_lower": 0.0,
+    "left_swivel": 0.0,
+    "right_swivel": 0.0,
+    "left_bar": 0.0,
+    "right_bar": 0.0,
+    "left_slide_shoe": 0.0,
+    "right_slide_shoe": 0.0,
+    "left_yaw_brake": 0.0,
+    "right_yaw_brake": 0.0,
+    "slide_shoe_load": 3.6240828037261963,
+    "yaw_brake_load": 7.186307430267334,
+    "capsule_radius": 0.0450049085862925,
+    "upper_speed": 0.0007962511153891683,
+    "swivel_spin": 13.59660816192627
+  },
+  "initialRobotBeforeAction": {
+    "left": {
+      "jointRadians": [
+        -4.3214376521660824e-10,
+        1.0,
+        1.0,
+        -0.6000000238418579,
+        -1.5074496317879493e-08,
+        -4.130570607774331e-10
+      ],
+      "normalizedJaw": 1.0,
+      "jawGapM": 0.0939
+    },
+    "right": {
+      "jointRadians": [
+        -4.3214376521660824e-10,
+        1.0,
+        1.0,
+        -0.6000000238418579,
+        -1.5074496317879493e-08,
+        -4.130570607774331e-10
+      ],
+      "normalizedJaw": 1.0,
+      "jawGapM": 0.0939
+    }
+  },
+  "initialGaugePoses": {},
+  "initialWedgeColliderProbes": {},
+  "finalWedgeBodyPositions": {},
+  "video_frames": 601,
+  "cameraPixels": {
+    "nativeOverview": [
+      640,
+      360
+    ],
+    "policyRGB": [
+      320,
+      176
+    ]
+  },
+  "nativeVersions": {
+    "isaacsim": "6.1.0.0",
+    "isaaclab": "17.0.2",
+    "isaaclab-arena": "0.3.0",
+    "inspect-robots": "1.0.0",
+    "yam-arena": "0.1.0",
+    "inspect-robots-dream": "0.1.0",
+    "dreamlabs-client": "1.0.14"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "observedSourceHashes": {
+    "task_impl/fixture.json": "6f69dd3a97f00fcfb89da04853fca51b326f8f33174232a8bca54b7494c582e3",
+    "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+    "task_impl/adapter.py": "1e087a232d8992cc8ca40134cd29e2e02250d081401e572a3f655a53a5d48b15",
+    "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+    "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+    "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+    "task_impl/scripted.py": "ebb5623f5d9bb865f740d0a8d307547859f30d5e8a9cb663f6aef498fc1fdb98"
+  },
+  "inspect_robots": "1.0.0",
+  "yam_arena": "0.1.0"
+}
