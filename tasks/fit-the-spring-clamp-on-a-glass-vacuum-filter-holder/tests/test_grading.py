@@ -7,8 +7,8 @@ from rdb_filter_clamp import fixed_scene as F
 from rdb_filter_clamp import grading as G
 
 
-def sample(height=0., support=None, *, clamp=True, tilt=0., funnel_lift=0.):
-    holder = F.HOLDER_START + (0., 0., height)
+def sample(height=0., support=None, *, clamp=True, tilt=0., funnel_lift=0., flask_dx=0.):
+    holder = F.HOLDER_START + (flask_dx, 0., height)
     angle = np.radians(tilt)
     rotation = np.array([[1., 0., 0.], [0., np.cos(angle), -np.sin(angle)], [0., np.sin(angle), np.cos(angle)]])
     joint = holder + rotation @ np.array([0., 0., F.JOINT[2]])
@@ -57,6 +57,35 @@ def test_upper_only_lift_then_set_down_and_release(arm):
     assert g.update(sample())["score"] == 1.
 
 
+def test_takeoff_outside_mark_tolerance_requires_a_new_lift_from_the_mark():
+    g = grade()
+    dx = 2 * G.MARK_TOL
+    assert dx < G.FAIL_TRAVEL
+    takeoff = g.update(sample(support="left", flask_dx=dx))
+    assert takeoff["on_table"] and not takeoff["on_mark"]
+    assert takeoff["failed"] is None
+    assert not repeat(g, sample(.023, "left", flask_dx=dx), G.HOLD_TICKS)["lift_verified"]
+    assert repeat(g, sample(), G.RELEASE_TICKS)["score"] == .5
+
+    g.update(sample(support="left"))
+    assert repeat(g, sample(.023, "left"), G.HOLD_TICKS)["lift_verified"]
+    assert repeat(g, sample(), G.RELEASE_TICKS)["score"] == 1.
+
+
+@pytest.mark.parametrize("on_mark_ticks", [0, G.RELEASE_TICKS - 1])
+def test_off_mark_set_down_or_release_invalidates_the_lift(on_mark_ticks):
+    g = grade()
+    g.update(sample(support="left"))
+    assert repeat(g, sample(.023, "left"), G.HOLD_TICKS)["lift_verified"]
+    for _ in range(on_mark_ticks):
+        g.update(sample())
+    off_mark = g.update(sample(flask_dx=2 * G.MARK_TOL))
+    assert off_mark["failed"] is None
+    assert off_mark["on_table"] and not off_mark["on_mark"]
+    assert not off_mark["lift_verified"] and off_mark["release_ticks"] == 0
+    assert repeat(g, sample(), G.RELEASE_TICKS)["score"] == .5
+
+
 @pytest.mark.parametrize("fault", ["under_20", "only_funnel", "open_clamp", "second_hand", "same_hand_lower",
                                     "single_finger", "touching_handles", "grip_flange", "no_contacts", "tilted_foot"])
 def test_false_lifts_do_not_count(fault):
@@ -85,6 +114,24 @@ def test_false_lifts_do_not_count(fault):
         s = sample(.022, "left", tilt=5.)
     assert not repeat(g, s, 25)["lift_verified"]
     assert repeat(g, sample(), 25)["score"] == .5
+
+
+def test_gauge_top_counts_for_the_full_hold():
+    g = grade()
+    g.update(sample(support="left"))
+    assert repeat(g, sample(.026, "left"), G.HOLD_TICKS)["lift_verified"]
+    assert repeat(g, sample(), G.RELEASE_TICKS)["score"] == 1.
+
+
+@pytest.mark.parametrize("prior_hold_ticks", [0, G.HOLD_TICKS])
+def test_above_gauge_latches_zero_even_after_return_to_the_mark(prior_hold_ticks):
+    g = grade()
+    g.update(sample(support="left"))
+    for _ in range(prior_hold_ticks):
+        g.update(sample(.023, "left"))
+    assert g.update(sample(.0261, "left"))["score"] == 0.
+    assert repeat(g, sample(.023, "left"), G.HOLD_TICKS)["score"] == 0.
+    assert repeat(g, sample(), G.RELEASE_TICKS)["score"] == 0.
 
 
 def test_helper_cannot_hand_over_in_midair_and_disassembly_invalidates_verified_lift():

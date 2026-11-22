@@ -32,10 +32,13 @@ CLAMP_BODIES = ("knuckle", "jawL", "jawR")
 CLAMP_JOINTS = ("hingeL", "hingeR")                          # opening = +hingeL = -hingeR
 
 INSTRUCTION = (
-    "Seat the glass funnel over the membrane on the fritted base. Hold it steady while fitting the spring clamp "
-    "around both flanges. Take the other hand clear. Grasp only the upper funnel and lift the entire dry assembly "
-    "until the bottom of the flask clears the bench by at least 20 mm for one second. Lower it upright onto its "
-    "mark, release it and withdraw both hands."
+    "Grip the glass funnel by its upper cylinder and lower it straight onto the membrane on the frit, "
+    "the porous disc that supports the membrane. Hold the funnel steady. With the other gripper, squeeze the "
+    "spring clamp handles, slide the jaws over both glass rims (flanges) and let them close. Move that gripper "
+    "clear. With the flask on its mark, lift the assembly straight up by the upper cylinder alone. Stop lifting "
+    "if the flanges separate. Keep the lowest edge of the flask foot at or below the gauge top. Hold that edge "
+    "between the top of the blue stripe and the gauge top for 1 continuous second. Set the flask down upright "
+    "on its mark, release the funnel, then move both grippers clear and keep them clear for 0.5 s."
 )
 
 

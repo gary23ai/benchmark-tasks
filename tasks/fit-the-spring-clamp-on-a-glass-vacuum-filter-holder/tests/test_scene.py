@@ -1,17 +1,15 @@
 """The scene file against layout.py, and the layout against the maker's numbers (NumPy and SciPy only)."""
 
 import re
-import subprocess
-import sys
-from pathlib import Path
+from importlib.resources import files
 
 import numpy as np
 
+from build_assets import usd as regenerate_usd
 from rdb_filter_clamp import fixed_scene as F
 from rdb_filter_clamp import layout as L
 
-ROOT = Path(__file__).resolve().parents[1]
-USD = F.USD.read_text()
+USD = F.USD.read_text(encoding="utf-8")
 
 
 def prim(name):
@@ -21,9 +19,9 @@ def prim(name):
 
 
 def test_asset_is_regenerated_from_layout():
-    out = subprocess.run([sys.executable, "-c", "import sys; sys.path.insert(0, 'tools'); import build_assets as b; print(b.usd() == open(b.scene.USD).read())"],
-                         cwd=ROOT, capture_output=True, text=True, check=True)
-    assert out.stdout.strip() == "True"
+    packaged_asset = files("rdb_filter_clamp").joinpath("filter_clamp.usda")
+    assert F.USD.read_bytes() == packaged_asset.read_bytes()
+    assert regenerate_usd() == packaged_asset.read_text(encoding="utf-8")
 
 
 def test_bodies_and_masses():

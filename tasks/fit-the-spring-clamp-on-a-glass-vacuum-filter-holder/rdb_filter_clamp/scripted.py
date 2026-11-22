@@ -1,4 +1,4 @@
-"""Full-score demonstration: the left hand seats the funnel on the base and holds it down; the right hand takes
+"""Scripted reference: the left hand seats the funnel on the base and holds it down; the right hand takes
 the clamp by its handles, squeezes it open, pushes it round both flanges and lets it close; then the left hand proof-lifts the assembly, sets it down and releases it.
 
 The demonstration reads the robot's own joint and gripper readings and, as the review rules allow for a
@@ -25,8 +25,8 @@ from yam_arena import ik
 from yam_arena.constants import FINGER_OPEN, READY
 
 from . import layout as L
-from .grading import flask_clearance
-from .fixed_scene import ARMS, BASES, CONTROL_HZ
+from .grading import LIFT_HEIGHT, MARK_TOL, MAX_LIFT_HEIGHT, RELEASE_TICKS, SEAT_GAP, TABLE_TOL, flask_clearance
+from .fixed_scene import ARMS, BASES, CONTROL_HZ, HOLDER_START, MAX_STEPS
 
 OPEN = abs(float(FINGER_OPEN))
 PAD_SPAN = 2 * OPEN                          # pads' separation (m) at a gripper reading of 1.0
@@ -51,6 +51,9 @@ FUNNEL_FINGER = (L.BODY_R - FUNNEL_SQUEEZE) / OPEN
 FUNNEL_HELD_MM = 60.                         # measured pad separation above this: the pads stopped on the funnel
 CLAMP_SQUEEZED_DEG = 24.                     # both jaws opened at least this far: the handles are pressed together
 RELEASE_CLAMP = (.40, .62)                   # gripper readings while letting the clamp close, then clear of the handles
+LOWER_STEPS = 10 * CONTROL_HZ
+LOWER_SETTLE_S = .5
+FUNNEL_RELEASE_TIMES = (.6, .3, 1., 2.2, .3)  # open, settle, withdraw, return home, open fully
 ABOVE = .022                                 # funnel's ground face this far above the base's on the way in
 VIA = np.array((.310, .050, L.JOINT_Z + ABOVE))   # funnel's ground face on the way over (reach study)
 BEHIND = .075                               # clamp ring this far behind the joint before it is pushed on
@@ -407,32 +410,48 @@ class FilterClampReference:
         """Move only the hand. Read the free flask and the funnel independently."""
         arm = "left"
         self.phase("proof lift by upper funnel")
-        start, _ = self.part("funnel")
-        start_foot, _ = self.part("holder")
+        mark_xy = HOLDER_START[:2]
         # The extra load pitches the soft wrist. Correct absolute vertical rather than
         # relative alignment between two pieces that can lean together.
+        target_clearance = (LIFT_HEIGHT + MAX_LIFT_HEIGHT) / 2
         yaw = 0.
         airborne = False
         held_ticks = 0
-        for k in range(16 * CONTROL_HZ):
+        # A slow preload can use the remaining episode time after reserving the full set-down and release.
+        release_steps = sum(round(seconds * CONTROL_HZ) for seconds in FUNNEL_RELEASE_TIMES)
+        finish_steps = LOWER_STEPS + round(LOWER_SETTLE_S * CONTROL_HZ) + release_steps + RELEASE_TICKS
+        proof_steps = max(0, MAX_STEPS - self.tick - finish_steps)
+        # Read the result of the last allowed command before deciding how the lift ended.
+        for k in range(proof_steps + 1):
             foot, body = self.part("holder")
             gap = flask_clearance(foot, body)
-            if self.seat()["gap"] > .006:
+            if self.seat()["gap"] > SEAT_GAP:
                 self.event("proof lift stopped: glass flanges separated")
                 break
+            if gap > MAX_LIFT_HEIGHT:
+                self.event("proof lift stopped: flask above gauge", foot_clearance_mm=1000 * gap)
+                break
             airborne = airborne or gap > .003
-            held_ticks = held_ticks + 1 if gap >= .022 else 0
+            held_ticks = held_ticks + 1 if LIFT_HEIGHT <= gap <= MAX_LIFT_HEIGHT else 0
             if held_ticks == 1:
                 self.phase("proof hold")
             if held_ticks >= 28:
                 break
+            if k == proof_steps:
+                self.event("proof lift step budget exhausted", foot_clearance_mm=round(1000 * gap, 2),
+                           held_ticks=held_ticks)
+                break
             if k % 4 == 0:
                 point, rotation = self.target[arm]
-                funnel, _ = self.part("funnel")
-                # Keep the grasp over the mark. In flight a modest yaw draws the
-                # elbow inward and makes the loaded upper workspace reachable.
-                xy = np.clip(.45 * (start[:2] - funnel[:2]), -.0012, .0012)
-                dz = np.clip(.45 * (.025 - gap), -.0012, .0026)
+                # The flask foot can drift while the funnel stays near the mark.
+                xy_error = mark_xy - foot[:2]
+                xy = np.clip(.45 * xy_error, -.0012, .0012)
+                dz = np.clip(.45 * (target_clearance - gap), -.0012, .0026)
+                if abs(gap) <= TABLE_TOL:
+                    # Leave room for motion lag before reaching the grader's mark tolerance.
+                    margin = max(0., 1. - np.linalg.norm(xy_error) / (MARK_TOL / 2))
+                    dz = min(dz, .0012 * margin)
+                # In flight a modest yaw draws the elbow inward and keeps the loaded workspace reachable.
                 turn = .32 * np.cross(body[:, 2], (0., 0., 1.))
                 size = np.linalg.norm(turn)
                 if size > np.radians(.65):
@@ -445,30 +464,31 @@ class FilterClampReference:
         self.event("proof hold ended", foot_clearance_mm=round(1000 * gap, 2), held_ticks=held_ticks)
         self.phase("lower assembly")
         # Descend onto the original foot mark and maintain world-up orientation.
-        for k in range(10 * CONTROL_HZ):
+        for k in range(LOWER_STEPS):
             foot, body = self.part("holder")
             gap = flask_clearance(foot, body)
             if gap < .0005 and L.tilt_deg(body) < 1.5:
                 break
             if k % 4 == 0:
                 point, rotation = self.target[arm]
-                xy = np.clip(.35 * (start_foot[:2] - foot[:2]), -.001, .001)
+                xy = np.clip(.35 * (mark_xy - foot[:2]), -.001, .001)
                 dz = -np.clip(.40 * gap, .00035, .0024)
                 turn = np.clip(.22 * np.cross(body[:, 2], (0., 0., 1.)), -.009, .009)
                 self.command(arm, point + np.r_[xy, dz], Rotation.from_rotvec(turn).as_matrix() @ rotation)
             yield self.emit()
-        yield from self.hold(.5)
+        yield from self.hold(LOWER_SETTLE_S)
 
     def let_go_of_funnel(self):
         arm = "left"
+        open_s, settle_s, withdraw_s, home_s, open_fully_s = FUNNEL_RELEASE_TIMES
         self.phase("funnel release")
-        yield from self.grip(arm, .88, .6)
-        yield from self.hold(.3)
+        yield from self.grip(arm, .88, open_s)
+        yield from self.hold(settle_s)
         point, rotation = self.target[arm]
-        yield from self.line(arm, 1.0, point - rotation[:, 2] * .06, rotation)
+        yield from self.line(arm, withdraw_s, point - rotation[:, 2] * .06, rotation)
         self.phase("funnel hand home")
-        yield from self.glide(arm, 2.2, np.asarray(READY, dtype=float))
-        yield from self.grip(arm, 1., .3)
+        yield from self.glide(arm, home_s, np.asarray(READY, dtype=float))
+        yield from self.grip(arm, 1., open_fully_s)
 
     def sequence(self):
         yield from self.hold(.5)

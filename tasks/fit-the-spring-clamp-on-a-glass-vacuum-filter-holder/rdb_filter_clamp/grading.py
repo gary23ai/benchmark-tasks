@@ -7,10 +7,12 @@ import numpy as np
 from . import layout as L
 
 CONTROL_HZ = 20
-LIFT_HEIGHT = .020
+LIFT_HEIGHT = .020       # Upper edge of the blue stripe, relative to the resting surface
+MAX_LIFT_HEIGHT = .026   # Upper edge of the stationary gauge
 HOLD_TICKS = 20
 RELEASE_TICKS = 10
 TABLE_TOL = .002
+MARK_TOL = .004  # Horizontal distance from the flask's fixed start, based on the reset allowance
 CONTACT_N = .05  # numerical noise floor for normal contact forces
 SEAT_GAP, SEAT_OFFSET = .003, .004
 CLEAR_AXIS = .100
@@ -67,31 +69,36 @@ class FilterClampGrade:
         tilt = L.tilt_deg(hr)
         foot = flask_clearance(hp, hr)
         on_table = abs(foot) <= TABLE_TOL
+        holder_offset = float(np.linalg.norm(hp[:2] - self.holder_start[:2]))
+        on_mark = holder_offset <= MARK_TOL
         seated = abs(seat["gap"]) <= SEAT_GAP and seat["offset"] <= SEAT_OFFSET and seat["tilt_deg"] <= 5.
         clamp_on = (ring["jaws_closed"] and ring["off_axis"] <= .005 and abs(ring["height"]) <= .004
                     and ring["tilt_deg"] <= 7.)
         assembled = seated and clamp_on
         if self.failed is None:
-            if tilt > FAIL_TILT or np.linalg.norm(hp[:2] - self.holder_start[:2]) > FAIL_TRAVEL:
+            if tilt > FAIL_TILT or holder_offset > FAIL_TRAVEL:
                 self.failed = "flask tipped or displaced"
+            elif foot > MAX_LIFT_HEIGHT:
+                self.failed = "flask foot above the top of the lift gauge"
             elif L.tilt_deg(fr) > 45. or fp[2] < -.05:
                 self.failed = "funnel dropped"
             elif (L.tilt_deg(cr) > 60. or cp[2] < -.05
                   or (cp[2] < .020 and np.linalg.norm(cp[:2] - self.clamp_start[:2]) > .050)):
                 self.failed = "clamp dropped"
         support = upper_support(s, fp, fr) if assembled else None
-        if not assembled:
+        if not assembled or (on_table and not on_mark):
             self.assembled_on_table = False
             self.lift_verified = False
         elif on_table:
             self.assembled_on_table = True
-        # Start from a table-supported assembly. A helper cannot lift it and hand it
-        # over in midair. A new attempt starts by replacing the assembly on the bench.
+        # Establish sole support while the assembled flask rests on the mark.
+        # Setting it down off the mark invalidates the proof.
         if assembled and on_table:
-            self.lifting_arm = support
+            self.lifting_arm = support if on_mark else None
         elif not assembled or support != self.lifting_arm:
             self.lifting_arm = None
-        lifting = self.assembled_on_table and self.lifting_arm is not None and foot >= LIFT_HEIGHT
+        lifting = (self.assembled_on_table and self.lifting_arm is not None
+                   and LIFT_HEIGHT <= foot <= MAX_LIFT_HEIGHT)
         self.lift_ticks = self.lift_ticks + 1 if lifting else 0
         if self.lift_ticks >= HOLD_TICKS:
             self.lift_verified = True
@@ -101,12 +108,13 @@ class FilterClampGrade:
             for arm in ("left", "right") for body in ("holder", "funnel", "knuckle", "jawL", "jawR"))
         clear = clear and all(np.linalg.norm(np.asarray(t)[:2] - hp[:2]) >= CLEAR_AXIS
                               or t[2] >= fp[2] + L.FUNNEL_H + .05 for t in s["tcp"])
-        released = self.lift_verified and assembled and on_table and tilt <= 3. and clear
+        released = self.lift_verified and assembled and on_table and on_mark and tilt <= 3. and clear
         self.release_ticks = self.release_ticks + 1 if released else 0
         score = 0. if self.failed or not assembled else (1. if self.release_ticks >= RELEASE_TICKS else .5)
         self.last = {
             "score": score, "failed": self.failed, "seated": bool(seated), "clamp_on": bool(clamp_on),
             "assembled": bool(assembled), "on_table": bool(on_table), "upper_support": support,
+            "on_mark": bool(on_mark), "holder_offset_mm": round(1000 * holder_offset, 3),
             "foot_clearance_mm": round(1000 * foot, 3), "lift_ticks": self.lift_ticks,
             "lift_verified": self.lift_verified, "release_ticks": self.release_ticks, "clear": bool(clear),
             "holder_tilt_deg": round(tilt, 2), "funnel_offset_mm": round(1000 * seat["offset"], 2),

@@ -37,7 +37,7 @@ class FilterClampArena(YamArenaEmbodiment):
         super().__init__(scene="station", object_jitter=0, control_hz=fixture.CONTROL_HZ,
                          cam_width=320, cam_height=176)
         self.info = replace(self.info, name="yam_filter_clamp",
-                            environment_id="isaaclab-arena-0.3.1-yam-filter-clamp",
+                            environment_id="isaaclab-arena-0.3.0-yam-filter-clamp",
                             supported_target_kinds=frozenset(),
                             docs="Calibrated dual-arm YAM station with a 47 mm glass vacuum filter holder on a 1 L "
                                  "filtering flask, its loose 300 mL funnel and its aluminium spring clamp. "
