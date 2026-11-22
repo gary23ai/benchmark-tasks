@@ -1,0 +1,20 @@
+{
+  "title": "Reverse one cover board to check the pair for squareness",
+  "category": "Other",
+  "keywords": [
+    "bookbinding",
+    "cover board",
+    "millboard",
+    "squareness",
+    "edge registration"
+  ],
+  "instruction": "Turn one cover board over. Match both ends of the long edge nearest you, then release the pair on the block with the opposite corners visible for inspection.",
+  "context": "A bookbinder checks a cut pair before attaching the covers. Reversing one board reveals a shared cutting error, and trimming a badly skewed pair square can make it too small for the intended book.",
+  "setup": "Two loose 3 mm boards lie pale face up on a flat bench block. Their long edges measure 160 mm and are 100 mm apart. The blue board’s near edge is centered and flush with the front lip. The ochre board has the same orientation and projects 39 mm toward you.",
+  "scoring": "At 30 seconds, earn 1 if the boards are released and resting flat together on the block, exactly one has changed face relative to its mate, and both corresponding near corners match within 3 mm in plan. Keep both registration points and the exposed far ledge visible. A tucked lower corner may be screened. Either board may finish on top, and you may correct a placement before time expires. Every other finish earns 0, including a match at only one near corner. For a partly hidden near tip, transfer both layers’ coordinates to the same square and measure the two signed offsets with a rule or caliper.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Center the blue near edge on the lip, with its far edge shifted 6 mm to your right. Stack the ochre board in the same orientation and slide it 39 mm straight toward you. Check both near endpoints of each board against the setup template and remove the template.",
+  "fidelity": "The stock edges and contrasting faces show the turnover. At a borderline near corner, place a transparent 3 mm radius circle over the lower endpoint and read the upper endpoint from above. Check the second corner before moving either board.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (600 steps).",
+  "media": "M-GVWVHY"
+}

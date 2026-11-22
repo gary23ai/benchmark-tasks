@@ -1,0 +1,3291 @@
+{
+  "limit": 600,
+  "actors": [
+    {
+      "name": "bench_block",
+      "bolted": true,
+      "material": "Bench-mounted hardwood plinth and flush cork-faced hardwood block",
+      "mass_kg": 1.65,
+      "friction": 0.78,
+      "rgb": [
+        0.43,
+        0.34,
+        0.25
+      ],
+      "position": [
+        0.35,
+        0,
+        0.0375
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.14,
+            0.24,
+            0.05
+          ],
+          "offset": [
+            0,
+            0,
+            -0.0125
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.14,
+            0.24,
+            0.025
+          ],
+          "offset": [
+            0,
+            0,
+            0.025
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blue",
+      "bolted": false,
+      "material": "Rigid blue-edged millboard with a pale front and dark reverse",
+      "mass_kg": 0.04,
+      "friction": 0.35,
+      "rgb": [
+        0.12,
+        0.32,
+        0.56
+      ],
+      "position": [
+        0.33,
+        -0.003,
+        0.0765
+      ],
+      "parts": [
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.1,
+            0.083
+          ],
+          "toe_m": 0.077,
+          "offset": [
+            0,
+            0.0415,
+            0
+          ],
+          "euler_deg": [
+            0,
+            -90,
+            -90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.1,
+            0.083
+          ],
+          "toe_m": 0.077,
+          "offset": [
+            0,
+            -0.0415,
+            0
+          ],
+          "euler_deg": [
+            0,
+            -90,
+            90
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.088,
+            0.145,
+            0.0001
+          ],
+          "offset": [
+            0,
+            0,
+            0.00155
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.65,
+            0.81,
+            0.89
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.088,
+            0.145,
+            0.0001
+          ],
+          "offset": [
+            0,
+            0,
+            -0.00155
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.16,
+            0.39,
+            0.46
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ochre",
+      "bolted": false,
+      "material": "Rigid ochre-edged millboard with a pale front and dark reverse",
+      "mass_kg": 0.04,
+      "friction": 0.35,
+      "rgb": [
+        0.84,
+        0.53,
+        0.17
+      ],
+      "position": [
+        0.291,
+        -0.003,
+        0.0795
+      ],
+      "parts": [
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.1,
+            0.083
+          ],
+          "toe_m": 0.077,
+          "offset": [
+            0,
+            0.0415,
+            0
+          ],
+          "euler_deg": [
+            0,
+            -90,
+            -90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.1,
+            0.083
+          ],
+          "toe_m": 0.077,
+          "offset": [
+            0,
+            -0.0415,
+            0
+          ],
+          "euler_deg": [
+            0,
+            -90,
+            90
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.088,
+            0.145,
+            0.0001
+          ],
+          "offset": [
+            0,
+            0,
+            0.00155
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.95,
+            0.84,
+            0.63
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.088,
+            0.145,
+            0.0001
+          ],
+          "offset": [
+            0,
+            0,
+            -0.00155
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.59,
+            0.28,
+            0.12
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [],
+  "metrics": [
+    {
+      "name": "faces",
+      "kind": "angle_deg",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "level_x",
+      "kind": "angle_deg",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "level_y",
+      "kind": "angle_deg",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0,
+        1,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "blue_heading",
+      "kind": "angle_deg",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ochre_heading",
+      "kind": "angle_deg",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "nn_l",
+      "kind": "planar",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        -0.05,
+        0.083,
+        0
+      ],
+      "pb": [
+        -0.05,
+        -0.077,
+        0
+      ]
+    },
+    {
+      "name": "nn_r",
+      "kind": "planar",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        -0.05,
+        -0.077,
+        0
+      ],
+      "pb": [
+        -0.05,
+        0.083,
+        0
+      ]
+    },
+    {
+      "name": "nf_l",
+      "kind": "planar",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        -0.05,
+        0.083,
+        0
+      ],
+      "pb": [
+        0.05,
+        0.077,
+        0
+      ]
+    },
+    {
+      "name": "nf_r",
+      "kind": "planar",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        -0.05,
+        -0.077,
+        0
+      ],
+      "pb": [
+        0.05,
+        -0.083,
+        0
+      ]
+    },
+    {
+      "name": "fn_l",
+      "kind": "planar",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        0.05,
+        0.077,
+        0
+      ],
+      "pb": [
+        -0.05,
+        0.083,
+        0
+      ]
+    },
+    {
+      "name": "fn_r",
+      "kind": "planar",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        0.05,
+        -0.083,
+        0
+      ],
+      "pb": [
+        -0.05,
+        -0.077,
+        0
+      ]
+    },
+    {
+      "name": "ff_l",
+      "kind": "planar",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        0.05,
+        0.077,
+        0
+      ],
+      "pb": [
+        0.05,
+        -0.083,
+        0
+      ]
+    },
+    {
+      "name": "ff_r",
+      "kind": "planar",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        0.05,
+        -0.083,
+        0
+      ],
+      "pb": [
+        0.05,
+        0.077,
+        0
+      ]
+    },
+    {
+      "name": "bearing",
+      "kind": "contact_n",
+      "a": "blue",
+      "b": "ochre",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_blue",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "blue",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_blue",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "blue",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_ochre",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "ochre",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_ochre",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "ochre",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "blue_speed",
+      "kind": "speed",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ochre_speed",
+      "kind": "speed",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "blue_spin",
+      "kind": "spin_deg_s",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ochre_spin",
+      "kind": "spin_deg_s",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_nl",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        -0.05,
+        0.083,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_nr",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        -0.05,
+        -0.077,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_fl",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0.05,
+        0.077,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_fr",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0.05,
+        -0.083,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_nl",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        -0.05,
+        0.083,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_nr",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        -0.05,
+        -0.077,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_fl",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        0.05,
+        0.077,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_fr",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        0.05,
+        -0.083,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "blue_edge_dx",
+      "kind": "dx",
+      "a": "blue",
+      "b": "blue",
+      "pa": [
+        0.05,
+        -0.003,
+        0
+      ],
+      "pb": [
+        -0.05,
+        0.003,
+        0
+      ]
+    },
+    {
+      "name": "ochre_edge_dx",
+      "kind": "dx",
+      "a": "ochre",
+      "b": "ochre",
+      "pa": [
+        0.05,
+        -0.003,
+        0
+      ],
+      "pb": [
+        -0.05,
+        0.003,
+        0
+      ]
+    },
+    {
+      "name": "ochre_above_blue",
+      "kind": "dz",
+      "a": "ochre",
+      "b": "blue",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_nl_long",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        -0.05,
+        0.079,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_nl_short",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        -0.04600718,
+        0.08276043,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_nr_long",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        -0.05,
+        -0.073,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_nr_short",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        -0.04600718,
+        -0.07723957,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_fl_long",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0.05,
+        0.073,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_fl_short",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0.04600718,
+        0.07723957,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_fr_long",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0.05,
+        -0.079,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_blue_fr_short",
+      "kind": "overview_arm_clear",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0.04600718,
+        -0.08276043,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_nl_long",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        -0.05,
+        0.079,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_nl_short",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        -0.04600718,
+        0.08276043,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_nr_long",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        -0.05,
+        -0.073,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_nr_short",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        -0.04600718,
+        -0.07723957,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_fl_long",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        0.05,
+        0.073,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_fl_short",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        0.04600718,
+        0.07723957,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_fr_long",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        0.05,
+        -0.079,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "view_ochre_fr_short",
+      "kind": "overview_arm_clear",
+      "a": "ochre",
+      "b": "table",
+      "pa": [
+        0.04600718,
+        -0.08276043,
+        0.0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "blue_on_block",
+      "kind": "contact_n",
+      "a": "blue",
+      "b": "bench_block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ochre_on_block",
+      "kind": "contact_n",
+      "a": "ochre",
+      "b": "bench_block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "blue_above_block",
+      "kind": "dz",
+      "a": "blue",
+      "b": "bench_block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.0375
+      ]
+    },
+    {
+      "name": "ochre_above_block",
+      "kind": "dz",
+      "a": "ochre",
+      "b": "bench_block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.0375
+      ]
+    }
+  ],
+  "invalidate": [],
+  "milestones": [
+    {
+      "name": "deadline",
+      "all": [
+        {
+          "metric": "faces",
+          "lo": 0,
+          "hi": 180
+        }
+      ],
+      "ticks": 600
+    }
+  ],
+  "tiers": [
+    {
+      "score": 1,
+      "needs": [
+        "deadline"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "nn_l",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "nn_r",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "blue_edge_dx",
+          "lo": 0,
+          "hi": 0.101
+        },
+        {
+          "metric": "ochre_edge_dx",
+          "lo": 0,
+          "hi": 0.101
+        },
+        {
+          "metric": "faces",
+          "lo": 179.7,
+          "hi": 180
+        },
+        {
+          "metric": "level_x",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "level_y",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "bearing",
+          "lo": 0.2,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "left_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "ochre_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "ochre_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "view_blue_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_above_blue",
+          "lo": 0.0001,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "blue_on_block",
+          "lo": 0.35,
+          "hi": 1000000.0
+        },
+        {
+          "metric": "blue_above_block",
+          "lo": 0.0005,
+          "hi": 0.0025
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "deadline"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "nn_l",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "nn_r",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "blue_edge_dx",
+          "lo": 0,
+          "hi": 0.101
+        },
+        {
+          "metric": "ochre_edge_dx",
+          "lo": 0,
+          "hi": 0.101
+        },
+        {
+          "metric": "faces",
+          "lo": 179.7,
+          "hi": 180
+        },
+        {
+          "metric": "level_x",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "level_y",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "bearing",
+          "lo": 0.2,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "left_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "ochre_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "ochre_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "view_blue_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_above_blue",
+          "lo": -1,
+          "hi": -0.0001
+        },
+        {
+          "metric": "view_blue_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_on_block",
+          "lo": 0.35,
+          "hi": 1000000.0
+        },
+        {
+          "metric": "ochre_above_block",
+          "lo": 0.0005,
+          "hi": 0.0025
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "deadline"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "nf_l",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "nf_r",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "blue_edge_dx",
+          "lo": 0,
+          "hi": 0.101
+        },
+        {
+          "metric": "ochre_edge_dx",
+          "lo": -0.101,
+          "hi": 0
+        },
+        {
+          "metric": "faces",
+          "lo": 179.7,
+          "hi": 180
+        },
+        {
+          "metric": "level_x",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "level_y",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "bearing",
+          "lo": 0.2,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "left_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "ochre_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "ochre_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "view_blue_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_above_blue",
+          "lo": 0.0001,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "blue_on_block",
+          "lo": 0.35,
+          "hi": 1000000.0
+        },
+        {
+          "metric": "blue_above_block",
+          "lo": 0.0005,
+          "hi": 0.0025
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "deadline"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "nf_l",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "nf_r",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "blue_edge_dx",
+          "lo": 0,
+          "hi": 0.101
+        },
+        {
+          "metric": "ochre_edge_dx",
+          "lo": -0.101,
+          "hi": 0
+        },
+        {
+          "metric": "faces",
+          "lo": 179.7,
+          "hi": 180
+        },
+        {
+          "metric": "level_x",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "level_y",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "bearing",
+          "lo": 0.2,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "left_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "ochre_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "ochre_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "view_blue_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_above_blue",
+          "lo": -1,
+          "hi": -0.0001
+        },
+        {
+          "metric": "view_blue_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_on_block",
+          "lo": 0.35,
+          "hi": 1000000.0
+        },
+        {
+          "metric": "ochre_above_block",
+          "lo": 0.0005,
+          "hi": 0.0025
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "deadline"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "fn_l",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "fn_r",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "blue_edge_dx",
+          "lo": -0.101,
+          "hi": 0
+        },
+        {
+          "metric": "ochre_edge_dx",
+          "lo": 0,
+          "hi": 0.101
+        },
+        {
+          "metric": "faces",
+          "lo": 179.7,
+          "hi": 180
+        },
+        {
+          "metric": "level_x",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "level_y",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "bearing",
+          "lo": 0.2,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "left_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "ochre_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "ochre_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "view_blue_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_above_blue",
+          "lo": 0.0001,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "blue_on_block",
+          "lo": 0.35,
+          "hi": 1000000.0
+        },
+        {
+          "metric": "blue_above_block",
+          "lo": 0.0005,
+          "hi": 0.0025
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "deadline"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "fn_l",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "fn_r",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "blue_edge_dx",
+          "lo": -0.101,
+          "hi": 0
+        },
+        {
+          "metric": "ochre_edge_dx",
+          "lo": 0,
+          "hi": 0.101
+        },
+        {
+          "metric": "faces",
+          "lo": 179.7,
+          "hi": 180
+        },
+        {
+          "metric": "level_x",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "level_y",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "bearing",
+          "lo": 0.2,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "left_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "ochre_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "ochre_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "view_blue_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_above_blue",
+          "lo": -1,
+          "hi": -0.0001
+        },
+        {
+          "metric": "view_blue_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_on_block",
+          "lo": 0.35,
+          "hi": 1000000.0
+        },
+        {
+          "metric": "ochre_above_block",
+          "lo": 0.0005,
+          "hi": 0.0025
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "deadline"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "ff_l",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "ff_r",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "blue_edge_dx",
+          "lo": -0.101,
+          "hi": 0
+        },
+        {
+          "metric": "ochre_edge_dx",
+          "lo": -0.101,
+          "hi": 0
+        },
+        {
+          "metric": "faces",
+          "lo": 179.7,
+          "hi": 180
+        },
+        {
+          "metric": "level_x",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "level_y",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "bearing",
+          "lo": 0.2,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "left_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "ochre_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "ochre_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "view_blue_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_above_blue",
+          "lo": 0.0001,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "blue_on_block",
+          "lo": 0.35,
+          "hi": 1000000.0
+        },
+        {
+          "metric": "blue_above_block",
+          "lo": 0.0005,
+          "hi": 0.0025
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "deadline"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "ff_l",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "ff_r",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "blue_edge_dx",
+          "lo": -0.101,
+          "hi": 0
+        },
+        {
+          "metric": "ochre_edge_dx",
+          "lo": -0.101,
+          "hi": 0
+        },
+        {
+          "metric": "faces",
+          "lo": 179.7,
+          "hi": 180
+        },
+        {
+          "metric": "level_x",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "level_y",
+          "lo": 89,
+          "hi": 91
+        },
+        {
+          "metric": "bearing",
+          "lo": 0.2,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_blue",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "left_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "right_ochre",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "ochre_speed",
+          "lo": 0,
+          "hi": 0.005
+        },
+        {
+          "metric": "blue_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "ochre_spin",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "view_blue_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_above_blue",
+          "lo": -1,
+          "hi": -0.0001
+        },
+        {
+          "metric": "view_blue_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_nr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_blue_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_nl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fl_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_long",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "view_ochre_fr_short",
+          "lo": 0.2,
+          "hi": 1
+        },
+        {
+          "metric": "ochre_on_block",
+          "lo": 0.35,
+          "hi": 1000000.0
+        },
+        {
+          "metric": "ochre_above_block",
+          "lo": 0.0005,
+          "hi": 0.0025
+        }
+      ]
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 40,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.19,
+          0.19,
+          0.18
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          1
+        ],
+        "opening_m": 0.02
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.22,
+          0,
+          0.128
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          1
+        ],
+        "opening_m": 0.011
+      }
+    },
+    {
+      "ticks": 36,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.235,
+          0,
+          0.0795
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          1
+        ],
+        "opening_m": 0.011
+      }
+    },
+    {
+      "ticks": 32,
+      "left": null,
+      "right": {
+        "relative_to": "ochre",
+        "tip": [
+          -0.02,
+          0.003,
+          0
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          1
+        ],
+        "opening_m": 0.011
+      }
+    },
+    {
+      "ticks": 20,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0,
+          0.0795
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          1
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 50,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0,
+          0.19
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          1
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0,
+          0.19
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0.5,
+          0.8660254
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0,
+          0.19
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0.8660254,
+          0.5
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0,
+          0.19
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0,
+          0.19
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0.8660254,
+          -0.5
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0,
+          0.19
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0.5,
+          -0.8660254
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0,
+          0.19
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          -1
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 46,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0.0016,
+          0.09
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          -1
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0.0016,
+          0.0795
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          -1
+        ],
+        "opening_m": 0.0
+      }
+    },
+    {
+      "ticks": 18,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.271,
+          0.0016,
+          0.0795
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          -1
+        ],
+        "opening_m": 0.011
+      }
+    },
+    {
+      "ticks": 34,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.203,
+          0.0016,
+          0.0795
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          0,
+          -1
+        ],
+        "opening_m": 0.011
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.205,
+          0.002,
+          0.085
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.238,
+          0.002,
+          0.08
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    },
+    {
+      "ticks": 38,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.279,
+          0.002,
+          0.08
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    },
+    {
+      "ticks": 38,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.209,
+          0.002,
+          0.08
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    },
+    {
+      "ticks": 38,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.21,
+          -0.14,
+          0.16
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.064
+      }
+    }
+  ],
+  "continuous_jaw": true,
+  "score_at_end": true
+}

@@ -1,0 +1,1341 @@
+{
+  "scripted": {
+    "task": "reverse-cover-board",
+    "policy": "scripted",
+    "seed": 0,
+    "model": null,
+    "scorer": "physical_task_score",
+    "score": 1.0,
+    "steps": 600,
+    "step_limit": 600,
+    "declaredStepLimit": 600,
+    "diagnosticOnly": false,
+    "elapsed_s": 237.98,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "bench_block": [
+        266.6,
+        150.4,
+        363.0,
+        210.0
+      ],
+      "blue": [
+        282.5,
+        162.5,
+        349.4,
+        197.1
+      ],
+      "ochre": [
+        281.7,
+        174.8,
+        350.1,
+        210.8
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "blue:0": [
+        286.9,
+        164.4,
+        345.1,
+        194.4
+      ],
+      "blue:1": [
+        286.9,
+        165.1,
+        345.0,
+        195.0
+      ],
+      "ochre:0": [
+        286.1,
+        176.8,
+        345.7,
+        208.1
+      ],
+      "ochre:1": [
+        286.2,
+        177.4,
+        345.6,
+        208.6
+      ]
+    },
+    "initialMeasurements": {
+      "faces": 0.0011595930908001486,
+      "level_x": 90.0,
+      "level_y": 90.0,
+      "blue_heading": 0.0,
+      "ochre_heading": 0.0011593365903865664,
+      "nn_l": 0.16468454326944537,
+      "nn_r": 0.1646845669299076,
+      "nf_l": 0.061294332546061744,
+      "nf_r": 0.06129433966365299,
+      "fn_l": 0.1391294746322023,
+      "fn_r": 0.1391294674869171,
+      "ff_l": 0.16468453886396156,
+      "ff_r": 0.16468457120836408,
+      "bearing": 0.3924027383327484,
+      "left_blue": 0.0,
+      "right_blue": 0.0,
+      "left_ochre": 0.0,
+      "right_ochre": 0.0,
+      "blue_speed": 4.574437116389163e-05,
+      "ochre_speed": 7.807023939676583e-05,
+      "blue_spin": 0.11896704137325287,
+      "ochre_spin": 0.11038467288017273,
+      "view_blue_nl": 1.0,
+      "view_blue_nr": 1.0,
+      "view_blue_fl": 1.0,
+      "view_blue_fr": 1.0,
+      "view_ochre_nl": 1.0,
+      "view_ochre_nr": 1.0,
+      "view_ochre_fl": 1.0,
+      "view_ochre_fr": 1.0,
+      "blue_edge_dx": 0.1000000000054353,
+      "ochre_edge_dx": 0.10000000027363307,
+      "ochre_above_blue": 0.0029982328414916992,
+      "view_blue_nl_long": 1.0,
+      "view_blue_nl_short": 1.0,
+      "view_blue_nr_long": 1.0,
+      "view_blue_nr_short": 1.0,
+      "view_blue_fl_long": 1.0,
+      "view_blue_fl_short": 1.0,
+      "view_blue_fr_long": 1.0,
+      "view_blue_fr_short": 1.0,
+      "view_ochre_nl_long": 1.0,
+      "view_ochre_nl_short": 1.0,
+      "view_ochre_nr_long": 1.0,
+      "view_ochre_nr_short": 1.0,
+      "view_ochre_fl_long": 1.0,
+      "view_ochre_fl_short": 1.0,
+      "view_ochre_fr_long": 1.0,
+      "view_ochre_fr_short": 1.0,
+      "blue_on_block": 0.7848033905029297,
+      "ochre_on_block": 0.0,
+      "blue_above_block": 0.0014999747276306097,
+      "ochre_above_block": 0.004498207569122309
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {
+      "blue:0": {
+        "bodyPositionM": [
+          0.33000001311302185,
+          -0.0030000009573996067,
+          0.07650000095367437
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.040299993784335186
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.036700007295998996
+          }
+        ]
+      },
+      "blue:1": {
+        "bodyPositionM": [
+          0.33000001311302185,
+          -0.0030000009573996067,
+          0.07650000095367437
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0402999891277223
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.03670000263938614
+          }
+        ]
+      },
+      "ochre:0": {
+        "bodyPositionM": [
+          0.29099997878074646,
+          -0.0029999874532222748,
+          0.07949823379516607
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.04029999652207184
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.036699992451107215
+          }
+        ]
+      },
+      "ochre:1": {
+        "bodyPositionM": [
+          0.29099997878074646,
+          -0.0029999874532222748,
+          0.07949823379516607
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.04030000397265107
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.03670001480284766
+          }
+        ]
+      }
+    },
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "finalWedgeBodyPositions": {
+      "blue": [
+        0.33000028133392334,
+        -0.002999862190335989,
+        0.07650000095367437
+      ],
+      "ochre": [
+        0.3284899592399597,
+        0.0038602780550718307,
+        0.07949918746948248
+      ]
+    },
+    "video_frames": 301,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "ff78d00654e9419407e6531d5ed2c6a5f519171cd6846f72f88b9371d7776f92",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "76ad11089c0af227ad253b9f5fc6bcb5adabfb1cbaea4c7b5f709570ddee1d4e",
+      "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/overview.py": "e84ec0d5d53f33a17adb2b9fedf594ad2d9a7364890bbb306f6c98c2f0123502",
+      "task_impl/scene.py": "839dce7d43a1229f1d0c5b418bbca90e4ca470613bbbdb597cd60f28131e798a",
+      "task_impl/scripted.py": "90632aa68d1cef3c8a4b4e6fcbcf4c5eb27a111d4b6362d8d970b868d0a767f4"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "taperedShimCrosscheck": {
+      "passed": true,
+      "parts": {
+        "blue:0": {
+          "nativeHeightsM": [
+            0.040299993784335186,
+            0.036700007295998996
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 7.295998999401476e-09,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "blue_on_block"
+          ],
+          "peakBodyContactN": 1.3384803533554077,
+          "displacementM": 3.019913077238991e-07
+        },
+        "blue:1": {
+          "nativeHeightsM": [
+            0.0402999891277223,
+            0.03670000263938614
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 1.087227770313337e-08,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "blue_on_block"
+          ],
+          "peakBodyContactN": 1.3384803533554077,
+          "displacementM": 3.019913077238991e-07
+        },
+        "ochre:0": {
+          "nativeHeightsM": [
+            0.04029999652207184,
+            0.036699992451107215
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 7.548892781705785e-09,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "ochre_on_block"
+          ],
+          "peakBodyContactN": 0.948908805847168,
+          "displacementM": 0.0381124897977812
+        },
+        "ochre:1": {
+          "nativeHeightsM": [
+            0.04030000397265107,
+            0.03670001480284766
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 1.4802847662920282e-08,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "ochre_on_block"
+          ],
+          "peakBodyContactN": 0.948908805847168,
+          "displacementM": 0.0381124897977812
+        }
+      },
+      "scope": "Native collision mesh raycast at two thicknesses and actual body-to-body reactions"
+    }
+  },
+  "scripted_repeat": {
+    "task": "reverse-cover-board",
+    "policy": "scripted",
+    "seed": 0,
+    "model": null,
+    "scorer": "physical_task_score",
+    "score": 1.0,
+    "steps": 600,
+    "step_limit": 600,
+    "declaredStepLimit": 600,
+    "diagnosticOnly": false,
+    "elapsed_s": 216.25,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "bench_block": [
+        266.6,
+        150.4,
+        363.0,
+        210.0
+      ],
+      "blue": [
+        282.5,
+        162.5,
+        349.4,
+        197.1
+      ],
+      "ochre": [
+        281.7,
+        174.8,
+        350.1,
+        210.8
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "blue:0": [
+        286.9,
+        164.4,
+        345.1,
+        194.4
+      ],
+      "blue:1": [
+        286.9,
+        165.1,
+        345.0,
+        195.0
+      ],
+      "ochre:0": [
+        286.1,
+        176.8,
+        345.7,
+        208.1
+      ],
+      "ochre:1": [
+        286.2,
+        177.4,
+        345.6,
+        208.6
+      ]
+    },
+    "initialMeasurements": {
+      "faces": 0.0011595930908001486,
+      "level_x": 90.0,
+      "level_y": 90.0,
+      "blue_heading": 0.0,
+      "ochre_heading": 0.0011593365903865664,
+      "nn_l": 0.16468454326944537,
+      "nn_r": 0.1646845669299076,
+      "nf_l": 0.061294332546061744,
+      "nf_r": 0.06129433966365299,
+      "fn_l": 0.1391294746322023,
+      "fn_r": 0.1391294674869171,
+      "ff_l": 0.16468453886396156,
+      "ff_r": 0.16468457120836408,
+      "bearing": 0.3924027383327484,
+      "left_blue": 0.0,
+      "right_blue": 0.0,
+      "left_ochre": 0.0,
+      "right_ochre": 0.0,
+      "blue_speed": 4.574437116389163e-05,
+      "ochre_speed": 7.807023939676583e-05,
+      "blue_spin": 0.11896704137325287,
+      "ochre_spin": 0.11038467288017273,
+      "view_blue_nl": 1.0,
+      "view_blue_nr": 1.0,
+      "view_blue_fl": 1.0,
+      "view_blue_fr": 1.0,
+      "view_ochre_nl": 1.0,
+      "view_ochre_nr": 1.0,
+      "view_ochre_fl": 1.0,
+      "view_ochre_fr": 1.0,
+      "blue_edge_dx": 0.1000000000054353,
+      "ochre_edge_dx": 0.10000000027363307,
+      "ochre_above_blue": 0.0029982328414916992,
+      "view_blue_nl_long": 1.0,
+      "view_blue_nl_short": 1.0,
+      "view_blue_nr_long": 1.0,
+      "view_blue_nr_short": 1.0,
+      "view_blue_fl_long": 1.0,
+      "view_blue_fl_short": 1.0,
+      "view_blue_fr_long": 1.0,
+      "view_blue_fr_short": 1.0,
+      "view_ochre_nl_long": 1.0,
+      "view_ochre_nl_short": 1.0,
+      "view_ochre_nr_long": 1.0,
+      "view_ochre_nr_short": 1.0,
+      "view_ochre_fl_long": 1.0,
+      "view_ochre_fl_short": 1.0,
+      "view_ochre_fr_long": 1.0,
+      "view_ochre_fr_short": 1.0,
+      "blue_on_block": 0.7848033905029297,
+      "ochre_on_block": 0.0,
+      "blue_above_block": 0.0014999747276306097,
+      "ochre_above_block": 0.004498207569122309
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {
+      "blue:0": {
+        "bodyPositionM": [
+          0.33000001311302185,
+          -0.0030000009573996067,
+          0.07650000095367437
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.040299993784335186
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.036700007295998996
+          }
+        ]
+      },
+      "blue:1": {
+        "bodyPositionM": [
+          0.33000001311302185,
+          -0.0030000009573996067,
+          0.07650000095367437
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0402999891277223
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.03670000263938614
+          }
+        ]
+      },
+      "ochre:0": {
+        "bodyPositionM": [
+          0.29099997878074646,
+          -0.0029999874532222748,
+          0.07949823379516607
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.04029999652207184
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.036699992451107215
+          }
+        ]
+      },
+      "ochre:1": {
+        "bodyPositionM": [
+          0.29099997878074646,
+          -0.0029999874532222748,
+          0.07949823379516607
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.04030000397265107
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.03670001480284766
+          }
+        ]
+      }
+    },
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "finalWedgeBodyPositions": {
+      "blue": [
+        0.33000028133392334,
+        -0.002999862190335989,
+        0.07650000095367437
+      ],
+      "ochre": [
+        0.3284899592399597,
+        0.0038602780550718307,
+        0.07949918746948248
+      ]
+    },
+    "video_frames": 301,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "ff78d00654e9419407e6531d5ed2c6a5f519171cd6846f72f88b9371d7776f92",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "76ad11089c0af227ad253b9f5fc6bcb5adabfb1cbaea4c7b5f709570ddee1d4e",
+      "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/overview.py": "e84ec0d5d53f33a17adb2b9fedf594ad2d9a7364890bbb306f6c98c2f0123502",
+      "task_impl/scene.py": "839dce7d43a1229f1d0c5b418bbca90e4ca470613bbbdb597cd60f28131e798a",
+      "task_impl/scripted.py": "90632aa68d1cef3c8a4b4e6fcbcf4c5eb27a111d4b6362d8d970b868d0a767f4"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "taperedShimCrosscheck": {
+      "passed": true,
+      "parts": {
+        "blue:0": {
+          "nativeHeightsM": [
+            0.040299993784335186,
+            0.036700007295998996
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 7.295998999401476e-09,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "blue_on_block"
+          ],
+          "peakBodyContactN": 1.3384803533554077,
+          "displacementM": 3.019913077238991e-07
+        },
+        "blue:1": {
+          "nativeHeightsM": [
+            0.0402999891277223,
+            0.03670000263938614
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 1.087227770313337e-08,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "blue_on_block"
+          ],
+          "peakBodyContactN": 1.3384803533554077,
+          "displacementM": 3.019913077238991e-07
+        },
+        "ochre:0": {
+          "nativeHeightsM": [
+            0.04029999652207184,
+            0.036699992451107215
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 7.548892781705785e-09,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "ochre_on_block"
+          ],
+          "peakBodyContactN": 0.948908805847168,
+          "displacementM": 0.0381124897977812
+        },
+        "ochre:1": {
+          "nativeHeightsM": [
+            0.04030000397265107,
+            0.03670001480284766
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 1.4802847662920282e-08,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "ochre_on_block"
+          ],
+          "peakBodyContactN": 0.948908805847168,
+          "displacementM": 0.0381124897977812
+        }
+      },
+      "scope": "Native collision mesh raycast at two thicknesses and actual body-to-body reactions"
+    }
+  },
+  "dream_1": {
+    "task": "reverse-cover-board",
+    "policy": "dream",
+    "seed": 0,
+    "model": "dreamlabs/dream-1-beta",
+    "scorer": "physical_task_score",
+    "score": 0.0,
+    "steps": 600,
+    "step_limit": 600,
+    "declaredStepLimit": 600,
+    "diagnosticOnly": false,
+    "elapsed_s": 226.98,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "bench_block": [
+        266.6,
+        150.4,
+        363.0,
+        210.0
+      ],
+      "blue": [
+        282.5,
+        162.5,
+        349.4,
+        197.1
+      ],
+      "ochre": [
+        281.7,
+        174.8,
+        350.1,
+        210.8
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "blue:0": [
+        286.9,
+        164.4,
+        345.1,
+        194.4
+      ],
+      "blue:1": [
+        286.9,
+        165.1,
+        345.0,
+        195.0
+      ],
+      "ochre:0": [
+        286.1,
+        176.8,
+        345.7,
+        208.1
+      ],
+      "ochre:1": [
+        286.2,
+        177.4,
+        345.6,
+        208.6
+      ]
+    },
+    "initialMeasurements": {
+      "faces": 0.0011595930908001486,
+      "level_x": 90.0,
+      "level_y": 90.0,
+      "blue_heading": 0.0,
+      "ochre_heading": 0.0011593365903865664,
+      "nn_l": 0.16468454326944537,
+      "nn_r": 0.1646845669299076,
+      "nf_l": 0.061294332546061744,
+      "nf_r": 0.06129433966365299,
+      "fn_l": 0.1391294746322023,
+      "fn_r": 0.1391294674869171,
+      "ff_l": 0.16468453886396156,
+      "ff_r": 0.16468457120836408,
+      "bearing": 0.3924027383327484,
+      "left_blue": 0.0,
+      "right_blue": 0.0,
+      "left_ochre": 0.0,
+      "right_ochre": 0.0,
+      "blue_speed": 4.574437116389163e-05,
+      "ochre_speed": 7.807023939676583e-05,
+      "blue_spin": 0.11896704137325287,
+      "ochre_spin": 0.11038467288017273,
+      "view_blue_nl": 1.0,
+      "view_blue_nr": 1.0,
+      "view_blue_fl": 1.0,
+      "view_blue_fr": 1.0,
+      "view_ochre_nl": 1.0,
+      "view_ochre_nr": 1.0,
+      "view_ochre_fl": 1.0,
+      "view_ochre_fr": 1.0,
+      "blue_edge_dx": 0.1000000000054353,
+      "ochre_edge_dx": 0.10000000027363307,
+      "ochre_above_blue": 0.0029982328414916992,
+      "view_blue_nl_long": 1.0,
+      "view_blue_nl_short": 1.0,
+      "view_blue_nr_long": 1.0,
+      "view_blue_nr_short": 1.0,
+      "view_blue_fl_long": 1.0,
+      "view_blue_fl_short": 1.0,
+      "view_blue_fr_long": 1.0,
+      "view_blue_fr_short": 1.0,
+      "view_ochre_nl_long": 1.0,
+      "view_ochre_nl_short": 1.0,
+      "view_ochre_nr_long": 1.0,
+      "view_ochre_nr_short": 1.0,
+      "view_ochre_fl_long": 1.0,
+      "view_ochre_fl_short": 1.0,
+      "view_ochre_fr_long": 1.0,
+      "view_ochre_fr_short": 1.0,
+      "blue_on_block": 0.7848033905029297,
+      "ochre_on_block": 0.0,
+      "blue_above_block": 0.0014999747276306097,
+      "ochre_above_block": 0.004498207569122309
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {
+      "blue:0": {
+        "bodyPositionM": [
+          0.33000001311302185,
+          -0.0030000009573996067,
+          0.07650000095367437
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.040299993784335186
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.036700007295998996
+          }
+        ]
+      },
+      "blue:1": {
+        "bodyPositionM": [
+          0.33000001311302185,
+          -0.0030000009573996067,
+          0.07650000095367437
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0402999891277223
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.03670000263938614
+          }
+        ]
+      },
+      "ochre:0": {
+        "bodyPositionM": [
+          0.29099997878074646,
+          -0.0029999874532222748,
+          0.07949823379516607
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.04029999652207184
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.036699992451107215
+          }
+        ]
+      },
+      "ochre:1": {
+        "bodyPositionM": [
+          0.29099997878074646,
+          -0.0029999874532222748,
+          0.07949823379516607
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.04030000397265107
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.03670001480284766
+          }
+        ]
+      }
+    },
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "finalWedgeBodyPositions": {
+      "blue": [
+        0.33000001311302185,
+        -0.003000004217028618,
+        0.07650000095367437
+      ],
+      "ochre": [
+        0.2923762798309326,
+        -0.0037170317955315113,
+        0.07949853181838995
+      ]
+    },
+    "video_frames": 301,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "ff78d00654e9419407e6531d5ed2c6a5f519171cd6846f72f88b9371d7776f92",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "76ad11089c0af227ad253b9f5fc6bcb5adabfb1cbaea4c7b5f709570ddee1d4e",
+      "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/overview.py": "e84ec0d5d53f33a17adb2b9fedf594ad2d9a7364890bbb306f6c98c2f0123502",
+      "task_impl/scene.py": "839dce7d43a1229f1d0c5b418bbca90e4ca470613bbbdb597cd60f28131e798a",
+      "task_impl/scripted.py": "90632aa68d1cef3c8a4b4e6fcbcf4c5eb27a111d4b6362d8d970b868d0a767f4"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "taperedShimCrosscheck": {
+      "passed": true,
+      "parts": {
+        "blue:0": {
+          "nativeHeightsM": [
+            0.040299993784335186,
+            0.036700007295998996
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 7.295998999401476e-09,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "blue_on_block"
+          ],
+          "peakBodyContactN": 1.192213773727417,
+          "displacementM": 3.259629011154175e-09
+        },
+        "blue:1": {
+          "nativeHeightsM": [
+            0.0402999891277223,
+            0.03670000263938614
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 1.087227770313337e-08,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "blue_on_block"
+          ],
+          "peakBodyContactN": 1.192213773727417,
+          "displacementM": 3.259629011154175e-09
+        },
+        "ochre:0": {
+          "nativeHeightsM": [
+            0.04029999652207184,
+            0.036699992451107215
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 7.548892781705785e-09,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "ochre_on_block"
+          ],
+          "peakBodyContactN": 0.8251307010650635,
+          "displacementM": 0.001551888287989521
+        },
+        "ochre:1": {
+          "nativeHeightsM": [
+            0.04030000397265107,
+            0.03670001480284766
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 1.4802847662920282e-08,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "ochre_on_block"
+          ],
+          "peakBodyContactN": 0.8251307010650635,
+          "displacementM": 0.001551888287989521
+        }
+      },
+      "scope": "Native collision mesh raycast at two thicknesses and actual body-to-body reactions"
+    },
+    "usage": {
+      "model": "dreamlabs/dream-1-beta",
+      "attempts": 12,
+      "served": 12,
+      "episodes": 1,
+      "cap": 16
+    }
+  },
+  "idle": {
+    "task": "reverse-cover-board",
+    "policy": "idle",
+    "seed": 0,
+    "model": null,
+    "scorer": "physical_task_score",
+    "score": 0.0,
+    "steps": 600,
+    "step_limit": 600,
+    "declaredStepLimit": 600,
+    "diagnosticOnly": false,
+    "elapsed_s": 211.5,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "bench_block": [
+        266.6,
+        150.4,
+        363.0,
+        210.0
+      ],
+      "blue": [
+        282.5,
+        162.5,
+        349.4,
+        197.1
+      ],
+      "ochre": [
+        281.7,
+        174.8,
+        350.1,
+        210.8
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "blue:0": [
+        286.9,
+        164.4,
+        345.1,
+        194.4
+      ],
+      "blue:1": [
+        286.9,
+        165.1,
+        345.0,
+        195.0
+      ],
+      "ochre:0": [
+        286.1,
+        176.8,
+        345.7,
+        208.1
+      ],
+      "ochre:1": [
+        286.2,
+        177.4,
+        345.6,
+        208.6
+      ]
+    },
+    "initialMeasurements": {
+      "faces": 0.0011595930908001486,
+      "level_x": 90.0,
+      "level_y": 90.0,
+      "blue_heading": 0.0,
+      "ochre_heading": 0.0011593365903865664,
+      "nn_l": 0.16468454326944537,
+      "nn_r": 0.1646845669299076,
+      "nf_l": 0.061294332546061744,
+      "nf_r": 0.06129433966365299,
+      "fn_l": 0.1391294746322023,
+      "fn_r": 0.1391294674869171,
+      "ff_l": 0.16468453886396156,
+      "ff_r": 0.16468457120836408,
+      "bearing": 0.3924027383327484,
+      "left_blue": 0.0,
+      "right_blue": 0.0,
+      "left_ochre": 0.0,
+      "right_ochre": 0.0,
+      "blue_speed": 4.574437116389163e-05,
+      "ochre_speed": 7.807023939676583e-05,
+      "blue_spin": 0.11896704137325287,
+      "ochre_spin": 0.11038467288017273,
+      "view_blue_nl": 1.0,
+      "view_blue_nr": 1.0,
+      "view_blue_fl": 1.0,
+      "view_blue_fr": 1.0,
+      "view_ochre_nl": 1.0,
+      "view_ochre_nr": 1.0,
+      "view_ochre_fl": 1.0,
+      "view_ochre_fr": 1.0,
+      "blue_edge_dx": 0.1000000000054353,
+      "ochre_edge_dx": 0.10000000027363307,
+      "ochre_above_blue": 0.0029982328414916992,
+      "view_blue_nl_long": 1.0,
+      "view_blue_nl_short": 1.0,
+      "view_blue_nr_long": 1.0,
+      "view_blue_nr_short": 1.0,
+      "view_blue_fl_long": 1.0,
+      "view_blue_fl_short": 1.0,
+      "view_blue_fr_long": 1.0,
+      "view_blue_fr_short": 1.0,
+      "view_ochre_nl_long": 1.0,
+      "view_ochre_nl_short": 1.0,
+      "view_ochre_nr_long": 1.0,
+      "view_ochre_nr_short": 1.0,
+      "view_ochre_fl_long": 1.0,
+      "view_ochre_fl_short": 1.0,
+      "view_ochre_fr_long": 1.0,
+      "view_ochre_fr_short": 1.0,
+      "blue_on_block": 0.7848033905029297,
+      "ochre_on_block": 0.0,
+      "blue_above_block": 0.0014999747276306097,
+      "ochre_above_block": 0.004498207569122309
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {
+      "blue:0": {
+        "bodyPositionM": [
+          0.33000001311302185,
+          -0.0030000009573996067,
+          0.07650000095367437
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.040299993784335186
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.036700007295998996
+          }
+        ]
+      },
+      "blue:1": {
+        "bodyPositionM": [
+          0.33000001311302185,
+          -0.0030000009573996067,
+          0.07650000095367437
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0402999891277223
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.03670000263938614
+          }
+        ]
+      },
+      "ochre:0": {
+        "bodyPositionM": [
+          0.29099997878074646,
+          -0.0029999874532222748,
+          0.07949823379516607
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.04029999652207184
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.036699992451107215
+          }
+        ]
+      },
+      "ochre:1": {
+        "bodyPositionM": [
+          0.29099997878074646,
+          -0.0029999874532222748,
+          0.07949823379516607
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.04030000397265107
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.03670001480284766
+          }
+        ]
+      }
+    },
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "finalWedgeBodyPositions": {
+      "blue": [
+        0.33000001311302185,
+        -0.0030000009573996067,
+        0.07650000095367437
+      ],
+      "ochre": [
+        0.29099997878074646,
+        -0.0029999874532222748,
+        0.07949823379516607
+      ]
+    },
+    "video_frames": 301,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "ff78d00654e9419407e6531d5ed2c6a5f519171cd6846f72f88b9371d7776f92",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "76ad11089c0af227ad253b9f5fc6bcb5adabfb1cbaea4c7b5f709570ddee1d4e",
+      "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/overview.py": "e84ec0d5d53f33a17adb2b9fedf594ad2d9a7364890bbb306f6c98c2f0123502",
+      "task_impl/scene.py": "839dce7d43a1229f1d0c5b418bbca90e4ca470613bbbdb597cd60f28131e798a",
+      "task_impl/scripted.py": "90632aa68d1cef3c8a4b4e6fcbcf4c5eb27a111d4b6362d8d970b868d0a767f4"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "taperedShimCrosscheck": {
+      "passed": true,
+      "parts": {
+        "blue:0": {
+          "nativeHeightsM": [
+            0.040299993784335186,
+            0.036700007295998996
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 7.295998999401476e-09,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "blue_on_block"
+          ],
+          "peakBodyContactN": 0.7848035097122192,
+          "displacementM": 0.0
+        },
+        "blue:1": {
+          "nativeHeightsM": [
+            0.0402999891277223,
+            0.03670000263938614
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 1.087227770313337e-08,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "blue_on_block"
+          ],
+          "peakBodyContactN": 0.7848035097122192,
+          "displacementM": 0.0
+        },
+        "ochre:0": {
+          "nativeHeightsM": [
+            0.04029999652207184,
+            0.036699992451107215
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 7.548892781705785e-09,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "ochre_on_block"
+          ],
+          "peakBodyContactN": 0.3924027979373932,
+          "displacementM": 0.0
+        },
+        "ochre:1": {
+          "nativeHeightsM": [
+            0.04030000397265107,
+            0.03670001480284766
+          ],
+          "expectedHeightsM": [
+            0.0403,
+            0.036699999999999997
+          ],
+          "maxHeightErrorM": 1.4802847662920282e-08,
+          "eligibleBodyContactChannels": [
+            "bearing",
+            "ochre_on_block"
+          ],
+          "peakBodyContactN": 0.3924027979373932,
+          "displacementM": 0.0
+        }
+      },
+      "scope": "Native collision mesh raycast at two thicknesses and actual body-to-body reactions"
+    }
+  }
+}
