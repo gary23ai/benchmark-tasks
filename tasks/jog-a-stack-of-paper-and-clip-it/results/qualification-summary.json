@@ -1,0 +1,1639 @@
+{
+ "files_sha256_now": {
+  "scene_sha256": "db9274ce4d5b073c9499e7c7e52dcb22528cfb0696ce690c864d014835178d66",
+  "asset_sha256": "185b6cd7f4ad144eb2fe01d691bbabe7ff1f8016a02e4d914f8a9e9cf38d88e9",
+  "model_sha256": "6d868c0a205a29ce3d0390dbd74c2454d33ccad84d3ddad43d05534a08539f1b",
+  "grader_sha256": "c9a0187d7fa37cbd879db93076cb4e56fccea38bdd02118ced79963c59dc2820"
+ },
+ "scripted": {
+  "policy": "scripted",
+  "model": null,
+  "variant": "full",
+  "score": 1.0,
+  "executed_steps": 1435,
+  "step_limit": 2400,
+  "wall_seconds": 952.97,
+  "termination_reason": "success",
+  "final_grade": {
+   "score": 1.0,
+   "long_edges_mm": 0.02,
+   "short_edges_mm": 0.02,
+   "sheets_in_jaws": 36,
+   "held_sheets": 36,
+   "lift_checked": true,
+   "clip_placed": true,
+   "clip_from_edge_middle_mm": 2.6,
+   "clip_angle_deg": 8.9,
+   "lip_gap_mm": 3.31,
+   "let_go": true,
+   "zeroed": ""
+  },
+  "lift_checks": [
+   {
+    "tick": 1435,
+    "seconds": 4.26,
+    "hung_clear": true,
+    "lowest_corner_mm": 154.1,
+    "peak_pull_n": 2.0,
+    "sheets_held": 36,
+    "moved_under_lips_mm": [
+     0.27,
+     0.27,
+     0.27,
+     0.27,
+     0.26,
+     0.27,
+     0.26,
+     0.25,
+     0.59
+    ]
+   }
+  ],
+  "worst_ik_mm": 0.097,
+  "peak_contact_n": {
+   "left_on_paper": 19.13,
+   "left_on_clip": 81.73,
+   "right_on_paper": 20.02,
+   "right_on_clip": 0.0
+  },
+  "peak_interarm_contact_n": 0.0,
+  "state_after_reset": {
+   "long_edges_mm": 18.18,
+   "short_edges_mm": 20.45,
+   "stack_middle_mm": [
+    627.7,
+    -99.3,
+    103.8
+   ],
+   "lowest_corner_mm": 102.2,
+   "highest_corner_mm": 105.4,
+   "largest_angle_deg": 0.0,
+   "clip_origin_mm": [
+    250.0,
+    300.0,
+    35.5
+   ],
+   "clip_opening_deg": 7.88,
+   "lip_gap_mm": 2.89
+  },
+  "phases": [
+   [
+    0,
+    "reach"
+   ],
+   [
+    70,
+    "pinch the overhanging edge (attempt 1)"
+   ],
+   [
+    108,
+    "draw the stack off the block"
+   ],
+   [
+    188,
+    "turn the stack to hang"
+   ],
+   [
+    254,
+    "open the cradle: the sheets drop onto the table"
+   ],
+   [
+    278,
+    "left hand goes to its end of the stack"
+   ],
+   [
+    356,
+    "right hand goes to its end of the stack"
+   ],
+   [
+    434,
+    "jog: pinch, lift, drop (1)"
+   ],
+   [
+    467,
+    "jog: pinch, lift, drop (2)"
+   ],
+   [
+    500,
+    "pat the ends together"
+   ],
+   [
+    546,
+    "shake from side to side"
+   ],
+   [
+    624,
+    "pinch and hold"
+   ],
+   [
+    634,
+    "right hand leaves its end"
+   ],
+   [
+    654,
+    "right hand takes the top edge"
+   ],
+   [
+    722,
+    "left hand leaves its end"
+   ],
+   [
+    742,
+    "carry the squared stack to where it is clipped"
+   ],
+   [
+    782,
+    "reach the clip"
+   ],
+   [
+    828,
+    "squeeze the clip's handles (attempt 1)"
+   ],
+   [
+    862,
+    "lift the clip off its fin"
+   ],
+   [
+    878,
+    "bring the clip to the short edge"
+   ],
+   [
+    934,
+    "push the clip on and let its handles go"
+   ],
+   [
+    1002,
+    "left hand takes the top edge"
+   ],
+   [
+    1070,
+    "right hand slides along the top edge to its own place"
+   ],
+   [
+    1106,
+    "lay the clipped stack back on the block"
+   ],
+   [
+    1354,
+    "let go and move away"
+   ],
+   [
+    1424,
+    "wait"
+   ]
+  ],
+  "events": [
+   {
+    "tick": 108,
+    "event": "pinched",
+    "long_edges_mm": 18.18,
+    "short_edges_mm": 20.45,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 2.95,
+     "right": 2.9
+    },
+    "whole_stack": {
+     "left": true,
+     "right": true
+    }
+   },
+   {
+    "tick": 188,
+    "event": "far edge off the block",
+    "long_edges_mm": 18.18,
+    "short_edges_mm": 20.46,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 2.88,
+     "right": 2.86
+    }
+   },
+   {
+    "tick": 254,
+    "event": "hanging over the table",
+    "long_edges_mm": 18.18,
+    "short_edges_mm": 20.45,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 2.93,
+     "right": 2.88
+    }
+   },
+   {
+    "tick": 266,
+    "event": "first drop",
+    "long_edges_mm": 0.02,
+    "short_edges_mm": 24.46,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    }
+   },
+   {
+    "tick": 356,
+    "event": "left hand at its end",
+    "long_edges_mm": 0.04,
+    "short_edges_mm": 24.48,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    }
+   },
+   {
+    "tick": 434,
+    "event": "right hand at its end",
+    "long_edges_mm": 0.0,
+    "short_edges_mm": 24.48,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    }
+   },
+   {
+    "tick": 467,
+    "event": "dropped",
+    "long_edges_mm": 0.11,
+    "short_edges_mm": 26.82,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.61
+    },
+    "cycle": 1
+   },
+   {
+    "tick": 500,
+    "event": "dropped",
+    "long_edges_mm": 0.1,
+    "short_edges_mm": 27.52,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    },
+    "cycle": 2
+   },
+   {
+    "tick": 546,
+    "event": "ends patted together",
+    "long_edges_mm": 0.08,
+    "short_edges_mm": 0.27,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.59,
+     "right": 6.62
+    },
+    "bars_apart_mm": 281.19
+   },
+   {
+    "tick": 561,
+    "event": "shaken to one side",
+    "long_edges_mm": 0.05,
+    "short_edges_mm": 0.01,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    },
+    "bars_apart_mm": 282.81
+   },
+   {
+    "tick": 582,
+    "event": "shaken to one side",
+    "long_edges_mm": 0.05,
+    "short_edges_mm": 0.01,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    },
+    "bars_apart_mm": 282.52
+   },
+   {
+    "tick": 603,
+    "event": "shaken to one side",
+    "long_edges_mm": 0.05,
+    "short_edges_mm": 0.03,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    },
+    "bars_apart_mm": 282.9
+   },
+   {
+    "tick": 624,
+    "event": "shaken to one side",
+    "long_edges_mm": 0.06,
+    "short_edges_mm": 0.01,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    },
+    "bars_apart_mm": 282.53
+   },
+   {
+    "tick": 624,
+    "event": "shaken",
+    "long_edges_mm": 0.06,
+    "short_edges_mm": 0.01,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 6.6,
+     "right": 6.6
+    }
+   },
+   {
+    "tick": 634,
+    "event": "clamped",
+    "long_edges_mm": 0.01,
+    "short_edges_mm": 0.0,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 2.75,
+     "right": 2.56
+    },
+    "whole_stack": {
+     "left": true,
+     "right": true
+    }
+   },
+   {
+    "tick": 782,
+    "event": "carried",
+    "long_edges_mm": 0.01,
+    "short_edges_mm": 0.01,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 30.0,
+     "right": 3.26
+    },
+    "whole_stack": true
+   },
+   {
+    "tick": 862,
+    "event": "handles squeezed",
+    "long_edges_mm": 0.01,
+    "short_edges_mm": 0.0,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 16.46,
+     "right": 3.26
+    },
+    "opened": true
+   },
+   {
+    "tick": 878,
+    "event": "clip in hand",
+    "long_edges_mm": 0.01,
+    "short_edges_mm": 0.0,
+    "sheets_in_jaws": 0,
+    "gripper_opening_mm": {
+     "left": 16.45,
+     "right": 3.25
+    },
+    "clip_in_hand_mm": [
+     0.1,
+     -4.0,
+     15.5
+    ]
+   },
+   {
+    "tick": 970,
+    "event": "clip let go",
+    "long_edges_mm": 0.01,
+    "short_edges_mm": 0.01,
+    "sheets_in_jaws": 36,
+    "gripper_opening_mm": {
+     "left": 45.0,
+     "right": 3.0
+    }
+   },
+   {
+    "tick": 986,
+    "event": "left hand off the clip",
+    "long_edges_mm": 0.01,
+    "short_edges_mm": 0.01,
+    "sheets_in_jaws": 36,
+    "gripper_opening_mm": {
+     "left": 45.0,
+     "right": 3.0
+    }
+   },
+   {
+    "tick": 1106,
+    "event": "both hands on the top edge",
+    "long_edges_mm": 0.02,
+    "short_edges_mm": 0.04,
+    "sheets_in_jaws": 36,
+    "gripper_opening_mm": {
+     "left": 2.72,
+     "right": 2.7
+    },
+    "whole_stack": {
+     "left": true,
+     "right": true
+    }
+   },
+   {
+    "tick": 1190,
+    "event": "held out in front of the block",
+    "long_edges_mm": 0.02,
+    "short_edges_mm": 0.02,
+    "sheets_in_jaws": 36,
+    "gripper_opening_mm": {
+     "left": 2.64,
+     "right": 2.71
+    },
+    "sag_mm": 16.7
+   },
+   {
+    "tick": 1268,
+    "event": "far edge on the block",
+    "long_edges_mm": 0.02,
+    "short_edges_mm": 0.03,
+    "sheets_in_jaws": 36,
+    "gripper_opening_mm": {
+     "left": 2.65,
+     "right": 2.62
+    }
+   },
+   {
+    "tick": 1354,
+    "event": "laid on the block",
+    "long_edges_mm": 0.03,
+    "short_edges_mm": 0.02,
+    "sheets_in_jaws": 36,
+    "gripper_opening_mm": {
+     "left": 2.67,
+     "right": 2.65
+    }
+   },
+   {
+    "tick": 1424,
+    "event": "parked",
+    "long_edges_mm": 0.02,
+    "short_edges_mm": 0.02,
+    "sheets_in_jaws": 36,
+    "gripper_opening_mm": {
+     "left": 93.9,
+     "right": 93.9
+    }
+   }
+  ],
+  "hashes": {
+   "scene_sha256": "db9274ce4d5b073c9499e7c7e52dcb22528cfb0696ce690c864d014835178d66",
+   "asset_sha256": "185b6cd7f4ad144eb2fe01d691bbabe7ff1f8016a02e4d914f8a9e9cf38d88e9",
+   "model_sha256": "6d868c0a205a29ce3d0390dbd74c2454d33ccad84d3ddad43d05534a08539f1b",
+   "grader_sha256": "c9a0187d7fa37cbd879db93076cb4e56fccea38bdd02118ced79963c59dc2820"
+  },
+  "versions": {
+   "inspect_robots": "1.0.0",
+   "yam_arena": "0.1.0"
+  }
+ },
+ "scripted_repeats": [],
+ "controls": {
+  "no_jog": {
+   "policy": "scripted",
+   "model": null,
+   "variant": "no_jog",
+   "score": 0.3,
+   "executed_steps": 2400,
+   "step_limit": 2400,
+   "wall_seconds": 1556.97,
+   "termination_reason": "max_steps",
+   "final_grade": {
+    "score": 0.3,
+    "long_edges_mm": 18.17,
+    "short_edges_mm": 20.53,
+    "sheets_in_jaws": 20,
+    "held_sheets": 20,
+    "lift_checked": true,
+    "clip_placed": true,
+    "clip_from_edge_middle_mm": 6.9,
+    "clip_angle_deg": 7.8,
+    "lip_gap_mm": 3.3,
+    "let_go": true,
+    "zeroed": ""
+   },
+   "lift_checks": [
+    {
+     "tick": 2400,
+     "seconds": 4.37,
+     "hung_clear": true,
+     "lowest_corner_mm": 154.7,
+     "peak_pull_n": 2.44,
+     "sheets_held": 20,
+     "moved_under_lips_mm": [
+      0.17,
+      0.06,
+      0.05,
+      0.05,
+      0.02,
+      0.02,
+      0.03,
+      0.04,
+      0.74
+     ]
+    }
+   ],
+   "worst_ik_mm": 0.1,
+   "peak_contact_n": {
+    "left_on_paper": 15.39,
+    "left_on_clip": 89.35,
+    "right_on_paper": 16.58,
+    "right_on_clip": 0.0
+   },
+   "peak_interarm_contact_n": 0.0,
+   "state_after_reset": {
+    "long_edges_mm": 18.18,
+    "short_edges_mm": 20.45,
+    "stack_middle_mm": [
+     627.7,
+     -99.3,
+     103.8
+    ],
+    "lowest_corner_mm": 102.2,
+    "highest_corner_mm": 105.4,
+    "largest_angle_deg": 0.0,
+    "clip_origin_mm": [
+     250.0,
+     300.0,
+     35.5
+    ],
+    "clip_opening_deg": 7.88,
+    "lip_gap_mm": 2.89
+   },
+   "phases": [
+    [
+     0,
+     "reach"
+    ],
+    [
+     70,
+     "pinch the overhanging edge (attempt 1)"
+    ],
+    [
+     108,
+     "draw the stack off the block"
+    ],
+    [
+     188,
+     "turn the stack to hang"
+    ],
+    [
+     254,
+     "set the pinched stack down"
+    ],
+    [
+     298,
+     "reach the clip"
+    ],
+    [
+     344,
+     "squeeze the clip's handles (attempt 1)"
+    ],
+    [
+     378,
+     "lift the clip off its fin"
+    ],
+    [
+     394,
+     "bring the clip to the short edge"
+    ],
+    [
+     450,
+     "push the clip on and let its handles go"
+    ],
+    [
+     518,
+     "left hand takes the top edge"
+    ],
+    [
+     586,
+     "lay the clipped stack back on the block"
+    ],
+    [
+     834,
+     "let go and move away"
+    ],
+    [
+     904,
+     "wait"
+    ]
+   ],
+   "events": [
+    {
+     "tick": 108,
+     "event": "pinched",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.95,
+      "right": 2.9
+     },
+     "whole_stack": {
+      "left": true,
+      "right": true
+     }
+    },
+    {
+     "tick": 188,
+     "event": "far edge off the block",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.46,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.88,
+      "right": 2.86
+     }
+    },
+    {
+     "tick": 254,
+     "event": "hanging over the table",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.93,
+      "right": 2.88
+     }
+    },
+    {
+     "tick": 280,
+     "event": "set down, never opened",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.98,
+      "right": 2.93
+     }
+    },
+    {
+     "tick": 378,
+     "event": "handles squeezed",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 16.46,
+      "right": 3.24
+     },
+     "opened": true
+    },
+    {
+     "tick": 394,
+     "event": "clip in hand",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 16.46,
+      "right": 3.24
+     },
+     "clip_in_hand_mm": [
+      0.1,
+      -4.0,
+      15.5
+     ]
+    },
+    {
+     "tick": 486,
+     "event": "clip let go",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 45.0,
+      "right": 3.22
+     }
+    },
+    {
+     "tick": 502,
+     "event": "left hand off the clip",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 45.0,
+      "right": 3.22
+     }
+    },
+    {
+     "tick": 586,
+     "event": "both hands on the top edge",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 2.78,
+      "right": 3.08
+     },
+     "whole_stack": {
+      "left": true,
+      "right": true
+     }
+    },
+    {
+     "tick": 670,
+     "event": "held out in front of the block",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 2.75,
+      "right": 3.06
+     },
+     "sag_mm": 16.2
+    },
+    {
+     "tick": 748,
+     "event": "far edge on the block",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.46,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 2.78,
+      "right": 3.07
+     }
+    },
+    {
+     "tick": 834,
+     "event": "laid on the block",
+     "long_edges_mm": 18.19,
+     "short_edges_mm": 20.46,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 2.81,
+      "right": 3.07
+     }
+    },
+    {
+     "tick": 904,
+     "event": "parked",
+     "long_edges_mm": 18.17,
+     "short_edges_mm": 20.53,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 93.9,
+      "right": 93.9
+     }
+    }
+   ],
+   "hashes": {
+    "scene_sha256": "db9274ce4d5b073c9499e7c7e52dcb22528cfb0696ce690c864d014835178d66",
+    "asset_sha256": "185b6cd7f4ad144eb2fe01d691bbabe7ff1f8016a02e4d914f8a9e9cf38d88e9",
+    "model_sha256": "6d868c0a205a29ce3d0390dbd74c2454d33ccad84d3ddad43d05534a08539f1b",
+    "grader_sha256": "c9a0187d7fa37cbd879db93076cb4e56fccea38bdd02118ced79963c59dc2820"
+   },
+   "versions": {
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0"
+   }
+  },
+  "one_direction": {
+   "policy": "scripted",
+   "model": null,
+   "variant": "one_direction",
+   "score": 0.3,
+   "executed_steps": 2400,
+   "step_limit": 2400,
+   "wall_seconds": 1200.91,
+   "termination_reason": "max_steps",
+   "final_grade": {
+    "score": 0.3,
+    "long_edges_mm": 0.06,
+    "short_edges_mm": 28.25,
+    "sheets_in_jaws": 20,
+    "held_sheets": 20,
+    "lift_checked": true,
+    "clip_placed": true,
+    "clip_from_edge_middle_mm": 3.5,
+    "clip_angle_deg": 8.8,
+    "lip_gap_mm": 3.08,
+    "let_go": true,
+    "zeroed": ""
+   },
+   "lift_checks": [
+    {
+     "tick": 2400,
+     "seconds": 4.47,
+     "hung_clear": true,
+     "lowest_corner_mm": 154.2,
+     "peak_pull_n": 2.11,
+     "sheets_held": 20,
+     "moved_under_lips_mm": [
+      0.27,
+      7.69,
+      0.25,
+      5.6,
+      0.21,
+      0.2,
+      0.18,
+      0.75,
+      0.47
+     ]
+    }
+   ],
+   "worst_ik_mm": 0.101,
+   "peak_contact_n": {
+    "left_on_paper": 16.9,
+    "left_on_clip": 86.26,
+    "right_on_paper": 18.14,
+    "right_on_clip": 0.0
+   },
+   "peak_interarm_contact_n": 0.0,
+   "state_after_reset": {
+    "long_edges_mm": 18.18,
+    "short_edges_mm": 20.45,
+    "stack_middle_mm": [
+     627.7,
+     -99.3,
+     103.8
+    ],
+    "lowest_corner_mm": 102.2,
+    "highest_corner_mm": 105.4,
+    "largest_angle_deg": 0.0,
+    "clip_origin_mm": [
+     250.0,
+     300.0,
+     35.5
+    ],
+    "clip_opening_deg": 7.88,
+    "lip_gap_mm": 2.89
+   },
+   "phases": [
+    [
+     0,
+     "reach"
+    ],
+    [
+     70,
+     "pinch the overhanging edge (attempt 1)"
+    ],
+    [
+     108,
+     "draw the stack off the block"
+    ],
+    [
+     188,
+     "turn the stack to hang"
+    ],
+    [
+     254,
+     "open the cradle: the sheets drop onto the table"
+    ],
+    [
+     278,
+     "jog: pinch, lift, drop (1)"
+    ],
+    [
+     311,
+     "jog: pinch, lift, drop (2)"
+    ],
+    [
+     362,
+     "pinch and hold"
+    ],
+    [
+     372,
+     "reach the clip"
+    ],
+    [
+     418,
+     "squeeze the clip's handles (attempt 1)"
+    ],
+    [
+     452,
+     "lift the clip off its fin"
+    ],
+    [
+     468,
+     "bring the clip to the short edge"
+    ],
+    [
+     524,
+     "push the clip on and let its handles go"
+    ],
+    [
+     592,
+     "left hand takes the top edge"
+    ],
+    [
+     660,
+     "lay the clipped stack back on the block"
+    ],
+    [
+     908,
+     "let go and move away"
+    ],
+    [
+     978,
+     "wait"
+    ]
+   ],
+   "events": [
+    {
+     "tick": 108,
+     "event": "pinched",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.95,
+      "right": 2.9
+     },
+     "whole_stack": {
+      "left": true,
+      "right": true
+     }
+    },
+    {
+     "tick": 188,
+     "event": "far edge off the block",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.46,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.88,
+      "right": 2.86
+     }
+    },
+    {
+     "tick": 254,
+     "event": "hanging over the table",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.93,
+      "right": 2.88
+     }
+    },
+    {
+     "tick": 266,
+     "event": "first drop",
+     "long_edges_mm": 0.02,
+     "short_edges_mm": 23.48,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     }
+    },
+    {
+     "tick": 311,
+     "event": "dropped",
+     "long_edges_mm": 0.14,
+     "short_edges_mm": 23.61,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.61,
+      "right": 6.6
+     },
+     "cycle": 1
+    },
+    {
+     "tick": 344,
+     "event": "dropped",
+     "long_edges_mm": 0.15,
+     "short_edges_mm": 28.25,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.61,
+      "right": 6.6
+     },
+     "cycle": 2
+    },
+    {
+     "tick": 372,
+     "event": "clamped",
+     "long_edges_mm": 0.04,
+     "short_edges_mm": 28.24,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 30.0,
+      "right": 3.19
+     },
+     "whole_stack": {
+      "right": true
+     }
+    },
+    {
+     "tick": 452,
+     "event": "handles squeezed",
+     "long_edges_mm": 0.04,
+     "short_edges_mm": 28.24,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 16.14,
+      "right": 3.2
+     },
+     "opened": true
+    },
+    {
+     "tick": 468,
+     "event": "clip in hand",
+     "long_edges_mm": 0.04,
+     "short_edges_mm": 28.24,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 16.14,
+      "right": 3.19
+     },
+     "clip_in_hand_mm": [
+      0.1,
+      -4.0,
+      15.6
+     ]
+    },
+    {
+     "tick": 560,
+     "event": "clip let go",
+     "long_edges_mm": 0.04,
+     "short_edges_mm": 28.24,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 45.0,
+      "right": 3.18
+     }
+    },
+    {
+     "tick": 576,
+     "event": "left hand off the clip",
+     "long_edges_mm": 0.04,
+     "short_edges_mm": 28.25,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 45.0,
+      "right": 3.2
+     }
+    },
+    {
+     "tick": 660,
+     "event": "both hands on the top edge",
+     "long_edges_mm": 0.04,
+     "short_edges_mm": 28.25,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 2.72,
+      "right": 2.94
+     },
+     "whole_stack": {
+      "left": true,
+      "right": true
+     }
+    },
+    {
+     "tick": 744,
+     "event": "held out in front of the block",
+     "long_edges_mm": 0.06,
+     "short_edges_mm": 28.25,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 2.65,
+      "right": 2.99
+     },
+     "sag_mm": 16.3
+    },
+    {
+     "tick": 822,
+     "event": "far edge on the block",
+     "long_edges_mm": 0.05,
+     "short_edges_mm": 28.25,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 2.76,
+      "right": 3.02
+     }
+    },
+    {
+     "tick": 908,
+     "event": "laid on the block",
+     "long_edges_mm": 0.04,
+     "short_edges_mm": 28.25,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 2.66,
+      "right": 2.91
+     }
+    },
+    {
+     "tick": 978,
+     "event": "parked",
+     "long_edges_mm": 0.06,
+     "short_edges_mm": 28.25,
+     "sheets_in_jaws": 20,
+     "gripper_opening_mm": {
+      "left": 93.9,
+      "right": 93.9
+     }
+    }
+   ],
+   "hashes": {
+    "scene_sha256": "db9274ce4d5b073c9499e7c7e52dcb22528cfb0696ce690c864d014835178d66",
+    "asset_sha256": "185b6cd7f4ad144eb2fe01d691bbabe7ff1f8016a02e4d914f8a9e9cf38d88e9",
+    "model_sha256": "6d868c0a205a29ce3d0390dbd74c2454d33ccad84d3ddad43d05534a08539f1b",
+    "grader_sha256": "c9a0187d7fa37cbd879db93076cb4e56fccea38bdd02118ced79963c59dc2820"
+   },
+   "versions": {
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0"
+   }
+  },
+  "release_before_clip": {
+   "policy": "scripted",
+   "model": null,
+   "variant": "release_before_clip",
+   "score": 0.0,
+   "executed_steps": 2400,
+   "step_limit": 2400,
+   "wall_seconds": 1112.02,
+   "termination_reason": "max_steps",
+   "final_grade": {
+    "score": 0.0,
+    "long_edges_mm": 3.93,
+    "short_edges_mm": 3.9,
+    "sheets_in_jaws": 0,
+    "held_sheets": null,
+    "lift_checked": false,
+    "clip_placed": false,
+    "clip_from_edge_middle_mm": 129.4,
+    "clip_angle_deg": 16.4,
+    "lip_gap_mm": 0.0,
+    "let_go": true,
+    "zeroed": ""
+   },
+   "lift_checks": [],
+   "worst_ik_mm": 0.097,
+   "peak_contact_n": {
+    "left_on_paper": 17.2,
+    "left_on_clip": 81.45,
+    "right_on_paper": 19.1,
+    "right_on_clip": 0.0
+   },
+   "peak_interarm_contact_n": 0.0,
+   "state_after_reset": {
+    "long_edges_mm": 18.18,
+    "short_edges_mm": 20.45,
+    "stack_middle_mm": [
+     627.7,
+     -99.3,
+     103.8
+    ],
+    "lowest_corner_mm": 102.2,
+    "highest_corner_mm": 105.4,
+    "largest_angle_deg": 0.0,
+    "clip_origin_mm": [
+     250.0,
+     300.0,
+     35.5
+    ],
+    "clip_opening_deg": 7.88,
+    "lip_gap_mm": 2.89
+   },
+   "phases": [
+    [
+     0,
+     "reach"
+    ],
+    [
+     70,
+     "pinch the overhanging edge (attempt 1)"
+    ],
+    [
+     108,
+     "draw the stack off the block"
+    ],
+    [
+     188,
+     "turn the stack to hang"
+    ],
+    [
+     254,
+     "open the cradle: the sheets drop onto the table"
+    ],
+    [
+     278,
+     "left hand goes to its end of the stack"
+    ],
+    [
+     356,
+     "right hand goes to its end of the stack"
+    ],
+    [
+     434,
+     "jog: pinch, lift, drop (1)"
+    ],
+    [
+     467,
+     "jog: pinch, lift, drop (2)"
+    ],
+    [
+     500,
+     "pat the ends together"
+    ],
+    [
+     546,
+     "shake from side to side"
+    ],
+    [
+     624,
+     "pinch and hold"
+    ],
+    [
+     634,
+     "right hand leaves its end"
+    ],
+    [
+     654,
+     "right hand takes the top edge"
+    ],
+    [
+     722,
+     "left hand leaves its end"
+    ],
+    [
+     742,
+     "carry the squared stack to where it is clipped"
+    ],
+    [
+     782,
+     "right hand lets go early"
+    ],
+    [
+     842,
+     "reach the clip"
+    ],
+    [
+     888,
+     "squeeze the clip's handles (attempt 1)"
+    ],
+    [
+     922,
+     "lift the clip off its fin"
+    ],
+    [
+     938,
+     "bring the clip to the short edge"
+    ],
+    [
+     994,
+     "push the clip on and let its handles go"
+    ],
+    [
+     1062,
+     "hands away (nothing to lay back)"
+    ],
+    [
+     1112,
+     "wait"
+    ]
+   ],
+   "events": [
+    {
+     "tick": 108,
+     "event": "pinched",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.95,
+      "right": 2.9
+     },
+     "whole_stack": {
+      "left": true,
+      "right": true
+     }
+    },
+    {
+     "tick": 188,
+     "event": "far edge off the block",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.46,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.88,
+      "right": 2.86
+     }
+    },
+    {
+     "tick": 254,
+     "event": "hanging over the table",
+     "long_edges_mm": 18.18,
+     "short_edges_mm": 20.45,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.93,
+      "right": 2.88
+     }
+    },
+    {
+     "tick": 266,
+     "event": "first drop",
+     "long_edges_mm": 0.02,
+     "short_edges_mm": 24.46,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     }
+    },
+    {
+     "tick": 356,
+     "event": "left hand at its end",
+     "long_edges_mm": 0.04,
+     "short_edges_mm": 24.48,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     }
+    },
+    {
+     "tick": 434,
+     "event": "right hand at its end",
+     "long_edges_mm": 0.0,
+     "short_edges_mm": 24.48,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     }
+    },
+    {
+     "tick": 467,
+     "event": "dropped",
+     "long_edges_mm": 0.11,
+     "short_edges_mm": 26.82,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.61
+     },
+     "cycle": 1
+    },
+    {
+     "tick": 500,
+     "event": "dropped",
+     "long_edges_mm": 0.1,
+     "short_edges_mm": 27.52,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     },
+     "cycle": 2
+    },
+    {
+     "tick": 546,
+     "event": "ends patted together",
+     "long_edges_mm": 0.08,
+     "short_edges_mm": 0.27,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.59,
+      "right": 6.62
+     },
+     "bars_apart_mm": 281.19
+    },
+    {
+     "tick": 561,
+     "event": "shaken to one side",
+     "long_edges_mm": 0.05,
+     "short_edges_mm": 0.01,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     },
+     "bars_apart_mm": 282.81
+    },
+    {
+     "tick": 582,
+     "event": "shaken to one side",
+     "long_edges_mm": 0.05,
+     "short_edges_mm": 0.01,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     },
+     "bars_apart_mm": 282.52
+    },
+    {
+     "tick": 603,
+     "event": "shaken to one side",
+     "long_edges_mm": 0.05,
+     "short_edges_mm": 0.03,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     },
+     "bars_apart_mm": 282.9
+    },
+    {
+     "tick": 624,
+     "event": "shaken to one side",
+     "long_edges_mm": 0.06,
+     "short_edges_mm": 0.01,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     },
+     "bars_apart_mm": 282.53
+    },
+    {
+     "tick": 624,
+     "event": "shaken",
+     "long_edges_mm": 0.06,
+     "short_edges_mm": 0.01,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 6.6,
+      "right": 6.6
+     }
+    },
+    {
+     "tick": 634,
+     "event": "clamped",
+     "long_edges_mm": 0.01,
+     "short_edges_mm": 0.0,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 2.75,
+      "right": 2.56
+     },
+     "whole_stack": {
+      "left": true,
+      "right": true
+     }
+    },
+    {
+     "tick": 782,
+     "event": "carried",
+     "long_edges_mm": 0.01,
+     "short_edges_mm": 0.01,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 30.0,
+      "right": 3.26
+     },
+     "whole_stack": true
+    },
+    {
+     "tick": 842,
+     "event": "let go before the clip",
+     "long_edges_mm": 3.93,
+     "short_edges_mm": 3.9,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 30.0,
+      "right": 93.9
+     }
+    },
+    {
+     "tick": 922,
+     "event": "handles squeezed",
+     "long_edges_mm": 3.93,
+     "short_edges_mm": 3.9,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 16.46,
+      "right": 93.9
+     },
+     "opened": true
+    },
+    {
+     "tick": 938,
+     "event": "clip in hand",
+     "long_edges_mm": 3.93,
+     "short_edges_mm": 3.9,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 16.45,
+      "right": 93.9
+     },
+     "clip_in_hand_mm": [
+      0.1,
+      -4.0,
+      15.5
+     ]
+    },
+    {
+     "tick": 1030,
+     "event": "clip let go",
+     "long_edges_mm": 3.93,
+     "short_edges_mm": 3.9,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 45.0,
+      "right": 93.9
+     }
+    },
+    {
+     "tick": 1046,
+     "event": "left hand off the clip",
+     "long_edges_mm": 3.93,
+     "short_edges_mm": 3.9,
+     "sheets_in_jaws": 0,
+     "gripper_opening_mm": {
+      "left": 45.0,
+      "right": 93.9
+     }
+    }
+   ],
+   "hashes": {
+    "scene_sha256": "db9274ce4d5b073c9499e7c7e52dcb22528cfb0696ce690c864d014835178d66",
+    "asset_sha256": "185b6cd7f4ad144eb2fe01d691bbabe7ff1f8016a02e4d914f8a9e9cf38d88e9",
+    "model_sha256": "6d868c0a205a29ce3d0390dbd74c2454d33ccad84d3ddad43d05534a08539f1b",
+    "grader_sha256": "c9a0187d7fa37cbd879db93076cb4e56fccea38bdd02118ced79963c59dc2820"
+   },
+   "versions": {
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0"
+   }
+  }
+ },
+ "dream_1": {
+  "policy": "dream",
+  "model": "dreamlabs/dream-1-beta",
+  "variant": null,
+  "score": 0.0,
+  "executed_steps": 2400,
+  "step_limit": 2400,
+  "wall_seconds": 1069.39,
+  "termination_reason": "max_steps",
+  "final_grade": {
+   "score": 0.0,
+   "long_edges_mm": 18.36,
+   "short_edges_mm": 20.41,
+   "sheets_in_jaws": 0,
+   "held_sheets": null,
+   "lift_checked": false,
+   "clip_placed": false,
+   "clip_from_edge_middle_mm": 372.8,
+   "clip_angle_deg": 90.0,
+   "lip_gap_mm": 2.89,
+   "let_go": true,
+   "zeroed": ""
+  },
+  "lift_checks": [],
+  "worst_ik_mm": null,
+  "peak_contact_n": {
+   "left_on_paper": 0.34,
+   "left_on_clip": 0.0,
+   "right_on_paper": 0.0,
+   "right_on_clip": 0.0
+  },
+  "peak_interarm_contact_n": 0.0,
+  "state_after_reset": {
+   "long_edges_mm": 18.18,
+   "short_edges_mm": 20.45,
+   "stack_middle_mm": [
+    627.7,
+    -99.3,
+    103.8
+   ],
+   "lowest_corner_mm": 102.2,
+   "highest_corner_mm": 105.4,
+   "largest_angle_deg": 0.0,
+   "clip_origin_mm": [
+    250.0,
+    300.0,
+    35.5
+   ],
+   "clip_opening_deg": 7.88,
+   "lip_gap_mm": 2.89
+  },
+  "phases": null,
+  "events": [],
+  "hashes": {
+   "scene_sha256": "db9274ce4d5b073c9499e7c7e52dcb22528cfb0696ce690c864d014835178d66",
+   "asset_sha256": "185b6cd7f4ad144eb2fe01d691bbabe7ff1f8016a02e4d914f8a9e9cf38d88e9",
+   "model_sha256": "6d868c0a205a29ce3d0390dbd74c2454d33ccad84d3ddad43d05534a08539f1b",
+   "grader_sha256": "c9a0187d7fa37cbd879db93076cb4e56fccea38bdd02118ced79963c59dc2820"
+  },
+  "versions": {
+   "inspect_robots": "1.0.0",
+   "yam_arena": "0.1.0"
+  },
+  "dream_action_requests": 80
+ },
+ "every_run_scored_these_files": {
+  "scene_sha256": true,
+  "asset_sha256": true,
+  "model_sha256": true,
+  "grader_sha256": true
+ }
+}

@@ -1,0 +1,58 @@
+{
+  "seed": 0,
+  "object_jitter": 0,
+  "control_hz": 20,
+  "physics_hz": 240,
+  "max_steps": 2400,
+  "scripted": {
+    "score": 1.0,
+    "steps": 1435,
+    "wall_seconds": 952.97
+  },
+  "scripted_repeats": [],
+  "controls": {
+    "no_jog": {
+      "score": 0.3,
+      "steps": 2400
+    },
+    "one_direction": {
+      "score": 0.3,
+      "steps": 2400
+    },
+    "release_before_clip": {
+      "score": 0.0,
+      "steps": 2400
+    }
+  },
+  "dream_1": {
+    "model": "dreamlabs/dream-1-beta",
+    "score": 0.0,
+    "steps": 2400,
+    "wall_seconds": 1069.39
+  },
+  "scope": "Original native runs; recording hashes below describe their historical sources. See submission_grader for the revised endpoint check.",
+  "model_observation": "Overhead and two wrist RGB images at 320 x 176, plus the standard 14 joint/gripper position readings. The extra side camera is for review only.",
+  "evidence_hash_scope": "Each RESULT.json records the hashes of fixed_scene.py, the scene file, paper_model.py and grading.py it ran. They do not record a hash of the whole source tree.",
+  "recorded_hashes_match": {
+    "scene_sha256": true,
+    "asset_sha256": true,
+    "model_sha256": true,
+    "grader_sha256": true
+  },
+  "notes": [
+    "Same-seed repeats of the scripted demonstration were not run on the final scene and scorer; earlier runs on earlier versions of the scene and scorer are development runs, not evidence for these files.",
+    "Dream-1: Three earlier attempts at this run on the same scene were stopped by the provider (DreamAPI refused the inference request: DA-2000 NO_CAPACITY (max_serves): Dream-1 is at max capacity right now) at steps 2,288, 32 and 80; in the first of them the model had also scored 0.0 up to that step. The recorded run is the fourth attempt and the only complete one."
+  ],
+  "submission_grader": {
+    "recording_sha256": "c2659137596afe685ba85f4f57a621d6bb79e4222449405c2c5cf984d37688dd",
+    "current_sha256": "6292f4d5bfc7bae1104df88708b40542ca219d3f9ecb0dbee299f0a697b3a20f",
+    "verification": "The recorded zeroing flag stayed empty in both videos and all three controls. Removing the temporary splay penalty therefore changes none of their scores. The lift, sheet-count and flush checks use the original recorded measurements.",
+    "verified_results": {
+      "scripted": 1.0,
+      "dream": 0.0,
+      "no_jog": 0.3,
+      "one_direction": 0.3,
+      "release_before_clip": 0.0
+    }
+  }
+}
