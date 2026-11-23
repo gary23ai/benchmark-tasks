@@ -1,0 +1,19 @@
+{
+  "title": "Hang a full-length broom in a household wall gripper",
+  "category": "Societal relatability",
+  "keywords": [
+    "broom",
+    "wall-mounted storage",
+    "rubber clip",
+    "floor clearance"
+  ],
+  "instruction": "Hang the broom in the wall clip. Leave at least 30 mm of space under the entire broom head and take both hands away.",
+  "context": "Wall-mounted holders keep sweeping tools accessible while leaving the floor clear for cleaning. A handle pushed only into the mouth can slide down after the operator lets go.",
+  "setup": "A 991 mm corn broom with a dry 23.8 mm wooden shaft stands on a marked floor plate. The handle rests in an open parking fork. Mount a 3M Command 17007 or equivalent two-sided push-in grip at 654 mm above the plate and 102 mm behind the starting shaft. Align their centers. The two arms start at home on 355 mm pedestals, 610 mm apart.",
+  "scoring": "Watch the final 3 seconds. The shaft must sit between both grey faces, with its front edge behind the clip lips at their height. The holder alone bears the load, both hands are clear, and the marked shaft moves at most one 5 mm stripe spacing at the clip. Compare the lowest bristles with the two clearance scales. Give 1 if a 30 mm spacer fits under the whole broom head throughout, 0.5 if only a 5 mm spacer fits, and 0 otherwise. A handle held at the entrance or supported by the floor, fork, wall or robot earns 0.",
+  "run_limit": "716 steps (35.8 seconds at 20 Hz)",
+  "reset_notes": "Place all bristles on the marked plate with the broad face parallel to the wall. Return the shaft to its open fork, allow both elastic faces to close and reset both arms.",
+  "fidelity": "The full-length rigid broom has a 23.8 mm hardwood shaft and a grouped bristle fan. The household gripper uses the published 79 mm by 47 mm by 85 mm shell envelope. Two spring-return rubber shoes approximate the deformation seen in the product. Their inner contours, friction and spring response are estimates. The wall and adhesive base are fixed.",
+  "scores": "Dream-1 run: 0 (716 steps); demo: 1.0 (716 steps).",
+  "media": "M-QUJAL8"
+}

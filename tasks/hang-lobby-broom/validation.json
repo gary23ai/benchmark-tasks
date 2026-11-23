@@ -1,0 +1,956 @@
+{
+  "scripted": {
+    "task": "hang-lobby-broom",
+    "policy": "scripted",
+    "seed": 0,
+    "model": null,
+    "scorer": "physical_task_score",
+    "score": 1.0,
+    "steps": 716,
+    "step_limit": 716,
+    "declaredStepLimit": 716,
+    "diagnosticOnly": false,
+    "elapsed_s": 316.93,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "wall_panel": [
+        77.2,
+        -14.2,
+        529.4,
+        216.5
+      ],
+      "catch_plate": [
+        223.8,
+        214.8,
+        341.7,
+        282.4
+      ],
+      "parking_rest": [
+        206.5,
+        82.3,
+        308.5,
+        113.7
+      ],
+      "pad_right": [
+        301.2,
+        91.5,
+        310.0,
+        110.4
+      ],
+      "clip_housing": [
+        279.0,
+        77.3,
+        317.3,
+        110.1
+      ],
+      "pad_left": [
+        286.9,
+        91.5,
+        296.1,
+        110.4
+      ],
+      "broom": [
+        274.2,
+        -23.0,
+        338.1,
+        254.9
+      ],
+      "floor": [
+        169.9,
+        124.9,
+        489.9,
+        402.3
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "catch_plate:0": [
+        342.1,
+        213.9,
+        343.8,
+        225.8
+      ],
+      "catch_plate:1": [
+        342.1,
+        220.9,
+        342.9,
+        225.3
+      ],
+      "catch_plate:2": [
+        342.2,
+        220.4,
+        343.0,
+        224.8
+      ],
+      "catch_plate:3": [
+        342.2,
+        219.8,
+        343.1,
+        224.2
+      ],
+      "catch_plate:4": [
+        342.3,
+        219.2,
+        343.1,
+        223.6
+      ],
+      "catch_plate:5": [
+        342.4,
+        218.7,
+        343.2,
+        223.1
+      ],
+      "catch_plate:6": [
+        342.5,
+        218.1,
+        343.3,
+        222.5
+      ],
+      "catch_plate:7": [
+        342.5,
+        217.5,
+        343.4,
+        221.9
+      ],
+      "catch_plate:8": [
+        342.6,
+        216.9,
+        343.5,
+        221.4
+      ],
+      "catch_plate:9": [
+        342.7,
+        216.3,
+        343.5,
+        220.8
+      ],
+      "catch_plate:10": [
+        342.8,
+        215.7,
+        343.6,
+        220.2
+      ],
+      "catch_plate:11": [
+        342.8,
+        215.1,
+        343.7,
+        219.6
+      ],
+      "catch_plate:12": [
+        342.9,
+        214.5,
+        343.8,
+        219.0
+      ],
+      "catch_plate:13": [
+        268.4,
+        213.9,
+        271.3,
+        225.8
+      ],
+      "catch_plate:14": [
+        270.2,
+        220.9,
+        271.2,
+        225.3
+      ],
+      "catch_plate:15": [
+        270.1,
+        220.4,
+        271.1,
+        224.8
+      ],
+      "catch_plate:16": [
+        269.9,
+        219.8,
+        270.9,
+        224.2
+      ],
+      "catch_plate:17": [
+        269.8,
+        219.2,
+        270.8,
+        223.6
+      ],
+      "catch_plate:18": [
+        269.6,
+        218.7,
+        270.6,
+        223.1
+      ],
+      "catch_plate:19": [
+        269.5,
+        218.1,
+        270.5,
+        222.5
+      ],
+      "catch_plate:20": [
+        269.3,
+        217.5,
+        270.3,
+        221.9
+      ],
+      "catch_plate:21": [
+        269.2,
+        216.9,
+        270.2,
+        221.4
+      ],
+      "catch_plate:22": [
+        269.0,
+        216.3,
+        270.0,
+        220.8
+      ],
+      "catch_plate:23": [
+        268.8,
+        215.7,
+        269.9,
+        220.2
+      ],
+      "catch_plate:24": [
+        268.7,
+        215.1,
+        269.7,
+        219.6
+      ],
+      "catch_plate:25": [
+        268.5,
+        214.5,
+        269.6,
+        219.0
+      ],
+      "broom:0": [
+        275.2,
+        -23.4,
+        307.6,
+        215.3
+      ],
+      "broom:1": [
+        285.5,
+        226.5,
+        324.0,
+        237.8
+      ],
+      "broom:2": [
+        286.8,
+        224.4,
+        322.3,
+        235.8
+      ],
+      "broom:3": [
+        293.7,
+        213.3,
+        313.8,
+        225.3
+      ],
+      "broom:4": [
+        293.3,
+        154.0,
+        304.8,
+        163.8
+      ],
+      "broom:5": [
+        293.2,
+        152.7,
+        304.7,
+        162.6
+      ],
+      "broom:6": [
+        293.0,
+        151.5,
+        304.7,
+        161.3
+      ],
+      "broom:7": [
+        292.9,
+        150.2,
+        304.6,
+        160.1
+      ],
+      "broom:8": [
+        292.8,
+        148.9,
+        304.5,
+        158.8
+      ],
+      "broom:9": [
+        292.6,
+        147.5,
+        304.4,
+        157.5
+      ],
+      "broom:10": [
+        292.5,
+        146.2,
+        304.4,
+        156.2
+      ],
+      "broom:11": [
+        292.3,
+        144.9,
+        304.3,
+        154.9
+      ],
+      "broom:12": [
+        292.2,
+        143.5,
+        304.2,
+        153.6
+      ],
+      "broom:13": [
+        292.1,
+        142.1,
+        304.2,
+        152.2
+      ],
+      "broom:14": [
+        291.9,
+        140.7,
+        304.1,
+        150.9
+      ],
+      "broom:15": [
+        291.8,
+        139.3,
+        304.0,
+        149.5
+      ],
+      "broom:16": [
+        291.6,
+        137.9,
+        303.9,
+        148.1
+      ],
+      "broom:17": [
+        291.5,
+        136.5,
+        303.8,
+        146.7
+      ],
+      "broom:18": [
+        291.3,
+        135.0,
+        303.8,
+        145.3
+      ],
+      "broom:19": [
+        291.2,
+        133.6,
+        303.7,
+        143.9
+      ],
+      "broom:20": [
+        291.0,
+        132.1,
+        303.6,
+        142.4
+      ],
+      "broom:21": [
+        290.9,
+        130.6,
+        303.5,
+        141.0
+      ]
+    },
+    "initialMeasurements": {
+      "gap_front_left": 1.692771911532276e-08,
+      "gap_front_right": 1.692771911532276e-08,
+      "gap_back_left": 1.692771911532276e-08,
+      "gap_back_right": 1.692771911532276e-08,
+      "head_top_front_left": 0.32300001716613774,
+      "head_top_front_right": 0.32300001716613774,
+      "head_top_back_left": 0.32300001716613774,
+      "head_top_back_right": 0.32300001716613774,
+      "handle_end_z": 0.9930000171661377,
+      "broom_speed": 0.00046001598821021616,
+      "left_pad_load": 0.0,
+      "right_pad_load": 0.0,
+      "plate_broom_n": 4.218578338623047,
+      "rest_broom_n": 0.0,
+      "wall_broom_n": 0.0,
+      "housing_broom_n": 0.0,
+      "left_broom_n": 0.0,
+      "right_broom_n": 0.0,
+      "left_hand_left_pad": 0.0,
+      "right_hand_left_pad": 0.0,
+      "left_hand_right_pad": 0.0,
+      "left_hand_housing": 0.0,
+      "right_hand_right_pad": 0.0,
+      "right_hand_housing": 0.0,
+      "heel_x": 0.26999997401237485,
+      "heel_y": 0.14100006687641142,
+      "heel_z": -0.35299998283386225,
+      "toe_x": 0.3219999740123749,
+      "toe_y": -0.07499993312358856,
+      "toe_z": -0.35299998283386225,
+      "band_x": -0.10200002789497375,
+      "band_y": 6.705522537231445e-08,
+      "band_z": -0.05499992465972903,
+      "shaft_inset": -0.08000002789497374
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {},
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {},
+    "finalWedgeBodyPositions": {},
+    "video_frames": 359,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "c7934f48a7506565482cb56c9a4c43800589a38718cebf9d6e8f129fb3ef671d",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "7279c4f9f198e13f6aa992da0c1ab2df0fc402df3e23e489fe74f0d38f262f60",
+      "task_impl/grading.py": "e0f51bd1ac278b7fb01d0721eb55bb6d604cd6494da36231470559e3356fa913",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "2785d5ebc5934882f3000ba2a1102a4edba4f1d578444fb713bcdc152eb8d132",
+      "task_impl/scripted.py": "e78faadd1f8ba6a08dc3cf7ff2255e0731140dababe8e18f55fd30a2b4b6b7f1"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0"
+  },
+  "dream_1": {
+    "task": "hang-lobby-broom",
+    "policy": "dream",
+    "seed": 0,
+    "model": "dreamlabs/dream-1-beta",
+    "scorer": "physical_task_score",
+    "score": 0.0,
+    "steps": 716,
+    "step_limit": 716,
+    "declaredStepLimit": 716,
+    "diagnosticOnly": false,
+    "elapsed_s": 294.53,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "wall_panel": [
+        77.2,
+        -14.2,
+        529.4,
+        216.5
+      ],
+      "catch_plate": [
+        223.8,
+        214.8,
+        341.7,
+        282.4
+      ],
+      "parking_rest": [
+        206.5,
+        82.3,
+        308.5,
+        113.7
+      ],
+      "pad_right": [
+        301.2,
+        91.5,
+        310.0,
+        110.4
+      ],
+      "clip_housing": [
+        279.0,
+        77.3,
+        317.3,
+        110.1
+      ],
+      "pad_left": [
+        286.9,
+        91.5,
+        296.1,
+        110.4
+      ],
+      "broom": [
+        274.2,
+        -23.0,
+        338.1,
+        254.9
+      ],
+      "floor": [
+        169.9,
+        124.9,
+        489.9,
+        402.3
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "catch_plate:0": [
+        342.1,
+        213.9,
+        343.8,
+        225.8
+      ],
+      "catch_plate:1": [
+        342.1,
+        220.9,
+        342.9,
+        225.3
+      ],
+      "catch_plate:2": [
+        342.2,
+        220.4,
+        343.0,
+        224.8
+      ],
+      "catch_plate:3": [
+        342.2,
+        219.8,
+        343.1,
+        224.2
+      ],
+      "catch_plate:4": [
+        342.3,
+        219.2,
+        343.1,
+        223.6
+      ],
+      "catch_plate:5": [
+        342.4,
+        218.7,
+        343.2,
+        223.1
+      ],
+      "catch_plate:6": [
+        342.5,
+        218.1,
+        343.3,
+        222.5
+      ],
+      "catch_plate:7": [
+        342.5,
+        217.5,
+        343.4,
+        221.9
+      ],
+      "catch_plate:8": [
+        342.6,
+        216.9,
+        343.5,
+        221.4
+      ],
+      "catch_plate:9": [
+        342.7,
+        216.3,
+        343.5,
+        220.8
+      ],
+      "catch_plate:10": [
+        342.8,
+        215.7,
+        343.6,
+        220.2
+      ],
+      "catch_plate:11": [
+        342.8,
+        215.1,
+        343.7,
+        219.6
+      ],
+      "catch_plate:12": [
+        342.9,
+        214.5,
+        343.8,
+        219.0
+      ],
+      "catch_plate:13": [
+        268.4,
+        213.9,
+        271.3,
+        225.8
+      ],
+      "catch_plate:14": [
+        270.2,
+        220.9,
+        271.2,
+        225.3
+      ],
+      "catch_plate:15": [
+        270.1,
+        220.4,
+        271.1,
+        224.8
+      ],
+      "catch_plate:16": [
+        269.9,
+        219.8,
+        270.9,
+        224.2
+      ],
+      "catch_plate:17": [
+        269.8,
+        219.2,
+        270.8,
+        223.6
+      ],
+      "catch_plate:18": [
+        269.6,
+        218.7,
+        270.6,
+        223.1
+      ],
+      "catch_plate:19": [
+        269.5,
+        218.1,
+        270.5,
+        222.5
+      ],
+      "catch_plate:20": [
+        269.3,
+        217.5,
+        270.3,
+        221.9
+      ],
+      "catch_plate:21": [
+        269.2,
+        216.9,
+        270.2,
+        221.4
+      ],
+      "catch_plate:22": [
+        269.0,
+        216.3,
+        270.0,
+        220.8
+      ],
+      "catch_plate:23": [
+        268.8,
+        215.7,
+        269.9,
+        220.2
+      ],
+      "catch_plate:24": [
+        268.7,
+        215.1,
+        269.7,
+        219.6
+      ],
+      "catch_plate:25": [
+        268.5,
+        214.5,
+        269.6,
+        219.0
+      ],
+      "broom:0": [
+        275.2,
+        -23.4,
+        307.6,
+        215.3
+      ],
+      "broom:1": [
+        285.5,
+        226.5,
+        324.0,
+        237.8
+      ],
+      "broom:2": [
+        286.8,
+        224.4,
+        322.3,
+        235.8
+      ],
+      "broom:3": [
+        293.7,
+        213.3,
+        313.8,
+        225.3
+      ],
+      "broom:4": [
+        293.3,
+        154.0,
+        304.8,
+        163.8
+      ],
+      "broom:5": [
+        293.2,
+        152.7,
+        304.7,
+        162.6
+      ],
+      "broom:6": [
+        293.0,
+        151.5,
+        304.7,
+        161.3
+      ],
+      "broom:7": [
+        292.9,
+        150.2,
+        304.6,
+        160.1
+      ],
+      "broom:8": [
+        292.8,
+        148.9,
+        304.5,
+        158.8
+      ],
+      "broom:9": [
+        292.6,
+        147.5,
+        304.4,
+        157.5
+      ],
+      "broom:10": [
+        292.5,
+        146.2,
+        304.4,
+        156.2
+      ],
+      "broom:11": [
+        292.3,
+        144.9,
+        304.3,
+        154.9
+      ],
+      "broom:12": [
+        292.2,
+        143.5,
+        304.2,
+        153.6
+      ],
+      "broom:13": [
+        292.1,
+        142.1,
+        304.2,
+        152.2
+      ],
+      "broom:14": [
+        291.9,
+        140.7,
+        304.1,
+        150.9
+      ],
+      "broom:15": [
+        291.8,
+        139.3,
+        304.0,
+        149.5
+      ],
+      "broom:16": [
+        291.6,
+        137.9,
+        303.9,
+        148.1
+      ],
+      "broom:17": [
+        291.5,
+        136.5,
+        303.8,
+        146.7
+      ],
+      "broom:18": [
+        291.3,
+        135.0,
+        303.8,
+        145.3
+      ],
+      "broom:19": [
+        291.2,
+        133.6,
+        303.7,
+        143.9
+      ],
+      "broom:20": [
+        291.0,
+        132.1,
+        303.6,
+        142.4
+      ],
+      "broom:21": [
+        290.9,
+        130.6,
+        303.5,
+        141.0
+      ]
+    },
+    "initialMeasurements": {
+      "gap_front_left": 1.692771911532276e-08,
+      "gap_front_right": 1.692771911532276e-08,
+      "gap_back_left": 1.692771911532276e-08,
+      "gap_back_right": 1.692771911532276e-08,
+      "head_top_front_left": 0.32300001716613774,
+      "head_top_front_right": 0.32300001716613774,
+      "head_top_back_left": 0.32300001716613774,
+      "head_top_back_right": 0.32300001716613774,
+      "handle_end_z": 0.9930000171661377,
+      "broom_speed": 0.00046001598821021616,
+      "left_pad_load": 0.0,
+      "right_pad_load": 0.0,
+      "plate_broom_n": 4.218578338623047,
+      "rest_broom_n": 0.0,
+      "wall_broom_n": 0.0,
+      "housing_broom_n": 0.0,
+      "left_broom_n": 0.0,
+      "right_broom_n": 0.0,
+      "left_hand_left_pad": 0.0,
+      "right_hand_left_pad": 0.0,
+      "left_hand_right_pad": 0.0,
+      "left_hand_housing": 0.0,
+      "right_hand_right_pad": 0.0,
+      "right_hand_housing": 0.0,
+      "heel_x": 0.26999997401237485,
+      "heel_y": 0.14100006687641142,
+      "heel_z": -0.35299998283386225,
+      "toe_x": 0.3219999740123749,
+      "toe_y": -0.07499993312358856,
+      "toe_z": -0.35299998283386225,
+      "band_x": -0.10200002789497375,
+      "band_y": 6.705522537231445e-08,
+      "band_z": -0.05499992465972903,
+      "shaft_inset": -0.08000002789497374
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {},
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {},
+    "finalWedgeBodyPositions": {},
+    "video_frames": 359,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "c7934f48a7506565482cb56c9a4c43800589a38718cebf9d6e8f129fb3ef671d",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "7279c4f9f198e13f6aa992da0c1ab2df0fc402df3e23e489fe74f0d38f262f60",
+      "task_impl/grading.py": "e0f51bd1ac278b7fb01d0721eb55bb6d604cd6494da36231470559e3356fa913",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "2785d5ebc5934882f3000ba2a1102a4edba4f1d578444fb713bcdc152eb8d132",
+      "task_impl/scripted.py": "e78faadd1f8ba6a08dc3cf7ff2255e0731140dababe8e18f55fd30a2b4b6b7f1"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "usage": {
+      "model": "dreamlabs/dream-1-beta",
+      "attempts": 17,
+      "served": 15,
+      "episodes": 1,
+      "cap": 36,
+      "lastSuccessfulAttempt": 17,
+      "serviceError": "DreamSessionExpired",
+      "errors": {
+        "DreamSessionExpired": 2
+      }
+    },
+    "actionCoverage": {
+      "task": "hang-lobby-broom",
+      "batch": "8bd8a67aaf18434fb05e535336881ace",
+      "controlSteps": 716,
+      "initialHoldSteps": 32,
+      "modelChunkStartStepsOneBased": [
+        33,
+        81,
+        129,
+        177,
+        225,
+        273,
+        321,
+        369,
+        417,
+        465,
+        513,
+        561,
+        609,
+        657,
+        705
+      ],
+      "lastModelActionStep": 716,
+      "postModelHoldSteps": 0,
+      "source": "Inspect one-action chunks; pinned DreamPolicy marks the first returned row of each fetched chunk with inference latency.",
+      "policyFileSha256": "64f6a6661e303a1012894af3539ecd0d14810af03aead302ede0ba9e9f6f258d",
+      "chunksSha256": "bd5b203e4db429de954e7bf2765371d91c68995ec8c335fe8d0647dc9f117ac5",
+      "recordSha256": "b94f0e9ccf6ff3a50c59fa74404fd3fa66c8aa2d827353423ce8de7d2ce61eab"
+    },
+    "networkRecovery": {
+      "modelBatch": "8bd8a67aaf18434fb05e535336881ace",
+      "originalBatch": "e1048b4cf4d247a79e0e577c2959a81e",
+      "reason": "An earlier Dream-1 trial ended at its local request cap after a service rate-limit response. The same account restarted after the service cooldown. This video starts at the original scene reset."
+    }
+  }
+}
