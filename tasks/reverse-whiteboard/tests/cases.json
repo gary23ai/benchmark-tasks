@@ -1,0 +1,1790 @@
+[
+  {
+    "label": "Chart still facing the operator",
+    "phases": [
+      {
+        "ticks": 600,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Rail seated after a turn using the other hand",
+    "phases": [
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 120,
+        "measurements": {
+          "blank_angle": 90,
+          "turn_rate": 16,
+          "clip_height": -0.024,
+          "rim_one": 0.1,
+          "rim_two": 0.1,
+          "rim_level": 0.11,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 6,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.003,
+          "rail_x": 0.475,
+          "rail_y": -0.04,
+          "rail_z": 0.155
+        }
+      },
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 40,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Early board touch clears before the inspection second",
+    "phases": [
+      {
+        "ticks": 318,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 245,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0.67,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 11,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 5,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0.12,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 21,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Returned pocket with near corner beyond the outside lip",
+    "phases": [
+      {
+        "ticks": 342,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 258,
+        "measurements": {
+          "blank_angle": 6.4,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.0141282,
+          "rim_two": 0.0081656,
+          "rim_level": -0.0121768,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.3861469,
+          "rail_y": -0.04,
+          "rail_z": 0.055623200000000005
+        }
+      }
+    ],
+    "min": 0.5,
+    "max": 0.5
+  },
+  {
+    "label": "Opposite outside-lip miss at the inclusive face limit",
+    "phases": [
+      {
+        "ticks": 560,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 40,
+        "measurements": {
+          "blank_angle": 8,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.0109465,
+          "rim_two": -0.0168881,
+          "rim_level": -0.0118268,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.3610827,
+          "rail_y": -0.04,
+          "rail_z": 0.05597320000000001
+        }
+      }
+    ],
+    "min": 0.5,
+    "max": 0.5
+  },
+  {
+    "label": "Released face beyond eight degrees",
+    "phases": [
+      {
+        "ticks": 550,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 50,
+        "measurements": {
+          "blank_angle": 8.2,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.01129,
+          "rim_two": -0.01723,
+          "rim_level": -0.01178,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.36074,
+          "rail_y": -0.04,
+          "rail_z": 0.05602000000000001
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Rail centered above the lowered pocket",
+    "phases": [
+      {
+        "ticks": 550,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 50,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.024,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": 0.01,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0.5,
+    "max": 0.5
+  },
+  {
+    "label": "Carriage misses the inclusive return limit only at tick 600",
+    "phases": [
+      {
+        "ticks": 344,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 255,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0025,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0115,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.00251,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.01149,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0.5,
+    "max": 0.5
+  },
+  {
+    "label": "Carriage at the inclusive return limit",
+    "phases": [
+      {
+        "ticks": 580,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 20,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0025,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0115,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Pocket drops and recovers inside the inspection second",
+    "phases": [
+      {
+        "ticks": 570,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 20,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0024,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0116,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0026,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0114,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 9,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0024,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0116,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0.5,
+    "max": 0.5
+  },
+  {
+    "label": "First inspected sample has board contact and the final nineteen are clear",
+    "phases": [
+      {
+        "ticks": 317,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 263,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0.0205,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 19,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Last early contact leaves exactly twenty clear samples",
+    "phases": [
+      {
+        "ticks": 560,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 19,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0.15,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.003,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 20,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Hand supports a captured board on the final sample",
+    "phases": [
+      {
+        "ticks": 550,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 49,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0.3,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Paddle touched on the final sample",
+    "phases": [
+      {
+        "ticks": 550,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 49,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0.021,
+          "board_clear": 0.012,
+          "clip_clear": 0.003,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Captured rail travels more than one millimetre during the final second",
+    "phases": [
+      {
+        "ticks": 332,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 267,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0.7047425305792483,
+          "turn_rate": 14.094850611584967,
+          "clip_height": -0.0012,
+          "rim_one": 0.00422974980394255,
+          "rim_two": -0.0017697963260574498,
+          "rim_level": -0.012792435500000005,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.37622997673894254,
+          "rail_y": -0.04,
+          "rail_z": 0.055007564499999995
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Matched captured rail stays inside the millimetre envelope",
+    "phases": [
+      {
+        "ticks": 332,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 267,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0.47555633501007427,
+          "turn_rate": 9.511126700201485,
+          "clip_height": -0.0012,
+          "rim_one": 0.003829889517631726,
+          "rim_two": -0.002169903812368274,
+          "rim_level": -0.0127965555,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.37582999285263174,
+          "rail_y": -0.04,
+          "rail_z": 0.0550034445
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Out-and-back rocking during the inspection second",
+    "phases": [
+      {
+        "ticks": 571,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 18,
+        "measurements": {
+          "blank_angle": 0.4,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.0036980529219123397,
+          "rim_two": -0.002301800862320029,
+          "rim_level": -0.012797563070539475,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.37569812602979613,
+          "rail_y": -0.04,
+          "rail_z": 0.055002436929460524
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 1.05,
+          "turn_rate": 13,
+          "clip_height": -0.0012,
+          "rim_one": 0.004831989392650772,
+          "rim_two": -0.001167003113430213,
+          "rim_level": -0.012783208434683085,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.37683249313961026,
+          "rail_y": -0.04,
+          "rail_z": 0.055016791565316914
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0.45,
+          "turn_rate": 12,
+          "clip_height": -0.0012,
+          "rim_one": 0.0037852975618055027,
+          "rim_two": -0.0022145173840632357,
+          "rim_level": -0.012796915764478972,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.37578539008887113,
+          "rail_y": -0.04,
+          "rail_z": 0.05500308423552103
+        }
+      },
+      {
+        "ticks": 9,
+        "measurements": {
+          "blank_angle": 0.4,
+          "turn_rate": 1,
+          "clip_height": -0.0012,
+          "rim_one": 0.0036980529219123397,
+          "rim_two": -0.002301800862320029,
+          "rim_level": -0.012797563070539475,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.37569812602979613,
+          "rail_y": -0.04,
+          "rail_z": 0.055002436929460524
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Matched final reading with carriage 2.5 mm below the stop",
+    "phases": [
+      {
+        "ticks": 344,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 255,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0024,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0116,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0025,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0115,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Matched final reading with carriage 2.6 mm below the stop",
+    "phases": [
+      {
+        "ticks": 344,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 255,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0024,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0116,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0026,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0114,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0.5,
+    "max": 0.5
+  },
+  {
+    "label": "Unloaded hand inside the clip clearance witness at the final sample",
+    "phases": [
+      {
+        "ticks": 550,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 49,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.003,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Out-and-back rail span 0.99 mm with the same centered endpoint",
+    "phases": [
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 120,
+        "measurements": {
+          "blank_angle": 90,
+          "turn_rate": 16,
+          "clip_height": -0.024,
+          "rim_one": 0.1,
+          "rim_two": 0.1,
+          "rim_level": 0.11,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 6,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.003,
+          "rail_x": 0.475,
+          "rail_y": -0.04,
+          "rail_z": 0.155
+        }
+      },
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 29,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0.5672305336232907,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.002009865113811793,
+          "rim_two": -0.003989840856188198,
+          "rim_level": -0.012795099500000007,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.3740100121288118,
+          "rail_y": -0.04,
+          "rail_z": 0.055004900499999995
+        }
+      },
+      {
+        "ticks": 10,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Out-and-back rail span 1.01 mm with the same centered endpoint",
+    "phases": [
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 120,
+        "measurements": {
+          "blank_angle": 90,
+          "turn_rate": 16,
+          "clip_height": -0.024,
+          "rim_one": 0.1,
+          "rim_two": 0.1,
+          "rim_level": 0.11,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 6,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.003,
+          "rail_x": 0.475,
+          "rail_y": -0.04,
+          "rail_z": 0.155
+        }
+      },
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 29,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 1,
+        "measurements": {
+          "blank_angle": 0.5786898327728217,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.0019898598638445897,
+          "rim_two": -0.004009834106155408,
+          "rim_level": -0.012794899500000016,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.3739900128788446,
+          "rail_y": -0.04,
+          "rail_z": 0.05500510049999999
+        }
+      },
+      {
+        "ticks": 10,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  },
+  {
+    "label": "Final gripper gap 5 mm with the same captured rail",
+    "phases": [
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 120,
+        "measurements": {
+          "blank_angle": 90,
+          "turn_rate": 16,
+          "clip_height": -0.024,
+          "rim_one": 0.1,
+          "rim_two": 0.1,
+          "rim_level": 0.11,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 6,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.003,
+          "rail_x": 0.475,
+          "rail_y": -0.04,
+          "rail_z": 0.155
+        }
+      },
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 40,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.005,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 1,
+    "max": 1
+  },
+  {
+    "label": "Final gripper gap 4.8 mm with the same captured rail",
+    "phases": [
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 180,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": -0.003,
+          "rim_two": 0.003,
+          "rim_level": 0.1872,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.012,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.255
+        }
+      },
+      {
+        "ticks": 120,
+        "measurements": {
+          "blank_angle": 90,
+          "turn_rate": 16,
+          "clip_height": -0.024,
+          "rim_one": 0.1,
+          "rim_two": 0.1,
+          "rim_level": 0.11,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 6,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.003,
+          "rail_x": 0.475,
+          "rail_y": -0.04,
+          "rail_z": 0.155
+        }
+      },
+      {
+        "ticks": 220,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 1.2,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.003,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      },
+      {
+        "ticks": 40,
+        "measurements": {
+          "blank_angle": 0,
+          "turn_rate": 0,
+          "clip_height": -0.0012,
+          "rim_one": 0.003,
+          "rim_two": -0.003,
+          "rim_level": -0.0128,
+          "left_board": 0,
+          "right_board": 0,
+          "left_clip": 0,
+          "right_clip": 0,
+          "board_clear": 0.0048,
+          "clip_clear": 0.012,
+          "rail_x": 0.375,
+          "rail_y": -0.04,
+          "rail_z": 0.05500000000000001
+        }
+      }
+    ],
+    "min": 0,
+    "max": 0
+  }
+]

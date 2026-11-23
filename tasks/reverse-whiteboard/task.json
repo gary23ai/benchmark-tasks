@@ -1,0 +1,19 @@
+{
+  "title": "Turn the meeting whiteboard to its clean face and secure it for writing",
+  "category": "Societal relatability",
+  "keywords": [
+    "reversible whiteboard",
+    "meeting room",
+    "rotation lock",
+    "writing surface"
+  ],
+  "instruction": "Turn the board so its clean face is toward you. Seat the new lower edge in the orange clip and withdraw both grippers. Keep the fingers clear of the gap as the clip closes.",
+  "context": "A meeting facilitator can give the next speaker a clean writing surface while preserving the first speaker’s chart on the reverse. The clip holds the board upright when someone writes.",
+  "setup": "The 300 × 200 mm board starts upright in a bolted frame, with the blue chart toward you and its lower rail captured. The horizontal axle is 155 mm above the bench. The orange paddle in front lowers the clip. The marker tray is behind the board. The axle center is at x = 375 mm and y = −40 mm in the station frame.",
+  "scoring": "Check samples 581–600 of the 30-second run. Earn 0.5 when the clean face stays within 8° of upright toward you, the center of the arriving rail tip, halfway across its thickness and width, stays within 1 mm between every pair of measured positions, and neither arm touches the board or clip, and both grippers stay at least 5 mm from them at each sample. Earn 1 if the arriving rail also stays captured. Both corners across its tip must be within the 10 mm opening, its midpoint must be 4–18 mm below the lip tops, and the clip must return within 2.5 mm of its upper stop. An upright rail balanced outside the pocket can earn 0.5. Earlier attempts may be retried.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Lower the paddle, turn the blue chart toward you and center the original lower rail between the lips. Let the spring return with both arms withdrawn. Check chart orientation, both lip clearances and the settled carriage position against the fixed upper-stop mark before starting the clock.",
+  "fidelity": "The tabletop panel turns on a center axle and brings its opposite rail into the same spring-returned pocket. The rail profile, clip dimensions and spring are tabletop design choices based on the push-down lock of a reversible meeting board.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (600 steps).",
+  "media": "M-4GR7RZ"
+}
