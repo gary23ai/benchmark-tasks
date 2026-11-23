@@ -52,13 +52,12 @@ Film the support and bar in profile against ruler marks and use an overhead view
 
 ## Reset
 
-Lift the screen off the post and let it roll back into the case, press the post's release and push it back down, and
+Lift the screen off the post and let it roll back into the case, pull the post's reset release and push it back down, and
 set the case back on its tape marks. In simulation each trial starts the simulator afresh.
 
-## Measuring the real screen
+## Building the physical screen
 
-The roller spring's pull (about 5 to 7 N here), the post's return spring and its click height are estimates: measure
-them on the bought screen with a spring scale and a ruler.
+The [fabrication and commissioning instructions](hardware/BUILD.md) and [dimensioned CAD profiles](hardware/screen-fixture.dxf) specify the tabletop reconstruction. They include the spring specifications, support lock, pin, bar guide, critical mounting datums and checks with a spring scale and ruler. The build dimensions and predicted forces are design values.
 
 ## Third-party assets and licences
 
