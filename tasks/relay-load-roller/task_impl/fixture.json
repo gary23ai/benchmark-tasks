@@ -1,0 +1,2612 @@
+{
+  "limit": 600,
+  "actors": [
+    {
+      "name": "desk",
+      "bolted": true,
+      "material": "rigidly mounted hard maple desktop insert",
+      "mass_kg": 0.84,
+      "friction": 0.58,
+      "rgb": [
+        0.47,
+        0.34,
+        0.23
+      ],
+      "position": [
+        0.346,
+        0.018,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.41,
+            0.245,
+            0.012
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.034,
+            0.0001
+          ],
+          "offset": [
+            -0.132,
+            -0.092,
+            0.00605
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.98,
+            0.94,
+            0.8
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.02,
+            0.034,
+            0.0001
+          ],
+          "offset": [
+            0.008,
+            -0.092,
+            0.00605
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.98,
+            0.94,
+            0.8
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.002,
+            0.017,
+            0.0001
+          ],
+          "offset": [
+            0.008,
+            -0.1005,
+            0.00616
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.15,
+            0.12,
+            0.09
+          ]
+        }
+      ]
+    },
+    {
+      "name": "block",
+      "bolted": false,
+      "material": "uniform beech",
+      "mass_kg": 0.275,
+      "friction": 0.55,
+      "rgb": [
+        0.85,
+        0.67,
+        0.42
+      ],
+      "position": [
+        0.284,
+        0.018,
+        0.0455
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.14,
+            0.08,
+            0.035
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "marked",
+      "bolted": false,
+      "material": "hardwood dowel with painted ends",
+      "mass_kg": 0.0197,
+      "friction": 0.55,
+      "rgb": [
+        0.89,
+        0.76,
+        0.56
+      ],
+      "position": [
+        0.224,
+        0.018,
+        0.02
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.016,
+            0.016,
+            0.14
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            90,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.0154,
+            0.0002,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.0701,
+            0.001
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.1,
+            0.18,
+            0.31
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0138,
+            0.0002,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.0701,
+            0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.1,
+            0.18,
+            0.31
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0105,
+            0.0002,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.0701,
+            0.005
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.1,
+            0.18,
+            0.31
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.0002,
+            0.0014
+          ],
+          "offset": [
+            0,
+            -0.0701,
+            0.0067
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.1,
+            0.18,
+            0.31
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0154,
+            0.0002,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.0701,
+            0.001
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.1,
+            0.18,
+            0.31
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0138,
+            0.0002,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.0701,
+            0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.1,
+            0.18,
+            0.31
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0105,
+            0.0002,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.0701,
+            0.005
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.1,
+            0.18,
+            0.31
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.006,
+            0.0002,
+            0.0014
+          ],
+          "offset": [
+            0,
+            0.0701,
+            0.0067
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.1,
+            0.18,
+            0.31
+          ]
+        }
+      ]
+    },
+    {
+      "name": "middle",
+      "bolted": false,
+      "material": "hardwood dowel",
+      "mass_kg": 0.0197,
+      "friction": 0.55,
+      "rgb": [
+        0.78,
+        0.6,
+        0.37
+      ],
+      "position": [
+        0.292,
+        0.018,
+        0.02
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.016,
+            0.016,
+            0.14
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "front",
+      "bolted": false,
+      "material": "hardwood dowel",
+      "mass_kg": 0.0197,
+      "friction": 0.55,
+      "rgb": [
+        0.78,
+        0.6,
+        0.37
+      ],
+      "position": [
+        0.329,
+        0.018,
+        0.02
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.016,
+            0.016,
+            0.14
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            90,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [],
+  "metrics": [
+    {
+      "name": "travel",
+      "kind": "dx",
+      "a": "block",
+      "b": "desk",
+      "pa": [
+        -0.07,
+        0,
+        0
+      ],
+      "pb": [
+        -0.132,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "height",
+      "kind": "dz",
+      "a": "block",
+      "b": "desk",
+      "pa": [
+        0,
+        0,
+        -0.0175
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "tilt",
+      "kind": "angle_deg",
+      "a": "block",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "heading",
+      "kind": "angle_deg",
+      "a": "block",
+      "b": "table",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "released_gap",
+      "kind": "dx",
+      "a": "block",
+      "b": "marked",
+      "pa": [
+        -0.07,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "nose_gap",
+      "kind": "dx",
+      "a": "marked",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0.07,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ahead_mid",
+      "kind": "dx",
+      "a": "marked",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "middle_mid",
+      "kind": "dx",
+      "a": "middle",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "front_mid",
+      "kind": "dx",
+      "a": "front",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mark_station",
+      "kind": "dx",
+      "a": "marked",
+      "b": "desk",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        -0.132,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mark_side",
+      "kind": "dy",
+      "a": "marked",
+      "b": "desk",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "alignment",
+      "kind": "dy",
+      "a": "marked",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mark_height",
+      "kind": "dz",
+      "a": "marked",
+      "b": "desk",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.006
+      ]
+    },
+    {
+      "name": "skew",
+      "kind": "dx",
+      "a": "marked",
+      "b": "marked",
+      "pa": [
+        0,
+        0.07,
+        0
+      ],
+      "pb": [
+        0,
+        -0.07,
+        0
+      ]
+    },
+    {
+      "name": "end_rise",
+      "kind": "dz",
+      "a": "marked",
+      "b": "marked",
+      "pa": [
+        0,
+        0.07,
+        0
+      ],
+      "pb": [
+        0,
+        -0.07,
+        0
+      ]
+    },
+    {
+      "name": "block_v",
+      "kind": "speed",
+      "a": "block",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "block_w",
+      "kind": "spin_deg_s",
+      "a": "block",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mark_v",
+      "kind": "speed",
+      "a": "marked",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mark_w",
+      "kind": "spin_deg_s",
+      "a": "marked",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "wood_desk",
+      "kind": "contact_n",
+      "a": "block",
+      "b": "desk",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mark_desk",
+      "kind": "contact_n",
+      "a": "marked",
+      "b": "desk",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "returned_load",
+      "kind": "contact_n",
+      "a": "marked",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "middle_load",
+      "kind": "contact_n",
+      "a": "middle",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "front_load",
+      "kind": "contact_n",
+      "a": "front",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lb",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rb",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lr",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "marked",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rr",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "marked",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lm",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "middle",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rm",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "middle",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lf",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "front",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rf",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "front",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "mark_phase",
+      "kind": "roller_phase",
+      "a": "marked",
+      "b": "desk",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "invalidate": [
+    [
+      {
+        "metric": "height",
+        "lo": 0.02,
+        "hi": 1000000
+      },
+      {
+        "metric": "returned_load",
+        "lo": 0,
+        "hi": 0.02
+      },
+      {
+        "metric": "middle_load",
+        "lo": 0,
+        "hi": 0.02
+      },
+      {
+        "metric": "front_load",
+        "lo": 0,
+        "hi": 0.02
+      }
+    ],
+    [
+      {
+        "metric": "wood_desk",
+        "lo": 0.25,
+        "hi": 1000000
+      },
+      {
+        "metric": "block_v",
+        "lo": 0.008,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "lb",
+        "lo": 0.15,
+        "hi": 1000000
+      },
+      {
+        "metric": "block_v",
+        "lo": 0.006,
+        "hi": 1000000
+      },
+      {
+        "metric": "returned_load",
+        "lo": 0,
+        "hi": 0.02
+      },
+      {
+        "metric": "middle_load",
+        "lo": 0,
+        "hi": 0.02
+      },
+      {
+        "metric": "front_load",
+        "lo": 0,
+        "hi": 0.02
+      },
+      {
+        "metric": "wood_desk",
+        "lo": 0,
+        "hi": 0.02
+      }
+    ],
+    [
+      {
+        "metric": "rb",
+        "lo": 0.15,
+        "hi": 1000000
+      },
+      {
+        "metric": "block_v",
+        "lo": 0.006,
+        "hi": 1000000
+      },
+      {
+        "metric": "returned_load",
+        "lo": 0,
+        "hi": 0.02
+      },
+      {
+        "metric": "middle_load",
+        "lo": 0,
+        "hi": 0.02
+      },
+      {
+        "metric": "front_load",
+        "lo": 0,
+        "hi": 0.02
+      },
+      {
+        "metric": "wood_desk",
+        "lo": 0,
+        "hi": 0.02
+      }
+    ]
+  ],
+  "violations": [
+    {
+      "needs": [],
+      "until_seen": [
+        "free"
+      ],
+      "all": [
+        {
+          "metric": "mark_height",
+          "lo": 0.012,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [],
+      "until_seen": [
+        "free"
+      ],
+      "all": [
+        {
+          "metric": "mark_side",
+          "lo": 0.02,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [],
+      "until_seen": [
+        "free"
+      ],
+      "all": [
+        {
+          "metric": "mark_side",
+          "lo": -1000000,
+          "hi": -0.02
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "name": "rolled",
+      "all": [
+        {
+          "metric": "travel",
+          "lo": 0.003,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_station",
+          "lo": 0.011,
+          "hi": 1000000
+        },
+        {
+          "metric": "returned_load",
+          "lo": 0.06,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.1,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_w",
+          "lo": 12,
+          "hi": 1000000
+        },
+        {
+          "metric": "block_v",
+          "lo": 0.003,
+          "hi": 1000000
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        }
+      ],
+      "ticks": 2
+    },
+    {
+      "name": "free",
+      "needs": [
+        "rolled"
+      ],
+      "all": [
+        {
+          "metric": "released_gap",
+          "lo": 0.008,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_station",
+          "lo": 0.014,
+          "hi": 1000000
+        },
+        {
+          "metric": "returned_load",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "middle_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "front_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "travel",
+          "lo": 0.027,
+          "hi": 1000000.0
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "name": "relay",
+      "needs": [
+        "free"
+      ],
+      "all": [
+        {
+          "metric": "nose_gap",
+          "lo": 0.008,
+          "hi": 1000000
+        },
+        {
+          "metric": "alignment",
+          "lo": -0.032,
+          "hi": 0.032
+        },
+        {
+          "metric": "skew",
+          "lo": -0.016,
+          "hi": 0.016
+        },
+        {
+          "metric": "end_rise",
+          "lo": -0.003,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_height",
+          "lo": 0.006,
+          "hi": 0.01
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "middle_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "front_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "wood_desk",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 3
+        }
+      ],
+      "ticks": 2
+    },
+    {
+      "name": "before_final_second",
+      "all": [
+        {
+          "metric": "travel",
+          "lo": -1000000,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 580
+    },
+    {
+      "name": "final_sample",
+      "all": [
+        {
+          "metric": "travel",
+          "lo": -1000000,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 600
+    },
+    {
+      "name": "rest_on_middle",
+      "needs": [
+        "before_final_second",
+        "onward"
+      ],
+      "all": [
+        {
+          "metric": "travel",
+          "lo": 0.13,
+          "hi": 0.15
+        },
+        {
+          "metric": "ahead_mid",
+          "lo": 0.001,
+          "hi": 0.07
+        },
+        {
+          "metric": "middle_mid",
+          "lo": -0.07,
+          "hi": -0.001
+        },
+        {
+          "metric": "middle_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "returned_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.15,
+          "hi": 1000000
+        },
+        {
+          "metric": "wood_desk",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "height",
+          "lo": 0.013,
+          "hi": 0.019
+        },
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "heading",
+          "lo": 0,
+          "hi": 8
+        },
+        {
+          "metric": "alignment",
+          "lo": -0.032,
+          "hi": 0.032
+        },
+        {
+          "metric": "skew",
+          "lo": -0.016,
+          "hi": 0.016
+        },
+        {
+          "metric": "end_rise",
+          "lo": -0.003,
+          "hi": 0.003
+        },
+        {
+          "metric": "block_v",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_v",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_w",
+          "lo": 0,
+          "hi": 12
+        },
+        {
+          "metric": "lb",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rb",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lm",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rm",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lf",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rf",
+          "lo": 0,
+          "hi": 0.02
+        }
+      ],
+      "ticks": 20
+    },
+    {
+      "name": "rest_on_front",
+      "needs": [
+        "before_final_second",
+        "onward"
+      ],
+      "all": [
+        {
+          "metric": "travel",
+          "lo": 0.13,
+          "hi": 0.15
+        },
+        {
+          "metric": "ahead_mid",
+          "lo": 0.001,
+          "hi": 0.07
+        },
+        {
+          "metric": "front_mid",
+          "lo": -0.07,
+          "hi": -0.001
+        },
+        {
+          "metric": "front_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "returned_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.15,
+          "hi": 1000000
+        },
+        {
+          "metric": "wood_desk",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "height",
+          "lo": 0.013,
+          "hi": 0.019
+        },
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "heading",
+          "lo": 0,
+          "hi": 8
+        },
+        {
+          "metric": "alignment",
+          "lo": -0.032,
+          "hi": 0.032
+        },
+        {
+          "metric": "skew",
+          "lo": -0.016,
+          "hi": 0.016
+        },
+        {
+          "metric": "end_rise",
+          "lo": -0.003,
+          "hi": 0.003
+        },
+        {
+          "metric": "block_v",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_v",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_w",
+          "lo": 0,
+          "hi": 12
+        },
+        {
+          "metric": "lb",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rb",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lm",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rm",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lf",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rf",
+          "lo": 0,
+          "hi": 0.02
+        }
+      ],
+      "ticks": 20
+    }
+  ],
+  "tiers": [
+    {
+      "score": 0.5,
+      "needs": [
+        "relay",
+        "final_sample"
+      ],
+      "all": [
+        {
+          "metric": "middle_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "wood_desk",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "height",
+          "lo": 0.013,
+          "hi": 0.019
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "score": 0.5,
+      "needs": [
+        "relay",
+        "final_sample"
+      ],
+      "all": [
+        {
+          "metric": "front_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "wood_desk",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "height",
+          "lo": 0.013,
+          "hi": 0.019
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "score": 0.5,
+      "needs": [
+        "relay",
+        "final_sample"
+      ],
+      "all": [
+        {
+          "metric": "returned_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "wood_desk",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "height",
+          "lo": 0.013,
+          "hi": 0.019
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "score": 1,
+      "needs": [
+        "rest_on_middle",
+        "final_sample"
+      ],
+      "all": [
+        {
+          "metric": "travel",
+          "lo": 0.13,
+          "hi": 0.15
+        },
+        {
+          "metric": "ahead_mid",
+          "lo": 0.001,
+          "hi": 0.07
+        },
+        {
+          "metric": "middle_mid",
+          "lo": -0.07,
+          "hi": -0.001
+        },
+        {
+          "metric": "middle_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "returned_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.15,
+          "hi": 1000000
+        },
+        {
+          "metric": "wood_desk",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "height",
+          "lo": 0.013,
+          "hi": 0.019
+        },
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "heading",
+          "lo": 0,
+          "hi": 8
+        },
+        {
+          "metric": "alignment",
+          "lo": -0.032,
+          "hi": 0.032
+        },
+        {
+          "metric": "skew",
+          "lo": -0.016,
+          "hi": 0.016
+        },
+        {
+          "metric": "end_rise",
+          "lo": -0.003,
+          "hi": 0.003
+        },
+        {
+          "metric": "block_v",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_v",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_w",
+          "lo": 0,
+          "hi": 12
+        },
+        {
+          "metric": "lb",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rb",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lm",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rm",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lf",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rf",
+          "lo": 0,
+          "hi": 0.02
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "score": 1,
+      "needs": [
+        "rest_on_front",
+        "final_sample"
+      ],
+      "all": [
+        {
+          "metric": "travel",
+          "lo": 0.13,
+          "hi": 0.15
+        },
+        {
+          "metric": "ahead_mid",
+          "lo": 0.001,
+          "hi": 0.07
+        },
+        {
+          "metric": "front_mid",
+          "lo": -0.07,
+          "hi": -0.001
+        },
+        {
+          "metric": "front_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "returned_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.15,
+          "hi": 1000000
+        },
+        {
+          "metric": "wood_desk",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "height",
+          "lo": 0.013,
+          "hi": 0.019
+        },
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 3
+        },
+        {
+          "metric": "heading",
+          "lo": 0,
+          "hi": 8
+        },
+        {
+          "metric": "alignment",
+          "lo": -0.032,
+          "hi": 0.032
+        },
+        {
+          "metric": "skew",
+          "lo": -0.016,
+          "hi": 0.016
+        },
+        {
+          "metric": "end_rise",
+          "lo": -0.003,
+          "hi": 0.003
+        },
+        {
+          "metric": "block_v",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_v",
+          "lo": 0,
+          "hi": 0.003
+        },
+        {
+          "metric": "mark_w",
+          "lo": 0,
+          "hi": 12
+        },
+        {
+          "metric": "lb",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rb",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lm",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rm",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "lf",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rf",
+          "lo": 0,
+          "hi": 0.02
+        }
+      ],
+      "ticks": 1
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 40,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.236,
+          0.123,
+          0.12
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.033
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.177,
+          0.018,
+          0.08
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 25,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.199,
+          0.018,
+          0.047
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 20,
+      "left": null,
+      "right": {
+        "relative_to": "block",
+        "tip": [
+          -0.056,
+          0,
+          0.0015
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 12,
+      "left": null,
+      "right": {
+        "relative_to": "block",
+        "tip": [
+          -0.056,
+          0,
+          0.0015
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.078
+      }
+    },
+    {
+      "ticks": 32,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.248,
+          0.018,
+          0.047
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.078
+      }
+    },
+    {
+      "ticks": 48,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.296,
+          0.018,
+          0.047
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.078
+      }
+    },
+    {
+      "ticks": 10,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.296,
+          0.018,
+          0.047
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 18,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.227,
+          0.003,
+          0.082
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 15,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.26,
+          0.089,
+          0.051
+        ],
+        "forward": [
+          0.0,
+          -0.2588190451,
+          -0.9659258263
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.034
+      },
+      "right": null
+    },
+    {
+      "ticks": 12,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.26,
+          0.072,
+          0.019
+        ],
+        "forward": [
+          0.0,
+          -0.2588190451,
+          -0.9659258263
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.034
+      },
+      "right": null
+    },
+    {
+      "ticks": 18,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.26,
+          0.072,
+          0.019
+        ],
+        "forward": [
+          0.0,
+          -0.2588190451,
+          -0.9659258263
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.005
+      },
+      "right": null
+    },
+    {
+      "ticks": 23,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.259,
+          0.073,
+          0.098
+        ],
+        "forward": [
+          0.0,
+          -0.2588190451,
+          -0.9659258263
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.005
+      },
+      "right": null
+    },
+    {
+      "ticks": 50,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.443,
+          0.073,
+          0.114
+        ],
+        "forward": [
+          0.0,
+          -0.2588190451,
+          -0.9659258263
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.005
+      },
+      "right": null
+    },
+    {
+      "ticks": 28,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.443,
+          0.073,
+          0.039
+        ],
+        "forward": [
+          0.0,
+          -0.2588190451,
+          -0.9659258263
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.005
+      },
+      "right": null
+    },
+    {
+      "ticks": 13,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.443,
+          0.073,
+          0.02
+        ],
+        "forward": [
+          0.0,
+          -0.2588190451,
+          -0.9659258263
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.005
+      },
+      "right": null
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.443,
+          0.073,
+          0.02
+        ],
+        "forward": [
+          0.0,
+          -0.2588190451,
+          -0.9659258263
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.034
+      },
+      "right": null
+    },
+    {
+      "ticks": 18,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.443,
+          0.09,
+          0.107
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.034
+      },
+      "right": {
+        "relative_to": "block",
+        "tip": [
+          -0.084,
+          0,
+          0.0015
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 16,
+      "left": null,
+      "right": {
+        "relative_to": "block",
+        "tip": [
+          -0.056,
+          0,
+          0.0015
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 10,
+      "left": null,
+      "right": {
+        "relative_to": "block",
+        "tip": [
+          -0.056,
+          0,
+          0.0015
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.078
+      }
+    },
+    {
+      "ticks": 95,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.361,
+          0.018,
+          0.047
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.078
+      }
+    },
+    {
+      "ticks": 20,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.368,
+          0.018,
+          0.047
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.078
+      }
+    },
+    {
+      "ticks": 12,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.368,
+          0.018,
+          0.047
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 24,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.312,
+          0.0,
+          0.092
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    }
+  ],
+  "rolling_windows": [
+    {
+      "name": "bearing",
+      "needs": [
+        "relay"
+      ],
+      "all": [
+        {
+          "metric": "travel",
+          "lo": 0,
+          "hi": 0.1
+        },
+        {
+          "metric": "nose_gap",
+          "lo": -0.069,
+          "hi": 0
+        },
+        {
+          "metric": "returned_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.15,
+          "hi": 1000000
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "skew",
+          "lo": -0.016,
+          "hi": 0.016
+        },
+        {
+          "metric": "end_rise",
+          "lo": -0.003,
+          "hi": 0.003
+        }
+      ],
+      "ticks": 6,
+      "axes": [
+        "travel",
+        "mark_station",
+        "mark_phase"
+      ],
+      "minimum": [
+        0.00125,
+        0.00075,
+        10
+      ]
+    },
+    {
+      "name": "onward",
+      "needs": [
+        "bearing"
+      ],
+      "all": [
+        {
+          "metric": "travel",
+          "lo": 0.125,
+          "hi": 1000000
+        },
+        {
+          "metric": "nose_gap",
+          "lo": -0.069,
+          "hi": -0.008
+        },
+        {
+          "metric": "returned_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "mark_desk",
+          "lo": 0.15,
+          "hi": 1000000
+        },
+        {
+          "metric": "lr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "rr",
+          "lo": 0,
+          "hi": 0.02
+        },
+        {
+          "metric": "skew",
+          "lo": -0.016,
+          "hi": 0.016
+        },
+        {
+          "metric": "end_rise",
+          "lo": -0.003,
+          "hi": 0.003
+        }
+      ],
+      "ticks": 6,
+      "axes": [
+        "travel",
+        "mark_station",
+        "mark_phase"
+      ],
+      "minimum": [
+        0.00125,
+        0.00075,
+        10
+      ]
+    }
+  ],
+  "continuous_jaw": true
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Roll a wooden block by moving its rear roller to the front",
+  "category": "Other",
+  "keywords": [
+    "primary science",
+    "loose rollers",
+    "moving a load",
+    "rolling contact"
+  ],
+  "instruction": "Roll the wooden block one block-length to the right. When the marked rear roller comes free, place it ahead of the block and keep rolling. Leave the trailing edge in the pale band with the block resting on the rollers and both hands clear.",
+  "context": "In a primary science lesson, pupils investigate how to keep a load moving when it overtakes a roller. The painted end lets them follow that same roller as it supports the moving block again.",
+  "setup": "The level desk has a start line and a finish band. The 140 × 80 × 35 mm block starts with its trailing face at the line. Three loose hardwood rollers, each 16 mm in diameter and 140 mm long, lie square across the lane. Their centers are 10, 78 and 115 mm from the line. Each end projects 30 mm beyond the block. The rear roller has a dark half on each end.",
+  "scoring": "Earn 0.5 when the block rolls clear of the marked roller and you release it crosswise ahead of the leading face while the other two rollers support the block. The block must still be level and supported on rollers at the final reading. For 1, the returned roller must advance and turn under the moving block. The two rolling readings are taken at or before 100 mm and at or beyond 125 mm of travel. Throughout the last second, including the final reading, the trailing edge must be within 130–150 mm inclusive, the block level and still, and both hands clear of the block and all three rollers. The marked roller must bear the front half and an original roller must bear behind the midpoint. Carrying the block, sliding it on the desk or removing the rear roller before the block rolls clear gives zero. An early touch followed by withdrawal allows a retry.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Measure from the center of the start line. Use a square to align both ends of each roller within 1 mm of its station. Turn the marked ends dark-half up and center the block across the rollers. Remove the square and ruler. Start with the pieces at rest and the hands clear.",
+  "fidelity": "The loose, flat-ended hardwood rollers can roll, coast, slip and skew. A side view along their axes shows the marked end turning, the gap under the block and the trailing edge crossing the finish band. The wooden block substitutes for the brick in the classroom lesson.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (600 steps).",
+  "media": "M-LL2S7X"
+}
