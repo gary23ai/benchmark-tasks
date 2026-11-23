@@ -1,0 +1,111 @@
+{
+  "policy": "scripted",
+  "model": null,
+  "score": 1.0,
+  "executed_steps": 781,
+  "step_limit": 1600,
+  "declared_step_limit": 1600,
+  "control_hz": 20,
+  "seed": 0,
+  "elapsed_s": 376.62,
+  "smoke_only": false,
+  "observations": {
+    "cameras": [
+      "top_cam",
+      "left_cam",
+      "right_cam"
+    ],
+    "state": [
+      "joint_pos"
+    ],
+    "rgb_size": [
+      320,
+      176
+    ]
+  },
+  "scripted_reads_simulator_state": true,
+  "source_sha256": {
+    "adapter.py": "8b6944608e81023e50f8f63ac8a80e3a20f305aa9ebe1d7b2641c59a24f23781",
+    "fixed_scene.py": "2124608f264ec11d8cea62eb156d522930260dd7b5d3dbfa0c5b4f5a95b9133e",
+    "grading.py": "9c827851bd9116bae790ec1dc893561d628ea95285d87b4a8acef50d6975eb30",
+    "knife_refresh.usda": "79fbd56a10803274d66dd1f3e095ccb3f9b392719faa484e3cb9e542750ab277",
+    "layout.py": "215c0e4f2e833db49cce3a0696fd503078ece95aa57c8fdb23fb4c46ae6e0402",
+    "recording.py": "4b374349a91cf137493052add6edfa165e46986cebc5e954250baab5cd7a30a6",
+    "run.py": "e69b3a1979b2445e18f697a6f6d69c3fa91ac6f5cf2a19b93809a299432bfdb5",
+    "scripted.py": "fdfeb809f9658aaed6f42b24474edea260f8469b97583c7aeb62fe2b728d61de"
+  },
+  "source_unchanged": true,
+  "runtime": {
+    "isaacsim": "6.1.0.0",
+    "inspect-robots": "1.0.0",
+    "inspect-robots-yam": "0.38.0",
+    "yam-arena": "0.1.0"
+  },
+  "physics_hz": 960.0,
+  "physics_samples": 37488,
+  "dream_requests": 0,
+  "final_grade": {
+    "score": 1.0,
+    "finished": true,
+    "void": null,
+    "broken": true,
+    "stable_samples": 1005,
+    "sample_hz": 960.0,
+    "seated": true,
+    "actual_seated": false,
+    "native_score_broken": true,
+    "lever_bending": false,
+    "lever_bending_moment_nm": 0.0,
+    "contained": true,
+    "recovered": true,
+    "onmat": true,
+    "case_upright": true,
+    "released": true,
+    "quiet": true,
+    "stable_seconds": 1.0458333333333334,
+    "knife_in_case_m": [
+      0.07632070411251296,
+      0.14973258815598964,
+      0.006799874672333805
+    ],
+    "lever_angle_rad": 0.0001543034513491361
+  },
+  "reference_phases": [
+    [
+      0,
+      "pick up the locked knife by its real steel handle"
+    ],
+    [
+      144,
+      "orient the sheath above the selected desktop guide"
+    ],
+    [
+      314,
+      "insert the steel sheath to its real shoulder stop"
+    ],
+    [
+      474,
+      "press the real hinged lever while holding the knife"
+    ],
+    [
+      608,
+      "withdraw the refreshed knife without removing the fragment"
+    ],
+    [
+      708,
+      "return the refreshed knife to the cutting mat and release"
+    ]
+  ],
+  "summary_only": true,
+  "original_result": {
+    "sha256": "528dd6c5f8e8debed8b68760eeeebe25b627522ff46f78daf326ab57f334f983",
+    "bytes": 2223570
+  },
+  "omitted_fields": [
+    "diagnostics",
+    "guard_changes",
+    "dream_transcript"
+  ],
+  "machine_paths_omitted": true,
+  "presentation_labels_anonymized": true
+}

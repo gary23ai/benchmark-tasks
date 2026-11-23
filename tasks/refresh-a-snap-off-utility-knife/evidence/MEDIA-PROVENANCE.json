@@ -1,0 +1,26 @@
+{
+  "media": {
+    "demo.mp4": {
+      "sha256": "4bfe725d5300a6714373981397158663230c7bc15d2bd1402b880ea718d66f03",
+      "bytes": 1288634,
+      "transformation": "Byte-identical copy of the full recorded media",
+      "board_upload_name": "demo.mp4"
+    },
+    "model_run.mp4": {
+      "sha256": "1ca902f41ee6a92416a76aa707d680bcafa810ca05d9979b266a81899dbae9ae",
+      "bytes": 3952723,
+      "transformation": "Byte-identical copy of the full recorded media",
+      "board_upload_name": "model_run.mp4"
+    },
+    "setup.png": {
+      "sha256": "2a27db90ed1fb4285e1365b146ee16a033454988830a232ccc0d4ee419684a54",
+      "bytes": 138035,
+      "transformation": "Byte-identical copy of the full recorded media",
+      "board_upload_name": "setup.png"
+    }
+  },
+  "model_video_source": "Full side-view episode with synchronized top-camera inset",
+  "temporal_cuts": false,
+  "retimed": false,
+  "generated_scene_content": false
+}

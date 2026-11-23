@@ -1,0 +1,519 @@
+{
+  "presentation_copies_only": true,
+  "machine_paths_omitted": true,
+  "presentation_labels_anonymized": true,
+  "scope": "Original report hashes plus portable report metadata. Full raw model/physical inputs are retained separately.",
+  "reports": {
+    "INPUT-REPLAY-AUDIT.json": {
+      "original_report": {
+        "sha256": "30a106b33e2097a56dfd180aa13fdd1778f6c44d0c31ab40d7a58befc06d3ed5",
+        "bytes": 3516
+      },
+      "summary": {
+        "schema": "robocurve-dream-native-input-replay-v1",
+        "ok": true,
+        "trial": "<original-machine-path-omitted>",
+        "candidate_slug": "refresh-a-snap-off-utility-knife",
+        "module": "rdb_knife_refresh",
+        "policy": "dream",
+        "model": "dreamlabs/dream-1-beta",
+        "score": 0.0,
+        "complete_verified_dream_evidence": true,
+        "scripted_reader_diagnostic": false,
+        "full_budget": true,
+        "step_limit": 1600,
+        "executed_steps": 1600,
+        "termination": "action_budget_exhausted",
+        "source_identical": true,
+        "source_sha256": {
+          "adapter.py": "8b6944608e81023e50f8f63ac8a80e3a20f305aa9ebe1d7b2641c59a24f23781",
+          "fixed_scene.py": "2124608f264ec11d8cea62eb156d522930260dd7b5d3dbfa0c5b4f5a95b9133e",
+          "grading.py": "9c827851bd9116bae790ec1dc893561d628ea95285d87b4a8acef50d6975eb30",
+          "knife_refresh.usda": "79fbd56a10803274d66dd1f3e095ccb3f9b392719faa484e3cb9e542750ab277",
+          "layout.py": "215c0e4f2e833db49cce3a0696fd503078ece95aa57c8fdb23fb4c46ae6e0402",
+          "recording.py": "4b374349a91cf137493052add6edfa165e46986cebc5e954250baab5cd7a30a6",
+          "run.py": "e69b3a1979b2445e18f697a6f6d69c3fa91ac6f5cf2a19b93809a299432bfdb5",
+          "scripted.py": "fdfeb809f9658aaed6f42b24474edea260f8469b97583c7aeb62fe2b728d61de"
+        },
+        "control_hz": 20,
+        "physics_hz": 960,
+        "physics_inputs_replayed": 76800,
+        "all_native_grades_exact": true,
+        "first_finished_native_sample": null,
+        "final_grade": {
+          "score": 0.0,
+          "finished": false,
+          "void": null,
+          "broken": false,
+          "stable_samples": 0,
+          "sample_hz": 960,
+          "seated": false,
+          "actual_seated": false,
+          "native_score_broken": false,
+          "lever_bending": false,
+          "lever_bending_moment_nm": 0.0,
+          "contained": false,
+          "recovered": false,
+          "onmat": true,
+          "case_upright": true,
+          "released": true,
+          "quiet": true,
+          "stable_seconds": 0.0,
+          "knife_in_case_m": [
+            0.06999999519451078,
+            0.14999997508099527,
+            0.006799935894145753
+          ],
+          "lever_angle_rad": 0.0006219881121744653
+        },
+        "dream_requests": 65,
+        "dream_successful_replies": 33,
+        "actions_14d": 1600,
+        "post_guard_commands_within_stock_bounds": true,
+        "executed_delta_guard_verified": true,
+        "maximum_executed_target_delta": 0.09997359411421902,
+        "measured_observations_14d": 1601,
+        "observation_coverage": "initial_and_every_control_step",
+        "initial_observation_recorded": true,
+        "all_control_grades_match_native_endpoints": true,
+        "verified_evidence_files": {
+          "RESULT.json": {
+            "sha256": "77e30e69726f4fedd8da77f5ad417146d3a37684e383290ed19bf52298432f3c",
+            "bytes": 4673865
+          },
+          "CONFIG.json": {
+            "sha256": "518bbab866015fd6efeae895d16275c62b4e757b652af0c18f5f385df5244458",
+            "bytes": 4465
+          },
+          "DREAM_USAGE.json": {
+            "sha256": "114fac20ac4244d90ccf8ec34f9b9ca9b8039362867dffe8dab3a1b1f4cf2674",
+            "bytes": 195
+          },
+          "media/physics-grade.jsonl": {
+            "sha256": "c3ee3d347b9f66b79972939d59d41bed3fe51d9526075fde712baa708b810114",
+            "bytes": 289748698
+          },
+          "actions.jsonl": {
+            "sha256": "f3492e8363b9efaa524c5b545aeebf1cc4710a0b457acc694bcc7ff114219a16",
+            "bytes": 535427
+          },
+          "media/grader-trace.jsonl": {
+            "sha256": "b8a37a619ecf26e9eb6cdc3701c0b01ffe8710ed73b561a4879fb81ca043ba33",
+            "bytes": 856689
+          },
+          "measured-observations.jsonl": {
+            "sha256": "492f1b1317e93fcce87749dc56d3c73d6660db0346bdccb3038245ce04995a68",
+            "bytes": 562945
+          }
+        }
+      }
+    },
+    "MODEL-PROVENANCE-AUDIT.json": {
+      "original_report": {
+        "sha256": "2b7b658dafd8867f6a31bf5905a0e213490b77d11efee7d494201c114c0f162d",
+        "bytes": 4051
+      },
+      "summary": {
+        "ok": true,
+        "audit_kind": "dream-model-input-and-action-provenance-v1",
+        "candidate_slug": "refresh-a-snap-off-utility-knife",
+        "model": "dreamlabs/dream-1-beta",
+        "score": 0.0,
+        "completed_model_trial": true,
+        "native_grade_replay_required_separately": true,
+        "control_steps": 1600,
+        "initial_and_post_step_measured_states": 1601,
+        "model_observations": 1600,
+        "archived_rgb_jpegs": 4800,
+        "exact_observation_joint_states": true,
+        "only_stock_rgb_and_joint_state": true,
+        "all_jpegs_decoded_and_hashed": true,
+        "exact_sdk_nine_frame_windows": true,
+        "successful_sdk_chunks": 33,
+        "exact_stock_sdk_filter_replays": 33,
+        "exact_preroll_and_chunk_queue_replay": true,
+        "exact_stock_guard_replay": true,
+        "guard_modified_steps": 1271,
+        "action_request_attempts": 65,
+        "retry_errors": 32,
+        "retry_error_types": {
+          "DreamSessionExpired": 32
+        },
+        "session_expiration_errors": 32,
+        "observed_successful_session_transitions": 32,
+        "successful_session_ids": [
+          "e5ff14ed-0de7-4aad-b90e-b63ed23d5b63",
+          "9c67f1bd-69a0-4ed7-b86d-277f0de1afa5",
+          "055da784-de27-4791-9e55-fa6517ebd593",
+          "6f79d477-c715-4653-b903-33f7fd62544e",
+          "5b65eb34-5a0a-406b-88fe-5df1381367e7",
+          "6278d00d-518e-4614-b74f-c896430bf42f",
+          "ca71b12d-11c5-47e9-a9cd-033dfbecc3fc",
+          "23b61e4b-e6ce-40e6-9a67-d4217d75e96d",
+          "9ad77beb-eab2-41c1-aab1-687199e18631",
+          "ae94db36-8a3f-4951-a1aa-cb2c0683fd2a",
+          "20feae1b-7d98-4a26-b1ea-771599a748ce",
+          "9bcb2d78-a770-4779-9889-f3dcddc13cef",
+          "54581ce3-c490-431b-909c-e079eeb81817",
+          "cc73292a-dfac-4857-ae29-f28945ea9ce2",
+          "3da4023b-66bb-4138-aa0e-fc269b64d980",
+          "83f2e22d-96a4-4762-a539-9bd286f46352",
+          "20a5b321-6113-478e-8cd2-44ed96dfb22b",
+          "71acee88-727e-4846-bb53-f74f45f094ee",
+          "b4fb668f-8aeb-4815-9903-d762e245af37",
+          "3e25594e-8fa7-47f0-ad36-64c2540509ae",
+          "62e4f562-0f4c-4ed3-9b4c-220b5c60b754",
+          "c7db5278-2aa0-494f-8906-657a5d9708c8",
+          "6ac35f77-3d8e-48c2-a7c3-5d2d3a5e4b08",
+          "8ca30b44-85c8-4f52-b8e1-d9ffa00413b5",
+          "9c7a72a4-e702-417f-872a-8b382fb8b276",
+          "f3f9a5e3-18cd-4b77-9436-74b24691518c",
+          "1ec438d7-86ce-4c1d-8e0e-10cbbf7fe6ba",
+          "e8a0f648-3534-40ed-9932-310862c80b5a",
+          "5b58c31b-c69f-404d-b08c-80c44e0dd698",
+          "8c29f49f-83a1-4132-9d97-0766c66acb8c",
+          "46fa7b5e-31ed-494f-9586-b3679ebe5b27",
+          "1698f644-62b1-48aa-8599-fd070bf53e42",
+          "585543be-d91d-42c0-8f89-2caf1c94c845"
+        ],
+        "selected_model_rows_played": 1568,
+        "unused_final_chunk_rows": 16,
+        "inputs": {
+          "RESULT.json": {
+            "sha256": "77e30e69726f4fedd8da77f5ad417146d3a37684e383290ed19bf52298432f3c",
+            "bytes": 4673865
+          },
+          "CONFIG.json": {
+            "sha256": "518bbab866015fd6efeae895d16275c62b4e757b652af0c18f5f385df5244458",
+            "bytes": 4465
+          },
+          "DREAM_USAGE.json": {
+            "sha256": "114fac20ac4244d90ccf8ec34f9b9ca9b8039362867dffe8dab3a1b1f4cf2674",
+            "bytes": 195
+          },
+          "dream-action-trace.jsonl": {
+            "sha256": "be4bb5800f0082565da327385ea1f25f419be8ae54eba9d664cdba1a9adfcc03",
+            "bytes": 8285252
+          },
+          "dream-input-rgb.zip": {
+            "sha256": "25e464baf84e266ab1fec8c12577e8a5ba0a88d83f8f8e26bc598cb46ef1248c",
+            "bytes": 25223644
+          },
+          "policy-actions.jsonl": {
+            "sha256": "ca4cb9f5b7a4fcc9c63e9a29774a4bf2cf68fcb8c557e5b627c85300f613ba64",
+            "bytes": 511035
+          },
+          "actions.jsonl": {
+            "sha256": "f3492e8363b9efaa524c5b545aeebf1cc4710a0b457acc694bcc7ff114219a16",
+            "bytes": 535427
+          },
+          "measured-observations.jsonl": {
+            "sha256": "492f1b1317e93fcce87749dc56d3c73d6660db0346bdccb3038245ce04995a68",
+            "bytes": 562945
+          },
+          "policy-source/evaluate_dream.py": {
+            "sha256": "bd627381753b9dd1e4c8cb676df689af2d1c0b49ac9078d5fb8eb5d699248dc4",
+            "bytes": 14809
+          },
+          "policy-source/dream_model_audit.py": {
+            "sha256": "1b30923ce19526d1159eb88eef5d44c68cd0279dc73d183092ef032873cd1823",
+            "bytes": 9616
+          }
+        },
+        "auditor_sha256": "d9c302af880c2c12b2811b96b77f64867a8d0e180b4a7569fec9e2d4cf5cc1b3"
+      }
+    },
+    "MEDIA-AUDIT.json": {
+      "original_report": {
+        "sha256": "bf265c27794dd9b32c16d3388d098e2b356fe446be368cc7d6f752052ad44351",
+        "bytes": 7691
+      },
+      "summary": {
+        "schema": "robocurve-dream-native-media-review-v1",
+        "ok": true,
+        "trial": "<original-machine-path-omitted>",
+        "candidate_slug": "refresh-a-snap-off-utility-knife",
+        "model": "dreamlabs/dream-1-beta",
+        "score": 0.0,
+        "executed_actions": 1600,
+        "control_hz": 20,
+        "camera_hz": 10.0,
+        "expected_frames": 801,
+        "initial_frame_included": true,
+        "every_second_control_frame": true,
+        "terminal_odd_control_frame_included": false,
+        "complete_episode": true,
+        "no_temporal_cuts": true,
+        "no_frame_interpolation": true,
+        "no_generated_scene_content": true,
+        "original_inputs_unchanged": true,
+        "source_result_sha256": "77e30e69726f4fedd8da77f5ad417146d3a37684e383290ed19bf52298432f3c",
+        "source_sha256": {
+          "adapter.py": "8b6944608e81023e50f8f63ac8a80e3a20f305aa9ebe1d7b2641c59a24f23781",
+          "fixed_scene.py": "2124608f264ec11d8cea62eb156d522930260dd7b5d3dbfa0c5b4f5a95b9133e",
+          "grading.py": "9c827851bd9116bae790ec1dc893561d628ea95285d87b4a8acef50d6975eb30",
+          "knife_refresh.usda": "79fbd56a10803274d66dd1f3e095ccb3f9b392719faa484e3cb9e542750ab277",
+          "layout.py": "215c0e4f2e833db49cce3a0696fd503078ece95aa57c8fdb23fb4c46ae6e0402",
+          "recording.py": "4b374349a91cf137493052add6edfa165e46986cebc5e954250baab5cd7a30a6",
+          "run.py": "e69b3a1979b2445e18f697a6f6d69c3fa91ac6f5cf2a19b93809a299432bfdb5",
+          "scripted.py": "fdfeb809f9658aaed6f42b24474edea260f8469b97583c7aeb62fe2b728d61de"
+        },
+        "all_four_native_cameras": {
+          "top_cam": {
+            "source": "<original-machine-path-omitted>",
+            "width": 640,
+            "height": 360,
+            "fps": 10.0,
+            "frames": 801,
+            "duration_s": 80.1,
+            "first_frame_pts_s": 0.0,
+            "last_frame_pts_s": 80.0,
+            "all_frame_timestamps_verified": true,
+            "full_decode": true,
+            "sha256": "eb22ef6ba1ec957a5e2a428fc9c516039d27e5ac95dffbf308563951b6781c06",
+            "bytes": 875347
+          },
+          "left_cam": {
+            "source": "<original-machine-path-omitted>",
+            "width": 640,
+            "height": 360,
+            "fps": 10.0,
+            "frames": 801,
+            "duration_s": 80.1,
+            "first_frame_pts_s": 0.0,
+            "last_frame_pts_s": 80.0,
+            "all_frame_timestamps_verified": true,
+            "full_decode": true,
+            "sha256": "863703a0d69020dfdea0ef226f53fce7d1413a8085f023da75f1c51b26114c8d",
+            "bytes": 1277123
+          },
+          "right_cam": {
+            "source": "<original-machine-path-omitted>",
+            "width": 640,
+            "height": 360,
+            "fps": 10.0,
+            "frames": 801,
+            "duration_s": 80.1,
+            "first_frame_pts_s": 0.0,
+            "last_frame_pts_s": 80.0,
+            "all_frame_timestamps_verified": true,
+            "full_decode": true,
+            "sha256": "76d6abc3b235eba79793ca9dc3b5531d1e655b94c50381644683237fbee23cfc",
+            "bytes": 775064
+          },
+          "side_cam": {
+            "source": "<original-machine-path-omitted>",
+            "width": 1280,
+            "height": 704,
+            "fps": 10.0,
+            "frames": 801,
+            "duration_s": 80.1,
+            "first_frame_pts_s": 0.0,
+            "last_frame_pts_s": 80.0,
+            "all_frame_timestamps_verified": true,
+            "full_decode": true,
+            "sha256": "c87c8b7039feee0852e1b55aa074d071e8aa3b0730e058ec952f018694df74f6",
+            "bytes": 2323028
+          }
+        },
+        "demo": {
+          "width": 1280,
+          "height": 704,
+          "fps": 10.0,
+          "frames": 801,
+          "duration_s": 80.1,
+          "first_frame_pts_s": 0.0,
+          "last_frame_pts_s": 80.0,
+          "all_frame_timestamps_verified": true,
+          "full_decode": true,
+          "sha256": "1ca902f41ee6a92416a76aa707d680bcafa810ca05d9979b266a81899dbae9ae",
+          "bytes": 3952723,
+          "source_primary_camera": "side_cam",
+          "source_inset_camera": "top_cam",
+          "inset_geometry_pixels": {
+            "position": "upper_right",
+            "x": 880,
+            "y": 12,
+            "width": 388,
+            "height": 220,
+            "image_width": 384,
+            "image_height": 216,
+            "border_px": 2,
+            "margin_px": 12
+          },
+          "composition": "Full native side-view episode with synchronized resized top-camera inset; no cuts, retiming, interpolation, or added scene content",
+          "codec": "H.264 libx264 CRF18 YUV420P; source frame chronology retained"
+        },
+        "contact_sheet": {
+          "source_demo_sha256": "1ca902f41ee6a92416a76aa707d680bcafa810ca05d9979b266a81899dbae9ae",
+          "sha256": "3fcea60ae0496dc02bc6b395e5c3105206a0c71891643ef6e2b3c7bd025ba3b5",
+          "bytes": 703892,
+          "width": 1280,
+          "height": 1282,
+          "chronological": true,
+          "selection": "six evenly spaced original frame indices including both endpoints",
+          "extraction": "ffmpeg select by decoded frame index; no timestamp seeking",
+          "thumbnail_resampling": "Pillow LANCZOS",
+          "panels": [
+            {
+              "panel": 1,
+              "source_frame_index_zero_based": 0,
+              "video_pts_s": 0.0,
+              "native_control_tick": 0,
+              "native_simulation_time_s": 0.0,
+              "extracted_full_frame_png_sha256": "cc9707ed3ca7b91c5d715ccc43426464d7c2de1609eabf7804f875f401cb002a",
+              "repeated_source_frame": false
+            },
+            {
+              "panel": 2,
+              "source_frame_index_zero_based": 160,
+              "video_pts_s": 16.0,
+              "native_control_tick": 320,
+              "native_simulation_time_s": 16.0,
+              "extracted_full_frame_png_sha256": "b4b0d5b90a6a51e02045dae444ce376d7d7380c40c9b8ce6bd7368ffd1fa8454",
+              "repeated_source_frame": false
+            },
+            {
+              "panel": 3,
+              "source_frame_index_zero_based": 320,
+              "video_pts_s": 32.0,
+              "native_control_tick": 640,
+              "native_simulation_time_s": 32.0,
+              "extracted_full_frame_png_sha256": "4cbd5ad616a6965991bc93515168610bea8ea13254d3adc40f14cd5da6d2a027",
+              "repeated_source_frame": false
+            },
+            {
+              "panel": 4,
+              "source_frame_index_zero_based": 480,
+              "video_pts_s": 48.0,
+              "native_control_tick": 960,
+              "native_simulation_time_s": 48.0,
+              "extracted_full_frame_png_sha256": "f4df01442ab444a2526c7678e7c42386f0fd857135ab9db50b97ebe2e066ed7e",
+              "repeated_source_frame": false
+            },
+            {
+              "panel": 5,
+              "source_frame_index_zero_based": 640,
+              "video_pts_s": 64.0,
+              "native_control_tick": 1280,
+              "native_simulation_time_s": 64.0,
+              "extracted_full_frame_png_sha256": "00db3d4d89653115c052635aeba6093e826f727c5d72252e8a406d1b3894a9b3",
+              "repeated_source_frame": false
+            },
+            {
+              "panel": 6,
+              "source_frame_index_zero_based": 800,
+              "video_pts_s": 80.0,
+              "native_control_tick": 1600,
+              "native_simulation_time_s": 80.0,
+              "extracted_full_frame_png_sha256": "a0fee23e11d09030674770b415502dc108c7408ddc9fc5cf4b9b139f4e498303",
+              "repeated_source_frame": false
+            }
+          ]
+        },
+        "setup": {
+          "source": "<original-machine-path-omitted>",
+          "sha256": "2a27db90ed1fb4285e1365b146ee16a033454988830a232ccc0d4ee419684a54",
+          "byte_identical_copy": true,
+          "bytes": 138035
+        },
+        "tool_sha256": "b71c7d3a3a595e115d7edd3b50187d43fd509b0d6883e5754acf5a0b981f4746",
+        "media_tools": {
+          "ffmpeg": "ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers",
+          "ffprobe": "ffprobe version 9.0.1 Copyright (c) 2007-2026 the FFmpeg developers"
+        }
+      }
+    },
+    "VISUAL-REVIEW.json": {
+      "original_report": {
+        "sha256": "cb758f883d092cfe0a8b433fcb1a05a1e3e0cd8fdb7e5d81a8b9b284f565f23f",
+        "bytes": 3243
+      },
+      "summary": {
+        "candidate_slug": "refresh-a-snap-off-utility-knife",
+        "trial_path": "<original-machine-path-omitted>",
+        "model": "dreamlabs/dream-1-beta",
+        "score": 0.0,
+        "executed_steps": 1600,
+        "step_limit": 1600,
+        "verified_demo_sha256": "1ca902f41ee6a92416a76aa707d680bcafa810ca05d9979b266a81899dbae9ae",
+        "verified_native_video_sha256": {
+          "top_cam": "eb22ef6ba1ec957a5e2a428fc9c516039d27e5ac95dffbf308563951b6781c06",
+          "left_cam": "863703a0d69020dfdea0ef226f53fce7d1413a8085f023da75f1c51b26114c8d",
+          "right_cam": "76d6abc3b235eba79793ca9dc3b5531d1e655b94c50381644683237fbee23cfc",
+          "side_cam": "c87c8b7039feee0852e1b55aa074d071e8aa3b0730e058ec952f018694df74f6"
+        },
+        "media_audit_path": "<original-machine-path-omitted>",
+        "contact_sheet_path": "<original-machine-path-omitted>",
+        "observations": [
+          {
+            "kind": "direct_image",
+            "source_frames": [
+              0,
+              160,
+              320,
+              480,
+              640,
+              800
+            ],
+            "video_times_s": [
+              0.0,
+              16.0,
+              32.0,
+              48.0,
+              64.0,
+              80.0
+            ],
+            "description": "Arms change pose near their bases while the knife stays flat on the cutting mat and the blade-disposal box stays upright. The six sampled frames show no knife pickup, insertion into the box, or lever press."
+          }
+        ],
+        "grade_facts": {
+          "kind": "native_grader_over_every_physics_sample",
+          "samples": 76800,
+          "max_score": 0.0,
+          "robot_contact_samples": 0,
+          "robot_component_contact_samples": {
+            "blade_segment": 0,
+            "case": 0,
+            "knife": 0,
+            "lever": 0
+          },
+          "seated_samples": 0,
+          "actual_seated_samples": 0,
+          "native_score_broken_samples": 0,
+          "broken_samples": 0,
+          "lever_bending_samples": 0,
+          "maximum_absolute_lever_bending_moment_nm": 0.0,
+          "lever_angle_range_rad": [
+            -0.00018060435157241678,
+            0.0008467488375131886
+          ],
+          "native_break_events": [],
+          "broken_fragment_produced": false,
+          "contained_samples": 0,
+          "recovered_samples": 0,
+          "onmat_samples": 76800,
+          "knife_coordinate_ranges_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "blade_segment_coordinate_ranges_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_void": null,
+          "final_broken": false,
+          "final_native_score_broken": false,
+          "final_seated": false,
+          "final_onmat": true,
+          "final_contained": false
+        },
+        "short_failure_label": "No knife pickup, insertion, lever press, or fracture",
+        "interpretation": "Images show the knife and disposal box left in their original arrangement. All 76,800 native samples confirm zero robot contact with all four task bodies, no seating, no bending contact moment, and no native fracture event. The original blade segment remained attached to the unmoved knife: contained=false describes that attached segment outside the box, not an escaped broken fragment. The knife being on the mat was its unchanged initial state.",
+        "vision_reviewed": true
+      }
+    }
+  }
+}
