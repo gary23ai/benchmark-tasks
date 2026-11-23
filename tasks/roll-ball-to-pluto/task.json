@@ -1,0 +1,20 @@
+{
+  "title": "Drop the Shoot the Moon ball into Pluto",
+  "category": "Societal relatability",
+  "keywords": [
+    "Shoot the Moon",
+    "tabletop dexterity",
+    "diverging rails",
+    "rolling ball",
+    "pocket selection"
+  ],
+  "instruction": "Using only the rod handles, roll the ball toward you and drop it into the last pocket, Pluto. Leave it there.",
+  "context": "Pluto is the pocket nearest the handles. Spreading the rods lets the ball ride lower between them. A gap wide enough for the ball to pass through over Saturn can end the turn one pocket early.",
+  "setup": "Secure the board to a level 550 × 300 mm base with the handle-end wooden face 60 mm in from the near edge. At their inward stops, the wooden grip centers are 128 mm apart. Settle the ball between the unchanged steel rails against the far stop.",
+  "scoring": "Earn 1 if Pluto is the first pocket the ball lands in and the ball rests there, supported by the pocket and clear of both rods, throughout the final second. Any arm contact with the ball, bare steel rods, frame or pocket lining earns 0. An earlier pocket, a miss or a ball left riding above Pluto also earns 0. During the last 20 readings the largest three-dimensional distance between any two measured ball centers is at most 2 mm. The ball must not land in a different pocket first, even if it bounces out.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Reset both arms to the stock station home (0, 1, 1, −0.6, 0, 0) radians with both jaws fully open. Return both rails to their inward stops and settle the ball against the far wall. Start both policies from this reset, with the clock beginning at the first action.",
+  "fidelity": "The model has two inclined steel cylinders on passive pivots, separate wooden grips, a free sphere and six recessed pockets. The dimensions and rigid felt contact are engineering approximations of the stock game. The free steel sphere uses constant 0.22 s⁻¹ angular damping to approximate rolling losses. This engineering coefficient applies everywhere, including on both rails and all wells.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (600 steps).",
+  "media": "M-L4GJMH"
+}

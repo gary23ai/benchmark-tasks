@@ -1,0 +1,447 @@
+{
+  "scripted": {
+    "task": "roll-ball-to-pluto",
+    "policy": "scripted",
+    "seed": 0,
+    "model": null,
+    "scorer": "physical_task_score",
+    "score": 1,
+    "steps": 600,
+    "step_limit": 600,
+    "declaredStepLimit": 600,
+    "diagnosticOnly": true,
+    "elapsed_s": 265.89,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "board": [
+        258.0,
+        44.5,
+        371.9,
+        210.0
+      ],
+      "well_floor": [
+        290.8,
+        160.1,
+        339.3,
+        187.0
+      ],
+      "left_rod": [
+        292.5,
+        54.9,
+        313.5,
+        176.9
+      ],
+      "right_rod": [
+        316.3,
+        54.9,
+        337.1,
+        176.9
+      ],
+      "left_handle": [
+        286.2,
+        169.9,
+        292.8,
+        188.5
+      ],
+      "right_handle": [
+        337.0,
+        169.9,
+        343.4,
+        188.5
+      ],
+      "ball": [
+        310.4,
+        47.3,
+        320.4,
+        61.8
+      ],
+      "earlier_floor": [
+        291.9,
+        66.5,
+        338.5,
+        160.7
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "board:0": [
+        305.2,
+        163.3,
+        306.4,
+        169.7
+      ],
+      "board:1": [
+        323.7,
+        163.3,
+        324.9,
+        169.7
+      ],
+      "board:2": [
+        311.4,
+        158.2,
+        318.8,
+        159.2
+      ],
+      "board:3": [
+        311.3,
+        173.9,
+        318.8,
+        174.9
+      ]
+    },
+    "initialMeasurements": {
+      "pocket_x": 0.36999997234344484,
+      "pluto_radius": 0.36999997234344956,
+      "height": 0.09447467565536505,
+      "ball_speed": 0.00012668679119087756,
+      "floor_load": 0.0,
+      "left_support": 0.6059608459472656,
+      "right_support": 0.6176804900169373,
+      "ll": 0.0,
+      "lr": 0.0,
+      "rl": 0.0,
+      "rr": 0.0,
+      "left_ball": 0.0,
+      "right_ball": 0.0,
+      "left_board": 0.0,
+      "right_board": 0.0,
+      "left_liner": 0.0,
+      "right_liner": 0.0,
+      "left_leftrod": 0.0,
+      "left_rightrod": 0.0,
+      "right_leftrod": 0.0,
+      "right_rightrod": 0.0,
+      "pocket_y": -5.92023781109674e-08,
+      "pocket_z": 0.09447467328689309,
+      "earlier_floor_load": 0.0,
+      "left_earlier_floor": 0.0,
+      "right_earlier_floor": 0.0,
+      "first_impact_pluto": 0.0,
+      "first_impact_earlier": 0.0,
+      "left_forbidden": 0.0,
+      "right_forbidden": 0.0,
+      "left_handle_seen": 0.0,
+      "right_handle_seen": 0.0
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {},
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {
+      "ball": 0.2199999988079071
+    },
+    "finalWedgeBodyPositions": {},
+    "video_frames": 301,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "8766a5817e9aa79a5b123fc1219ac26a0029eab3f680fac631a354151d040666",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "5fa7ebed5bfba1d0325d861d0b4aa77961a82a016a95caaa4a2ce34447ef1438",
+      "task_impl/arm_contact_history.py": "d57f23555e32588beb832d1c4be5bdff362c2d11a79aa6ffaf72b6b6d9d4bce2",
+      "task_impl/first_impact.py": "4d22426ca34740f67f5ee206397efef4445e9135b606385cbe7e14ba69dad527",
+      "task_impl/grading.py": "e0f51bd1ac278b7fb01d0721eb55bb6d604cd6494da36231470559e3356fa913",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "da79747ed87ff59785d7056b637fe821e9afbde2da368150ba4d43312e782408",
+      "task_impl/scripted.py": "ebb5623f5d9bb865f740d0a8d307547859f30d5e8a9cb663f6aef498fc1fdb98"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "overviewCamera": {
+      "positionM": [
+        -0.16649487853050232,
+        -0.008999999612569809,
+        1.6918205499649046
+      ],
+      "rotationXYZW": [
+        0.18301085645621007,
+        -0.18301085645621007,
+        -0.6830131963726356,
+        0.6830131963726356
+      ],
+      "convention": "opengl",
+      "tableTopM": 0.7474999999999999,
+      "intrinsics": [
+        392.195617675781,
+        391.722351074219,
+        318.389434814453,
+        177.876312255859
+      ]
+    },
+    "replay": {
+      "batch": "3f73fe9f41fd7deb843ad5916d85aff4",
+      "traceSha256": "be1ec2ab2182d799922c2e3f6ffbae23391580bb78ef69a72ad49270cb5d7c81",
+      "recordedScore": 1.0,
+      "scope": "Original native video and archived measurements. Rescored under the submitted rubric. No rerender or new policy action is claimed."
+    }
+  },
+  "dream_1": {
+    "task": "roll-ball-to-pluto",
+    "policy": "dream",
+    "seed": 0,
+    "model": "dreamlabs/dream-1-beta",
+    "scorer": "physical_task_score",
+    "score": 0.0,
+    "steps": 600,
+    "step_limit": 600,
+    "declaredStepLimit": 600,
+    "diagnosticOnly": false,
+    "elapsed_s": 259.4,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "board": [
+        258.0,
+        44.5,
+        371.9,
+        210.0
+      ],
+      "well_floor": [
+        290.8,
+        160.1,
+        339.3,
+        187.0
+      ],
+      "left_rod": [
+        292.5,
+        54.9,
+        313.5,
+        176.9
+      ],
+      "right_rod": [
+        316.3,
+        54.9,
+        337.1,
+        176.9
+      ],
+      "left_handle": [
+        286.2,
+        169.9,
+        292.8,
+        188.5
+      ],
+      "right_handle": [
+        337.0,
+        169.9,
+        343.4,
+        188.5
+      ],
+      "ball": [
+        310.4,
+        47.3,
+        320.4,
+        61.8
+      ],
+      "earlier_floor": [
+        291.9,
+        66.5,
+        338.5,
+        160.7
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "board:0": [
+        305.2,
+        163.3,
+        306.4,
+        169.7
+      ],
+      "board:1": [
+        323.7,
+        163.3,
+        324.9,
+        169.7
+      ],
+      "board:2": [
+        311.4,
+        158.2,
+        318.8,
+        159.2
+      ],
+      "board:3": [
+        311.3,
+        173.9,
+        318.8,
+        174.9
+      ]
+    },
+    "initialMeasurements": {
+      "pocket_x": 0.36999997234344484,
+      "pluto_radius": 0.36999997234344956,
+      "height": 0.09447467565536505,
+      "ball_speed": 0.00012668679119087756,
+      "floor_load": 0.0,
+      "left_support": 0.6059608459472656,
+      "right_support": 0.6176804900169373,
+      "ll": 0.0,
+      "lr": 0.0,
+      "rl": 0.0,
+      "rr": 0.0,
+      "left_ball": 0.0,
+      "right_ball": 0.0,
+      "left_board": 0.0,
+      "right_board": 0.0,
+      "left_liner": 0.0,
+      "right_liner": 0.0,
+      "left_leftrod": 0.0,
+      "left_rightrod": 0.0,
+      "right_leftrod": 0.0,
+      "right_rightrod": 0.0,
+      "pocket_y": -5.92023781109674e-08,
+      "pocket_z": 0.09447467328689309,
+      "earlier_floor_load": 0.0,
+      "left_earlier_floor": 0.0,
+      "right_earlier_floor": 0.0,
+      "first_impact_pluto": 0.0,
+      "first_impact_earlier": 0.0,
+      "left_forbidden": 0.0,
+      "right_forbidden": 0.0,
+      "left_handle_seen": 0.0,
+      "right_handle_seen": 0.0
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {},
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {
+      "ball": 0.2199999988079071
+    },
+    "finalWedgeBodyPositions": {},
+    "video_frames": 301,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "9b3fd31d4c5ac655bc98e33db7a7c225a0d715ba0295f8809cd09b8ab5298c5d",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "5fa7ebed5bfba1d0325d861d0b4aa77961a82a016a95caaa4a2ce34447ef1438",
+      "task_impl/arm_contact_history.py": "d57f23555e32588beb832d1c4be5bdff362c2d11a79aa6ffaf72b6b6d9d4bce2",
+      "task_impl/first_impact.py": "4d22426ca34740f67f5ee206397efef4445e9135b606385cbe7e14ba69dad527",
+      "task_impl/grading.py": "e0f51bd1ac278b7fb01d0721eb55bb6d604cd6494da36231470559e3356fa913",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "da79747ed87ff59785d7056b637fe821e9afbde2da368150ba4d43312e782408",
+      "task_impl/scripted.py": "ebb5623f5d9bb865f740d0a8d307547859f30d5e8a9cb663f6aef498fc1fdb98"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "usage": {
+      "model": "dreamlabs/dream-1-beta",
+      "attempts": 13,
+      "served": 12,
+      "episodes": 1,
+      "cap": 16,
+      "serviceError": "DreamSessionExpired"
+    },
+    "actionCoverage": {
+      "task": "roll-ball-to-pluto",
+      "batch": "a3a0bd564e1448fb9168eb1b6e842fcf",
+      "controlSteps": 600,
+      "initialHoldSteps": 32,
+      "modelChunkStartStepsOneBased": [
+        33,
+        81,
+        129,
+        177,
+        225,
+        273,
+        321,
+        369,
+        417,
+        465,
+        513,
+        561
+      ],
+      "lastModelActionStep": 600,
+      "postModelHoldSteps": 0,
+      "source": "Inspect one-action chunks; pinned DreamPolicy marks the first returned row of each fetched chunk with inference latency.",
+      "policyFileSha256": "64f6a6661e303a1012894af3539ecd0d14810af03aead302ede0ba9e9f6f258d",
+      "chunksSha256": "90ea6f519997f645e9d8605237882a56ef33dcc80c17fbf16468272c6ad5ff6d",
+      "recordSha256": "9c76a35f9c8e2f56fcb935cb54e0bdda0f4e4d5fec9b4077d8b8c3bd4e4aa83f"
+    }
+  }
+}
