@@ -1,0 +1,19 @@
+{
+  "title": "Hang a full-size dining chair on the tabletop by both armrests",
+  "category": "Societal relatability",
+  "keywords": [
+    "dining room",
+    "chair hanging",
+    "bilateral support",
+    "floor cleaning"
+  ],
+  "run_limit": "908 steps (45.4 seconds at 20 Hz)",
+  "instruction": "Hang the chair from the dining tabletop by both armrests. Leave its four feet clear so the floor can be cleaned, and let go.",
+  "setup": "A 3.5 kg rigid birch chair (510 mm wide, 404 mm deep; 360 mm round seat at 450 mm) stands centered at the front edge of a fixed 690 mm high, 690 mm wide, 26 mm thick tabletop. The two armrests project forward from rear supports; each has a blue 10 mm side band. Align the chair square to the edge on its four floor marks, with the front ends of the arms 20 mm short of the tabletop. Mount both arms on 490 mm pedestals above a 1 m floor deck. Align their bases 610 mm apart. Leave the tabletop underside open at the front.",
+  "context": "Lifting dining chairs clears the floor for sweeping or mopping. Chairs with projecting armrests can stay upright while the tabletop carries their weight. The Jennifer 78 chair is designed for this placement. IKEA also shows the upright cleaning arrangement in its U.S. dining-chair instructions.",
+  "scoring": "Keep the front edge of the table, both blue armrest bands, the four feet and the hands in view. A side view with a ruler shows gaps. Give 0.5 when both band centres are at least 20 mm inside the front and side edges, at least one armrest rests on the top, the chair is within 6 degrees of upright, and all four feet clear 35 mm for the final second. For 1, lower the chair until BOTH armrests bear on the tabletop before withdrawing the hand or hands. At both blue bands the lower faces must meet the top, within 4 mm on a side-view ruler. Both hands then stay at least 5 mm clear of every chair surface and the chair stays supported only by its armrests for the final two seconds. A chair released in open air, with the hands visibly clear and neither armrest on the tabletop, earns zero. If a foot stays on the floor or a band is outside the top, award zero.",
+  "reset_notes": "Set all four feet on the floor marks, centre and square the chair, align the projecting arm ends 20 mm in front of the lip and return the arms to their open ready pose.",
+  "fidelity": "Full-size 3.5 kg birch furniture with two fixed armrests. The commercial Jennifer 78 gives the mass, 510 mm width, 360 mm seat diameter and 450 mm seat height. The test chair uses straight 404 mm armrests within a 404 mm deep frame. The catalog lists a 440 mm overall depth. Rear profile, surface friction and inertia are estimates.",
+  "scores": "Dream-1 run: 0 (908 steps); demo: 1.0 (908 steps).",
+  "media": "M-YMSLU9"
+}

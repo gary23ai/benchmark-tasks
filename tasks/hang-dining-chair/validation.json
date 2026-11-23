@@ -1,0 +1,488 @@
+{
+  "scripted": {
+    "task": "hang-dining-chair",
+    "policy": "scripted",
+    "seed": 0,
+    "model": null,
+    "scorer": "physical_task_score",
+    "score": 1.0,
+    "steps": 908,
+    "step_limit": 908,
+    "declaredStepLimit": 908,
+    "diagnosticOnly": false,
+    "elapsed_s": 398.0,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "top": [
+        175.3,
+        -2.4,
+        454.2,
+        107.2
+      ],
+      "pedestal": [
+        236.7,
+        5.3,
+        394.1,
+        143.0
+      ],
+      "chair": [
+        200.7,
+        171.0,
+        427.5,
+        321.3
+      ],
+      "armL": [
+        190.7,
+        122.1,
+        229.9,
+        280.9
+      ],
+      "armR": [
+        400.0,
+        122.1,
+        437.3,
+        280.9
+      ],
+      "floor": [
+        160.8,
+        135.9,
+        468.0,
+        387.7
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "armL:0": [
+        217.7,
+        189.6,
+        220.5,
+        198.1
+      ],
+      "armL:1": [
+        204.7,
+        189.6,
+        207.9,
+        198.1
+      ],
+      "armR:0": [
+        421.3,
+        189.6,
+        424.3,
+        198.1
+      ],
+      "armR:1": [
+        408.7,
+        189.6,
+        411.3,
+        198.1
+      ],
+      "floor:0": [
+        348.4,
+        310.5,
+        349.5,
+        324.2
+      ],
+      "floor:1": [
+        342.4,
+        317.0,
+        355.5,
+        317.6
+      ],
+      "floor:2": [
+        282.1,
+        310.5,
+        283.3,
+        324.2
+      ],
+      "floor:3": [
+        276.1,
+        317.0,
+        289.3,
+        317.6
+      ],
+      "floor:4": [
+        345.5,
+        232.2,
+        346.4,
+        243.4
+      ],
+      "floor:5": [
+        340.0,
+        237.5,
+        351.9,
+        238.0
+      ],
+      "floor:6": [
+        285.7,
+        232.2,
+        286.7,
+        243.4
+      ],
+      "floor:7": [
+        280.2,
+        237.5,
+        292.1,
+        238.0
+      ]
+    },
+    "initialMeasurements": {
+      "tilt": 2.0240018397643986e-05,
+      "pastLipL": -0.2219999634283762,
+      "acrossL": 0.24000030305903572,
+      "undersideL": -0.08900098991394044,
+      "loadL": 0.0,
+      "pastLipR": -0.22199987434450646,
+      "acrossR": -0.23999971592501293,
+      "undersideR": -0.08900087070465089,
+      "loadR": 0.0,
+      "foot0": 1.30584983881743e-07,
+      "foot1": 5.588817653112699e-08,
+      "foot2": 8.753292313201655e-08,
+      "foot3": 1.2836115781400537e-08,
+      "chairleft": 0.0,
+      "chairright": 0.0,
+      "armLleft": 0.0,
+      "armLright": 0.0,
+      "armRleft": 0.0,
+      "armRright": 0.0,
+      "pedestalContact": 0.0,
+      "seatOnTable": 0.0,
+      "handgapchair": 0.04,
+      "handgaparmL": 0.04,
+      "handgaparmR": 0.04
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {},
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {},
+    "finalWedgeBodyPositions": {},
+    "video_frames": 455,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "601252326333d17f9c6bdddf3f03536efd608bc92ed3ea437fea7f8fe498f8a2",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "9694075e6ba50abd8e682d354b9c7c493c3a4e6d4e836df4cc1bca9224ad5308",
+      "task_impl/arm_release.py": "bcc46e087deed886ba24338c0295ccea64f2d1a9db1090ed269ff428abbd6f0d",
+      "task_impl/clearance.py": "d09e57bfa2bd9db69bf10b9eb637540392377898ceb0cfc9bffdcf4ac932f82d",
+      "task_impl/geometry.py": "ef3962e6e3163477a49ba420686a7ad37a254025238fab6838f0ec23d25e0374",
+      "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+      "task_impl/gripper_clearance.py": "dddf1c7e2458f06631894d56f45997df587db043e9ade9998aa942e1c2cc12b7",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+      "task_impl/scripted.py": "f732e7eed9fddcca59c6218eecd8ea7588fa618b713697f07bccc5209909d215"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0"
+  },
+  "dream_1": {
+    "task": "hang-dining-chair",
+    "policy": "dream",
+    "seed": 0,
+    "model": "dreamlabs/dream-1-beta",
+    "scorer": "physical_task_score",
+    "score": 0.0,
+    "steps": 908,
+    "step_limit": 908,
+    "declaredStepLimit": 908,
+    "diagnosticOnly": false,
+    "elapsed_s": 352.96,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "top": [
+        175.3,
+        -2.4,
+        454.2,
+        107.2
+      ],
+      "pedestal": [
+        236.7,
+        5.3,
+        394.1,
+        143.0
+      ],
+      "chair": [
+        200.7,
+        171.0,
+        427.5,
+        321.3
+      ],
+      "armL": [
+        190.7,
+        122.1,
+        229.9,
+        280.9
+      ],
+      "armR": [
+        400.0,
+        122.1,
+        437.3,
+        280.9
+      ],
+      "floor": [
+        160.8,
+        135.9,
+        468.0,
+        387.7
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "armL:0": [
+        217.7,
+        189.6,
+        220.5,
+        198.1
+      ],
+      "armL:1": [
+        204.7,
+        189.6,
+        207.9,
+        198.1
+      ],
+      "armR:0": [
+        421.3,
+        189.6,
+        424.3,
+        198.1
+      ],
+      "armR:1": [
+        408.7,
+        189.6,
+        411.3,
+        198.1
+      ],
+      "floor:0": [
+        348.4,
+        310.5,
+        349.5,
+        324.2
+      ],
+      "floor:1": [
+        342.4,
+        317.0,
+        355.5,
+        317.6
+      ],
+      "floor:2": [
+        282.1,
+        310.5,
+        283.3,
+        324.2
+      ],
+      "floor:3": [
+        276.1,
+        317.0,
+        289.3,
+        317.6
+      ],
+      "floor:4": [
+        345.5,
+        232.2,
+        346.4,
+        243.4
+      ],
+      "floor:5": [
+        340.0,
+        237.5,
+        351.9,
+        238.0
+      ],
+      "floor:6": [
+        285.7,
+        232.2,
+        286.7,
+        243.4
+      ],
+      "floor:7": [
+        280.2,
+        237.5,
+        292.1,
+        238.0
+      ]
+    },
+    "initialMeasurements": {
+      "tilt": 2.0240018397643986e-05,
+      "pastLipL": -0.2219999634283762,
+      "acrossL": 0.24000030305903572,
+      "undersideL": -0.08900098991394044,
+      "loadL": 0.0,
+      "pastLipR": -0.22199987434450646,
+      "acrossR": -0.23999971592501293,
+      "undersideR": -0.08900087070465089,
+      "loadR": 0.0,
+      "foot0": 1.30584983881743e-07,
+      "foot1": 5.588817653112699e-08,
+      "foot2": 8.753292313201655e-08,
+      "foot3": 1.2836115781400537e-08,
+      "chairleft": 0.0,
+      "chairright": 0.0,
+      "armLleft": 0.0,
+      "armLright": 0.0,
+      "armRleft": 0.0,
+      "armRright": 0.0,
+      "pedestalContact": 0.0,
+      "seatOnTable": 0.0,
+      "handgapchair": 0.04,
+      "handgaparmL": 0.04,
+      "handgaparmR": 0.04
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {},
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {},
+    "finalWedgeBodyPositions": {},
+    "video_frames": 455,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "601252326333d17f9c6bdddf3f03536efd608bc92ed3ea437fea7f8fe498f8a2",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "9694075e6ba50abd8e682d354b9c7c493c3a4e6d4e836df4cc1bca9224ad5308",
+      "task_impl/arm_release.py": "bcc46e087deed886ba24338c0295ccea64f2d1a9db1090ed269ff428abbd6f0d",
+      "task_impl/clearance.py": "d09e57bfa2bd9db69bf10b9eb637540392377898ceb0cfc9bffdcf4ac932f82d",
+      "task_impl/geometry.py": "ef3962e6e3163477a49ba420686a7ad37a254025238fab6838f0ec23d25e0374",
+      "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+      "task_impl/gripper_clearance.py": "dddf1c7e2458f06631894d56f45997df587db043e9ade9998aa942e1c2cc12b7",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+      "task_impl/scripted.py": "f732e7eed9fddcca59c6218eecd8ea7588fa618b713697f07bccc5209909d215"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "usage": {
+      "model": "dreamlabs/dream-1-beta",
+      "attempts": 22,
+      "served": 19,
+      "episodes": 1,
+      "cap": 44,
+      "serviceError": "DreamSessionExpired"
+    },
+    "actionCoverage": {
+      "task": "hang-dining-chair",
+      "batch": "93cc0409eb874a5d8c3f8b05f8f47fc5",
+      "controlSteps": 908,
+      "initialHoldSteps": 32,
+      "modelChunkStartStepsOneBased": [
+        33,
+        81,
+        129,
+        177,
+        225,
+        273,
+        321,
+        369,
+        417,
+        465,
+        513,
+        561,
+        609,
+        657,
+        705,
+        753,
+        801,
+        849,
+        897
+      ],
+      "lastModelActionStep": 908,
+      "postModelHoldSteps": 0,
+      "source": "Inspect one-action chunks; pinned DreamPolicy marks the first returned row of each fetched chunk with inference latency.",
+      "policyFileSha256": "64f6a6661e303a1012894af3539ecd0d14810af03aead302ede0ba9e9f6f258d",
+      "chunksSha256": "7056a8dd7023b7ee0097cee171c9e6a75d1061b0e49b1400f25a2abe9b4a0dae",
+      "recordSha256": "1d77b796846bd770f9bb089406bcfbc84fc9bb8496dfb6077e2f3e1e94567b16"
+    },
+    "networkRecovery": {
+      "modelBatch": "93cc0409eb874a5d8c3f8b05f8f47fc5",
+      "originalBatch": "78c3cee4b36248e28eb706a3d7b17249",
+      "reason": "The previous live model episode expired before completion. This video starts at the original scene reset."
+    }
+  }
+}

@@ -1,0 +1,3566 @@
+{
+  "limit": 908,
+  "score_at_end": true,
+  "continuous_jaw": true,
+  "pedestal_station": true,
+  "actors": [
+    {
+      "name": "top",
+      "position": [
+        0.685,
+        0,
+        0.1869999999999999
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.4,
+            0.69,
+            0.026
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "mass_kg": 7,
+      "rgb": [
+        0.65,
+        0.7,
+        0.66
+      ],
+      "material": "26 mm birch tabletop",
+      "bolted": true,
+      "friction": 0.65
+    },
+    {
+      "name": "pedestal",
+      "position": [
+        0.863,
+        0,
+        -0.15800000000000008
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.044,
+            0.47,
+            0.6639999999999999
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "mass_kg": 6,
+      "rgb": [
+        0.55,
+        0.58,
+        0.58
+      ],
+      "material": "bolted birch end panel",
+      "bolted": true,
+      "friction": 0.65
+    },
+    {
+      "name": "chair",
+      "position": [
+        0.24499999999999997,
+        0,
+        -0.04000000000000002
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.36,
+            0.36,
+            0.024
+          ],
+          "offset": [
+            0,
+            0,
+            -0.012
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.027,
+            0.028,
+            0.426
+          ],
+          "offset": [
+            -0.148,
+            -0.116,
+            -0.237
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.027,
+            0.028,
+            0.426
+          ],
+          "offset": [
+            -0.148,
+            0.116,
+            -0.237
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.027,
+            0.028,
+            0.426
+          ],
+          "offset": [
+            0.148,
+            -0.116,
+            -0.237
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.027,
+            0.028,
+            0.426
+          ],
+          "offset": [
+            0.148,
+            0.116,
+            -0.237
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.032,
+            0.032,
+            0.31
+          ],
+          "offset": [
+            -0.155,
+            -0.14,
+            0.145
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.032,
+            0.092,
+            0.032
+          ],
+          "offset": [
+            -0.155,
+            -0.192,
+            0.157
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.032,
+            0.032,
+            0.31
+          ],
+          "offset": [
+            -0.155,
+            0.14,
+            0.145
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.032,
+            0.092,
+            0.032
+          ],
+          "offset": [
+            -0.155,
+            0.192,
+            0.157
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.026,
+            0.304,
+            0.065
+          ],
+          "offset": [
+            -0.164,
+            0,
+            0.28
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.026,
+            0.304,
+            0.04
+          ],
+          "offset": [
+            -0.164,
+            0,
+            0.205
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "mass_kg": 3.22,
+      "rgb": [
+        0.64,
+        0.43,
+        0.24
+      ],
+      "material": "birch chair with a circular veneer seat and solid frame",
+      "bolted": false,
+      "friction": 0.65
+    },
+    {
+      "name": "armL",
+      "position": [
+        0.263,
+        0.24,
+        0.12499999999999994
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.404,
+            0.03,
+            0.028
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "mass_kg": 0.14,
+      "rgb": [
+        0.47,
+        0.3,
+        0.17
+      ],
+      "material": "laminated birch armrest",
+      "bolted": false,
+      "friction": 0.65,
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.01,
+            0.0002,
+            0.024
+          ],
+          "offset": [
+            0,
+            -0.0151,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.09,
+            0.15,
+            0.72
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.01,
+            0.0002,
+            0.024
+          ],
+          "offset": [
+            0,
+            0.0151,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.09,
+            0.15,
+            0.72
+          ]
+        }
+      ]
+    },
+    {
+      "name": "armR",
+      "position": [
+        0.263,
+        -0.24,
+        0.12499999999999994
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.404,
+            0.03,
+            0.028
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "mass_kg": 0.14,
+      "rgb": [
+        0.47,
+        0.3,
+        0.17
+      ],
+      "material": "laminated birch armrest",
+      "bolted": false,
+      "friction": 0.65,
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.01,
+            0.0002,
+            0.024
+          ],
+          "offset": [
+            0,
+            -0.0151,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.09,
+            0.15,
+            0.72
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.01,
+            0.0002,
+            0.024
+          ],
+          "offset": [
+            0,
+            0.0151,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.09,
+            0.15,
+            0.72
+          ]
+        }
+      ]
+    },
+    {
+      "name": "floor",
+      "position": [
+        0.38,
+        0,
+        -0.502
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            1,
+            0.92,
+            0.024
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.08,
+            0.08,
+            0.49
+          ],
+          "offset": [
+            -0.38,
+            0.305,
+            0.257
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.08,
+            0.08,
+            0.49
+          ],
+          "offset": [
+            -0.38,
+            -0.305,
+            0.257
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "mass_kg": 20,
+      "rgb": [
+        0.63,
+        0.64,
+        0.66
+      ],
+      "material": "rigid floor deck with two steel arm pedestals",
+      "bolted": true,
+      "friction": 0.65,
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.046,
+            0.002,
+            0.0001
+          ],
+          "offset": [
+            -0.28300000000000003,
+            -0.116,
+            0.0121
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.24
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.046,
+            0.002,
+            0.0001
+          ],
+          "offset": [
+            -0.28300000000000003,
+            -0.116,
+            0.0121
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.24
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.046,
+            0.002,
+            0.0001
+          ],
+          "offset": [
+            -0.28300000000000003,
+            0.116,
+            0.0121
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.24
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.046,
+            0.002,
+            0.0001
+          ],
+          "offset": [
+            -0.28300000000000003,
+            0.116,
+            0.0121
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.24
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.046,
+            0.002,
+            0.0001
+          ],
+          "offset": [
+            0.012999999999999956,
+            -0.116,
+            0.0121
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.24
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.046,
+            0.002,
+            0.0001
+          ],
+          "offset": [
+            0.012999999999999956,
+            -0.116,
+            0.0121
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.24
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.046,
+            0.002,
+            0.0001
+          ],
+          "offset": [
+            0.012999999999999956,
+            0.116,
+            0.0121
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.24
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.046,
+            0.002,
+            0.0001
+          ],
+          "offset": [
+            0.012999999999999956,
+            0.116,
+            0.0121
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ],
+          "rgb": [
+            0.22,
+            0.25,
+            0.24
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "type": "fixed",
+      "a": "chair",
+      "b": "armL",
+      "anchor_a": [
+        -0.155,
+        0.24,
+        0.165
+      ],
+      "anchor_b": [
+        -0.173,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "fixed",
+      "a": "chair",
+      "b": "armR",
+      "anchor_a": [
+        -0.155,
+        -0.24,
+        0.165
+      ],
+      "anchor_b": [
+        -0.173,
+        0,
+        0
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "name": "tilt",
+      "kind": "angle_deg",
+      "a": "chair",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "pastLipL",
+      "kind": "dx",
+      "a": "armL",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        -0.014
+      ],
+      "pb": [
+        -0.2,
+        0,
+        0.013
+      ]
+    },
+    {
+      "name": "acrossL",
+      "kind": "dy",
+      "a": "armL",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        -0.014
+      ],
+      "pb": [
+        0,
+        0,
+        0.013
+      ]
+    },
+    {
+      "name": "undersideL",
+      "kind": "dz",
+      "a": "armL",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        -0.014
+      ],
+      "pb": [
+        0,
+        0,
+        0.013
+      ]
+    },
+    {
+      "name": "loadL",
+      "kind": "contact_n",
+      "a": "armL",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pastLipR",
+      "kind": "dx",
+      "a": "armR",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        -0.014
+      ],
+      "pb": [
+        -0.2,
+        0,
+        0.013
+      ]
+    },
+    {
+      "name": "acrossR",
+      "kind": "dy",
+      "a": "armR",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        -0.014
+      ],
+      "pb": [
+        0,
+        0,
+        0.013
+      ]
+    },
+    {
+      "name": "undersideR",
+      "kind": "dz",
+      "a": "armR",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        -0.014
+      ],
+      "pb": [
+        0,
+        0,
+        0.013
+      ]
+    },
+    {
+      "name": "loadR",
+      "kind": "contact_n",
+      "a": "armR",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "foot0",
+      "kind": "dz",
+      "a": "chair",
+      "b": "floor",
+      "pa": [
+        -0.148,
+        -0.116,
+        -0.45
+      ],
+      "pb": [
+        -0.05,
+        0,
+        0.012
+      ]
+    },
+    {
+      "name": "foot1",
+      "kind": "dz",
+      "a": "chair",
+      "b": "floor",
+      "pa": [
+        -0.148,
+        0.116,
+        -0.45
+      ],
+      "pb": [
+        -0.05,
+        0,
+        0.012
+      ]
+    },
+    {
+      "name": "foot2",
+      "kind": "dz",
+      "a": "chair",
+      "b": "floor",
+      "pa": [
+        0.148,
+        -0.116,
+        -0.45
+      ],
+      "pb": [
+        -0.05,
+        0,
+        0.012
+      ]
+    },
+    {
+      "name": "foot3",
+      "kind": "dz",
+      "a": "chair",
+      "b": "floor",
+      "pa": [
+        0.148,
+        0.116,
+        -0.45
+      ],
+      "pb": [
+        -0.05,
+        0,
+        0.012
+      ]
+    },
+    {
+      "name": "chairleft",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "chair",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chairright",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "chair",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "armLleft",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "armL",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "armLright",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "armL",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "armRleft",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "armR",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "armRright",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "armR",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pedestalContact",
+      "kind": "contact_n",
+      "a": "chair",
+      "b": "pedestal",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "seatOnTable",
+      "kind": "contact_n",
+      "a": "chair",
+      "b": "top",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "handgapchair",
+      "kind": "gripper_clearance",
+      "a": "chair",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "handgaparmL",
+      "kind": "gripper_clearance",
+      "a": "armL",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "handgaparmR",
+      "kind": "gripper_clearance",
+      "a": "armR",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "invalidate": [
+    [
+      {
+        "metric": "chairleft",
+        "lo": 0,
+        "hi": 0.001
+      },
+      {
+        "metric": "chairright",
+        "lo": 0,
+        "hi": 0.001
+      },
+      {
+        "metric": "armLleft",
+        "lo": 0,
+        "hi": 0.001
+      },
+      {
+        "metric": "armLright",
+        "lo": 0,
+        "hi": 0.001
+      },
+      {
+        "metric": "armRleft",
+        "lo": 0,
+        "hi": 0.001
+      },
+      {
+        "metric": "armRright",
+        "lo": 0,
+        "hi": 0.001
+      },
+      {
+        "metric": "loadL",
+        "lo": 0,
+        "hi": 0.001
+      },
+      {
+        "metric": "loadR",
+        "lo": 0,
+        "hi": 0.001
+      },
+      {
+        "metric": "foot0",
+        "lo": 0.015,
+        "hi": 2
+      },
+      {
+        "metric": "foot1",
+        "lo": 0.015,
+        "hi": 2
+      },
+      {
+        "metric": "foot2",
+        "lo": 0.015,
+        "hi": 2
+      },
+      {
+        "metric": "foot3",
+        "lo": 0.015,
+        "hi": 2
+      },
+      {
+        "metric": "handgapchair",
+        "lo": 0.005,
+        "hi": 0.0401
+      },
+      {
+        "metric": "handgaparmL",
+        "lo": 0.005,
+        "hi": 0.0401
+      },
+      {
+        "metric": "handgaparmR",
+        "lo": 0.005,
+        "hi": 0.0401
+      }
+    ]
+  ],
+  "milestones": [
+    {
+      "name": "placedchairleft",
+      "ticks": 2,
+      "all": [
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "chairleft",
+          "lo": 0.005,
+          "hi": 800
+        }
+      ]
+    },
+    {
+      "name": "placedchairright",
+      "ticks": 2,
+      "all": [
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "chairright",
+          "lo": 0.005,
+          "hi": 800
+        }
+      ]
+    },
+    {
+      "name": "placedarmLleft",
+      "ticks": 2,
+      "all": [
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "armLleft",
+          "lo": 0.005,
+          "hi": 800
+        }
+      ]
+    },
+    {
+      "name": "placedarmLright",
+      "ticks": 2,
+      "all": [
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "armLright",
+          "lo": 0.005,
+          "hi": 800
+        }
+      ]
+    },
+    {
+      "name": "placedarmRleft",
+      "ticks": 2,
+      "all": [
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "armRleft",
+          "lo": 0.005,
+          "hi": 800
+        }
+      ]
+    },
+    {
+      "name": "placedarmRright",
+      "ticks": 2,
+      "all": [
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "armRright",
+          "lo": 0.005,
+          "hi": 800
+        }
+      ]
+    }
+  ],
+  "tiers": [
+    {
+      "score": 0.5,
+      "needs": [],
+      "ticks": 20,
+      "all": [
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 6
+        },
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "foot0",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot1",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot2",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot3",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        }
+      ]
+    },
+    {
+      "score": 0.5,
+      "needs": [],
+      "ticks": 20,
+      "all": [
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 6
+        },
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "foot0",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot1",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot2",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot3",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "placedchairleft"
+      ],
+      "ticks": 40,
+      "all": [
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 6
+        },
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "foot0",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot1",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot2",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot3",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "chairleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "chairright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "pedestalContact",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "seatOnTable",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "handgapchair",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmL",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmR",
+          "lo": 0.005,
+          "hi": 0.0401
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "placedchairright"
+      ],
+      "ticks": 40,
+      "all": [
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 6
+        },
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "foot0",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot1",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot2",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot3",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "chairleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "chairright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "pedestalContact",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "seatOnTable",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "handgapchair",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmL",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmR",
+          "lo": 0.005,
+          "hi": 0.0401
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "placedarmLleft"
+      ],
+      "ticks": 40,
+      "all": [
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 6
+        },
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "foot0",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot1",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot2",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot3",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "chairleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "chairright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "pedestalContact",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "seatOnTable",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "handgapchair",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmL",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmR",
+          "lo": 0.005,
+          "hi": 0.0401
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "placedarmLright"
+      ],
+      "ticks": 40,
+      "all": [
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 6
+        },
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "foot0",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot1",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot2",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot3",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "chairleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "chairright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "pedestalContact",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "seatOnTable",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "handgapchair",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmL",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmR",
+          "lo": 0.005,
+          "hi": 0.0401
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "placedarmRleft"
+      ],
+      "ticks": 40,
+      "all": [
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 6
+        },
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "foot0",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot1",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot2",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot3",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "chairleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "chairright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "pedestalContact",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "seatOnTable",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "handgapchair",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmL",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmR",
+          "lo": 0.005,
+          "hi": 0.0401
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "placedarmRright"
+      ],
+      "ticks": 40,
+      "all": [
+        {
+          "metric": "tilt",
+          "lo": 0,
+          "hi": 6
+        },
+        {
+          "metric": "pastLipL",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossL",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "pastLipR",
+          "lo": 0.02,
+          "hi": 0.372
+        },
+        {
+          "metric": "acrossR",
+          "lo": -0.325,
+          "hi": 0.325
+        },
+        {
+          "metric": "foot0",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot1",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot2",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "foot3",
+          "lo": 0.035,
+          "hi": 0.23
+        },
+        {
+          "metric": "undersideL",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadL",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "undersideR",
+          "lo": -0.002,
+          "hi": 0.004
+        },
+        {
+          "metric": "loadR",
+          "lo": 0.2,
+          "hi": 500
+        },
+        {
+          "metric": "chairleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "chairright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armLright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRleft",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "armRright",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "pedestalContact",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "seatOnTable",
+          "lo": 0,
+          "hi": 0.001
+        },
+        {
+          "metric": "handgapchair",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmL",
+          "lo": 0.005,
+          "hi": 0.0401
+        },
+        {
+          "metric": "handgaparmR",
+          "lo": 0.005,
+          "hi": 0.0401
+        }
+      ]
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 54,
+      "left": {
+        "relative_to": "chair",
+        "tip": [
+          -0.025,
+          0.325,
+          0.172
+        ],
+        "opening_m": 0.068,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "chair",
+        "tip": [
+          -0.025,
+          -0.325,
+          0.172
+        ],
+        "opening_m": 0.068,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      }
+    },
+    {
+      "ticks": 60,
+      "left": {
+        "relative_to": "chair",
+        "tip": [
+          -0.025,
+          0.224,
+          0.165
+        ],
+        "opening_m": 0.068,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "chair",
+        "tip": [
+          -0.025,
+          -0.224,
+          0.165
+        ],
+        "opening_m": 0.068,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      }
+    },
+    {
+      "ticks": 30,
+      "left": {
+        "relative_to": "chair",
+        "tip": [
+          -0.025,
+          0.224,
+          0.165
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "chair",
+        "tip": [
+          -0.025,
+          -0.224,
+          0.165
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      }
+    },
+    {
+      "ticks": 80,
+      "left": {
+        "relative_to": "chair",
+        "tip": [
+          -0.025,
+          0.2186,
+          0.37
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "chair",
+        "tip": [
+          -0.025,
+          -0.2186,
+          0.37
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.26437499999999997,
+          0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.26437499999999997,
+          -0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.30875,
+          0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.30875,
+          -0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.353125,
+          0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.353125,
+          -0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.3975,
+          0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3975,
+          -0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.441875,
+          0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.441875,
+          -0.216,
+          0.33
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.48625000000000007,
+          0.216,
+          0.3122857142857143
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.48625000000000007,
+          -0.216,
+          0.3122857142857143
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.530625,
+          0.216,
+          0.29014285714285715
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.530625,
+          -0.216,
+          0.29014285714285715
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 19,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.268
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          -0.216,
+          0.268
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 45,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.226
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          -0.216,
+          0.226
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 25,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          -0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          -0.216,
+          0.203
+        ],
+        "opening_m": 0.078,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "ticks": 18,
+      "continue_arm_targets": true
+    },
+    {
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.54,
+          -0.33599999999999997,
+          0.231
+        ],
+        "opening_m": 0.078,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "ticks": 40,
+      "continue_arm_targets": true
+    },
+    {
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.54,
+          -0.33599999999999997,
+          0.231
+        ],
+        "opening_m": 0.078,
+        "forward": [
+          0.4210100716628344,
+          0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "ticks": 22,
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 34,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.255,
+          -0.225,
+          0.335
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 30,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "chair",
+        "tip": [
+          -0.225,
+          -0.08,
+          0.21
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 24,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "chair",
+        "tip": [
+          -0.167,
+          -0.08,
+          0.205
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 36,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.003,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.444,
+          -0.08,
+          0.258
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 22,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.5750000000000001,
+          0.216,
+          0.203
+        ],
+        "opening_m": 0.078,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.444,
+          -0.08,
+          0.258
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 52,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.54,
+          0.33599999999999997,
+          0.231
+        ],
+        "opening_m": 0.078,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.444,
+          -0.08,
+          0.258
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 38,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.44,
+          0.34,
+          0.295
+        ],
+        "opening_m": 0.065,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.444,
+          -0.08,
+          0.258
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 28,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.44,
+          0.34,
+          0.295
+        ],
+        "opening_m": 0.065,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.451,
+          -0.08,
+          0.257
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 35,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.44,
+          0.34,
+          0.295
+        ],
+        "opening_m": 0.065,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "chair",
+        "tip": [
+          -0.25,
+          -0.08,
+          0.21
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    },
+    {
+      "ticks": 35,
+      "left": {
+        "relative_to": "table",
+        "tip": [
+          0.44,
+          0.34,
+          0.295
+        ],
+        "opening_m": 0.065,
+        "forward": [
+          0.4210100716628344,
+          -0.9028590122851735,
+          -0.08715574274765817
+        ],
+        "closing": [
+          0.03683360850073487,
+          -0.07898992833716563,
+          0.9961946980917455
+        ]
+      },
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.23,
+          -0.3,
+          0.299
+        ],
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "closing": [
+          0,
+          -1,
+          0
+        ],
+        "opening_m": 0.02
+      },
+      "continue_arm_targets": true
+    }
+  ]
+}
