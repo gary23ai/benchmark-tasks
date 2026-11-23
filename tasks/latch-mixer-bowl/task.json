@@ -1,0 +1,19 @@
+{
+  "title": "Fit the mixer bowl on its side pins and latch the back",
+  "category": "Societal relatability",
+  "keywords": [
+    "bowl-lift mixer",
+    "locating pins",
+    "rear spring latch",
+    "food service"
+  ],
+  "instruction": "Fit the empty bowl onto the lowered mixer arms. Seat both side tabs over their pins, press the back of the bowl into the spring latch, and let go.",
+  "context": "A cook installing a mixer bowl needs to secure its back as well as its sides. A bowl can look level on the pins and still wobble if its rear stud rests on top of the latch.",
+  "setup": "Use the unplugged tabletop stand mixer with its arms fully down and its removable beater off the drive shaft. The red motor head and steel shaft stay in place. The 6.4 mm shanks with tapered yellow tips stand 246.4 mm apart; their shoulders are 128 mm above the bench. The free 0.60 kg stainless bowl is upright on its foot 176 mm ahead of the pin line, with its front handle facing the operator. The orange catch starts at its marked forward stop. Set the speed lever to off.",
+  "scoring": "Score the final uninterrupted second, or finish early when the 1.0 state lasts a second. Use synchronized views of both yellow pin tops, the left and right rear pocket windows, and both hands. Score 0.5 if each yellow pin passes through its own closed tab and projects 5–9 mm above the top face of the tab (7.6 mm with the tab resting on the shoulder). The tab top lies between the two black height rings on the pin. Use the 6.4 mm steel shank for scale. In front or overhead view, each gripper centre (the midpoint between its jaws) must be at least two shank diameters outboard of the outer edge of the corresponding tab. Both arms must be visibly clear of the bowl and catch. Score 1 if during the same second both blue stud ends sit entirely below and behind the orange lip in the respective pocket windows, and the collar stays within the 3 mm mark at its forward stop. The stud centre must be 5–15 mm above the pocket floor and 5–15 mm behind its front face at each window. A stud on the ramp or a retracted catch caps the score at 0.5. One missed tab or continued hand support earns zero. A pin touching the inside wall of a closed ear and a blue stud touching the underside of the lip both count when their visible positions meet these marks. A failed attempt may be retried.",
+  "run_limit": "830 steps (41.5 seconds at 20 Hz)",
+  "reset_notes": "On a standard unplugged mixer, support the bowl by the handle and rim, lift the rear free of the spring latch, then lift both ears off the pins. On this inspection model, support the bowl and retract the guided spring catch to free the stud. Release the catch and reset the empty bowl on its marked foot position.",
+  "fidelity": "Full-size original reconstruction of a bowl-lift stand mixer. The unpowered head and planetary shaft remain fitted. The free 0.60 kg hollow bowl has a 226 mm rim and externally welded tabs. Two 6.4 mm shanks with tapered pilot tips approximate the proportions of the genuine bowl-locating pins. A passive guided catch approximates the flexing rear clip. Two open viewing sides and painted marks permit inspection. Dimensions and spring forces are estimated.",
+  "scores": "Dream-1 run: 0 (830 steps); demo: 1.0 (805 steps).",
+  "media": "M-PCCEKE"
+}
