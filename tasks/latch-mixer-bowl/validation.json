@@ -1159,5 +1159,34 @@
       "episodes": 1,
       "cap": 21
     }
+  },
+  "reviewRevision": {
+    "originalPR": 3981,
+    "originalHead": "e06bfa54e462622ae64aa63273d4f0293831d54e",
+    "mediaId": "M-PCCEKE",
+    "unchangedPhysicsAndSensors": true,
+    "records": {
+      "scripted": {
+        "archivedSteps": 805,
+        "archivedScore": 1.0,
+        "revisedScore": 1.0,
+        "firstFullCreditSample": 761,
+        "changedScoreSamples": 128,
+        "firstHalfCreditSample": 502,
+        "traceSha256": "6a83c60c3bfd0e3b8ac5b8c5b43418b4c7773fc0769b120ad8af3c969014ae41",
+        "videoSha256": "ed78b757a1ea15b0f1bb981236cb29f081d21801c796623f60754da6dccfe69e"
+      },
+      "dream_1": {
+        "archivedSteps": 830,
+        "archivedScore": 0.0,
+        "revisedScore": 0.0,
+        "firstFullCreditSample": null,
+        "changedScoreSamples": 0,
+        "firstHalfCreditSample": null,
+        "traceSha256": "3ac4ac0e4d9f6d53e2587fff28fa9fe6d18cb9a5fd4e319337d723954146574f",
+        "videoSha256": "080f7358cc16052f35150b6cd7daf0824a6b303cd23560d2c81aa8a7d62590ed"
+      }
+    },
+    "method": "Replayed each archived measurement against the original and revised state graders. Original recording lengths and source hashes remain as recorded."
   }
 }

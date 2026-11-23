@@ -6762,34 +6762,24 @@
           "hi": 0.009
         },
         {
-          "metric": "left_dist",
-          "lo": 0.0128,
-          "hi": 8.0
-        },
-        {
-          "metric": "right_dist",
-          "lo": 0.0128,
-          "hi": 8.0
-        },
-        {
           "metric": "left_bowl",
           "lo": 0,
-          "hi": 0.02
+          "hi": 0.0
         },
         {
           "metric": "right_bowl",
           "lo": 0,
-          "hi": 0.02
+          "hi": 0.0
         },
         {
           "metric": "left_catch",
           "lo": 0,
-          "hi": 0.02
+          "hi": 0.0
         },
         {
           "metric": "right_catch",
           "lo": 0,
-          "hi": 0.02
+          "hi": 0.0
         },
         {
           "metric": "l0_e",
@@ -6979,34 +6969,24 @@
           "hi": 0.009
         },
         {
-          "metric": "left_dist",
-          "lo": 0.0128,
-          "hi": 8.0
-        },
-        {
-          "metric": "right_dist",
-          "lo": 0.0128,
-          "hi": 8.0
-        },
-        {
           "metric": "left_bowl",
           "lo": 0,
-          "hi": 0.02
+          "hi": 0.0
         },
         {
           "metric": "right_bowl",
           "lo": 0,
-          "hi": 0.02
+          "hi": 0.0
         },
         {
           "metric": "left_catch",
           "lo": 0,
-          "hi": 0.02
+          "hi": 0.0
         },
         {
           "metric": "right_catch",
           "lo": 0,
-          "hi": 0.02
+          "hi": 0.0
         },
         {
           "metric": "left_floor",

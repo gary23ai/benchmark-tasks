@@ -1,0 +1,171 @@
+{
+  "pieces": [
+    {
+      "name": "pocket_cassette",
+      "triangles": 1920,
+      "bounds": {
+        "min": [
+          106,
+          -25,
+          -29.6
+        ],
+        "max": [
+          193,
+          25,
+          24
+        ]
+      },
+      "volumeMm3": 56405.57860088549,
+      "components": 1
+    },
+    {
+      "name": "guide_tower",
+      "triangles": 808,
+      "bounds": {
+        "min": [
+          186,
+          -20.5,
+          -25.5
+        ],
+        "max": [
+          193,
+          20.5,
+          24
+        ]
+      },
+      "volumeMm3": 5656.701196984122,
+      "components": 1
+    },
+    {
+      "name": "sliding_catch",
+      "triangles": 300,
+      "bounds": {
+        "min": [
+          122.79999999999998,
+          -12.8,
+          7.2
+        ],
+        "max": [
+          159.6,
+          12.8,
+          20.8
+        ]
+      },
+      "volumeMm3": 5434.422891960524,
+      "components": 1
+    },
+    {
+      "name": "cradle_and_column",
+      "triangles": 5732,
+      "bounds": {
+        "min": [
+          -106,
+          -142.4,
+          -128
+        ],
+        "max": [
+          277.5,
+          142.4,
+          95
+        ]
+      },
+      "volumeMm3": 4363819.051831127,
+      "components": 1
+    },
+    {
+      "name": "head_and_upper_column",
+      "triangles": 5088,
+      "bounds": {
+        "min": [
+          -71,
+          -62,
+          95
+        ],
+        "max": [
+          277.5,
+          79.5,
+          280.5
+        ]
+      },
+      "volumeMm3": 3922395.5030309665,
+      "components": 1
+    },
+    {
+      "name": "bowl_and_fittings",
+      "triangles": 8376,
+      "bounds": {
+        "min": [
+          -147.20000000000002,
+          -142.4,
+          -80
+        ],
+        "max": [
+          132.4,
+          142.4,
+          35.2
+        ]
+      },
+      "volumeMm3": 219675.52895223035,
+      "components": 1
+    },
+    {
+      "name": "locator_pin_profile",
+      "triangles": 6824,
+      "bounds": {
+        "min": [
+          -3.2,
+          -3.200000000000003,
+          -24
+        ],
+        "max": [
+          3.2,
+          3.200000000000003,
+          12.399999999999999
+        ]
+      },
+      "volumeMm3": 1076.8425358633228,
+      "components": 1
+    }
+  ],
+  "travelChecks": [
+    {
+      "travelMm": 0,
+      "modelSpringN": 2.56,
+      "rodBushingOverlapMm": 6.400000000000006,
+      "rodToStopMm": 12.800000000000011
+    },
+    {
+      "travelMm": 3.2,
+      "modelSpringN": 3.2,
+      "rodBushingOverlapMm": 9.599999999999994,
+      "rodToStopMm": 9.600000000000023
+    },
+    {
+      "travelMm": 6.4,
+      "modelSpringN": 3.8400000000000003,
+      "rodBushingOverlapMm": 12.800000000000011,
+      "rodToStopMm": 6.400000000000006
+    },
+    {
+      "travelMm": 9.6,
+      "modelSpringN": 4.48,
+      "rodBushingOverlapMm": 16,
+      "rodToStopMm": 3.200000000000017
+    },
+    {
+      "travelMm": 12.8,
+      "modelSpringN": 5.120000000000001,
+      "rodBushingOverlapMm": 16.400000000000006,
+      "rodToStopMm": 0
+    }
+  ],
+  "retention": {
+    "seatedOverlapMm3": 0,
+    "lifted3mmBlockedMm3": 168.78093742552164,
+    "retractedLiftMaxOverlapMm3": 0,
+    "forwardStopOverrunMm3": 12.544000000002466,
+    "rearStopOverrunMm3": 3.2118256543198376,
+    "fixedCassetteMisfitMm3": 0,
+    "towerMisfitMm3": 0
+  }
+}
