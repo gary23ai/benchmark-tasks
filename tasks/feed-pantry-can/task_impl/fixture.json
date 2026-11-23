@@ -1,0 +1,2799 @@
+{
+  "limit": 600,
+  "actors": [
+    {
+      "name": "rack",
+      "bolted": false,
+      "material": "rigid molded polymer side frames, rear guide and shelf feet",
+      "mass_kg": 0.808,
+      "friction": 0.62,
+      "rgb": [
+        0.55,
+        0.58,
+        0.57
+      ],
+      "position": [
+        0.36,
+        0,
+        0
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.045,
+            0.142,
+            0.008
+          ],
+          "offset": [
+            0.022,
+            0,
+            0.004
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.045,
+            0.142,
+            0.008
+          ],
+          "offset": [
+            0.294,
+            0,
+            0.004
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.332,
+            0.008,
+            0.012
+          ],
+          "offset": [
+            0.16,
+            0.0622,
+            0.014
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.332,
+            0.008,
+            0.012
+          ],
+          "offset": [
+            0.16,
+            -0.0622,
+            0.014
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.014,
+            0.008,
+            0.184
+          ],
+          "offset": [
+            0.003,
+            0.0622,
+            0.105
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.014,
+            0.008,
+            0.184
+          ],
+          "offset": [
+            0.003,
+            -0.0622,
+            0.105
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.014,
+            0.008,
+            0.172
+          ],
+          "offset": [
+            0.218,
+            0.0622,
+            0.098
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.014,
+            0.008,
+            0.172
+          ],
+          "offset": [
+            0.218,
+            -0.0622,
+            0.098
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.014,
+            0.008,
+            0.204
+          ],
+          "offset": [
+            0.319,
+            0.0622,
+            0.116
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.014,
+            0.008,
+            0.204
+          ],
+          "offset": [
+            0.319,
+            -0.0622,
+            0.116
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.231,
+            0.008,
+            0.026
+          ],
+          "offset": [
+            0.113,
+            0.0622,
+            0.178
+          ],
+          "euler_deg": [
+            0,
+            7,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.231,
+            0.008,
+            0.026
+          ],
+          "offset": [
+            0.113,
+            -0.0622,
+            0.178
+          ],
+          "euler_deg": [
+            0,
+            7,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.322,
+            0.008,
+            0.027
+          ],
+          "offset": [
+            0.159,
+            0.0622,
+            0.0525
+          ],
+          "euler_deg": [
+            0,
+            -7,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.322,
+            0.008,
+            0.027
+          ],
+          "offset": [
+            0.159,
+            -0.0622,
+            0.0525
+          ],
+          "euler_deg": [
+            0,
+            -7,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.105,
+            0.008,
+            0.026
+          ],
+          "offset": [
+            0.269,
+            0.0622,
+            0.145
+          ],
+          "euler_deg": [
+            0,
+            13,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.105,
+            0.008,
+            0.026
+          ],
+          "offset": [
+            0.269,
+            -0.0622,
+            0.145
+          ],
+          "euler_deg": [
+            0,
+            13,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.008,
+            0.1164,
+            0.14
+          ],
+          "offset": [
+            0.322,
+            0,
+            0.148
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.12,
+            0.004,
+            0.046
+          ],
+          "offset": [
+            0.149,
+            -0.063,
+            0.194
+          ],
+          "euler_deg": [
+            0,
+            7,
+            2.4
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.12,
+            0.004,
+            0.046
+          ],
+          "offset": [
+            0.149,
+            0.063,
+            0.194
+          ],
+          "euler_deg": [
+            0,
+            7,
+            -2.4
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.121,
+            0.004,
+            0.105
+          ],
+          "offset": [
+            0.2575,
+            -0.0605,
+            0.166
+          ],
+          "euler_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.121,
+            0.004,
+            0.105
+          ],
+          "offset": [
+            0.2575,
+            0.0605,
+            0.166
+          ],
+          "euler_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.004,
+            0.009,
+            0.0265
+          ],
+          "offset": [
+            0.103,
+            -0.0622,
+            0.178
+          ],
+          "euler_deg": [
+            0,
+            7,
+            0
+          ],
+          "rgb": [
+            0.12,
+            0.31,
+            0.49
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.004,
+            0.009,
+            0.0265
+          ],
+          "offset": [
+            0.103,
+            0.0622,
+            0.178
+          ],
+          "euler_deg": [
+            0,
+            7,
+            0
+          ],
+          "rgb": [
+            0.12,
+            0.31,
+            0.49
+          ]
+        }
+      ]
+    },
+    {
+      "name": "upper",
+      "bolted": false,
+      "material": "paired molded polymer supply ledges",
+      "mass_kg": 0.065,
+      "friction": 0.36,
+      "rgb": [
+        0.74,
+        0.76,
+        0.74
+      ],
+      "position": [
+        0.473,
+        0,
+        0.17116
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.2277,
+            0.0114,
+            0.01
+          ],
+          "offset": [
+            -0.00061,
+            0.0525,
+            0
+          ],
+          "euler_deg": [
+            0,
+            7,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.2277,
+            0.0114,
+            0.01
+          ],
+          "offset": [
+            -0.00061,
+            -0.0525,
+            0
+          ],
+          "euler_deg": [
+            0,
+            7,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lower_left",
+      "bolted": false,
+      "material": "molded polymer retrieval ledge and rear landing",
+      "mass_kg": 0.044,
+      "friction": 0.36,
+      "rgb": [
+        0.74,
+        0.76,
+        0.74
+      ],
+      "position": [
+        0.51,
+        0.0525,
+        0.04
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.25792,
+            0.0114,
+            0.01
+          ],
+          "offset": [
+            -0.021391,
+            0,
+            -0.005245
+          ],
+          "euler_deg": [
+            0,
+            -7,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.06289,
+            0.0114,
+            0.01
+          ],
+          "offset": [
+            0.13661,
+            0,
+            0.02419
+          ],
+          "euler_deg": [
+            0,
+            -25,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lower_right",
+      "bolted": false,
+      "material": "molded polymer retrieval ledge and rear landing",
+      "mass_kg": 0.044,
+      "friction": 0.36,
+      "rgb": [
+        0.74,
+        0.76,
+        0.74
+      ],
+      "position": [
+        0.51,
+        -0.0525,
+        0.04
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.25792,
+            0.0114,
+            0.01
+          ],
+          "offset": [
+            -0.021391,
+            0,
+            -0.005245
+          ],
+          "euler_deg": [
+            0,
+            -7,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.06289,
+            0.0114,
+            0.01
+          ],
+          "offset": [
+            0.13661,
+            0,
+            0.02419
+          ],
+          "euler_deg": [
+            0,
+            -25,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stop_bar",
+      "bolted": false,
+      "material": "molded polymer pickup lip",
+      "mass_kg": 0.025,
+      "friction": 0.38,
+      "rgb": [
+        0.48,
+        0.51,
+        0.51
+      ],
+      "position": [
+        0.36,
+        0,
+        0.061
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.008,
+            0.1164,
+            0.038
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blue",
+      "bolted": false,
+      "material": "blue enamel dry closed steel tin with rolled seams and fixed concentric ballast",
+      "mass_kg": 0.28,
+      "friction": 0.38,
+      "rgb": [
+        0.07,
+        0.28,
+        0.72
+      ],
+      "position": [
+        0.4005,
+        0,
+        0.06575
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.071,
+            0.071,
+            0.106
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.073,
+            0.073,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.073,
+            0.073,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.0732,
+            0.0732,
+            0.0022
+          ],
+          "offset": [
+            0,
+            0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.78,
+            0.79,
+            0.76
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.057,
+            0.057,
+            0.0024
+          ],
+          "offset": [
+            0,
+            0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.64,
+            0.65,
+            0.62
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0732,
+            0.0732,
+            0.0022
+          ],
+          "offset": [
+            0,
+            -0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.78,
+            0.79,
+            0.76
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.057,
+            0.057,
+            0.0024
+          ],
+          "offset": [
+            0,
+            -0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.64,
+            0.65,
+            0.62
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0712,
+            0.0712,
+            0.004
+          ],
+          "offset": [
+            0,
+            -0.04,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.89,
+            0.85,
+            0.71
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0712,
+            0.0712,
+            0.004
+          ],
+          "offset": [
+            0,
+            0.04,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.89,
+            0.85,
+            0.71
+          ]
+        }
+      ]
+    },
+    {
+      "name": "yellow",
+      "bolted": false,
+      "material": "yellow enamel dry closed steel tin with rolled seams and fixed concentric ballast",
+      "mass_kg": 0.28,
+      "friction": 0.38,
+      "rgb": [
+        0.96,
+        0.7,
+        0.055
+      ],
+      "position": [
+        0.24,
+        0,
+        0.055
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.071,
+            0.071,
+            0.106
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.073,
+            0.073,
+            0.002
+          ],
+          "offset": [
+            0,
+            0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.073,
+            0.073,
+            0.002
+          ],
+          "offset": [
+            0,
+            -0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.0732,
+            0.0732,
+            0.0022
+          ],
+          "offset": [
+            0,
+            0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.78,
+            0.79,
+            0.76
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.057,
+            0.057,
+            0.0024
+          ],
+          "offset": [
+            0,
+            0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.64,
+            0.65,
+            0.62
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0732,
+            0.0732,
+            0.0022
+          ],
+          "offset": [
+            0,
+            -0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.78,
+            0.79,
+            0.76
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.057,
+            0.057,
+            0.0024
+          ],
+          "offset": [
+            0,
+            -0.054,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.64,
+            0.65,
+            0.62
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0712,
+            0.0712,
+            0.004
+          ],
+          "offset": [
+            0,
+            -0.04,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.89,
+            0.85,
+            0.71
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0712,
+            0.0712,
+            0.004
+          ],
+          "offset": [
+            0,
+            0.04,
+            0
+          ],
+          "euler_deg": [
+            -90,
+            0,
+            0
+          ],
+          "rgb": [
+            0.89,
+            0.85,
+            0.71
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pickup_cradle",
+      "bolted": true,
+      "material": "matte sealed wood pickup saddle",
+      "mass_kg": 0.1,
+      "friction": 0.5,
+      "rgb": [
+        0.57,
+        0.46,
+        0.35
+      ],
+      "position": [
+        0.24,
+        0,
+        0
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.04,
+            0.014,
+            0.007
+          ],
+          "offset": [
+            -0.022,
+            -0.041,
+            0.019
+          ],
+          "euler_deg": [
+            0,
+            30,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.019,
+            0.016,
+            0.019
+          ],
+          "offset": [
+            -0.029,
+            -0.041,
+            0.0095
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.04,
+            0.014,
+            0.007
+          ],
+          "offset": [
+            -0.022,
+            0.041,
+            0.019
+          ],
+          "euler_deg": [
+            0,
+            30,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.019,
+            0.016,
+            0.019
+          ],
+          "offset": [
+            -0.029,
+            0.041,
+            0.0095
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.04,
+            0.014,
+            0.007
+          ],
+          "offset": [
+            0.022,
+            -0.041,
+            0.019
+          ],
+          "euler_deg": [
+            0,
+            -30,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.019,
+            0.016,
+            0.019
+          ],
+          "offset": [
+            0.029,
+            -0.041,
+            0.0095
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.04,
+            0.014,
+            0.007
+          ],
+          "offset": [
+            0.022,
+            0.041,
+            0.019
+          ],
+          "euler_deg": [
+            0,
+            -30,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.019,
+            0.016,
+            0.019
+          ],
+          "offset": [
+            0.029,
+            0.041,
+            0.0095
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "type": "fixed",
+      "a": "rack",
+      "b": "upper",
+      "anchor_a": [
+        0.113,
+        0,
+        0.17116
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "fixed",
+      "a": "rack",
+      "b": "lower_left",
+      "anchor_a": [
+        0.15,
+        0.0525,
+        0.04
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "fixed",
+      "a": "rack",
+      "b": "lower_right",
+      "anchor_a": [
+        0.15,
+        -0.0525,
+        0.04
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "fixed",
+      "a": "rack",
+      "b": "stop_bar",
+      "anchor_a": [
+        0,
+        0,
+        0.061
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "name": "feed_x",
+      "kind": "dx",
+      "a": "yellow",
+      "b": "rack",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "feed_y",
+      "kind": "dy",
+      "a": "yellow",
+      "b": "rack",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "feed_z",
+      "kind": "dz",
+      "a": "yellow",
+      "b": "rack",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "old_x",
+      "kind": "dx",
+      "a": "blue",
+      "b": "stop_bar",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "old_y",
+      "kind": "dy",
+      "a": "blue",
+      "b": "rack",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "old_z",
+      "kind": "dz",
+      "a": "blue",
+      "b": "rack",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rack_shift",
+      "kind": "distance",
+      "a": "rack",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0.36,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rack_tilt",
+      "kind": "angle_deg",
+      "a": "rack",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "rack_heading",
+      "kind": "angle_deg",
+      "a": "rack",
+      "b": "table",
+      "pa": [
+        1,
+        0,
+        0
+      ],
+      "pb": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "supply_load",
+      "kind": "contact_n",
+      "a": "upper",
+      "b": "yellow",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_load",
+      "kind": "contact_n",
+      "a": "lower_left",
+      "b": "yellow",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_load",
+      "kind": "contact_n",
+      "a": "lower_right",
+      "b": "yellow",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "old_left",
+      "kind": "contact_n",
+      "a": "lower_left",
+      "b": "blue",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "old_right",
+      "kind": "contact_n",
+      "a": "lower_right",
+      "b": "blue",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "stop_load",
+      "kind": "contact_n",
+      "a": "stop_bar",
+      "b": "blue",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "queue_load",
+      "kind": "contact_n",
+      "a": "blue",
+      "b": "yellow",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_hand",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "yellow",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_hand",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "yellow",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "blue_left_hand",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "blue",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "blue_right_hand",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "blue",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "new_speed",
+      "kind": "speed",
+      "a": "yellow",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "new_spin",
+      "kind": "spin_deg_s",
+      "a": "yellow",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "old_speed",
+      "kind": "speed",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "old_spin",
+      "kind": "spin_deg_s",
+      "a": "blue",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "can_axis",
+      "kind": "angle_deg",
+      "a": "yellow",
+      "b": "table",
+      "pa": [
+        0,
+        1,
+        0
+      ],
+      "pb": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "hand_gap",
+      "kind": "gripper_clearance",
+      "a": "yellow",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "invalidate": [
+    [
+      {
+        "metric": "old_x",
+        "lo": 0.052,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "old_x",
+        "lo": -1000000,
+        "hi": 0.029
+      }
+    ],
+    [
+      {
+        "metric": "old_y",
+        "lo": 0.015,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "old_y",
+        "lo": -1000000,
+        "hi": -0.015
+      }
+    ],
+    [
+      {
+        "metric": "old_z",
+        "lo": 0.078,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "old_z",
+        "lo": -1000000,
+        "hi": 0.053
+      }
+    ],
+    [
+      {
+        "metric": "rack_shift",
+        "lo": 0.04,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "rack_tilt",
+        "lo": 6,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "rack_heading",
+        "lo": 7,
+        "hi": 1000000
+      }
+    ]
+  ],
+  "milestones": [
+    {
+      "name": "upper_entry",
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": -0.018,
+          "hi": 0.088
+        },
+        {
+          "metric": "feed_y",
+          "lo": -0.012,
+          "hi": 0.012
+        },
+        {
+          "metric": "feed_z",
+          "lo": 0.199,
+          "hi": 0.24
+        },
+        {
+          "metric": "supply_load",
+          "lo": 0.08,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "name": "released_on_supply",
+      "needs": [
+        "upper_entry"
+      ],
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": -0.018,
+          "hi": 0.103
+        },
+        {
+          "metric": "feed_y",
+          "lo": -0.012,
+          "hi": 0.012
+        },
+        {
+          "metric": "feed_z",
+          "lo": 0.183,
+          "hi": 0.24
+        },
+        {
+          "metric": "supply_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "right_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "hand_gap",
+          "lo": 0.01,
+          "hi": 100
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "name": "rear_descent",
+      "needs": [
+        "released_on_supply"
+      ],
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": 0.229,
+          "hi": 0.293
+        },
+        {
+          "metric": "feed_y",
+          "lo": -0.014,
+          "hi": 0.014
+        },
+        {
+          "metric": "feed_z",
+          "lo": 0.083,
+          "hi": 0.16
+        },
+        {
+          "metric": "left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "right_hand",
+          "lo": 0,
+          "hi": 0.04
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "name": "arrived",
+      "needs": [
+        "rear_descent"
+      ],
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": 0.099,
+          "hi": 0.127
+        },
+        {
+          "metric": "feed_z",
+          "lo": 0.064,
+          "hi": 0.086
+        },
+        {
+          "metric": "left_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "right_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "queue_load",
+          "lo": 0.02,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "right_hand",
+          "lo": 0,
+          "hi": 0.04
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "name": "before_final_six",
+      "all": [
+        {
+          "metric": "rack_shift",
+          "lo": 0,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 594
+    },
+    {
+      "name": "settled_queue",
+      "needs": [
+        "before_final_six"
+      ],
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": 0.099,
+          "hi": 0.127
+        },
+        {
+          "metric": "feed_y",
+          "lo": -0.012,
+          "hi": 0.012
+        },
+        {
+          "metric": "feed_z",
+          "lo": 0.064,
+          "hi": 0.086
+        },
+        {
+          "metric": "left_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "right_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "old_left",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "old_right",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "stop_load",
+          "lo": 0.02,
+          "hi": 1000000
+        },
+        {
+          "metric": "queue_load",
+          "lo": 0.02,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "right_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "blue_left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "blue_right_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0,
+          "hi": 0.009
+        },
+        {
+          "metric": "old_speed",
+          "lo": 0,
+          "hi": 0.009
+        },
+        {
+          "metric": "new_spin",
+          "lo": 0,
+          "hi": 14
+        },
+        {
+          "metric": "old_spin",
+          "lo": 0,
+          "hi": 14
+        }
+      ],
+      "ticks": 6
+    },
+    {
+      "name": "final_sample",
+      "all": [
+        {
+          "metric": "rack_shift",
+          "lo": 0,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 600
+    },
+    {
+      "name": "blue_away_toward_back",
+      "all": [
+        {
+          "metric": "old_x",
+          "lo": 0.0475,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 3
+    },
+    {
+      "name": "blue_away_toward_front",
+      "all": [
+        {
+          "metric": "old_x",
+          "lo": -1000000,
+          "hi": 0.035500000000000004
+        }
+      ],
+      "ticks": 3
+    },
+    {
+      "name": "last_second_begins",
+      "all": [
+        {
+          "metric": "rack_shift",
+          "lo": 0,
+          "hi": 1000
+        }
+      ],
+      "ticks": 580
+    },
+    {
+      "name": "upper_stall",
+      "needs": [
+        "last_second_begins",
+        "released_on_supply"
+      ],
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": 0.045,
+          "hi": 0.225
+        },
+        {
+          "metric": "feed_y",
+          "lo": -0.012,
+          "hi": 0.012
+        },
+        {
+          "metric": "feed_z",
+          "lo": 0.176,
+          "hi": 0.233
+        },
+        {
+          "metric": "supply_load",
+          "lo": 0.25,
+          "hi": 1000
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0,
+          "hi": 0.009
+        },
+        {
+          "metric": "new_spin",
+          "lo": 0,
+          "hi": 14
+        },
+        {
+          "metric": "left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "right_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "stop_load",
+          "lo": 0.02,
+          "hi": 1000
+        },
+        {
+          "metric": "old_left",
+          "lo": 0.08,
+          "hi": 1000
+        },
+        {
+          "metric": "old_right",
+          "lo": 0.08,
+          "hi": 1000
+        },
+        {
+          "metric": "blue_left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "blue_right_hand",
+          "lo": 0,
+          "hi": 0.04
+        }
+      ],
+      "ticks": 20
+    },
+    {
+      "name": "stopped_before_hand_withdrawal",
+      "needs": [
+        "upper_entry"
+      ],
+      "all": [
+        {
+          "metric": "supply_load",
+          "lo": 0.25,
+          "hi": 1000
+        },
+        {
+          "metric": "feed_x",
+          "lo": 0.018,
+          "hi": 0.2
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0,
+          "hi": 0.009
+        },
+        {
+          "metric": "left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "right_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "hand_gap",
+          "lo": 0.001,
+          "hi": 100
+        }
+      ],
+      "ticks": 4
+    }
+  ],
+  "violations": [
+    {
+      "needs": [
+        "released_on_supply"
+      ],
+      "until_seen": [
+        "arrived"
+      ],
+      "all": [
+        {
+          "metric": "left_hand",
+          "lo": 0.15,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "released_on_supply"
+      ],
+      "until_seen": [
+        "arrived"
+      ],
+      "all": [
+        {
+          "metric": "right_hand",
+          "lo": 0.15,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "arrived"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": 0.15,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "arrived"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "feed_z",
+          "lo": 0.108,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "blue_away_toward_back"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "old_x",
+          "lo": -1000000,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "blue_away_toward_front"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "old_x",
+          "lo": -1000000,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "released_on_supply"
+      ],
+      "until_seen": [
+        "arrived"
+      ],
+      "all": [
+        {
+          "metric": "left_hand",
+          "lo": 0.05,
+          "hi": 1000000
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0.015,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "released_on_supply"
+      ],
+      "until_seen": [
+        "arrived"
+      ],
+      "all": [
+        {
+          "metric": "right_hand",
+          "lo": 0.05,
+          "hi": 1000000
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0.015,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "stopped_before_hand_withdrawal"
+      ],
+      "until_seen": [
+        "arrived"
+      ],
+      "all": [
+        {
+          "metric": "left_hand",
+          "lo": 0.05,
+          "hi": 1000
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0.015,
+          "hi": 100
+        }
+      ]
+    },
+    {
+      "needs": [
+        "stopped_before_hand_withdrawal"
+      ],
+      "until_seen": [
+        "arrived"
+      ],
+      "all": [
+        {
+          "metric": "right_hand",
+          "lo": 0.05,
+          "hi": 1000
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0.015,
+          "hi": 100
+        }
+      ]
+    }
+  ],
+  "tiers": [
+    {
+      "score": 0.5,
+      "needs": [
+        "upper_stall",
+        "final_sample"
+      ],
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": 0.045,
+          "hi": 0.225
+        },
+        {
+          "metric": "feed_y",
+          "lo": -0.012,
+          "hi": 0.012
+        },
+        {
+          "metric": "feed_z",
+          "lo": 0.176,
+          "hi": 0.233
+        },
+        {
+          "metric": "supply_load",
+          "lo": 0.25,
+          "hi": 1000
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0,
+          "hi": 0.009
+        },
+        {
+          "metric": "new_spin",
+          "lo": 0,
+          "hi": 14
+        },
+        {
+          "metric": "left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "right_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "stop_load",
+          "lo": 0.02,
+          "hi": 1000
+        },
+        {
+          "metric": "old_left",
+          "lo": 0.08,
+          "hi": 1000
+        },
+        {
+          "metric": "old_right",
+          "lo": 0.08,
+          "hi": 1000
+        },
+        {
+          "metric": "blue_left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "blue_right_hand",
+          "lo": 0,
+          "hi": 0.04
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "score": 1,
+      "needs": [
+        "arrived",
+        "settled_queue",
+        "final_sample"
+      ],
+      "all": [
+        {
+          "metric": "feed_x",
+          "lo": 0.099,
+          "hi": 0.127
+        },
+        {
+          "metric": "feed_y",
+          "lo": -0.012,
+          "hi": 0.012
+        },
+        {
+          "metric": "feed_z",
+          "lo": 0.064,
+          "hi": 0.086
+        },
+        {
+          "metric": "left_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "right_load",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "old_left",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "old_right",
+          "lo": 0.08,
+          "hi": 1000000
+        },
+        {
+          "metric": "stop_load",
+          "lo": 0.02,
+          "hi": 1000000
+        },
+        {
+          "metric": "queue_load",
+          "lo": 0.02,
+          "hi": 1000000
+        },
+        {
+          "metric": "left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "right_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "blue_left_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "blue_right_hand",
+          "lo": 0,
+          "hi": 0.04
+        },
+        {
+          "metric": "new_speed",
+          "lo": 0,
+          "hi": 0.009
+        },
+        {
+          "metric": "old_speed",
+          "lo": 0,
+          "hi": 0.009
+        },
+        {
+          "metric": "new_spin",
+          "lo": 0,
+          "hi": 14
+        },
+        {
+          "metric": "old_spin",
+          "lo": 0,
+          "hi": 14
+        }
+      ],
+      "ticks": 1
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 45,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.24,
+          0.006,
+          0.16
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 38,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.24,
+          0.006,
+          0.045
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    },
+    {
+      "ticks": 27,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.24,
+          0.006,
+          0.045
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.048
+      }
+    },
+    {
+      "ticks": 34,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.24,
+          0,
+          0.11
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.048,
+        "held_actor": "yellow"
+      }
+    },
+    {
+      "ticks": 34,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.24,
+          0,
+          0.173
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.048,
+        "held_actor": "yellow"
+      }
+    },
+    {
+      "ticks": 40,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.24,
+          0,
+          0.244
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.048,
+        "held_actor": "yellow"
+      }
+    },
+    {
+      "ticks": 30,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.3,
+          0,
+          0.25
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.048,
+        "held_actor": "yellow"
+      }
+    },
+    {
+      "ticks": 44,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.39,
+          0.004,
+          0.244
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.048,
+        "held_actor": "yellow"
+      }
+    },
+    {
+      "ticks": 48,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.39,
+          0.004,
+          0.229
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.048,
+        "held_actor": "yellow"
+      }
+    },
+    {
+      "ticks": 5,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.39,
+          -0.026,
+          0.254
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.09,
+        "held_actor": "yellow"
+      }
+    },
+    {
+      "ticks": 22,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.38,
+          -0.102,
+          0.317
+        ],
+        "forward": [
+          0,
+          0.573576436351046,
+          -0.8191520442889918
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.09
+      }
+    }
+  ],
+  "continuous_jaw": true
+}

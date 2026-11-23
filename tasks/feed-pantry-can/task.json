@@ -1,0 +1,19 @@
+{
+  "title": "Restock a gravity-feed pantry rack",
+  "category": "Societal relatability",
+  "keywords": [
+    "pantry stocking",
+    "first-in first-out",
+    "gravity feed",
+    "can rack"
+  ],
+  "instruction": "Load the yellow can through the top. Leave the blue can first at the pickup opening.",
+  "context": "Blue is the older stock. The upper rails carry a can toward the back of the shelf. The lower rails bring it forward for pickup.",
+  "setup": "Level the rack, with the pickup opening toward the operator. Blue rests across the lower rails at the front lip. Use closed tins, 73 mm across the rims and 110 mm long. Set yellow across the two wooden saddles on the lane centerline, 120 mm in front of the upper mouth.",
+  "scoring": "Watch the marked front opening, both ramps and the older blue can. Yellow must leave both hands at the upper opening before the blue side stripe, with visible daylight all around the grippers. Score 1 if yellow rolls around the back under gravity and settles on both lower rails touching blue. Score 0.5 if yellow was released there and remains stranded upstairs, hands clear, for the final second. Blue stays at the lip. A hand moving a stopped can again, a touch after a completed release, direct lower loading or a fallen tin earns 0.",
+  "run_limit": "600 steps (30 seconds at 20 Hz)",
+  "reset_notes": "Align the rack feet and restore the lane spacing. Return blue to the stop and rest yellow crosswise in the saddles. Keep the upper ramp empty. Reset both arms to home and let the tins settle.",
+  "fidelity": "The fixture represents one Cupboard lane with rolled tin rims, paired ledges, side ribs, a rear landing and a pickup lip. The dimensions of the simulated rails, rolling inertia and contact properties are engineering estimates pending comparison with an assembled rack.",
+  "scores": "Dream-1 run: 0 (600 steps); demo: 1.0 (600 steps).",
+  "media": "M-8UBJN3"
+}

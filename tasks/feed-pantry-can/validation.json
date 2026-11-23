@@ -1,0 +1,528 @@
+{
+  "scripted": {
+    "task": "feed-pantry-can",
+    "policy": "scripted",
+    "seed": 0,
+    "model": null,
+    "scorer": "physical_task_score",
+    "score": 1.0,
+    "steps": 600,
+    "step_limit": 600,
+    "declaredStepLimit": 600,
+    "diagnosticOnly": false,
+    "elapsed_s": 302.44,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "rack": [
+        285.7,
+        38.6,
+        343.2,
+        184.2
+      ],
+      "upper": [
+        289.6,
+        81.0,
+        339.4,
+        147.0
+      ],
+      "lower_left": [
+        293.5,
+        78.5,
+        299.8,
+        180.8
+      ],
+      "lower_right": [
+        331.0,
+        78.5,
+        336.6,
+        180.8
+      ],
+      "stop_bar": [
+        292.3,
+        167.3,
+        337.5,
+        177.4
+      ],
+      "blue": [
+        293.2,
+        139.3,
+        336.5,
+        177.2
+      ],
+      "yellow": [
+        291.3,
+        196.0,
+        337.9,
+        235.0
+      ],
+      "pickup_cradle": [
+        295.3,
+        205.4,
+        334.3,
+        237.9
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "rack:0": [
+        337.7,
+        108.5,
+        341.8,
+        117.4
+      ],
+      "rack:1": [
+        287.7,
+        108.5,
+        292.0,
+        117.4
+      ],
+      "blue:0": [
+        293.1,
+        139.2,
+        296.2,
+        177.2
+      ],
+      "blue:1": [
+        293.3,
+        143.5,
+        296.0,
+        173.1
+      ],
+      "blue:2": [
+        334.1,
+        139.2,
+        336.6,
+        177.2
+      ],
+      "blue:3": [
+        334.2,
+        143.5,
+        336.4,
+        173.1
+      ],
+      "blue:4": [
+        328.8,
+        139.8,
+        331.4,
+        176.7
+      ],
+      "blue:5": [
+        298.3,
+        139.8,
+        301.5,
+        176.7
+      ],
+      "yellow:0": [
+        291.3,
+        196.0,
+        294.7,
+        235.0
+      ],
+      "yellow:1": [
+        291.5,
+        200.4,
+        294.5,
+        230.8
+      ],
+      "yellow:2": [
+        335.2,
+        196.0,
+        337.9,
+        235.0
+      ],
+      "yellow:3": [
+        335.3,
+        200.4,
+        337.7,
+        230.8
+      ],
+      "yellow:4": [
+        329.5,
+        196.5,
+        332.3,
+        234.5
+      ],
+      "yellow:5": [
+        296.8,
+        196.5,
+        300.4,
+        234.5
+      ]
+    },
+    "initialMeasurements": {
+      "feed_x": -0.11999988555908203,
+      "feed_y": 6.971096297547774e-06,
+      "feed_z": 0.05133163928985596,
+      "old_x": 0.04049941897392273,
+      "old_y": 1.1882315220645978e-07,
+      "old_z": 0.06573814153671265,
+      "rack_shift": 8.369542794160413e-08,
+      "rack_tilt": 0.0,
+      "rack_heading": 0.0,
+      "supply_load": 0.0,
+      "left_load": 0.0,
+      "right_load": 0.0,
+      "old_left": 1.4184155464172363,
+      "old_right": 1.4036237001419067,
+      "stop_load": 0.3931863605976105,
+      "queue_load": 0.0,
+      "left_hand": 0.0,
+      "right_hand": 0.0,
+      "blue_left_hand": 0.0,
+      "blue_right_hand": 0.0,
+      "new_speed": 0.00043258166988380253,
+      "new_spin": 0.8358136415481567,
+      "old_speed": 0.0003539071185514331,
+      "old_spin": 0.493913471698761,
+      "can_axis": 3.565463422438781e-05,
+      "hand_gap": 0.04
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {},
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {},
+    "finalWedgeBodyPositions": {},
+    "video_frames": 301,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "707efb4fa3a50d47aa1fdc0933e946ab3b1b7bff52259a6acaa3dbc59398b88d",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "ea36a31083a7f17480d2774dab599a54d366dd57bde0d02c62697b60f6247323",
+      "task_impl/arm_release.py": "bcc46e087deed886ba24338c0295ccea64f2d1a9db1090ed269ff428abbd6f0d",
+      "task_impl/clearance.py": "d09e57bfa2bd9db69bf10b9eb637540392377898ceb0cfc9bffdcf4ac932f82d",
+      "task_impl/geometry.py": "ef3962e6e3163477a49ba420686a7ad37a254025238fab6838f0ec23d25e0374",
+      "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+      "task_impl/gripper_clearance.py": "dddf1c7e2458f06631894d56f45997df587db043e9ade9998aa942e1c2cc12b7",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+      "task_impl/scripted.py": "eebd41db9db1f7571905213fa91f75f268f8b9e79543ec99e4dab974bb8ba5f2"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0"
+  },
+  "dream_1": {
+    "task": "feed-pantry-can",
+    "policy": "dream",
+    "seed": 0,
+    "model": "dreamlabs/dream-1-beta",
+    "scorer": "physical_task_score",
+    "score": 0.0,
+    "steps": 600,
+    "step_limit": 600,
+    "declaredStepLimit": 600,
+    "diagnosticOnly": false,
+    "elapsed_s": 289.17,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "rack": [
+        285.7,
+        38.6,
+        343.2,
+        184.2
+      ],
+      "upper": [
+        289.6,
+        81.0,
+        339.4,
+        147.0
+      ],
+      "lower_left": [
+        293.5,
+        78.5,
+        299.8,
+        180.8
+      ],
+      "lower_right": [
+        331.0,
+        78.5,
+        336.6,
+        180.8
+      ],
+      "stop_bar": [
+        292.3,
+        167.3,
+        337.5,
+        177.4
+      ],
+      "blue": [
+        293.2,
+        139.3,
+        336.5,
+        177.2
+      ],
+      "yellow": [
+        291.3,
+        196.0,
+        337.9,
+        235.0
+      ],
+      "pickup_cradle": [
+        295.3,
+        205.4,
+        334.3,
+        237.9
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "rack:0": [
+        337.7,
+        108.5,
+        341.8,
+        117.4
+      ],
+      "rack:1": [
+        287.7,
+        108.5,
+        292.0,
+        117.4
+      ],
+      "blue:0": [
+        293.1,
+        139.2,
+        296.2,
+        177.2
+      ],
+      "blue:1": [
+        293.3,
+        143.5,
+        296.0,
+        173.1
+      ],
+      "blue:2": [
+        334.1,
+        139.2,
+        336.6,
+        177.2
+      ],
+      "blue:3": [
+        334.2,
+        143.5,
+        336.4,
+        173.1
+      ],
+      "blue:4": [
+        328.8,
+        139.8,
+        331.4,
+        176.7
+      ],
+      "blue:5": [
+        298.3,
+        139.8,
+        301.5,
+        176.7
+      ],
+      "yellow:0": [
+        291.3,
+        196.0,
+        294.7,
+        235.0
+      ],
+      "yellow:1": [
+        291.5,
+        200.4,
+        294.5,
+        230.8
+      ],
+      "yellow:2": [
+        335.2,
+        196.0,
+        337.9,
+        235.0
+      ],
+      "yellow:3": [
+        335.3,
+        200.4,
+        337.7,
+        230.8
+      ],
+      "yellow:4": [
+        329.5,
+        196.5,
+        332.3,
+        234.5
+      ],
+      "yellow:5": [
+        296.8,
+        196.5,
+        300.4,
+        234.5
+      ]
+    },
+    "initialMeasurements": {
+      "feed_x": -0.11999988555908203,
+      "feed_y": 6.971096297547774e-06,
+      "feed_z": 0.05133163928985596,
+      "old_x": 0.04049941897392273,
+      "old_y": 1.1882315220645978e-07,
+      "old_z": 0.06573814153671265,
+      "rack_shift": 8.369542794160413e-08,
+      "rack_tilt": 0.0,
+      "rack_heading": 0.0,
+      "supply_load": 0.0,
+      "left_load": 0.0,
+      "right_load": 0.0,
+      "old_left": 1.4184155464172363,
+      "old_right": 1.4036237001419067,
+      "stop_load": 0.3931863605976105,
+      "queue_load": 0.0,
+      "left_hand": 0.0,
+      "right_hand": 0.0,
+      "blue_left_hand": 0.0,
+      "blue_right_hand": 0.0,
+      "new_speed": 0.00043258166988380253,
+      "new_spin": 0.8358136415481567,
+      "old_speed": 0.0003539071185514331,
+      "old_spin": 0.493913471698761,
+      "can_axis": 3.565463422438781e-05,
+      "hand_gap": 0.04
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {},
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {},
+    "finalWedgeBodyPositions": {},
+    "video_frames": 301,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "707efb4fa3a50d47aa1fdc0933e946ab3b1b7bff52259a6acaa3dbc59398b88d",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "ea36a31083a7f17480d2774dab599a54d366dd57bde0d02c62697b60f6247323",
+      "task_impl/arm_release.py": "bcc46e087deed886ba24338c0295ccea64f2d1a9db1090ed269ff428abbd6f0d",
+      "task_impl/clearance.py": "d09e57bfa2bd9db69bf10b9eb637540392377898ceb0cfc9bffdcf4ac932f82d",
+      "task_impl/geometry.py": "ef3962e6e3163477a49ba420686a7ad37a254025238fab6838f0ec23d25e0374",
+      "task_impl/grading.py": "68e8a56c0508c96bf133c9fac4d3618979b0d565904ef140e890866a58124894",
+      "task_impl/gripper_clearance.py": "dddf1c7e2458f06631894d56f45997df587db043e9ade9998aa942e1c2cc12b7",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "b9caafc7ec6de5b8933fb81ff6e38124d1cc75462e264b0f43ad21376aa0db22",
+      "task_impl/scripted.py": "eebd41db9db1f7571905213fa91f75f268f8b9e79543ec99e4dab974bb8ba5f2"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "usage": {
+      "model": "dreamlabs/dream-1-beta",
+      "attempts": 13,
+      "served": 12,
+      "episodes": 1,
+      "cap": 16,
+      "serviceError": "DreamSessionExpired"
+    },
+    "actionCoverage": {
+      "task": "feed-pantry-can",
+      "batch": "6912d74fdf2a447a93bf0f80ce0ebc87",
+      "controlSteps": 600,
+      "initialHoldSteps": 32,
+      "modelChunkStartStepsOneBased": [
+        33,
+        81,
+        129,
+        177,
+        225,
+        273,
+        321,
+        369,
+        417,
+        465,
+        513,
+        561
+      ],
+      "lastModelActionStep": 600,
+      "postModelHoldSteps": 0,
+      "source": "Inspect one-action chunks; pinned DreamPolicy marks the first returned row of each fetched chunk with inference latency.",
+      "policyFileSha256": "64f6a6661e303a1012894af3539ecd0d14810af03aead302ede0ba9e9f6f258d",
+      "chunksSha256": "b4f4c95d88353987b3282b6a7c1867c878c1d6baae8b589da5db770f69eb459e",
+      "recordSha256": "ca619e411a686dc49a1270aa9b04d9194912ca73c209e387b779995d72f27385"
+    }
+  }
+}
