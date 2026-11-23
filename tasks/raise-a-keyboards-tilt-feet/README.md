@@ -40,6 +40,14 @@ including initialization and inference; hardware and service latency vary.
 
 
 
-## Assets
+## Assets and licenses
 
-Original procedural keyboard and notebook geometry is provided under the included MIT license. Robot meshes and the stock station come from the external pinned YAM runtime. See ENVIRONMENT.md for exact dependencies.
+| Asset in this task | Source and applicable license |
+| --- | --- |
+| Keyboard, both tilt feet and notebook | Original procedural geometry in this task. [MIT license](LICENSE). |
+| Two YAM arms and parallel grippers, including visual meshes and collision hulls | I2RT Robotics' [YAM model](https://github.com/i2rt-robotics/i2rt/tree/120c3c81400171174604e503943f8d1ebc891058), loaded as USD by the pinned YAM runtime. [Source revision](https://github.com/kairosiann/yam-isaac-lab-arena/blob/bd62771e60320433893bd1d2df0fc79b5ddcd6d1/yam_arena/assets/yam/SOURCE_COMMIT) and [I2RT MIT license](https://github.com/kairosiann/yam-isaac-lab-arena/blob/bd62771e60320433893bd1d2df0fc79b5ddcd6d1/yam_arena/assets/yam/LICENSE.i2rt). |
+| Black and white surfaces of links 2 and 3 on both arms | The runtime renders four split I2RT meshes from the Dream Labs 1.0.23 wheel. The [mesh provenance and hashes](https://github.com/kairosiann/yam-isaac-lab-arena/blob/bd62771e60320433893bd1d2df0fc79b5ddcd6d1/yam_arena/assets/yam/dream/SOURCE) identify the same I2RT MIT license. |
+| Table, floor, dome and sphere lights, overhead camera stand and housing | The stock [station room](https://github.com/kairosiann/yam-isaac-lab-arena/blob/bd62771e60320433893bd1d2df0fc79b5ddcd6d1/yam_arena/scene.py) builds the geometry and lighting from primitives at runtime. The upstream [license statement](https://github.com/kairosiann/yam-isaac-lab-arena/blob/bd62771e60320433893bd1d2df0fc79b5ddcd6d1/README.md#license) says the station repository has no license yet. This task references it as an external installation. |
+| Overhead RGB camera and two wrist RGB cameras | The [station rig](https://github.com/kairosiann/yam-isaac-lab-arena/blob/bd62771e60320433893bd1d2df0fc79b5ddcd6d1/yam_arena/station.py) supplies the poses and lens parameters from Dream Labs' MuJoCo station in dreamlabs 1.0.23 and the [YAM calibration](https://github.com/ARISE-Initiative/yamlab/blob/ec0455d2b4ce35f21fc126418ea5e74ac567133d/yamlab/configs/robot/yam.yaml). The calibration repository publishes an [MIT license](https://github.com/ARISE-Initiative/yamlab/blob/ec0455d2b4ce35f21fc126418ea5e74ac567133d/LICENSE). The camera implementation is part of the external station runtime under its [upstream license statement](https://github.com/kairosiann/yam-isaac-lab-arena/blob/bd62771e60320433893bd1d2df0fc79b5ddcd6d1/README.md#license). The recording-only side camera uses an original pose in [fixed_scene.py](rdb_keyboard_feet/fixed_scene.py). |
+
+[ENVIRONMENT.md](ENVIRONMENT.md) pins the runtime used for the recordings.
