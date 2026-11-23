@@ -1,0 +1,19 @@
+{
+  "title": "Divide the last spoonful of carrot and potato filling into two equal servings with a spatula",
+  "category": "Societal relatability",
+  "keywords": [
+    "cooking",
+    "portioning",
+    "spatula",
+    "contact manipulation"
+  ],
+  "instruction": "Use the spatula to split the last spoonful of carrot and potato filling between two wraps. Leave three pieces of each vegetable in each compact pile, with a spatula-width of bare pan between the piles. Keep all the filling in the pan and lift the spatula clear.",
+  "context": "At the end of preparing two wraps there is one spoonful of filling left. Divide it in the pan so each person gets the same amount of both vegetables, ready to scoop.",
+  "setup": "An unheated 160 mm saucepan rests on a counter with its handle in a U-shaped holder. Six orange carrot cubes and six pale potato cubes, each 10 mm, start in separate groups. The left arm faces a 194 mm spatula standing in a 62 mm square crock. The 48 mm blade is free to lift. Pan center is 360 mm forward from the base midpoint. Crock center is 280 mm forward and 160 mm left. The README gives the twelve starting positions and holder dimensions.",
+  "scoring": "Score the final resting layout. Give 1 for two six-piece piles, three of each color per pile, maximum within-pile center span 40 mm, at least 48 mm of bare pan between their facing edges, one layer and blade clear. Give 0.5 for two compact six-piece piles with at least two of each color per pile and an 18 mm gap. Give 0.25 if at least four pieces of each color are within 20 mm of an opposite-color center. Take the highest applicable tier. Give 0 for a spill, direct arm-food contact, displaced or tipped pan, no blade-food contact, unsettled filling, or no tier. Photo and video measurements are specified in the README.",
+  "run_limit": "540 actions at 20 Hz (27 seconds)",
+  "reset_notes": "Use cold, dry 10 mm dice and reset the two color groups from the coordinates in the README. Return the free spatula to the slot in the crock.",
+  "fidelity": "MuJoCo contacts move a free saucepan, spatula and twelve independently simulated dice. The blade is pinched by friction. The vegetables are firm rigid cubes and the blade is modeled as rigid. Friction values are estimates. The trial measures cold portioning; it does not simulate cooking or adhesion.",
+  "scores": "Dream-1 (dreamlabs/dream-1-beta): 0.0 in 540 actions. Scripted demo: 1.0 in 540 actions, repeated at 1.0; the piles had a 62.47 mm edge-to-edge gap. Idle: 0.0.",
+  "media": "M-NJZQTU"
+}

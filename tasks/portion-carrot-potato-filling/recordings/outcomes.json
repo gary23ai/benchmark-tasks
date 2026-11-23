@@ -1,0 +1,253 @@
+{
+  "demo": {
+    "policy": "demo",
+    "steps": 540,
+    "score": 1.0,
+    "balanced_gap_mm": 62.47,
+    "portion_spans_mm": [
+      27.26,
+      28.21
+    ],
+    "carrots_in_each": [
+      3,
+      3
+    ],
+    "potatoes_in_each": [
+      3,
+      3
+    ],
+    "unlike_neighbors": [
+      6,
+      6
+    ],
+    "spilled": false,
+    "hand_touched_food": false,
+    "tool_clear": true,
+    "pan_stable": true,
+    "single_layer": true,
+    "blade_contacts": 8,
+    "settled_in_pan": true
+  },
+  "repeat": {
+    "policy": "demo",
+    "steps": 540,
+    "score": 1.0,
+    "balanced_gap_mm": 62.47,
+    "portion_spans_mm": [
+      27.26,
+      28.21
+    ],
+    "carrots_in_each": [
+      3,
+      3
+    ],
+    "potatoes_in_each": [
+      3,
+      3
+    ],
+    "unlike_neighbors": [
+      6,
+      6
+    ],
+    "spilled": false,
+    "hand_touched_food": false,
+    "tool_clear": true,
+    "pan_stable": true,
+    "single_layer": true,
+    "blade_contacts": 8,
+    "settled_in_pan": true
+  },
+  "dream": {
+    "policy": "dream",
+    "steps": 540,
+    "score": 0.0,
+    "balanced_gap_mm": null,
+    "portion_spans_mm": null,
+    "carrots_in_each": null,
+    "potatoes_in_each": null,
+    "unlike_neighbors": [
+      0,
+      0
+    ],
+    "spilled": false,
+    "hand_touched_food": false,
+    "tool_clear": true,
+    "pan_stable": true,
+    "single_layer": true,
+    "blade_contacts": 0,
+    "settled_in_pan": true,
+    "model": "dreamlabs/dream-1-beta"
+  },
+  "idle": {
+    "policy": "idle",
+    "steps": 540,
+    "score": 0.0,
+    "balanced_gap_mm": null,
+    "portion_spans_mm": null,
+    "carrots_in_each": null,
+    "potatoes_in_each": null,
+    "unlike_neighbors": [
+      0,
+      0
+    ],
+    "spilled": false,
+    "hand_touched_food": false,
+    "tool_clear": true,
+    "pan_stable": true,
+    "single_layer": true,
+    "blade_contacts": 0,
+    "settled_in_pan": true
+  },
+  "blade_and_neck_collision_disabled": {
+    "score": 0.0,
+    "balanced_gap_mm": null,
+    "portion_spans_mm": null,
+    "carrots_in_each": null,
+    "potatoes_in_each": null,
+    "unlike_neighbors": [
+      0,
+      0
+    ],
+    "spilled": false,
+    "hand_touched_food": false,
+    "tool_clear": true,
+    "pan_stable": true,
+    "single_layer": true,
+    "blade_contacts": 0,
+    "settled_in_pan": true,
+    "max_food_displacement_mm": 0.01
+  },
+  "control_description": "Only blade and neck collisions disabled after reset; the exact recorded demo commands were replayed.",
+  "samples": {
+    "0": {
+      "score": 0.0,
+      "balanced_gap_mm": null,
+      "portion_spans_mm": null,
+      "carrots_in_each": null,
+      "potatoes_in_each": null,
+      "unlike_neighbors": [
+        0,
+        0
+      ],
+      "spilled": false,
+      "hand_touched_food": false,
+      "tool_clear": true,
+      "pan_stable": true,
+      "single_layer": true,
+      "blade_contacts": 0,
+      "settled_in_pan": true
+    },
+    "220": {
+      "score": 0.25,
+      "balanced_gap_mm": 3.29,
+      "portion_spans_mm": [
+        26.78,
+        28.73
+      ],
+      "carrots_in_each": [
+        3,
+        3
+      ],
+      "potatoes_in_each": [
+        3,
+        3
+      ],
+      "unlike_neighbors": [
+        6,
+        6
+      ],
+      "spilled": false,
+      "hand_touched_food": false,
+      "tool_clear": true,
+      "pan_stable": true,
+      "single_layer": true,
+      "blade_contacts": 4,
+      "settled_in_pan": true
+    },
+    "340": {
+      "score": 0.5,
+      "balanced_gap_mm": 30.57,
+      "portion_spans_mm": [
+        26.78,
+        27.4
+      ],
+      "carrots_in_each": [
+        3,
+        3
+      ],
+      "potatoes_in_each": [
+        3,
+        3
+      ],
+      "unlike_neighbors": [
+        6,
+        6
+      ],
+      "spilled": false,
+      "hand_touched_food": false,
+      "tool_clear": false,
+      "pan_stable": true,
+      "single_layer": true,
+      "blade_contacts": 6,
+      "settled_in_pan": true
+    },
+    "480": {
+      "score": 1.0,
+      "balanced_gap_mm": 62.47,
+      "portion_spans_mm": [
+        27.26,
+        28.21
+      ],
+      "carrots_in_each": [
+        3,
+        3
+      ],
+      "potatoes_in_each": [
+        3,
+        3
+      ],
+      "unlike_neighbors": [
+        6,
+        6
+      ],
+      "spilled": false,
+      "hand_touched_food": false,
+      "tool_clear": true,
+      "pan_stable": true,
+      "single_layer": true,
+      "blade_contacts": 8,
+      "settled_in_pan": true
+    },
+    "540": {
+      "score": 1.0,
+      "balanced_gap_mm": 62.47,
+      "portion_spans_mm": [
+        27.26,
+        28.21
+      ],
+      "carrots_in_each": [
+        3,
+        3
+      ],
+      "potatoes_in_each": [
+        3,
+        3
+      ],
+      "unlike_neighbors": [
+        6,
+        6
+      ],
+      "spilled": false,
+      "hand_touched_food": false,
+      "tool_clear": true,
+      "pan_stable": true,
+      "single_layer": true,
+      "blade_contacts": 8,
+      "settled_in_pan": true
+    }
+  },
+  "live_vs_filmed_max_qpos_difference": {
+    "demo": 0.0,
+    "dream": 0.0
+  }
+}

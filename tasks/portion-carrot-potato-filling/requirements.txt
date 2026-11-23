@@ -1,0 +1,6 @@
+mujoco==3.5.0
+numpy==2.5.5
+scipy==1.18.1
+Pillow==13.0.0
+imageio-ffmpeg==0.8.1
+dreamlabs-client==1.1.7
