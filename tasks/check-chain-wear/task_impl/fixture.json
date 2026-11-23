@@ -1,0 +1,3629 @@
+{
+  "limit": 900,
+  "actors": [
+    {
+      "name": "station",
+      "bolted": true,
+      "material": "steel service stand and stationary drivetrain end supports",
+      "mass_kg": 8,
+      "friction": 0.55,
+      "rgb": [
+        0.26,
+        0.28,
+        0.3
+      ],
+      "position": [
+        0.29,
+        -0.05,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.045,
+            0.18,
+            0.012
+          ],
+          "offset": [
+            0.095,
+            0,
+            -0.114
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.025,
+            0.025,
+            0.145
+          ],
+          "offset": [
+            0.095,
+            0.073,
+            -0.0355
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.19,
+            0.012
+          ],
+          "offset": [
+            0.095,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.102,
+            0.006,
+            0.008
+          ],
+          "offset": [
+            0.0475,
+            -0.09,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.102,
+            0.006,
+            0.008
+          ],
+          "offset": [
+            0.0475,
+            0.09,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.018,
+            0.0082
+          ],
+          "offset": [
+            0.00249,
+            -0.083525,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.018,
+            0.0082
+          ],
+          "offset": [
+            -0.00249,
+            -0.083525,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.018,
+            0.0082
+          ],
+          "offset": [
+            0.00159,
+            0.083525,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.018,
+            0.0082
+          ],
+          "offset": [
+            -0.00159,
+            0.083525,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rest",
+      "bolted": true,
+      "material": "bench-mounted acetal cradle",
+      "mass_kg": 0.11,
+      "friction": 0.45,
+      "rgb": [
+        0.24,
+        0.36,
+        0.39
+      ],
+      "position": [
+        0.22,
+        -0.0631,
+        0
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.036,
+            0.104,
+            0.006
+          ],
+          "offset": [
+            0,
+            0,
+            0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.009,
+            0.0654
+          ],
+          "offset": [
+            0,
+            -0.042,
+            0.0387
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.009,
+            0.0654
+          ],
+          "offset": [
+            0,
+            0.042,
+            0.0387
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0049,
+            0.009,
+            0.004
+          ],
+          "offset": [
+            -0.00355,
+            -0.042,
+            0.0734
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0049,
+            0.009,
+            0.004
+          ],
+          "offset": [
+            0.00355,
+            -0.042,
+            0.0734
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0049,
+            0.009,
+            0.004
+          ],
+          "offset": [
+            -0.00355,
+            0.042,
+            0.0734
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0049,
+            0.009,
+            0.004
+          ],
+          "offset": [
+            0.00355,
+            0.042,
+            0.0734
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gauge",
+      "bolted": false,
+      "material": "stainless steel chain checker with painted measuring-end mark",
+      "mass_kg": 0.035,
+      "friction": 0.42,
+      "rgb": [
+        0.76,
+        0.66,
+        0.32
+      ],
+      "position": [
+        0.22,
+        -0.0631,
+        0.065
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0015,
+            0.141,
+            0.0192
+          ],
+          "offset": [
+            0,
+            -0.0005,
+            0.016
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0015,
+            0.007,
+            0.0025
+          ],
+          "offset": [
+            0,
+            -0.064,
+            0.00615
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0015,
+            0.005,
+            0.0018
+          ],
+          "offset": [
+            0,
+            -0.06641,
+            0.00433
+          ],
+          "euler_deg": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0015,
+            0.005,
+            0.0018
+          ],
+          "offset": [
+            0,
+            -0.06159,
+            0.00433
+          ],
+          "euler_deg": [
+            -45,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0015,
+            0.0016,
+            0.0082
+          ],
+          "offset": [
+            0,
+            -0.05934,
+            0.0017
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0015,
+            0.00245,
+            0.0095
+          ],
+          "offset": [
+            0,
+            0.0588675,
+            0.00205
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0015,
+            0.00185,
+            0.0003
+          ],
+          "offset": [
+            0,
+            0.0588675,
+            -0.00285
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0015,
+            0.008,
+            0.0032
+          ],
+          "offset": [
+            0,
+            0.0638,
+            0.00546
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.0001,
+            0.009,
+            0.003
+          ],
+          "offset": [
+            -0.00078,
+            0.0589,
+            0.0083
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.09,
+            0.22,
+            0.31
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0001,
+            0.009,
+            0.003
+          ],
+          "offset": [
+            0.00078,
+            0.0589,
+            0.0083
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ],
+          "rgb": [
+            0.09,
+            0.22,
+            0.31
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link0",
+      "bolted": false,
+      "material": "steel inner plates",
+      "mass_kg": 0.0018,
+      "friction": 0.32,
+      "rgb": [
+        0.45,
+        0.49,
+        0.52
+      ],
+      "position": [
+        0.29,
+        -0.120675,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.01285,
+            0.0082
+          ],
+          "offset": [
+            -0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.01285,
+            0.0082
+          ],
+          "offset": [
+            0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0082,
+            0.0082,
+            0.0008
+          ],
+          "offset": [
+            -0.00159,
+            -0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0082,
+            0.0082,
+            0.0008
+          ],
+          "offset": [
+            0.00159,
+            -0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0082,
+            0.0082,
+            0.0008
+          ],
+          "offset": [
+            -0.00159,
+            0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.0082,
+            0.0082,
+            0.0008
+          ],
+          "offset": [
+            0.00159,
+            0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link1",
+      "bolted": false,
+      "material": "steel outer plates",
+      "mass_kg": 0.002,
+      "friction": 0.32,
+      "rgb": [
+        0.66,
+        0.68,
+        0.69
+      ],
+      "position": [
+        0.29,
+        -0.107825,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            -0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link2",
+      "bolted": false,
+      "material": "steel inner plates and captive roller",
+      "mass_kg": 0.0025,
+      "friction": 0.32,
+      "rgb": [
+        0.45,
+        0.49,
+        0.52
+      ],
+      "position": [
+        0.29,
+        -0.094975,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            -0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link3",
+      "bolted": false,
+      "material": "steel outer plates",
+      "mass_kg": 0.002,
+      "friction": 0.32,
+      "rgb": [
+        0.66,
+        0.68,
+        0.69
+      ],
+      "position": [
+        0.29,
+        -0.082125,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            -0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link4",
+      "bolted": false,
+      "material": "steel inner plates and two captive rollers",
+      "mass_kg": 0.0032,
+      "friction": 0.32,
+      "rgb": [
+        0.45,
+        0.49,
+        0.52
+      ],
+      "position": [
+        0.29,
+        -0.069275,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            -0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            -0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link5",
+      "bolted": false,
+      "material": "steel outer plates",
+      "mass_kg": 0.002,
+      "friction": 0.32,
+      "rgb": [
+        0.66,
+        0.68,
+        0.69
+      ],
+      "position": [
+        0.29,
+        -0.056425,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            -0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link6",
+      "bolted": false,
+      "material": "steel inner plates and two captive rollers",
+      "mass_kg": 0.0032,
+      "friction": 0.32,
+      "rgb": [
+        0.45,
+        0.49,
+        0.52
+      ],
+      "position": [
+        0.29,
+        -0.043575,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            -0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            -0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link7",
+      "bolted": false,
+      "material": "steel outer plates",
+      "mass_kg": 0.002,
+      "friction": 0.32,
+      "rgb": [
+        0.66,
+        0.68,
+        0.69
+      ],
+      "position": [
+        0.29,
+        -0.030725,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            -0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link8",
+      "bolted": false,
+      "material": "steel inner plates and two captive rollers",
+      "mass_kg": 0.0032,
+      "friction": 0.32,
+      "rgb": [
+        0.45,
+        0.49,
+        0.52
+      ],
+      "position": [
+        0.29,
+        -0.017875,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            -0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            -0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        },
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0.006425,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link9",
+      "bolted": false,
+      "material": "steel outer plates",
+      "mass_kg": 0.002,
+      "friction": 0.32,
+      "rgb": [
+        0.66,
+        0.68,
+        0.69
+      ],
+      "position": [
+        0.29,
+        -0.005025,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            -0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link10",
+      "bolted": false,
+      "material": "steel inner plates",
+      "mass_kg": 0.0018,
+      "friction": 0.32,
+      "rgb": [
+        0.45,
+        0.49,
+        0.52
+      ],
+      "position": [
+        0.29,
+        0.007825,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            -0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.0196,
+            0.0082
+          ],
+          "offset": [
+            0.00159,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "link11",
+      "bolted": false,
+      "material": "steel outer plates",
+      "mass_kg": 0.002,
+      "friction": 0.32,
+      "rgb": [
+        0.66,
+        0.68,
+        0.69
+      ],
+      "position": [
+        0.29,
+        0.020675,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            -0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.0008,
+            0.019,
+            0.0074
+          ],
+          "offset": [
+            0.00249,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "r0",
+      "bolted": false,
+      "material": "hardened steel roller",
+      "mass_kg": 0.00065,
+      "friction": 0.28,
+      "rgb": [
+        0.55,
+        0.57,
+        0.58
+      ],
+      "position": [
+        0.29,
+        -0.1271,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "r1",
+      "bolted": false,
+      "material": "hardened steel roller",
+      "mass_kg": 0.00065,
+      "friction": 0.28,
+      "rgb": [
+        0.55,
+        0.57,
+        0.58
+      ],
+      "position": [
+        0.29,
+        -0.11425,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "r2",
+      "bolted": false,
+      "material": "hardened steel roller",
+      "mass_kg": 0.00065,
+      "friction": 0.28,
+      "rgb": [
+        0.55,
+        0.57,
+        0.58
+      ],
+      "position": [
+        0.29,
+        -0.1014,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "r10",
+      "bolted": false,
+      "material": "hardened steel roller",
+      "mass_kg": 0.00065,
+      "friction": 0.28,
+      "rgb": [
+        0.55,
+        0.57,
+        0.58
+      ],
+      "position": [
+        0.29,
+        0.0014,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "r11",
+      "bolted": false,
+      "material": "hardened steel roller",
+      "mass_kg": 0.00065,
+      "friction": 0.28,
+      "rgb": [
+        0.55,
+        0.57,
+        0.58
+      ],
+      "position": [
+        0.29,
+        0.01425,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "r12",
+      "bolted": false,
+      "material": "hardened steel roller",
+      "mass_kg": 0.00065,
+      "friction": 0.28,
+      "rgb": [
+        0.55,
+        0.57,
+        0.58
+      ],
+      "position": [
+        0.29,
+        0.0271,
+        0.12
+      ],
+      "parts": [
+        {
+          "type": "cylinder",
+          "size": [
+            0.00772,
+            0.00772,
+            0.00232
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            90,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "type": "hinge",
+      "a": "station",
+      "b": "link0",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        -0.0771,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link0",
+      "b": "link1",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link1",
+      "b": "link2",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link2",
+      "b": "link3",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link3",
+      "b": "link4",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link4",
+      "b": "link5",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link5",
+      "b": "link6",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link6",
+      "b": "link7",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link7",
+      "b": "link8",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link8",
+      "b": "link9",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link9",
+      "b": "link10",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link10",
+      "b": "link11",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        -0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "station",
+      "b": "link11",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.0771,
+        0
+      ],
+      "anchor_b": [
+        0,
+        0.006425,
+        0
+      ],
+      "min": -35,
+      "max": 35,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 1e-05
+    },
+    {
+      "type": "hinge",
+      "a": "link0",
+      "b": "r0",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        -0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -360,
+      "max": 360,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0
+    },
+    {
+      "type": "hinge",
+      "a": "link0",
+      "b": "r1",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -360,
+      "max": 360,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0
+    },
+    {
+      "type": "hinge",
+      "a": "link2",
+      "b": "r2",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        -0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -360,
+      "max": 360,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0
+    },
+    {
+      "type": "hinge",
+      "a": "link10",
+      "b": "r10",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        -0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -360,
+      "max": 360,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0
+    },
+    {
+      "type": "hinge",
+      "a": "link10",
+      "b": "r11",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.006425,
+        0
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -360,
+      "max": 360,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0
+    },
+    {
+      "type": "hinge",
+      "a": "station",
+      "b": "r12",
+      "axis": "X",
+      "anchor_a": [
+        0,
+        0.0771,
+        0
+      ],
+      "anchor_b": [
+        0,
+        0,
+        0
+      ],
+      "min": -360,
+      "max": 360,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0
+    }
+  ],
+  "metrics": [
+    {
+      "name": "hx",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "station",
+      "pa": [
+        0,
+        -0.05934,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tx",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "station",
+      "pa": [
+        0,
+        0.0588675,
+        -0.003
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "h0y",
+      "kind": "dy",
+      "a": "gauge",
+      "b": "r0",
+      "pa": [
+        0,
+        -0.064,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "h0z",
+      "kind": "dz",
+      "a": "gauge",
+      "b": "r0",
+      "pa": [
+        0,
+        -0.064,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "t10y",
+      "kind": "dy",
+      "a": "gauge",
+      "b": "r10",
+      "pa": [
+        0,
+        0.0588675,
+        -0.003
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "t10z",
+      "kind": "dz",
+      "a": "gauge",
+      "b": "r10",
+      "pa": [
+        0,
+        0.0588675,
+        -0.003
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "h2y",
+      "kind": "dy",
+      "a": "gauge",
+      "b": "r2",
+      "pa": [
+        0,
+        -0.064,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "h2z",
+      "kind": "dz",
+      "a": "gauge",
+      "b": "r2",
+      "pa": [
+        0,
+        -0.064,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "t12y",
+      "kind": "dy",
+      "a": "gauge",
+      "b": "r12",
+      "pa": [
+        0,
+        0.0588675,
+        -0.003
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "t12z",
+      "kind": "dz",
+      "a": "gauge",
+      "b": "r12",
+      "pa": [
+        0,
+        0.0588675,
+        -0.003
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "h11y",
+      "kind": "dy",
+      "a": "gauge",
+      "b": "r11",
+      "pa": [
+        0,
+        -0.064,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "h11z",
+      "kind": "dz",
+      "a": "gauge",
+      "b": "r11",
+      "pa": [
+        0,
+        -0.064,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "t1y",
+      "kind": "dy",
+      "a": "gauge",
+      "b": "r1",
+      "pa": [
+        0,
+        0.0588675,
+        -0.003
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "t1z",
+      "kind": "dz",
+      "a": "gauge",
+      "b": "r1",
+      "pa": [
+        0,
+        0.0588675,
+        -0.003
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "n0",
+      "kind": "contact_n",
+      "a": "r0",
+      "b": "gauge",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "n1",
+      "kind": "contact_n",
+      "a": "r1",
+      "b": "gauge",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "n2",
+      "kind": "contact_n",
+      "a": "r2",
+      "b": "gauge",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "n10",
+      "kind": "contact_n",
+      "a": "r10",
+      "b": "gauge",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "n11",
+      "kind": "contact_n",
+      "a": "r11",
+      "b": "gauge",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "n12",
+      "kind": "contact_n",
+      "a": "r12",
+      "b": "gauge",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upright",
+      "kind": "angle_deg",
+      "a": "gauge",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        1
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "v",
+      "kind": "speed",
+      "a": "gauge",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "w",
+      "kind": "spin_deg_s",
+      "a": "gauge",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "leftN",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "gauge",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rightN",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "gauge",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link9_tip_0",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link9",
+      "pa": [
+        -0.00075,
+        0.057642500000000006,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link9_tip_1",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link9",
+      "pa": [
+        -0.00075,
+        0.057642500000000006,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link9_tip_2",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link9",
+      "pa": [
+        -0.00075,
+        0.0600925,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link9_tip_3",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link9",
+      "pa": [
+        -0.00075,
+        0.0600925,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link9_tip_4",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link9",
+      "pa": [
+        0.00075,
+        0.057642500000000006,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link9_tip_5",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link9",
+      "pa": [
+        0.00075,
+        0.057642500000000006,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link9_tip_6",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link9",
+      "pa": [
+        0.00075,
+        0.0600925,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link9_tip_7",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link9",
+      "pa": [
+        0.00075,
+        0.0600925,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link11_tip_0",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link11",
+      "pa": [
+        -0.00075,
+        0.057642500000000006,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link11_tip_1",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link11",
+      "pa": [
+        -0.00075,
+        0.057642500000000006,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link11_tip_2",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link11",
+      "pa": [
+        -0.00075,
+        0.0600925,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link11_tip_3",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link11",
+      "pa": [
+        -0.00075,
+        0.0600925,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link11_tip_4",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link11",
+      "pa": [
+        0.00075,
+        0.057642500000000006,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link11_tip_5",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link11",
+      "pa": [
+        0.00075,
+        0.057642500000000006,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link11_tip_6",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link11",
+      "pa": [
+        0.00075,
+        0.0600925,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link11_tip_7",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link11",
+      "pa": [
+        0.00075,
+        0.0600925,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link1_tip_0",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link1",
+      "pa": [
+        -0.00075,
+        0.057642500000000006,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link1_tip_1",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link1",
+      "pa": [
+        -0.00075,
+        0.057642500000000006,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link1_tip_2",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link1",
+      "pa": [
+        -0.00075,
+        0.0600925,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link1_tip_3",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link1",
+      "pa": [
+        -0.00075,
+        0.0600925,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link1_tip_4",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link1",
+      "pa": [
+        0.00075,
+        0.057642500000000006,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link1_tip_5",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link1",
+      "pa": [
+        0.00075,
+        0.057642500000000006,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link1_tip_6",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link1",
+      "pa": [
+        0.00075,
+        0.0600925,
+        -0.0026999999999999997
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "link1_tip_7",
+      "kind": "dx",
+      "a": "gauge",
+      "b": "link1",
+      "pa": [
+        0.00075,
+        0.0600925,
+        0.0068000000000000005
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "invalidate": [],
+  "milestones": [
+    {
+      "name": "window_start",
+      "all": [
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 890
+    },
+    {
+      "name": "finish",
+      "all": [
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 900
+    },
+    {
+      "name": "reading_0_10",
+      "needs": [
+        "window_start"
+      ],
+      "all": [
+        {
+          "metric": "hx",
+          "lo": -0.00044,
+          "hi": 0.00044
+        },
+        {
+          "metric": "tx",
+          "lo": -0.00134,
+          "hi": 0.00134
+        },
+        {
+          "metric": "upright",
+          "lo": 0,
+          "hi": 4
+        },
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "leftN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "rightN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "h0y",
+          "lo": -0.00045,
+          "hi": 0.00045
+        },
+        {
+          "metric": "h0z",
+          "lo": -0.0005,
+          "hi": 0.0005
+        },
+        {
+          "metric": "t10y",
+          "lo": -0.0062,
+          "hi": -0.0051
+        },
+        {
+          "metric": "t10z",
+          "lo": -0.0035,
+          "hi": -0.0025
+        },
+        {
+          "metric": "n0",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "n10",
+          "lo": 0.012,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 10
+    },
+    {
+      "name": "reading_2_12",
+      "needs": [
+        "window_start"
+      ],
+      "all": [
+        {
+          "metric": "hx",
+          "lo": -0.00044,
+          "hi": 0.00044
+        },
+        {
+          "metric": "tx",
+          "lo": -0.00134,
+          "hi": 0.00134
+        },
+        {
+          "metric": "upright",
+          "lo": 0,
+          "hi": 4
+        },
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "leftN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "rightN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "h2y",
+          "lo": -0.00045,
+          "hi": 0.00045
+        },
+        {
+          "metric": "h2z",
+          "lo": -0.0005,
+          "hi": 0.0005
+        },
+        {
+          "metric": "t12y",
+          "lo": -0.0062,
+          "hi": -0.0051
+        },
+        {
+          "metric": "t12z",
+          "lo": -0.0035,
+          "hi": -0.0025
+        },
+        {
+          "metric": "n2",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "n12",
+          "lo": 0.012,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 10
+    },
+    {
+      "name": "reading_11_1",
+      "needs": [
+        "window_start"
+      ],
+      "all": [
+        {
+          "metric": "hx",
+          "lo": -0.00044,
+          "hi": 0.00044
+        },
+        {
+          "metric": "tx",
+          "lo": -0.00134,
+          "hi": 0.00134
+        },
+        {
+          "metric": "upright",
+          "lo": 0,
+          "hi": 4
+        },
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "leftN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "rightN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "h11y",
+          "lo": -0.00045,
+          "hi": 0.00045
+        },
+        {
+          "metric": "h11z",
+          "lo": -0.0005,
+          "hi": 0.0005
+        },
+        {
+          "metric": "t1y",
+          "lo": 0.0051,
+          "hi": 0.0062
+        },
+        {
+          "metric": "t1z",
+          "lo": -0.0035,
+          "hi": -0.0025
+        },
+        {
+          "metric": "n11",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "n1",
+          "lo": 0.012,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 10
+    }
+  ],
+  "tiers": [
+    {
+      "score": 1,
+      "needs": [
+        "finish",
+        "reading_0_10"
+      ],
+      "all": [
+        {
+          "metric": "hx",
+          "lo": -0.00044,
+          "hi": 0.00044
+        },
+        {
+          "metric": "tx",
+          "lo": -0.00134,
+          "hi": 0.00134
+        },
+        {
+          "metric": "upright",
+          "lo": 0,
+          "hi": 4
+        },
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "leftN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "rightN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "h0y",
+          "lo": -0.00045,
+          "hi": 0.00045
+        },
+        {
+          "metric": "h0z",
+          "lo": -0.0005,
+          "hi": 0.0005
+        },
+        {
+          "metric": "t10y",
+          "lo": -0.0062,
+          "hi": -0.0051
+        },
+        {
+          "metric": "t10z",
+          "lo": -0.0035,
+          "hi": -0.0025
+        },
+        {
+          "metric": "n0",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "n10",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "link9_tip_0",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link9_tip_1",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link9_tip_2",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link9_tip_3",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link9_tip_4",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link9_tip_5",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link9_tip_6",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link9_tip_7",
+          "lo": -0.00209,
+          "hi": 0.00209
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "score": 1,
+      "needs": [
+        "finish",
+        "reading_2_12"
+      ],
+      "all": [
+        {
+          "metric": "hx",
+          "lo": -0.00044,
+          "hi": 0.00044
+        },
+        {
+          "metric": "tx",
+          "lo": -0.00134,
+          "hi": 0.00134
+        },
+        {
+          "metric": "upright",
+          "lo": 0,
+          "hi": 4
+        },
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "leftN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "rightN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "h2y",
+          "lo": -0.00045,
+          "hi": 0.00045
+        },
+        {
+          "metric": "h2z",
+          "lo": -0.0005,
+          "hi": 0.0005
+        },
+        {
+          "metric": "t12y",
+          "lo": -0.0062,
+          "hi": -0.0051
+        },
+        {
+          "metric": "t12z",
+          "lo": -0.0035,
+          "hi": -0.0025
+        },
+        {
+          "metric": "n2",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "n12",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "link11_tip_0",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link11_tip_1",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link11_tip_2",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link11_tip_3",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link11_tip_4",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link11_tip_5",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link11_tip_6",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link11_tip_7",
+          "lo": -0.00209,
+          "hi": 0.00209
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "score": 1,
+      "needs": [
+        "finish",
+        "reading_11_1"
+      ],
+      "all": [
+        {
+          "metric": "hx",
+          "lo": -0.00044,
+          "hi": 0.00044
+        },
+        {
+          "metric": "tx",
+          "lo": -0.00134,
+          "hi": 0.00134
+        },
+        {
+          "metric": "upright",
+          "lo": 0,
+          "hi": 4
+        },
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "leftN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "rightN",
+          "lo": 0,
+          "hi": 0.002
+        },
+        {
+          "metric": "h11y",
+          "lo": -0.00045,
+          "hi": 0.00045
+        },
+        {
+          "metric": "h11z",
+          "lo": -0.0005,
+          "hi": 0.0005
+        },
+        {
+          "metric": "t1y",
+          "lo": 0.0051,
+          "hi": 0.0062
+        },
+        {
+          "metric": "t1z",
+          "lo": -0.0035,
+          "hi": -0.0025
+        },
+        {
+          "metric": "n11",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "n1",
+          "lo": 0.012,
+          "hi": 1000000
+        },
+        {
+          "metric": "link1_tip_0",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link1_tip_1",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link1_tip_2",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link1_tip_3",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link1_tip_4",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link1_tip_5",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link1_tip_6",
+          "lo": -0.00209,
+          "hi": 0.00209
+        },
+        {
+          "metric": "link1_tip_7",
+          "lo": -0.00209,
+          "hi": 0.00209
+        }
+      ],
+      "ticks": 1
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 95,
+      "left": null,
+      "right": {
+        "relative_to": "rest",
+        "tip": [
+          0,
+          0,
+          0.13
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.026
+      }
+    },
+    {
+      "ticks": 65,
+      "left": null,
+      "right": {
+        "relative_to": "rest",
+        "tip": [
+          0,
+          0,
+          0.074
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.026
+      }
+    },
+    {
+      "ticks": 59,
+      "left": null,
+      "right": {
+        "relative_to": "rest",
+        "tip": [
+          0,
+          0,
+          0.074
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.0002
+      }
+    },
+    {
+      "ticks": 20,
+      "left": null,
+      "right": {
+        "relative_to": "rest",
+        "tip": [
+          0,
+          0,
+          0.084
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.0002
+      }
+    },
+    {
+      "ticks": 85,
+      "left": null,
+      "right": {
+        "relative_to": "rest",
+        "tip": [
+          0,
+          0,
+          0.155
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.0002
+      }
+    },
+    {
+      "ticks": 85,
+      "left": null,
+      "right": {
+        "relative_to": "station",
+        "tip": [
+          0,
+          -0.0131,
+          0.035
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.0002
+      }
+    },
+    {
+      "ticks": 65,
+      "left": null,
+      "right": {
+        "relative_to": "station",
+        "tip": [
+          0,
+          -0.0131,
+          0.02
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.0002
+      }
+    },
+    {
+      "ticks": 75,
+      "left": null,
+      "right": {
+        "relative_to": "station",
+        "tip": [
+          0,
+          -0.0131,
+          0.0143
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.0002
+      }
+    },
+    {
+      "ticks": 45,
+      "left": null,
+      "right": {
+        "relative_to": "station",
+        "tip": [
+          0,
+          -0.0131,
+          0.0143
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.024
+      }
+    },
+    {
+      "ticks": 60,
+      "left": null,
+      "right": {
+        "relative_to": "station",
+        "tip": [
+          0,
+          -0.0131,
+          0.05
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.024
+      }
+    },
+    {
+      "ticks": 70,
+      "left": null,
+      "right": {
+        "relative_to": "table",
+        "tip": [
+          0.22,
+          -0.14,
+          0.17
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.024
+      }
+    }
+  ],
+  "continuous_jaw": true
+}

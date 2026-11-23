@@ -1,0 +1,19 @@
+{
+  "title": "Check a stationary bicycle chain with a wear gauge",
+  "category": "Other",
+  "keywords": [
+    "bicycle maintenance",
+    "chain wear",
+    "roller contact",
+    "go/no-go gauge"
+  ],
+  "instruction": "Check the chain with the 0.75% edge of the gauge. Fit the hook against a roller inside an inner-plate link and let the measuring tip settle under the gauge’s own weight. Keep the drivetrain still. Leave the gauge on the chain so the mechanic can inspect the reading.",
+  "context": "A bicycle mechanic uses this reading to decide whether a compatible chain has reached its replacement threshold. Continued use of a worn chain can impair shifting and accelerate sprocket wear.",
+  "setup": "The stand holds the drive side of the bicycle toward you. The selected upper section runs horizontally, with its roller centers 120 mm above the work surface and its end rollers 154.2 mm apart. The gauge stands parallel to the chain in an open cradle 70 mm toward you. Its 0.75% edge faces down, its blue measuring-end mark is on your left, and both faces are clear at the middle for gripping.",
+  "scoring": "Score 1 when the hook bears on its roller between the inner plates, the tip enters the matching link completely, and the released gauge rests steadily on both rollers throughout the final half-second. Either fitting heading counts. Score 0 for any other finish, including a tip beside a plate, a shoulder caught on a plate, a tip stopped high or a gauge still supported by a hand. You may retry a missed placement.",
+  "run_limit": "900 steps (45 seconds at 20 Hz)",
+  "reset_notes": "Restore the recorded stand height, gear and crank position. Count from the master link to recover the same tested section. Return the gauge to both cradle slots with its marked end to the left and both working ends free.",
+  "fidelity": "The exposed section represents a stationary eight-speed chain. The gauge spans ten pitches. With the hook on its reference roller, the roller at the far end determines whether the measuring tooth can enter fully.",
+  "scores": "Dream-1 run: 0 (900 steps); demo: 1.0 (900 steps).",
+  "media": "M-9DVAQ3"
+}
