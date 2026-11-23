@@ -1,0 +1,2404 @@
+{
+  "limit": 1000,
+  "actors": [
+    {
+      "name": "feeder",
+      "bolted": true,
+      "material": "bench-mounted maple channel and pedestal",
+      "mass_kg": 0.14,
+      "friction": 0.48,
+      "rgb": [
+        0.71,
+        0.49,
+        0.27
+      ],
+      "position": [
+        0.265,
+        -0.112,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "wedge",
+          "size": [
+            0.03,
+            0.125,
+            0.042
+          ],
+          "toe_m": 0.03575,
+          "offset": [
+            -0.0975,
+            0,
+            0.021
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.032,
+            0.08,
+            0.005
+          ],
+          "toe_m": 0.001,
+          "offset": [
+            -0.12,
+            0,
+            0.0405
+          ],
+          "euler_deg": [
+            0,
+            180,
+            90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.032,
+            0.08,
+            0.005
+          ],
+          "toe_m": 0.001,
+          "offset": [
+            -0.12,
+            0,
+            0.0455
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.032,
+            0.08,
+            0.005
+          ],
+          "toe_m": 0.001,
+          "offset": [
+            -0.04,
+            0,
+            0.0365
+          ],
+          "euler_deg": [
+            0,
+            180,
+            90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.032,
+            0.08,
+            0.005
+          ],
+          "toe_m": 0.001,
+          "offset": [
+            -0.04,
+            0,
+            0.0415
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.08,
+            0.006
+          ],
+          "toe_m": 0.002,
+          "offset": [
+            -0.12,
+            0.0145,
+            0.047
+          ],
+          "euler_deg": [
+            0,
+            180,
+            90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.08,
+            0.006
+          ],
+          "toe_m": 0.002,
+          "offset": [
+            -0.12,
+            0.0145,
+            0.053
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.08,
+            0.006
+          ],
+          "toe_m": 0.002,
+          "offset": [
+            -0.12,
+            -0.0145,
+            0.047
+          ],
+          "euler_deg": [
+            0,
+            180,
+            90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.08,
+            0.006
+          ],
+          "toe_m": 0.002,
+          "offset": [
+            -0.12,
+            -0.0145,
+            0.053
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.08,
+            0.006
+          ],
+          "toe_m": 0.002,
+          "offset": [
+            -0.04,
+            0.0145,
+            0.043
+          ],
+          "euler_deg": [
+            0,
+            180,
+            90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.08,
+            0.006
+          ],
+          "toe_m": 0.002,
+          "offset": [
+            -0.04,
+            0.0145,
+            0.049
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.08,
+            0.006
+          ],
+          "toe_m": 0.002,
+          "offset": [
+            -0.04,
+            -0.0145,
+            0.043
+          ],
+          "euler_deg": [
+            0,
+            180,
+            90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.003,
+            0.08,
+            0.006
+          ],
+          "toe_m": 0.002,
+          "offset": [
+            -0.04,
+            -0.0145,
+            0.049
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bed",
+      "bolted": false,
+      "material": "maple receiver floor",
+      "mass_kg": 0.0287,
+      "friction": 0.46,
+      "rgb": [
+        0.85,
+        0.68,
+        0.41
+      ],
+      "position": [
+        0.25,
+        -0.112,
+        0.058225
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.16,
+            0.046,
+            0.006
+          ],
+          "offset": [
+            0.07782,
+            0,
+            -0.018788
+          ],
+          "euler_deg": [
+            0,
+            15.72,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cheeks",
+      "bolted": false,
+      "material": "bonded maple receiver sidewalls",
+      "mass_kg": 0.0067,
+      "friction": 0.46,
+      "rgb": [
+        0.83,
+        0.63,
+        0.36
+      ],
+      "position": [
+        0.25,
+        -0.112,
+        0.058225
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.16,
+            0.004,
+            0.008
+          ],
+          "offset": [
+            0.07972,
+            0.021,
+            -0.01205
+          ],
+          "euler_deg": [
+            0,
+            15.72,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.16,
+            0.004,
+            0.008
+          ],
+          "offset": [
+            0.07972,
+            -0.021,
+            -0.01205
+          ],
+          "euler_deg": [
+            0,
+            15.72,
+            0
+          ]
+        }
+      ],
+      "visuals": [
+        {
+          "type": "box",
+          "size": [
+            0.02,
+            0.0002,
+            0.0025
+          ],
+          "offset": [
+            0.07009,
+            -0.0231,
+            -0.00934
+          ],
+          "euler_deg": [
+            0,
+            15.72,
+            0
+          ],
+          "rgb": [
+            0.08,
+            0.12,
+            0.16
+          ]
+        }
+      ]
+    },
+    {
+      "name": "near_block",
+      "bolted": true,
+      "material": "fixed beech support",
+      "mass_kg": 0.0083,
+      "friction": 0.58,
+      "rgb": [
+        0.44,
+        0.3,
+        0.19
+      ],
+      "position": [
+        0.285,
+        -0.112,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "wedge",
+          "size": [
+            0.05,
+            0.006,
+            0.022
+          ],
+          "toe_m": 0.0193,
+          "offset": [
+            -0.003,
+            0,
+            0.011
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.05,
+            0.006,
+            0.022
+          ],
+          "toe_m": 0.0193,
+          "offset": [
+            0.003,
+            0,
+            0.011
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "name": "far_block",
+      "bolted": true,
+      "material": "fixed beech support",
+      "mass_kg": 0.0035,
+      "friction": 0.58,
+      "rgb": [
+        0.44,
+        0.3,
+        0.19
+      ],
+      "position": [
+        0.4,
+        -0.112,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "wedge",
+          "size": [
+            0.05,
+            0.006,
+            0.01
+          ],
+          "toe_m": 0.0073,
+          "offset": [
+            -0.003,
+            0,
+            0.005
+          ],
+          "euler_deg": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "type": "wedge",
+          "size": [
+            0.05,
+            0.005,
+            0.01
+          ],
+          "toe_m": 0.00775,
+          "offset": [
+            0.0025,
+            0,
+            0.005
+          ],
+          "euler_deg": [
+            0,
+            0,
+            -90
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tray",
+      "bolted": true,
+      "material": "fixed rigid plastic catch tray",
+      "mass_kg": 0.051,
+      "friction": 0.55,
+      "rgb": [
+        0.22,
+        0.48,
+        0.55
+      ],
+      "position": [
+        0.405,
+        -0.112,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.093,
+            0.076,
+            0.002
+          ],
+          "offset": [
+            0.0465,
+            0,
+            0.001
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.07,
+            0.003
+          ],
+          "offset": [
+            0.0015,
+            0,
+            0.0035
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.09,
+            0.003,
+            0.035
+          ],
+          "offset": [
+            0.045,
+            0.0365,
+            0.0195
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.09,
+            0.003,
+            0.035
+          ],
+          "offset": [
+            0.045,
+            -0.0365,
+            0.0195
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.076,
+            0.035
+          ],
+          "offset": [
+            0.0915,
+            0,
+            0.0195
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "guide",
+      "bolted": true,
+      "material": "mounted acetal sleeve",
+      "mass_kg": 0.012,
+      "friction": 0.18,
+      "rgb": [
+        0.33,
+        0.36,
+        0.38
+      ],
+      "position": [
+        0.1865,
+        -0.05,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.018,
+            0.018,
+            0.003
+          ],
+          "offset": [
+            0,
+            0,
+            0.0015
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.018,
+            0.044
+          ],
+          "offset": [
+            -0.0075,
+            0,
+            0.025
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.018,
+            0.044
+          ],
+          "offset": [
+            0.0075,
+            0,
+            0.025
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.003,
+            0.044
+          ],
+          "offset": [
+            0,
+            0.0075,
+            0.025
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.012,
+            0.003,
+            0.044
+          ],
+          "offset": [
+            0,
+            -0.0075,
+            0.025
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gate",
+      "bolted": false,
+      "material": "acetal blade, bridge, lift tab and stem",
+      "mass_kg": 0.014,
+      "friction": 0.4,
+      "rgb": [
+        0.16,
+        0.41,
+        0.43
+      ],
+      "position": [
+        0.1865,
+        -0.112,
+        0.051
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.003,
+            0.024,
+            0.022
+          ],
+          "offset": [
+            0,
+            0,
+            0.011
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.009,
+            0.078,
+            0.003
+          ],
+          "offset": [
+            0,
+            0.027,
+            0.0235
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.016,
+            0.01,
+            0.012
+          ],
+          "offset": [
+            0,
+            0.036,
+            0.031
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "box",
+          "size": [
+            0.008,
+            0.008,
+            0.063
+          ],
+          "offset": [
+            0,
+            0.062,
+            -0.0095
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "marble",
+      "bolted": false,
+      "material": "orange-painted hardwood",
+      "mass_kg": 0.0028,
+      "friction": 0.38,
+      "rgb": [
+        0.96,
+        0.24,
+        0.055
+      ],
+      "position": [
+        0.175,
+        -0.112,
+        0.060513
+      ],
+      "parts": [
+        {
+          "type": "sphere",
+          "size": [
+            0.02,
+            0.02,
+            0.02
+          ],
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bench_deck",
+      "bolted": true,
+      "material": "sealed birch workboard",
+      "mass_kg": 1.1,
+      "friction": 0.5,
+      "rgb": [
+        0.61,
+        0.49,
+        0.33
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.006
+      ],
+      "parts": [
+        {
+          "type": "box",
+          "size": [
+            0.58,
+            0.36,
+            0.006
+          ],
+          "offset": [
+            0.33,
+            -0.106,
+            -0.003
+          ],
+          "euler_deg": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "type": "fixed",
+      "a": "bed",
+      "b": "cheeks",
+      "anchor_a": [
+        0.077,
+        0,
+        -0.02168
+      ],
+      "anchor_b": [
+        0.077,
+        0,
+        -0.02168
+      ]
+    },
+    {
+      "type": "slider",
+      "a": "guide",
+      "b": "gate",
+      "axis": "Z",
+      "anchor_a": [
+        0,
+        0,
+        0.045
+      ],
+      "anchor_b": [
+        0,
+        0.062,
+        0
+      ],
+      "min": 0,
+      "max": 0.028,
+      "rest": 0,
+      "stiffness": 0,
+      "damping": 0.12
+    }
+  ],
+  "metrics": [
+    {
+      "name": "lift",
+      "kind": "dz",
+      "a": "gate",
+      "b": "guide",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0.045
+      ]
+    },
+    {
+      "name": "x",
+      "kind": "dx",
+      "a": "marble",
+      "b": "feeder",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "y",
+      "kind": "dy",
+      "a": "marble",
+      "b": "feeder",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "z",
+      "kind": "dz",
+      "a": "marble",
+      "b": "feeder",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "feed_n",
+      "kind": "contact_n",
+      "a": "marble",
+      "b": "feeder",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bed_n",
+      "kind": "contact_n",
+      "a": "marble",
+      "b": "bed",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rim_n",
+      "kind": "contact_n",
+      "a": "marble",
+      "b": "cheeks",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tray_n",
+      "kind": "contact_n",
+      "a": "marble",
+      "b": "tray",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lb",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "marble",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rb",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "marble",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lf",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "feeder",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rf",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "feeder",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ld",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "bed",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rd",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "bed",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lc",
+      "kind": "contact_n",
+      "a": "left_tcp",
+      "b": "cheeks",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "rc",
+      "kind": "contact_n",
+      "a": "right_tcp",
+      "b": "cheeks",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "v",
+      "kind": "speed",
+      "a": "marble",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bed_v",
+      "kind": "speed",
+      "a": "bed",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bed_w",
+      "kind": "spin_deg_s",
+      "a": "bed",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tilt",
+      "kind": "angle_deg",
+      "a": "bed",
+      "b": "table",
+      "pa": [
+        0.27094,
+        0,
+        0.9626
+      ],
+      "pb": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "station",
+      "kind": "distance",
+      "a": "marble",
+      "b": "bed",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        -0.95827,
+        0,
+        0.28634
+      ]
+    },
+    {
+      "name": "surface",
+      "kind": "distance",
+      "a": "marble",
+      "b": "bed",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0.34958,
+        0,
+        0.9467
+      ]
+    },
+    {
+      "name": "left_edge",
+      "kind": "distance",
+      "a": "marble",
+      "b": "bed",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0.08134,
+        2,
+        -0.00628
+      ]
+    },
+    {
+      "name": "right_edge",
+      "kind": "distance",
+      "a": "marble",
+      "b": "bed",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0.08134,
+        -2,
+        -0.00628
+      ]
+    },
+    {
+      "name": "receiver_s",
+      "kind": "local_dx",
+      "a": "marble",
+      "b": "bed",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0.9625972304030695,
+        0.0,
+        -0.2709364722962559
+      ]
+    },
+    {
+      "name": "near_bed_support",
+      "kind": "contact_n",
+      "a": "bed",
+      "b": "near_block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "far_bed_support",
+      "kind": "contact_n",
+      "a": "bed",
+      "b": "far_block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "near_marble_n",
+      "kind": "contact_n",
+      "a": "marble",
+      "b": "near_block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "far_marble_n",
+      "kind": "contact_n",
+      "a": "marble",
+      "b": "far_block",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "bench_n",
+      "kind": "contact_n",
+      "a": "marble",
+      "b": "bench_deck",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "contact_totals": {
+    "left_receiver": [
+      "ld",
+      "lc"
+    ],
+    "right_receiver": [
+      "rd",
+      "rc"
+    ]
+  },
+  "invalidate": [
+    [
+      {
+        "metric": "lb",
+        "lo": 1e-08,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "rb",
+        "lo": 1e-08,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "lift",
+        "lo": 0.002,
+        "hi": 1000000
+      },
+      {
+        "metric": "lf",
+        "lo": 0.002,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "lift",
+        "lo": 0.002,
+        "hi": 1000000
+      },
+      {
+        "metric": "rf",
+        "lo": 0.002,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "lift",
+        "lo": 0.002,
+        "hi": 1000000
+      },
+      {
+        "metric": "left_receiver",
+        "lo": 0.002,
+        "hi": 1000000
+      }
+    ],
+    [
+      {
+        "metric": "lift",
+        "lo": 0.002,
+        "hi": 1000000
+      },
+      {
+        "metric": "right_receiver",
+        "lo": 0.002,
+        "hi": 1000000
+      }
+    ]
+  ],
+  "excursions": [
+    {
+      "name": "opened",
+      "metric": "lift",
+      "direction": "increase",
+      "travel": 0.002,
+      "noise": 0.0004,
+      "needs": [
+        "loaded"
+      ],
+      "onset_any": [
+        [
+          {
+            "metric": "lf",
+            "lo": 0,
+            "hi": 0.0019999998
+          },
+          {
+            "metric": "rf",
+            "lo": 0,
+            "hi": 0.0019999998
+          },
+          {
+            "metric": "left_receiver",
+            "lo": 0,
+            "hi": 0.0019999998
+          },
+          {
+            "metric": "right_receiver",
+            "lo": 0,
+            "hi": 0.0019999998
+          }
+        ]
+      ],
+      "during_any": [
+        [
+          {
+            "metric": "lf",
+            "lo": 0,
+            "hi": 0.0019999998
+          },
+          {
+            "metric": "rf",
+            "lo": 0,
+            "hi": 0.0019999998
+          },
+          {
+            "metric": "left_receiver",
+            "lo": 0,
+            "hi": 0.0019999998
+          },
+          {
+            "metric": "right_receiver",
+            "lo": 0,
+            "hi": 0.0019999998
+          }
+        ]
+      ],
+      "reject_on_failure": true
+    }
+  ],
+  "violations": [
+    {
+      "needs": [],
+      "until_seen": [
+        "loaded"
+      ],
+      "all": [
+        {
+          "metric": "lift",
+          "lo": 0.002,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [],
+      "until_seen": [
+        "opened"
+      ],
+      "all": [
+        {
+          "metric": "bed_n",
+          "lo": 0.001,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [],
+      "until_seen": [
+        "opened"
+      ],
+      "all": [
+        {
+          "metric": "rim_n",
+          "lo": 0.001,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "lf",
+          "lo": 0.002,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "rf",
+          "lo": 0.002,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "left_receiver",
+          "lo": 0.002,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "right_receiver",
+          "lo": 0.002,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "rd",
+          "lo": 0.001,
+          "hi": 1000000
+        },
+        {
+          "metric": "rc",
+          "lo": 0.001,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [],
+      "all": [
+        {
+          "metric": "ld",
+          "lo": 0.001,
+          "hi": 1000000
+        },
+        {
+          "metric": "lc",
+          "lo": 0.001,
+          "hi": 1000000
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [
+        "rolled_on_receiver"
+      ],
+      "all": [
+        {
+          "metric": "tray_n",
+          "lo": 0.001,
+          "hi": 1000000
+        },
+        {
+          "metric": "bed_n",
+          "lo": 0,
+          "hi": 0.0009999999
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [
+        "rolled_on_receiver"
+      ],
+      "all": [
+        {
+          "metric": "near_marble_n",
+          "lo": 1e-08,
+          "hi": 1000000.0
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [
+        "rolled_on_receiver"
+      ],
+      "all": [
+        {
+          "metric": "far_marble_n",
+          "lo": 1e-08,
+          "hi": 1000000.0
+        }
+      ]
+    },
+    {
+      "needs": [
+        "release_seen"
+      ],
+      "until_seen": [
+        "rolled_on_receiver"
+      ],
+      "all": [
+        {
+          "metric": "bench_n",
+          "lo": 1e-08,
+          "hi": 1000000.0
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "name": "loaded",
+      "all": [
+        {
+          "metric": "lift",
+          "lo": -0.0005,
+          "hi": 0.0005
+        },
+        {
+          "metric": "x",
+          "lo": -0.092,
+          "hi": -0.088
+        },
+        {
+          "metric": "y",
+          "lo": -0.004,
+          "hi": 0.004
+        },
+        {
+          "metric": "z",
+          "lo": 0.053,
+          "hi": 0.056
+        },
+        {
+          "metric": "feed_n",
+          "lo": 0.001,
+          "hi": 1000000
+        },
+        {
+          "metric": "v",
+          "lo": 0,
+          "hi": 0.012
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "name": "release_seen",
+      "needs": [
+        "loaded"
+      ],
+      "all": [
+        {
+          "metric": "lift",
+          "lo": 0.002,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 1
+    },
+    {
+      "name": "on_feeder",
+      "needs": [
+        "opened"
+      ],
+      "all": [
+        {
+          "metric": "x",
+          "lo": -0.079,
+          "hi": -0.001
+        },
+        {
+          "metric": "y",
+          "lo": -0.0045,
+          "hi": 0.0045
+        },
+        {
+          "metric": "z",
+          "lo": 0.048,
+          "hi": 0.0555
+        },
+        {
+          "metric": "feed_n",
+          "lo": 0.001,
+          "hi": 1000000
+        }
+      ],
+      "ticks": 1
+    }
+  ],
+  "tiers": [
+    {
+      "score": 0.5,
+      "needs": [
+        "rolled_on_receiver"
+      ],
+      "ticks": 1,
+      "all": [
+        {
+          "metric": "left_receiver",
+          "lo": 0,
+          "hi": 0.0019999998
+        },
+        {
+          "metric": "right_receiver",
+          "lo": 0,
+          "hi": 0.0019999998
+        },
+        {
+          "metric": "lf",
+          "lo": 0,
+          "hi": 0.0019999998
+        },
+        {
+          "metric": "rf",
+          "lo": 0,
+          "hi": 0.0019999998
+        },
+        {
+          "metric": "lb",
+          "lo": 0,
+          "hi": 0.0009999999
+        },
+        {
+          "metric": "rb",
+          "lo": 0,
+          "hi": 0.0009999999
+        }
+      ]
+    },
+    {
+      "score": 1,
+      "needs": [
+        "rolled_on_receiver"
+      ],
+      "ticks": 20,
+      "all": [
+        {
+          "metric": "left_receiver",
+          "lo": 0,
+          "hi": 0.0019999998
+        },
+        {
+          "metric": "right_receiver",
+          "lo": 0,
+          "hi": 0.0019999998
+        },
+        {
+          "metric": "lf",
+          "lo": 0,
+          "hi": 0.0019999998
+        },
+        {
+          "metric": "rf",
+          "lo": 0,
+          "hi": 0.0019999998
+        },
+        {
+          "metric": "lb",
+          "lo": 0,
+          "hi": 0.0009999999
+        },
+        {
+          "metric": "rb",
+          "lo": 0,
+          "hi": 0.0009999999
+        },
+        {
+          "metric": "x",
+          "lo": 0.143,
+          "hi": 0.2208
+        },
+        {
+          "metric": "y",
+          "lo": -0.0258,
+          "hi": 0.0258
+        },
+        {
+          "metric": "z",
+          "lo": 0.011,
+          "hi": 0.013
+        },
+        {
+          "metric": "tray_n",
+          "lo": 0.001,
+          "hi": 1000000
+        }
+      ]
+    }
+  ],
+  "trajectory": [
+    {
+      "ticks": 70,
+      "left": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.1865,
+          -0.017,
+          0.13
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.045
+      },
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.328,
+          -0.207,
+          0.13
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.067
+      }
+    },
+    {
+      "ticks": 50,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.339,
+          -0.112,
+          0.087
+        ],
+        "forward": [
+          -0.27094,
+          0,
+          -0.9626
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.063
+      }
+    },
+    {
+      "ticks": 45,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.32795,
+          -0.112,
+          0.03392
+        ],
+        "forward": [
+          -0.27094,
+          0,
+          -0.9626
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.063
+      }
+    },
+    {
+      "ticks": 25,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.32795,
+          -0.112,
+          0.03392
+        ],
+        "forward": [
+          -0.27094,
+          0,
+          -0.9626
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.043
+      }
+    },
+    {
+      "ticks": 40,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.32795,
+          -0.112,
+          0.05392
+        ],
+        "forward": [
+          -0.27094,
+          0,
+          -0.9626
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.043
+      }
+    },
+    {
+      "ticks": 40,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.35095,
+          -0.112,
+          0.05392
+        ],
+        "forward": [
+          -0.27094,
+          0,
+          -0.9626
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.043
+      }
+    },
+    {
+      "ticks": 35,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.3522,
+          -0.112,
+          0.0604
+        ],
+        "forward": [
+          -0.19081,
+          0,
+          -0.98163
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.043
+      }
+    },
+    {
+      "ticks": 35,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.35293,
+          -0.112,
+          0.0674
+        ],
+        "forward": [
+          -0.1038,
+          0,
+          -0.9946
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.043
+      }
+    },
+    {
+      "ticks": 35,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.34893,
+          -0.112,
+          0.042
+        ],
+        "forward": [
+          -0.1038,
+          0,
+          -0.9946
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.043
+      }
+    },
+    {
+      "ticks": 50,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.34893,
+          -0.112,
+          0.0192
+        ],
+        "forward": [
+          -0.1038,
+          0,
+          -0.9946
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.043
+      }
+    },
+    {
+      "ticks": 20,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.34893,
+          -0.112,
+          0.01885
+        ],
+        "forward": [
+          -0.1038,
+          0,
+          -0.9946
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.043
+      }
+    },
+    {
+      "ticks": 30,
+      "left": null,
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.34893,
+          -0.112,
+          0.01885
+        ],
+        "forward": [
+          -0.1038,
+          0,
+          -0.9946
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.067
+      }
+    },
+    {
+      "ticks": 45,
+      "left": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.1865,
+          -0.076,
+          0.11
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.035
+      },
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.353,
+          -0.112,
+          0.081
+        ],
+        "forward": [
+          -0.1038,
+          0,
+          -0.9946
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.067
+      }
+    },
+    {
+      "ticks": 35,
+      "left": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.1865,
+          -0.076,
+          0.0725
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.035
+      },
+      "right": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.336,
+          -0.207,
+          0.13
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          0,
+          1,
+          0
+        ],
+        "opening_m": 0.067
+      }
+    },
+    {
+      "ticks": 25,
+      "left": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.1865,
+          -0.076,
+          0.0725
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.0135
+      },
+      "right": null
+    },
+    {
+      "ticks": 36,
+      "left": {
+        "relative_to": "bench_deck",
+        "tip": [
+          0.1865,
+          -0.076,
+          0.1005
+        ],
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "closing": [
+          1,
+          0,
+          0
+        ],
+        "opening_m": 0.0135
+      },
+      "right": null
+    }
+  ],
+  "score_at_end": true,
+  "continuous_jaw": true,
+  "supported_roll": {
+    "name": "rolled_on_receiver",
+    "needs": [
+      "on_feeder"
+    ],
+    "support": [
+      {
+        "metric": "bed_n",
+        "lo": 0.001,
+        "hi": 1000000
+      },
+      {
+        "metric": "surface",
+        "lo": 0.987,
+        "hi": 0.995
+      },
+      {
+        "metric": "left_edge",
+        "lo": 0,
+        "hi": 2.011
+      },
+      {
+        "metric": "right_edge",
+        "lo": 0,
+        "hi": 2.011
+      },
+      {
+        "metric": "station",
+        "lo": 0.997,
+        "hi": 1.163
+      },
+      {
+        "metric": "near_marble_n",
+        "lo": 0.0,
+        "hi": 9.99999e-09
+      },
+      {
+        "metric": "far_marble_n",
+        "lo": 0.0,
+        "hi": 9.99999e-09
+      },
+      {
+        "metric": "bench_n",
+        "lo": 0.0,
+        "hi": 9.99999e-09
+      }
+    ],
+    "direction_metric": "receiver_s",
+    "advance_m": 0.02,
+    "reverse_tolerance_m": null,
+    "settle_axes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "settle_ticks": 20,
+    "settle_span_m": 0.002
+  }
+}

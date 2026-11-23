@@ -1,0 +1,1610 @@
+{
+  "scripted": {
+    "task": "repair-marble-run",
+    "policy": "scripted",
+    "seed": 0,
+    "model": null,
+    "scorer": "physical_task_score",
+    "score": 1.0,
+    "steps": 1000,
+    "step_limit": 1000,
+    "declaredStepLimit": 1000,
+    "diagnosticOnly": false,
+    "elapsed_s": 327.87,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "feeder": [
+        352.5,
+        205.6,
+        370.3,
+        274.5
+      ],
+      "bed": [
+        347.2,
+        165.7,
+        369.3,
+        210.9
+      ],
+      "cheeks": [
+        347.3,
+        163.6,
+        369.6,
+        209.3
+      ],
+      "near_block": [
+        347.8,
+        201.6,
+        367.8,
+        209.4
+      ],
+      "far_block": [
+        346.2,
+        166.8,
+        364.7,
+        172.1
+      ],
+      "tray": [
+        340.7,
+        133.9,
+        370.2,
+        168.7
+      ],
+      "guide": [
+        331.0,
+        232.2,
+        339.2,
+        246.0
+      ],
+      "gate": [
+        333.1,
+        227.0,
+        367.1,
+        243.6
+      ],
+      "marble": [
+        356.8,
+        233.5,
+        366.6,
+        244.5
+      ],
+      "bench_deck": [
+        282.8,
+        109.0,
+        437.0,
+        302.6
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "cheeks:0": [
+        366.5,
+        184.9,
+        367.4,
+        191.1
+      ]
+    },
+    "initialMeasurements": {
+      "lift": -4.2915344236615915e-08,
+      "x": -0.08999994397163391,
+      "y": -0.00010816752910614014,
+      "z": 0.05451244115829468,
+      "feed_n": 0.0273420587182045,
+      "bed_n": 0.0,
+      "rim_n": 0.0,
+      "tray_n": 0.0,
+      "lb": 0.0,
+      "rb": 0.0,
+      "lf": 0.0,
+      "rf": 0.0,
+      "ld": 0.0,
+      "rd": 0.0,
+      "lc": 0.0,
+      "rc": 0.0,
+      "v": 0.0010942782973870635,
+      "bed_v": 0.00013764543109573424,
+      "bed_w": 0.9311777949333191,
+      "tilt": 15.721222583045066,
+      "station": 0.9278213521057072,
+      "surface": 1.0354625050095356,
+      "left_edge": 2.006227405808196,
+      "right_edge": 2.006011600002405,
+      "receiver_s": -0.07281415596934017,
+      "near_bed_support": 0.0,
+      "far_bed_support": 0.1564462035894394,
+      "near_marble_n": 0.0,
+      "far_marble_n": 0.0,
+      "bench_n": 0.0
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {
+      "feeder:0": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.019750015763912783
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.016000015988261812
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:1": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0016999840065494243
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0007000160208580225
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:2": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0017000159519368336
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0006999840754706133
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:3": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0016999840056623641
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0007000160217450827
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:4": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0017000159528238938
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0006999840745835532
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:5": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0021999840652260462
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00020001603203059618
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:6": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.002200016010605865
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0001999840866507771
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:7": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0021999840652260462
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00020001603203059618
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:8": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.002200016010605865
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0001999840866507769
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:9": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.002199984064338986
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00020001603291765722
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:10": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0022000160114928127
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00019998408576383012
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:11": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.002199984064338986
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00020001603291765744
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:12": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0022000160114928127
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00019998408576383056
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "near_block:0": {
+        "bodyPositionM": [
+          0.2849999964237213,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.01046001356881105
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.008840013540871373
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "near_block:1": {
+        "bodyPositionM": [
+          0.2849999964237213,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0104600167874619
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.008840016759522224
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "far_block:0": {
+        "bodyPositionM": [
+          0.4000000059604645,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.004460017849854651
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.0028400179685561123
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "far_block:1": {
+        "bodyPositionM": [
+          0.4000000059604645,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.004550012504568725
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.0032000125267227755
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      }
+    },
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {},
+    "finalWedgeBodyPositions": {
+      "feeder": [
+        0.26499998569488525,
+        -0.1120000034570694,
+        0.005999984741210995
+      ],
+      "near_block": [
+        0.2849999964237213,
+        -0.1120000034570694,
+        0.005999984741210995
+      ],
+      "far_block": [
+        0.4000000059604645,
+        -0.1120000034570694,
+        0.005999984741210995
+      ]
+    },
+    "video_frames": 501,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "382f9bf3bae6fdbc8b5db79d4a34a2d3cd488960840f8d76843ed8d017c03d70",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "7c13205898fac6633bacc9236a03e83b9540cfdb73843a8ea0055181e472ce01",
+      "task_impl/grading.py": "8facd79d71dbd62a97133e32f88b0c7d7cd68d00f771ea23fa70bcffc1eafa6c",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "839dce7d43a1229f1d0c5b418bbca90e4ca470613bbbdb597cd60f28131e798a",
+      "task_impl/scripted.py": "90632aa68d1cef3c8a4b4e6fcbcf4c5eb27a111d4b6362d8d970b868d0a767f4"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "contactTotalCrosscheck": {
+      "left_receiver": {
+        "peakN": 0.0,
+        "zeroFrames": 1000,
+        "positiveFrames": 0,
+        "channelsWithLoad": []
+      },
+      "right_receiver": {
+        "peakN": 14.16956377029419,
+        "zeroFrames": 737,
+        "positiveFrames": 263,
+        "channelsWithLoad": [
+          "rd",
+          "rc"
+        ]
+      }
+    },
+    "taperedShimCrosscheck": {
+      "passed": true,
+      "parts": {
+        "feeder:0": {
+          "nativeHeightsM": [
+            0.019750015763912783,
+            0.016000015988261812
+          ],
+          "expectedHeightsM": [
+            0.01975,
+            0.015999999999999997
+          ],
+          "maxHeightErrorM": 1.598826181517521e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:1": {
+          "nativeHeightsM": [
+            0.0016999840065494243,
+            -0.0007000160208580225
+          ],
+          "expectedHeightsM": [
+            0.0017000000000000001,
+            -0.0007000000000000001
+          ],
+          "maxHeightErrorM": 1.6020858022375642e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:2": {
+          "nativeHeightsM": [
+            0.0017000159519368336,
+            -0.0006999840754706133
+          ],
+          "expectedHeightsM": [
+            0.0017000000000000001,
+            -0.0007000000000000001
+          ],
+          "maxHeightErrorM": 1.595193683352411e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:3": {
+          "nativeHeightsM": [
+            0.0016999840056623641,
+            -0.0007000160217450827
+          ],
+          "expectedHeightsM": [
+            0.0017000000000000001,
+            -0.0007000000000000001
+          ],
+          "maxHeightErrorM": 1.602174508254922e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:4": {
+          "nativeHeightsM": [
+            0.0017000159528238938,
+            -0.0006999840745835532
+          ],
+          "expectedHeightsM": [
+            0.0017000000000000001,
+            -0.0007000000000000001
+          ],
+          "maxHeightErrorM": 1.595282389369769e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:5": {
+          "nativeHeightsM": [
+            0.0021999840652260462,
+            -0.00020001603203059618
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6032030596092525e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:6": {
+          "nativeHeightsM": [
+            0.002200016010605865,
+            -0.0001999840866507771
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6010605864962696e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:7": {
+          "nativeHeightsM": [
+            0.0021999840652260462,
+            -0.00020001603203059618
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6032030596092525e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:8": {
+          "nativeHeightsM": [
+            0.002200016010605865,
+            -0.0001999840866507769
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6010605864962696e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:9": {
+          "nativeHeightsM": [
+            0.002199984064338986,
+            -0.00020001603291765722
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6032917657133466e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:10": {
+          "nativeHeightsM": [
+            0.0022000160114928127,
+            -0.00019998408576383012
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.601149281259609e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:11": {
+          "nativeHeightsM": [
+            0.002199984064338986,
+            -0.00020001603291765744
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6032917657350307e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:12": {
+          "nativeHeightsM": [
+            0.0022000160114928127,
+            -0.00019998408576383056
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.601149281259609e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "near_block:0": {
+          "nativeHeightsM": [
+            0.01046001356881105,
+            0.008840013540871373
+          ],
+          "expectedHeightsM": [
+            0.01046,
+            0.00884
+          ],
+          "maxHeightErrorM": 1.3568811048705887e-08,
+          "eligibleBodyContactChannels": [
+            "near_bed_support",
+            "near_marble_n"
+          ],
+          "peakBodyContactN": 0.36725687980651855,
+          "displacementM": 0.0
+        },
+        "near_block:1": {
+          "nativeHeightsM": [
+            0.0104600167874619,
+            0.008840016759522224
+          ],
+          "expectedHeightsM": [
+            0.01046,
+            0.00884
+          ],
+          "maxHeightErrorM": 1.678746189975877e-08,
+          "eligibleBodyContactChannels": [
+            "near_bed_support",
+            "near_marble_n"
+          ],
+          "peakBodyContactN": 0.36725687980651855,
+          "displacementM": 0.0
+        },
+        "far_block:0": {
+          "nativeHeightsM": [
+            0.004460017849854651,
+            0.0028400179685561123
+          ],
+          "expectedHeightsM": [
+            0.00446,
+            0.00284
+          ],
+          "maxHeightErrorM": 1.7968556112208517e-08,
+          "eligibleBodyContactChannels": [
+            "far_bed_support",
+            "far_marble_n"
+          ],
+          "peakBodyContactN": 0.22474977374076843,
+          "displacementM": 0.0
+        },
+        "far_block:1": {
+          "nativeHeightsM": [
+            0.004550012504568725,
+            0.0032000125267227755
+          ],
+          "expectedHeightsM": [
+            0.00455,
+            0.0031999999999999997
+          ],
+          "maxHeightErrorM": 1.2526722775827587e-08,
+          "eligibleBodyContactChannels": [
+            "far_bed_support",
+            "far_marble_n"
+          ],
+          "peakBodyContactN": 0.22474977374076843,
+          "displacementM": 0.0
+        }
+      },
+      "scope": "Native collision mesh raycast at two thicknesses and actual body-to-body reactions"
+    }
+  },
+  "dream_1": {
+    "task": "repair-marble-run",
+    "policy": "dream",
+    "seed": 0,
+    "model": "dreamlabs/dream-1-beta",
+    "scorer": "physical_task_score",
+    "score": 0.0,
+    "steps": 1000,
+    "step_limit": 1000,
+    "declaredStepLimit": 1000,
+    "diagnosticOnly": false,
+    "elapsed_s": 301.99,
+    "control_hz": 20,
+    "initialBoundsPixels": {
+      "feeder": [
+        352.5,
+        205.6,
+        370.3,
+        274.5
+      ],
+      "bed": [
+        347.2,
+        165.7,
+        369.3,
+        210.9
+      ],
+      "cheeks": [
+        347.3,
+        163.6,
+        369.6,
+        209.3
+      ],
+      "near_block": [
+        347.8,
+        201.6,
+        367.8,
+        209.4
+      ],
+      "far_block": [
+        346.2,
+        166.8,
+        364.7,
+        172.1
+      ],
+      "tray": [
+        340.7,
+        133.9,
+        370.2,
+        168.7
+      ],
+      "guide": [
+        331.0,
+        232.2,
+        339.2,
+        246.0
+      ],
+      "gate": [
+        333.1,
+        227.0,
+        367.1,
+        243.6
+      ],
+      "marble": [
+        356.8,
+        233.5,
+        366.6,
+        244.5
+      ],
+      "bench_deck": [
+        282.8,
+        109.0,
+        437.0,
+        302.6
+      ]
+    },
+    "initialMarkBoundsPixels": {
+      "cheeks:0": [
+        366.5,
+        184.9,
+        367.4,
+        191.1
+      ]
+    },
+    "initialMeasurements": {
+      "lift": -4.2915344236615915e-08,
+      "x": -0.08999994397163391,
+      "y": -0.00010816752910614014,
+      "z": 0.05451244115829468,
+      "feed_n": 0.0273420587182045,
+      "bed_n": 0.0,
+      "rim_n": 0.0,
+      "tray_n": 0.0,
+      "lb": 0.0,
+      "rb": 0.0,
+      "lf": 0.0,
+      "rf": 0.0,
+      "ld": 0.0,
+      "rd": 0.0,
+      "lc": 0.0,
+      "rc": 0.0,
+      "v": 0.0010942782973870635,
+      "bed_v": 0.00013764543109573424,
+      "bed_w": 0.9311777949333191,
+      "tilt": 15.721222583045066,
+      "station": 0.9278213521057072,
+      "surface": 1.0354625050095356,
+      "left_edge": 2.006227405808196,
+      "right_edge": 2.006011600002405,
+      "receiver_s": -0.07281415596934017,
+      "near_bed_support": 0.0,
+      "far_bed_support": 0.1564462035894394,
+      "near_marble_n": 0.0,
+      "far_marble_n": 0.0,
+      "bench_n": 0.0
+    },
+    "initialRobotBeforeAction": {
+      "left": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      },
+      "right": {
+        "jointRadians": [
+          -4.3214376521660824e-10,
+          1.0,
+          1.0,
+          -0.6000000238418579,
+          -1.5074496317879493e-08,
+          -4.130570607774331e-10
+        ],
+        "normalizedJaw": 1.0,
+        "jawGapM": 0.0939
+      }
+    },
+    "initialGaugePoses": {},
+    "initialWedgeColliderProbes": {
+      "feeder:0": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.019750015763912783
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.016000015988261812
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:1": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0016999840065494243
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0007000160208580225
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:2": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0017000159519368336
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0006999840754706133
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:3": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0016999840056623641
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0007000160217450827
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:4": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0017000159528238938
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0006999840745835532
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:5": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0021999840652260462
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00020001603203059618
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:6": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.002200016010605865
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0001999840866507771
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:7": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0021999840652260462
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00020001603203059618
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:8": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.002200016010605865
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.0001999840866507769
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:9": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.002199984064338986
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00020001603291765722
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:10": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0022000160114928127
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00019998408576383012
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:11": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.002199984064338986
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00020001603291765744
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "feeder:12": {
+        "bodyPositionM": [
+          0.26499998569488525,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0022000160114928127
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": -0.00019998408576383056
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "near_block:0": {
+        "bodyPositionM": [
+          0.2849999964237213,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.01046001356881105
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.008840013540871373
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "near_block:1": {
+        "bodyPositionM": [
+          0.2849999964237213,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.0104600167874619
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.008840016759522224
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "far_block:0": {
+        "bodyPositionM": [
+          0.4000000059604645,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.004460017849854651
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.0028400179685561123
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      },
+      "far_block:1": {
+        "bodyPositionM": [
+          0.4000000059604645,
+          -0.1120000034570694,
+          0.005999984741210995
+        ],
+        "rays": [
+          {
+            "lengthFraction": -0.3,
+            "surfaceHeightM": 0.004550012504568725
+          },
+          {
+            "lengthFraction": 0.3,
+            "surfaceHeightM": 0.0032000125267227755
+          }
+        ],
+        "method": "PhysX raycast and composed USD convex collider"
+      }
+    },
+    "initialBoreColliderProbes": {},
+    "initialSlotColliderProbes": {},
+    "configuredAngularDampingSInv": {},
+    "finalWedgeBodyPositions": {
+      "feeder": [
+        0.26499998569488525,
+        -0.1120000034570694,
+        0.005999984741210995
+      ],
+      "near_block": [
+        0.2849999964237213,
+        -0.1120000034570694,
+        0.005999984741210995
+      ],
+      "far_block": [
+        0.4000000059604645,
+        -0.1120000034570694,
+        0.005999984741210995
+      ]
+    },
+    "video_frames": 501,
+    "cameraPixels": {
+      "nativeOverview": [
+        640,
+        360
+      ],
+      "policyRGB": [
+        320,
+        176
+      ]
+    },
+    "nativeVersions": {
+      "isaacsim": "6.1.0.0",
+      "isaaclab": "17.0.2",
+      "isaaclab-arena": "0.3.0",
+      "inspect-robots": "1.0.0",
+      "yam-arena": "0.1.0",
+      "inspect-robots-dream": "0.1.0",
+      "dreamlabs-client": "1.0.14"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "observedSourceHashes": {
+      "task_impl/fixture.json": "382f9bf3bae6fdbc8b5db79d4a34a2d3cd488960840f8d76843ed8d017c03d70",
+      "task_impl/__init__.py": "f126946da010f13167ac447eb65fbfd27f82702fe1b964440d447b836ff3a6d3",
+      "task_impl/adapter.py": "7c13205898fac6633bacc9236a03e83b9540cfdb73843a8ea0055181e472ce01",
+      "task_impl/grading.py": "8facd79d71dbd62a97133e32f88b0c7d7cd68d00f771ea23fa70bcffc1eafa6c",
+      "task_impl/kinematics.py": "501e5e9c5952773ca9a379b8d020dcc57e5d6164c5698f6e4e791ecbe3b6b085",
+      "task_impl/scene.py": "839dce7d43a1229f1d0c5b418bbca90e4ca470613bbbdb597cd60f28131e798a",
+      "task_impl/scripted.py": "90632aa68d1cef3c8a4b4e6fcbcf4c5eb27a111d4b6362d8d970b868d0a767f4"
+    },
+    "inspect_robots": "1.0.0",
+    "yam_arena": "0.1.0",
+    "contactTotalCrosscheck": {
+      "left_receiver": {
+        "peakN": 0.0,
+        "zeroFrames": 1000,
+        "positiveFrames": 0,
+        "channelsWithLoad": []
+      },
+      "right_receiver": {
+        "peakN": 0.0,
+        "zeroFrames": 1000,
+        "positiveFrames": 0,
+        "channelsWithLoad": []
+      }
+    },
+    "taperedShimCrosscheck": {
+      "passed": false,
+      "parts": {
+        "feeder:0": {
+          "nativeHeightsM": [
+            0.019750015763912783,
+            0.016000015988261812
+          ],
+          "expectedHeightsM": [
+            0.01975,
+            0.015999999999999997
+          ],
+          "maxHeightErrorM": 1.598826181517521e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:1": {
+          "nativeHeightsM": [
+            0.0016999840065494243,
+            -0.0007000160208580225
+          ],
+          "expectedHeightsM": [
+            0.0017000000000000001,
+            -0.0007000000000000001
+          ],
+          "maxHeightErrorM": 1.6020858022375642e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:2": {
+          "nativeHeightsM": [
+            0.0017000159519368336,
+            -0.0006999840754706133
+          ],
+          "expectedHeightsM": [
+            0.0017000000000000001,
+            -0.0007000000000000001
+          ],
+          "maxHeightErrorM": 1.595193683352411e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:3": {
+          "nativeHeightsM": [
+            0.0016999840056623641,
+            -0.0007000160217450827
+          ],
+          "expectedHeightsM": [
+            0.0017000000000000001,
+            -0.0007000000000000001
+          ],
+          "maxHeightErrorM": 1.602174508254922e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:4": {
+          "nativeHeightsM": [
+            0.0017000159528238938,
+            -0.0006999840745835532
+          ],
+          "expectedHeightsM": [
+            0.0017000000000000001,
+            -0.0007000000000000001
+          ],
+          "maxHeightErrorM": 1.595282389369769e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:5": {
+          "nativeHeightsM": [
+            0.0021999840652260462,
+            -0.00020001603203059618
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6032030596092525e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:6": {
+          "nativeHeightsM": [
+            0.002200016010605865,
+            -0.0001999840866507771
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6010605864962696e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:7": {
+          "nativeHeightsM": [
+            0.0021999840652260462,
+            -0.00020001603203059618
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6032030596092525e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:8": {
+          "nativeHeightsM": [
+            0.002200016010605865,
+            -0.0001999840866507769
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6010605864962696e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:9": {
+          "nativeHeightsM": [
+            0.002199984064338986,
+            -0.00020001603291765722
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6032917657133466e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:10": {
+          "nativeHeightsM": [
+            0.0022000160114928127,
+            -0.00019998408576383012
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.601149281259609e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:11": {
+          "nativeHeightsM": [
+            0.002199984064338986,
+            -0.00020001603291765744
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.6032917657350307e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "feeder:12": {
+          "nativeHeightsM": [
+            0.0022000160114928127,
+            -0.00019998408576383056
+          ],
+          "expectedHeightsM": [
+            0.0022,
+            -0.0002000000000000001
+          ],
+          "maxHeightErrorM": 1.601149281259609e-08,
+          "eligibleBodyContactChannels": [
+            "feed_n"
+          ],
+          "peakBodyContactN": 0.028696775436401367,
+          "displacementM": 0.0
+        },
+        "near_block:0": {
+          "nativeHeightsM": [
+            0.01046001356881105,
+            0.008840013540871373
+          ],
+          "expectedHeightsM": [
+            0.01046,
+            0.00884
+          ],
+          "maxHeightErrorM": 1.3568811048705887e-08,
+          "eligibleBodyContactChannels": [
+            "near_bed_support",
+            "near_marble_n"
+          ],
+          "peakBodyContactN": 0.0,
+          "displacementM": 0.0
+        },
+        "near_block:1": {
+          "nativeHeightsM": [
+            0.0104600167874619,
+            0.008840016759522224
+          ],
+          "expectedHeightsM": [
+            0.01046,
+            0.00884
+          ],
+          "maxHeightErrorM": 1.678746189975877e-08,
+          "eligibleBodyContactChannels": [
+            "near_bed_support",
+            "near_marble_n"
+          ],
+          "peakBodyContactN": 0.0,
+          "displacementM": 0.0
+        },
+        "far_block:0": {
+          "nativeHeightsM": [
+            0.004460017849854651,
+            0.0028400179685561123
+          ],
+          "expectedHeightsM": [
+            0.00446,
+            0.00284
+          ],
+          "maxHeightErrorM": 1.7968556112208517e-08,
+          "eligibleBodyContactChannels": [
+            "far_bed_support",
+            "far_marble_n"
+          ],
+          "peakBodyContactN": 0.15644623339176178,
+          "displacementM": 0.0
+        },
+        "far_block:1": {
+          "nativeHeightsM": [
+            0.004550012504568725,
+            0.0032000125267227755
+          ],
+          "expectedHeightsM": [
+            0.00455,
+            0.0031999999999999997
+          ],
+          "maxHeightErrorM": 1.2526722775827587e-08,
+          "eligibleBodyContactChannels": [
+            "far_bed_support",
+            "far_marble_n"
+          ],
+          "peakBodyContactN": 0.15644623339176178,
+          "displacementM": 0.0
+        }
+      },
+      "scope": "Native collision mesh raycast at two thicknesses and actual body-to-body reactions"
+    },
+    "usage": {
+      "model": "dreamlabs/dream-1-beta",
+      "attempts": 21,
+      "served": 21,
+      "episodes": 1,
+      "cap": 24
+    }
+  }
+}

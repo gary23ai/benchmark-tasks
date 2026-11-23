@@ -1,0 +1,19 @@
+{
+  "title": "Repair the raised joint in a preschool marble run",
+  "category": "Other",
+  "keywords": [
+    "construction play",
+    "wooden marble run",
+    "receiving track",
+    "gravity release"
+  ],
+  "instruction": "Fix the join so the marble can roll down both tracks into the tray. Let go of both tracks, then lift the gate. You may hold the gate up. Leave the marble untouched and keep both tracks free until the trial ends.",
+  "context": "At a preschool construction table documented by the Iowa Regents Center, one child laid the receiving track on top of the feeding track. Another child tested the run and showed how to fix the join so the marble could continue.",
+  "setup": "Two 160 mm wooden tracks point toward an empty tray. The narrow feeding track is fixed. The loose receiving track overlaps its outlet by 15 mm and rests on the feeder rims and the far support. The near support stands free. A 20 mm wooden marble rests against the closed gate, 80 mm upstream of the join. Mount the fixture on the marked 6 mm workboard.",
+  "scoring": "Earn 0.5 if the marble crosses the join and advances at least one marble diameter (20 mm) downstream while resting on the self-supporting receiving track. A brief landing bounce is allowed. Start a fresh distance reading when the marble regains support. Earn 1 if the marble also stays on the tray for the final second and the greatest distance between any two sampled centers is at most 2 mm. A stall, rim strike alone, or direct flight into the tray earns 0. Touching the marble, holding a track as the gate opens, or handling a track afterward earns 0, including on the last reading. Give 0 if the marble hits either support block or the workboard before it completes the supported roll. A bounce on the receiver floor may start a fresh roll.",
+  "run_limit": "1000 steps (50 seconds at 20 Hz)",
+  "reset_notes": "Empty the tray and close the gate. Center the loose track with its inlet bottom edge 15 mm upstream of the feeder outlet and 52.2 mm above the workboard. Remove the positioning gauge and check that the track stays perched. Load the marble against the upstream face of the gate.",
+  "fidelity": "The raised joint reproduces the placement error observed in the classroom. The two supports, gate and tray give the repair a repeatable test. Any self-supporting placement that carries the released marble along the receiving track can qualify.",
+  "scores": "Dream-1 run: 0 (1000 steps); demo: 1.0 (1000 steps).",
+  "media": "M-PMZV5G"
+}
