@@ -1,0 +1,7 @@
+[project]
+name = "put-up-a-tabletop-pull-up-projector-screen"
+version = "0.1.0"
+description = "A yam_arena task file for the Robocurve Benchmarking Program"
+requires-python = ">=3.12,<3.13"
+dependencies = ["inspect-robots==1.0.0", "inspect-robots-yam==0.38.0", "yam-arena==0.1.0", "numpy>=1.26", "scipy>=1.11"]
+license = {text = "MIT"}

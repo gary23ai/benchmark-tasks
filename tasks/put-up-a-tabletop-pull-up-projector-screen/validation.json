@@ -1,0 +1,67 @@
+{
+  "seed": 0,
+  "object_jitter": 0,
+  "control_hz": 20,
+  "physics_hz": 240,
+  "max_steps": 1000,
+  "scripted": {
+    "score": 1.0,
+    "steps": 381,
+    "seed": 1415158438,
+    "end_reason": "success",
+    "wall_seconds": 147.0885369409807,
+    "log_sha256": "144c23358b35e1a9300486a593a1d283da64655b03c410ba3b34557b7b57c02a",
+    "overhead_video_frames": 382,
+    "fps": 20
+  },
+  "one_hand_check": {
+    "score": 0.25,
+    "steps": 520,
+    "note": "the right hand pulled the screen fully up, but with no hand to raise the post the screen had nothing to hang on and rolled back in when let go (0.25)"
+  },
+  "dream_1": {
+    "model": "dreamlabs/dream-1-beta",
+    "score": 0.0,
+    "steps": 1000,
+    "wall_seconds": 140.2,
+    "note": "the right gripper went to the right end of the case and worked at the top bar there while the left arm stayed near its start; the screen never came fully up and the post never clicked"
+  },
+  "scope": "Native simulator with fixed poses, object_jitter=0. The current full-score demo and both post-only controls were run during review. The first post-only run used the original clearance/hold scorer. All runs used the same mechanism. The archived model never raised the screen or locked the post and therefore scores zero under either rubric. The archived bar-only control raised the bar without extending the post (0.25).",
+  "model_observation": "Overhead and two wrist RGB images (scaled to 320 x 176 by the Dream client), plus the 14 joint and gripper positions.",
+  "archived_scripted": {
+    "score": 1.0,
+    "steps": 353,
+    "wall_seconds": 70.8
+  },
+  "support_only": {
+    "post": {
+      "score": 0.0,
+      "steps": 520,
+      "seed": 1415158438,
+      "end_reason": "policy_stop",
+      "wall_seconds": 169.17992704198696,
+      "log_sha256": "e5585ffd051b585b193e0aa1770bbd3f7d2d7ea97ae41aa9f6b3fa264efa7059",
+      "sampled_max_bar_mm": 248.2,
+      "sampled_max_post_mm": 263.2,
+      "click_observed": false,
+      "sample_interval_seconds": 0.5
+    },
+    "post_retry": {
+      "score": 0.0,
+      "steps": 620,
+      "seed": 1415158438,
+      "end_reason": "policy_stop",
+      "wall_seconds": 168.1252712389687,
+      "log_sha256": "d8af51212db9a81d8c7fa0b04b5fe96c1948f599b68ddc27cb08c5e18cd318a9",
+      "sampled_max_bar_mm": 246.7,
+      "sampled_max_post_mm": 261.7,
+      "click_observed": false,
+      "sample_interval_seconds": 0.5
+    }
+  },
+  "media_sha256": {
+    "setup.png": "60cd2e18cfb9921d89def47e57e2628abf381246dcbe1954c195638f2f2c287a",
+    "model_run.mp4": "b8d81cb3602fd81daa30cab0fdd180e6f4ce83209dd9f6f891961fbf4b076468",
+    "demo.mp4": "f2953706f7c8855c3267598238a419923304c56ee3840585224d3c54bce471d8"
+  }
+}
