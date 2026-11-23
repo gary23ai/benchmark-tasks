@@ -2,6 +2,13 @@
 
 Use the spatula to give each wrap three carrot cubes and three potato cubes. Leave two compact portions separated by a bare strip one blade wide. The wraps are the destination in the subsequent serving step. This trial ends with both portions still in the pan.
 
+| Recorded run | Final score | Observed result |
+| --- | ---: | --- |
+| Scripted, two fresh resets | 1.0 each | Three carrots and three potatoes per portion, 62.47 mm between portions |
+| Dream-1, 540 actions | 0.0 | No contact between blade and filling |
+| Stationary control, 540 actions | 0.0 | The two ingredients stayed in their starting groups |
+| Scripted actions with blade and neck collisions disabled | 0.0 | The greatest cube displacement was 0.01 mm |
+
 ## Run
 
 Use CPython 3.12 and a working OpenGL context. From this directory:
