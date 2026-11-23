@@ -1,0 +1,36 @@
+{
+  "seed": 0,
+  "control_hz": 20,
+  "object_jitter": 0,
+  "recorded_hashes": {
+    "scene_sha256": "9bc4690a944d5b216cf0472cc6b3573243ecb73ee2286c6a661ff9a9224cdc32",
+    "asset_sha256": "4dd936ad467c5b6da6df57b9d333e4b23ec6b80980493235a5be703f01eeef0c",
+    "model_sha256": "a8be6cb0f2289a9df4382a70a40a694a63b778e037fe46e70ab1f2f6402ec906",
+    "grader_sha256": "3270e6db7bc7320917e1524ac07d41e505899023608e042adac0667ab2a696a5"
+  },
+  "scripted": {
+    "score": 1.0,
+    "executed_steps": 1617,
+    "step_limit": 2400,
+    "elapsed_s": 878.89,
+    "scripted_demo_reads_simulator_state": true
+  },
+  "dream": {
+    "score": 0.0,
+    "executed_steps": 2400,
+    "step_limit": 2400,
+    "elapsed_s": 998.05
+  },
+  "submission_grader": {
+    "recording_sha256": "46b4ce04db83f64840c3261c4f7e470eb7ce984be9b135b48180965ce02c590e",
+    "current_sha256": "8d636d4a2773be8574ff44d2c5e91e4de1fbc2a95efe68a6d447761e0e02b7c9",
+    "verification": "In the full-score recording both items stayed seated throughout the lift, meeting the stronger original lift test; both remained in the bag and passed the final seating check. Dream ended with the bag collapsed and neither item on its base, which scores zero regardless of lift history. The scene, instruction, actions and videos are unchanged.",
+    "verified_results": {
+      "scripted": 1.0,
+      "dream": 0.0,
+      "large_first": 0.0,
+      "no_opening": 0.0,
+      "drop_from_rim": 1.0
+    }
+  }
+}
