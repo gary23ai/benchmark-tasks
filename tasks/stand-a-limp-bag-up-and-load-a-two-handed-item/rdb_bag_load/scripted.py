@@ -19,7 +19,8 @@ hold them.
 5. ``let down``: the hands ease apart until the pack slides between the fingers and comes to rest on the base, then
    draw away sideways.
 6. ``lift``: each hand passes its open fingers either side of a handle's grip where it hangs beside the wall, swings
-   the handle up over the rim, closes on the grip and lifts. The bag is held up 2 s, set down and let go.
+   the handle up over the rim, re-centres the pads on where the grip came to rest, closes on it (once more if a
+   pad misses) and lifts. The bag is held up 2 s, set down and let go.
 
 ``variant`` selects shortened runs and the controls that must not reach full score; see ``VARIANTS``.
 """
@@ -752,6 +753,20 @@ class BagReference:
                 self.gap[arm] = min(HOOK_GAP, max(self.gap[arm] - .002, between + HOOK_ROOM))
             yield self.emit()
 
+    def grip_point(self, arm):
+        """Fingertip point for closing on the arm's handle where its grip is now: the fingertips' ends HOOK_PAST
+        beyond the grip's middle, HOOK_ALONG toward the box, the fingers pitched for the handle's present angle."""
+        wall = WALL[arm]
+        along = np.asarray(self.state["handles"][wall][1], dtype=float)[:, 0]
+        angle = self.handle_angle(arm)
+        centre = np.asarray(self.state["grips"][wall], dtype=float) + along * HOOK_ALONG * float(np.sign(along[0]))
+        return centre + HOOK_PAST * aim(HOOK_YAW, self.hook_pitch(angle), SIDE[arm]), angle
+
+    def onto_grips(self, seconds):
+        aims = {arm: self.grip_point(arm) for arm in ARMS}
+        rots = {arm: self.same_way(arm, self.hook_rot(arm, aims[arm][1])) for arm in ARMS}
+        yield from self.line(seconds, {arm: aims[arm][0] for arm in ARMS}, rots)
+
     def unhook(self, begin):
         """Let the handles back down part of the way on the fingers and draw the fingers out lengthwise."""
         rim = {arm: np.asarray(self.state["handles"][WALL[arm]][0], dtype=float).copy() for arm in ARMS}
@@ -779,10 +794,17 @@ class BagReference:
         self.event("handles up", handle_deg=[round(float(np.degrees(v)), 0) for v in up])
         held = [False, False]
         if min(up) >= HOOK_TOP - np.radians(30.):
-            yield from self.grip(.5, {arm: HOOK_PINCH for arm in ARMS})
-            yield from self.wait(.2)
-            held = [self.opening(arm) > HOOK_PINCH + .006 for arm in ARMS]
-            self.event("grips pinched", held=held)
+            for attempt in range(2):
+                # a handle can come to rest a little short of or past where it was carried to: bring the pads
+                # back to where each grip actually is before closing on it
+                yield from self.onto_grips(.6)
+                yield from self.grip(.5, {arm: HOOK_PINCH for arm in ARMS})
+                yield from self.wait(.2)
+                held = [self.opening(arm) > HOOK_PINCH + .006 for arm in ARMS]
+                self.event("grips pinched", held=held, attempt=attempt + 1)
+                if all(held):
+                    break
+                yield from self.grip(.4, {arm: HOOK_GAP for arm in ARMS})
         if not all(held):                                       # never lift the bag by one handle: it would tip over
             self.phase("lift: let go, a handle was missed")
             yield from self.unhook(begin)
