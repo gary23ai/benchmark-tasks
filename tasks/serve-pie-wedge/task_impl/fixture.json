@@ -6275,6 +6275,1062 @@
         0,
         0
       ]
+    },
+    {
+      "name": "left_crust",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_crust",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_filling",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_filling",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shift_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tilt_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "press_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lane_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slice2",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slice2",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shift_slice2",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tilt_slice2",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "press_slice2",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slice3",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slice3",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shift_slice3",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tilt_slice3",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "press_slice3",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slice4",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slice4",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shift_slice4",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tilt_slice4",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "press_slice4",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slice5",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slice5",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shift_slice5",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tilt_slice5",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "press_slice5",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slice6",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slice6",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shift_slice6",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tilt_slice6",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "press_slice6",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "left_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "right_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shift_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tilt_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "press_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "lane_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_crust",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_crust",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_filling",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_filling",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_slice2",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_slice2",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_slice3",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_slice3",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_slice4",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_slice4",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_slice5",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_slice5",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_slice6",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_slice6",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_left_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "touch_right_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "impact_slice1",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "impact_slice2",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "impact_slice3",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "impact_slice4",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "impact_slice5",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "impact_slice6",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "impact_slice7",
+      "kind": "food_guard",
+      "a": "table",
+      "b": "table",
+      "pa": [
+        0,
+        0,
+        0
+      ],
+      "pb": [
+        0,
+        0,
+        0
+      ]
     }
   ],
   "invalidate": [
@@ -6282,28 +7338,476 @@
       {
         "metric": "l_crust",
         "lo": 0.04,
-        "hi": 1000
+        "hi": 1e+308
       }
     ],
     [
       {
         "metric": "l_filling",
         "lo": 0.04,
-        "hi": 1000
+        "hi": 1e+308
       }
     ],
     [
       {
         "metric": "r_crust",
         "lo": 0.04,
-        "hi": 1000
+        "hi": 1e+308
       }
     ],
     [
       {
         "metric": "r_filling",
         "lo": 0.04,
-        "hi": 1000
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_crust",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_crust",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_filling",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_filling",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_slice1",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_slice1",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "shift_slice1",
+        "lo": 0.024,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "tilt_slice1",
+        "lo": 15.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "press_slice1",
+        "lo": 0.24999999,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_slice2",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_slice2",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "shift_slice2",
+        "lo": 0.024,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "tilt_slice2",
+        "lo": 15.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "press_slice2",
+        "lo": 0.24999999,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_slice3",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_slice3",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "shift_slice3",
+        "lo": 0.024,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "tilt_slice3",
+        "lo": 15.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "press_slice3",
+        "lo": 0.24999999,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_slice4",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_slice4",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "shift_slice4",
+        "lo": 0.024,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "tilt_slice4",
+        "lo": 15.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "press_slice4",
+        "lo": 0.24999999,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_slice5",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_slice5",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "shift_slice5",
+        "lo": 0.024,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "tilt_slice5",
+        "lo": 15.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "press_slice5",
+        "lo": 0.24999999,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_slice6",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_slice6",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "shift_slice6",
+        "lo": 0.024,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "tilt_slice6",
+        "lo": 15.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "press_slice6",
+        "lo": 0.24999999,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "left_slice7",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "right_slice7",
+        "lo": 1e-06,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "shift_slice7",
+        "lo": 0.024,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "tilt_slice7",
+        "lo": 15.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "press_slice7",
+        "lo": 0.24999999,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_crust",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_crust",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_filling",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_filling",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_slice1",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_slice1",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_slice2",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_slice2",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_slice3",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_slice3",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_slice4",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_slice4",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_slice5",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_slice5",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_slice6",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_slice6",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_left_slice7",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "touch_right_slice7",
+        "lo": 1.0,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "impact_slice1",
+        "lo": 1,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "impact_slice2",
+        "lo": 1,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "impact_slice3",
+        "lo": 1,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "impact_slice4",
+        "lo": 1,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "impact_slice5",
+        "lo": 1,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "impact_slice6",
+        "lo": 1,
+        "hi": 1e+308
+      }
+    ],
+    [
+      {
+        "metric": "impact_slice7",
+        "lo": 1,
+        "hi": 1e+308
       }
     ]
   ],
@@ -7851,14 +9355,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.37390313,
+          0.37490214,
           -0.064,
-          0.1196881
+          0.12080855
         ],
         "forward": [
-          0.1993185,
+          0.18218592,
           0.0,
-          -0.97993476
+          -0.9832641
         ],
         "closing": [
           0,
@@ -7874,14 +9378,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.35897453,
+          0.36058692,
           -0.064,
-          0.10786374
+          0.11085668
         ],
         "forward": [
-          0.39530715,
+          0.36300944,
           0.0,
-          -0.918549
+          -0.93178546
         ],
         "closing": [
           0,
@@ -7897,14 +9401,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.35253233,
+          0.35443578,
           -0.064,
-          0.09708672
+          0.10226857
         ],
         "forward": [
-          0.52195773,
+          0.47660133,
           0.0,
-          -0.85297135
+          -0.87911954
         ],
         "closing": [
           0,
@@ -7920,14 +9424,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.35113618,
+          0.35259284,
           -0.064,
-          0.08831895
+          0.09397405
         ],
         "forward": [
-          0.60532774,
+          0.56283998,
           0.0,
-          -0.79597633
+          -0.82656588
         ],
         "closing": [
           0,
@@ -7943,14 +9447,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.35269162,
+          0.35379249,
           -0.064,
-          0.08136732
+          0.0873387
         ],
         "forward": [
-          0.66243336,
+          0.62231956,
           0.0,
-          -0.74912085
+          -0.78276329
         ],
         "closing": [
           0,
@@ -7966,14 +9470,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.35602929,
+          0.35684641,
           -0.064,
-          0.07583876
+          0.08203119
         ],
         "forward": [
-          0.70319686,
+          0.66502254,
           0.0,
-          -0.7109952
+          -0.74682329
         ],
         "closing": [
           0,
@@ -7989,14 +9493,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.36049083,
+          0.36107902,
           -0.064,
-          0.07138706
+          0.07774025
         ],
         "forward": [
-          0.73338969,
+          0.69680618,
           0.0,
-          -0.67980847
+          -0.71725947
         ],
         "closing": [
           0,
@@ -8012,14 +9516,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.36569195,
+          0.36609278,
           -0.064,
-          0.06774919
+          0.07422332
         ],
         "forward": [
-          0.75647033,
+          0.72120443,
           0.0,
-          -0.65402801
+          -0.69272229
         ],
         "closing": [
           0,
@@ -8035,14 +9539,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.37139896,
+          0.37164427,
           -0.064,
-          0.06473275
+          0.07130049
         ],
         "forward": [
-          0.77459058,
+          0.74042848,
           0.0,
-          -0.63246299
+          -0.67213516
         ],
         "closing": [
           0,
@@ -8058,14 +9562,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.37746381,
+          0.37757829,
           -0.064,
-          0.06219763
+          0.06883959
         ],
         "forward": [
-          0.78914012,
+          0.7559132,
           0.0,
-          -0.61421321
+          -0.65467186
         ],
         "closing": [
           0,
@@ -8081,14 +9585,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.3837893,
+          0.3837924,
           -0.064,
-          0.06004096
+          0.06674299
         ],
         "forward": [
-          0.80104766,
+          0.76862152,
           0.0,
-          -0.59860057
+          -0.63970381
         ],
         "closing": [
           0,
@@ -8104,14 +9608,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.39030952,
+          0.39021179,
           -0.064,
-          0.05818614
+          0.06326415
         ],
         "forward": [
-          0.81095316,
+          0.78735659,
           0.0,
-          -0.58511108
+          -0.61649785
         ],
         "closing": [
           0,
@@ -8127,14 +9631,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.39697842,
+          0.3968525,
           -0.064,
-          0.05657539
+          0.05999029
         ],
         "forward": [
-          0.81930978,
+          0.80402044,
           0.0,
-          -0.5733511
+          -0.59460166
         ],
         "closing": [
           0,
@@ -8150,14 +9654,14 @@
       "right": {
         "relative_to": "table",
         "tip": [
-          0.39211845,
+          0.39202074,
           -0.064,
-          0.06709362
+          0.06881699
         ],
         "forward": [
-          0.82903757,
+          0.82164694,
           0.0,
-          -0.5591929
+          -0.56999676
         ],
         "closing": [
           0,
@@ -8330,5 +9834,33 @@
     }
   ],
   "score_at_end": true,
-  "continuous_jaw": true
+  "continuous_jaw": true,
+  "violations": [
+    {
+      "needs": [],
+      "until_seen": [
+        "lift"
+      ],
+      "all": [
+        {
+          "metric": "lane_slice1",
+          "lo": 0.0075,
+          "hi": 1e+308
+        }
+      ]
+    },
+    {
+      "needs": [],
+      "until_seen": [
+        "lift"
+      ],
+      "all": [
+        {
+          "metric": "lane_slice7",
+          "lo": 0.0075,
+          "hi": 1e+308
+        }
+      ]
+    }
+  ]
 }

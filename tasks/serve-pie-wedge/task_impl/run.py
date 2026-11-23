@@ -78,6 +78,7 @@ def run(task, mode, out, bridge=None, seed=0, task_id=None, stop_after=None):
     started = time.monotonic()
     scorer = make_scorer()
     bench_poses = [['pan_top', [0.463, -0.069, 0.416], [0.465, -0.064, 0.021], 33.0], ['pan_side', [0.245, 0.22, 0.091], [0.462, -0.064, 0.044], 27.0], ['plate_top', [0.53, -0.311, 0.416], [0.532, -0.309, 0.025], 22.0], ['plate_side', [0.53, -0.65, 0.084], [0.532, -0.309, 0.038], 27.0]]
+    bench_poses.append(("whole_pan_top",[.52,-.065,.435],[.52,-.064,.019],28.))
 
     # Use the station's own Isaac Lab CameraCfg and renderer. The policy and
     # Inspect recorder continue to read only top_cam, left_cam and right_cam.
@@ -105,7 +106,7 @@ def run(task, mode, out, bridge=None, seed=0, task_id=None, stop_after=None):
             quat=Rotation.from_matrix(np.column_stack((x,np.cross(z,x),z))).as_quat()
             position=(eye[0],eye[1],float(TABLE_TOP)+eye[2])
             cfg=yam.CameraCfg(
-                prim_path="{ENV_REGEX_NS}/"+key, height=180, width=384,
+                prim_path="{ENV_REGEX_NS}/"+key, height=360 if key=="whole_pan_top" else 180, width=384,
                 data_types=["rgb"], update_latest_camera_pose=True,
                 spawn=yam.sim_utils.PinholeCameraCfg(focal_length=focal, horizontal_aperture=20.955, clipping_range=(.005,20.)),
                 offset=yam.CameraCfg.OffsetCfg(pos=position,rot=tuple(quat.tolist()),convention="opengl"),
@@ -287,7 +288,7 @@ def run(task, mode, out, bridge=None, seed=0, task_id=None, stop_after=None):
                 pixels = sensor.data.output["rgb"]
                 pixels = pixels.torch if hasattr(pixels, "torch") else pixels
                 im = np.ascontiguousarray(pixels[0, ..., :3].cpu().numpy(), dtype=np.uint8)
-                if im.shape != (180,384,3):
+                if im.shape != (360 if key=="whole_pan_top" else 180,384,3):
                     raise ValueError("Invalid native bench camera resolution: " + key)
                 if np.percentile(im,90,axis=(0,1)).max() - np.percentile(im,10,axis=(0,1)).min() > 24 and im.std(axis=(0,1)).max() > 8:
                     self.valid[i] += 1
@@ -322,12 +323,12 @@ def run(task, mode, out, bridge=None, seed=0, task_id=None, stop_after=None):
                         'positionM':list(cam.pos),'rotationXYZW':list(cam.rot_xyzw),
                         'convention':cam.convention,'tableTopM':float(TABLE_TOP),
                         'intrinsics':[float(lens.fx),float(lens.fy),float(lens.cx),float(lens.cy)]}
-            # The robot still receives the original three rig images. The two
+            # The robot still receives the original three rig images. The
             # additional live RTX products are read only for the referee video.
             if not hasattr(self, "inspection"):
                 self.inspection = WindowCameras()
             details = self.inspection.views()
-            frame = Image.new('RGB', (width+cams[1].shape[1]+768,height))
+            frame = Image.new('RGB', (width+cams[1].shape[1]+1152,height))
             frame.paste(Image.fromarray(overhead))
             for i, image in enumerate(cams[1:]):
                 frame.paste(Image.fromarray(image), (width, (height//2)*i))
@@ -335,7 +336,7 @@ def run(task, mode, out, bridge=None, seed=0, task_id=None, stop_after=None):
                 frame.paste(detail, (width+cams[1].shape[1]+384*(i//2), (height//2)*(i%2)))
             from PIL import ImageDraw
             draw=ImageDraw.Draw(frame)
-            for i, label in enumerate(('First slice / overhead', 'Pan rim / side', 'Dessert plate / overhead', 'Plate and server / side')):
+            for i, label in enumerate(('First slice / overhead', 'Pan rim / side', 'Dessert plate / overhead', 'Plate and server / side', 'All eight portions / overhead')):
                 x,y=width+cams[1].shape[1]+384*(i//2)+3, (height//2)*(i%2)+3
                 draw.text((x,y), label, fill="white", stroke_width=1, stroke_fill="black")
             if self.steps in (100, 300, 450, 500, horizon):

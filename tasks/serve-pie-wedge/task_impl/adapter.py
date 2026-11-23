@@ -13,6 +13,7 @@ from yam_arena.station import BASES, TABLE_TOP
 from yam_arena.urdf import quat_xyzw_to_matrix
 
 from .grading import Grade
+from .food_integrity import FOOD, NEIGHBORS, FoodGuard, gripper_contacts
 from .scene import compile_layer, load_fixture
 from .scripted import make_scripted
 
@@ -122,6 +123,17 @@ class PhysicalTaskArena(YamArenaEmbodiment):
         links=asset_link_paths()
         pad_paths={arm+"_pad_"+side:root+"/"+arm.title()+"Arm"+links["tip_"+side]
                    for arm in ("left","right") for side in ("left","right")}
+        self.food_guard = FoodGuard(self.spec)
+        self.food_views = {}
+        # One sensor per food body. Explicit filter order makes the source
+        # identifiable when the rim, food and tool contact each other together.
+        link_names = ("gripper", "tip_left", "tip_right")
+        hands = [root+"/"+side.title()+"Arm"+links[n] for side in ("left","right") for n in link_names]
+        for food in FOOD:
+            filters = hands+[actors+"/"+n for n in ("blade","handle")]
+            if food in NEIGHBORS:
+                filters += [actors+"/crust", actors+"/filling"]
+            self.food_views[food] = self.physics.create_rigid_contact_view(actors+"/"+food,[filters],max_contact_data_count=256)
         for spec in self.spec["metrics"]:
             if spec["kind"] == "contact_n":
                 arm, obj = spec["a"], spec["b"]
@@ -136,6 +148,25 @@ class PhysicalTaskArena(YamArenaEmbodiment):
                 for frame in (spec["a"],spec["b"]):
                     if frame in pad_paths and frame not in self.pad_bodies:
                         self.pad_bodies[frame]=self.physics.create_rigid_body_view(pad_paths[frame])
+
+    def _sample_food(self, dt):
+        # Store physical-substep maxima. A brief touch between two 20 Hz
+        # camera frames must survive until the recorded control step.
+        poses = array(self.bodies.get_transforms())
+        forces = []
+        for name in FOOD:
+            view=self.food_views[name]
+            vectors = view.get_contact_force_matrix(dt=dt)[0]
+            force,_,_,separation,counts,starts=view.get_contact_data(dt=dt)
+            touched=gripper_contacts(array(force),array(separation),array(counts),array(starts))
+            norms = self._torch.linalg.vector_norm(vectors[:6], dim=-1)
+            # The contact normal points toward the sensor (the food). Downward
+            # load from the server or the target is separate from a sideways brush.
+            down = self._torch.clamp(-vectors[6:,2],min=0).sum()
+            forces.append(self._torch.stack((norms[:3].sum(),norms[3:].sum(),down,down.new_tensor(float(touched[0])),down.new_tensor(float(touched[1])))))
+        values = self.food_guard.tick(poses[self.neighbor_rows],array(self._torch.stack(forces)),dt)
+        for key,value in values.items():
+            self.food_peaks[key] = max(self.food_peaks.get(key,value),value)
 
     def _measure(self, observation):
         from yam_arena.constants import PHYSICS_DT
@@ -155,7 +186,8 @@ class PhysicalTaskArena(YamArenaEmbodiment):
         contacts = {key: float(np.linalg.norm(array(view.get_contact_force_matrix(dt=PHYSICS_DT)), axis=-1).sum())
                     for key, view in self.contacts.items()}
         return {s["name"]:(self.solid_gauges[s["name"]].distance(self.frames)
-                           if s["name"] in self.solid_gauges else metric(s,self.frames,contacts))
+                           if s["name"] in self.solid_gauges else self.food_peaks[s["name"]]
+                           if s["kind"]=="food_guard" else metric(s,self.frames,contacts))
                 for s in self.spec["metrics"]}
 
     def reset(self, scene, *, seed=None):
@@ -170,13 +202,32 @@ class PhysicalTaskArena(YamArenaEmbodiment):
         self.bodies.set_transforms(poses, ids)
         self.bodies.set_velocities(self._torch.zeros_like(self.bodies.get_velocities()), ids)
         observation = super().reset(scene, seed=seed)
+        self.neighbor_rows = [self.rows[n] for n in NEIGHBORS]
+        self.food_guard.reset(array(self.bodies.get_transforms())[self.neighbor_rows])
+        self.food_peaks = {g["name"]:0. for g in self.spec["metrics"] if g["kind"]=="food_guard"}
         self.grading = Grade(self.spec)
         self.demo_command = None
         self.grading.prime(self._measure(observation))
         return observation
 
     def step(self, action):
-        observation = super().step(action).observation
+        from yam_arena.constants import PHYSICS_DT
+        sim = self._base.sim
+        advance = sim.step
+        self.food_peaks = {}
+        def observe_after_physics(*args,**kwargs):
+            outcome = advance(*args,**kwargs)
+            self._sample_food(PHYSICS_DT)
+            return outcome
+        # The stock environment advances all twelve physics ticks itself.
+        # Restore the entry point even if a native step or camera raises.
+        sim.step = observe_after_physics
+        try:
+            observation = super().step(action).observation
+        finally:
+            sim.step = advance
+        if not self.food_peaks:
+            raise RuntimeError("No physics ticks captured for food integrity")
         grade = self.grading.update(self._measure(observation))
         if self.demo_command is not None:
             # Diagnostics are written to the grader's trace; never passed into a model observation.

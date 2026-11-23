@@ -1,0 +1,684 @@
+{
+  "finger": {
+    "limit": 186,
+    "trajectory": [
+      {
+        "ticks": 55,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.467,
+            -0.117,
+            0.14
+          ],
+          "forward": [
+            0.707107,
+            0,
+            -0.707107
+          ],
+          "closing": [
+            0,
+            1.0,
+            0
+          ],
+          "opening_m": 0.029
+        }
+      },
+      {
+        "ticks": 46,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.467,
+            -0.112,
+            0.057
+          ],
+          "forward": [
+            0.707107,
+            0,
+            -0.707107
+          ],
+          "closing": [
+            0,
+            1.0,
+            0
+          ],
+          "opening_m": 0.029
+        }
+      },
+      {
+        "ticks": 25,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.469,
+            -0.111,
+            0.03
+          ],
+          "forward": [
+            0.707107,
+            0,
+            -0.707107
+          ],
+          "closing": [
+            0,
+            1.0,
+            0
+          ],
+          "opening_m": 0.029
+        }
+      },
+      {
+        "ticks": 30,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.47,
+            -0.111,
+            0.018
+          ],
+          "forward": [
+            0.707107,
+            0,
+            -0.707107
+          ],
+          "closing": [
+            0,
+            1.0,
+            0
+          ],
+          "opening_m": 0.029
+        }
+      },
+      {
+        "ticks": 30,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.47,
+            -0.111,
+            0.11
+          ],
+          "forward": [
+            0.707107,
+            0,
+            -0.707107
+          ],
+          "closing": [
+            0,
+            1.0,
+            0
+          ],
+          "opening_m": 0.029
+        }
+      }
+    ]
+  },
+  "lane": {
+    "limit": 627,
+    "replaced": {
+      "10": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.37390313,
+            -0.064,
+            0.1196881
+          ],
+          "forward": [
+            0.1993185,
+            0.0,
+            -0.97993476
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "11": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.35897453,
+            -0.064,
+            0.10786374
+          ],
+          "forward": [
+            0.39530715,
+            0.0,
+            -0.918549
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "12": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.35253233,
+            -0.064,
+            0.09708672
+          ],
+          "forward": [
+            0.52195773,
+            0.0,
+            -0.85297135
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "13": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.35113618,
+            -0.064,
+            0.08831895
+          ],
+          "forward": [
+            0.60532774,
+            0.0,
+            -0.79597633
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "14": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.35269162,
+            -0.064,
+            0.08136732
+          ],
+          "forward": [
+            0.66243336,
+            0.0,
+            -0.74912085
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "15": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.35602929,
+            -0.064,
+            0.07583876
+          ],
+          "forward": [
+            0.70319686,
+            0.0,
+            -0.7109952
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "16": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.36049083,
+            -0.064,
+            0.07138706
+          ],
+          "forward": [
+            0.73338969,
+            0.0,
+            -0.67980847
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "17": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.36569195,
+            -0.064,
+            0.06774919
+          ],
+          "forward": [
+            0.75647033,
+            0.0,
+            -0.65402801
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "18": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.37139896,
+            -0.064,
+            0.06473275
+          ],
+          "forward": [
+            0.77459058,
+            0.0,
+            -0.63246299
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "19": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.37746381,
+            -0.064,
+            0.06219763
+          ],
+          "forward": [
+            0.78914012,
+            0.0,
+            -0.61421321
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "20": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.3837893,
+            -0.064,
+            0.06004096
+          ],
+          "forward": [
+            0.80104766,
+            0.0,
+            -0.59860057
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "21": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.39030952,
+            -0.064,
+            0.05818614
+          ],
+          "forward": [
+            0.81095316,
+            0.0,
+            -0.58511108
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "22": {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.39697842,
+            -0.064,
+            0.05657539
+          ],
+          "forward": [
+            0.81930978,
+            0.0,
+            -0.5733511
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      "23": {
+        "ticks": 25,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.39211845,
+            -0.064,
+            0.06709362
+          ],
+          "forward": [
+            0.82903757,
+            0.0,
+            -0.5591929
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      }
+    }
+  },
+  "strike": {
+    "limit": 225,
+    "trajectory": [
+      {
+        "ticks": 42,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.043,
+          "tip": [
+            0.20876654,
+            -0.064,
+            0.06451558
+          ]
+        }
+      },
+      {
+        "ticks": 30,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.043,
+          "tip": [
+            0.24530836,
+            -0.064,
+            0.03324611
+          ]
+        }
+      },
+      {
+        "ticks": 30,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002,
+          "tip": [
+            0.24530836,
+            -0.064,
+            0.03324611
+          ]
+        }
+      },
+      {
+        "ticks": 24,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "tip": [
+            0.24530836,
+            -0.064,
+            0.07674611
+          ],
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0.002
+        }
+      },
+      {
+        "ticks": 50,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0,
+          "tip": [
+            0.402,
+            -0.111,
+            0.145
+          ]
+        }
+      },
+      {
+        "ticks": 20,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0,
+          "tip": [
+            0.409,
+            -0.111,
+            0.128
+          ]
+        }
+      },
+      {
+        "ticks": 4,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0,
+          "tip": [
+            0.41,
+            -0.111,
+            0.04
+          ]
+        }
+      },
+      {
+        "ticks": 2,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0,
+          "tip": [
+            0.41,
+            -0.111,
+            0.04
+          ]
+        }
+      },
+      {
+        "ticks": 8,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0,
+          "tip": [
+            0.409,
+            -0.111,
+            0.15
+          ]
+        }
+      },
+      {
+        "ticks": 15,
+        "left": null,
+        "right": {
+          "relative_to": "table",
+          "forward": [
+            0.91354546,
+            0.0,
+            -0.40673664
+          ],
+          "closing": [
+            0,
+            1,
+            0
+          ],
+          "opening_m": 0,
+          "tip": [
+            0.409,
+            -0.111,
+            0.155
+          ]
+        }
+      }
+    ]
+  }
+}
