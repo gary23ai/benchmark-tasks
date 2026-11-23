@@ -1,0 +1,34 @@
+{
+  "seed": 0,
+  "control_hz": 20,
+  "object_jitter": 0,
+  "recorded_hashes": {
+    "scene_sha256": "a24483fb673de0f55d9a1a0bee60e4920fb0a87187eb944f2fa9f1d59ee0a9b4",
+    "asset_sha256": "f6c4d01d1ad0d01f1ad5d518809ae8bee38db71536ff75876cbe6fd7caf1f1b4",
+    "model_sha256": "3f6448419b5df757ddba1800a4892f4a763b99980d5d15a32dc0a5ced94c534b",
+    "grader_sha256": "c1a875b643afce2d9fa33ca09866f04f11d2a84a6ea72d92f700901f2a47d807"
+  },
+  "scripted": {
+    "score": 1.0,
+    "executed_steps": 1429,
+    "step_limit": 2400,
+    "elapsed_s": 902.57,
+    "scripted_demo_reads_simulator_state": true
+  },
+  "dream": {
+    "score": 0.0,
+    "executed_steps": 2400,
+    "step_limit": 2400,
+    "elapsed_s": 1358.95,
+    "action_requests": 99
+  },
+  "submission_grader": {
+    "recording_sha256": "3a9f0210ea486d942183ae00cb4b32179c26b7faa82f2f431c98367db5c198de",
+    "current_sha256": "c1a875b643afce2d9fa33ca09866f04f11d2a84a6ea72d92f700901f2a47d807",
+    "verification": "The recorded scorer and physical scene are unchanged. At release the recorded pad had 1.086 turns, 4.2 mm axial offset and 22.6 mm minimum protrusion; the whole sleeve surrounded the layers. Dream left the pad flat. These are simulation measurements. The manufacturer describes banded rolls in general, without measuring this fixture.",
+    "verified_results": {
+      "scripted": 1,
+      "dream": 0
+    }
+  }
+}

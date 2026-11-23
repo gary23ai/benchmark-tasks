@@ -1,0 +1,654 @@
+{
+ "note": "Copied from the RESULT.json files of the Isaac qualification runs (one scripted, one Dream-1 trial); see README.",
+ "scripted": {
+  "score": 1.0,
+  "executed_steps": 1429,
+  "step_limit": 2400,
+  "elapsed_s": 902.57,
+  "termination_reason": "success",
+  "peak_interarm_contact_n": 0.0,
+  "scene_sha256": "a24483fb673de0f55d9a1a0bee60e4920fb0a87187eb944f2fa9f1d59ee0a9b4",
+  "asset_sha256": "f6c4d01d1ad0d01f1ad5d518809ae8bee38db71536ff75876cbe6fd7caf1f1b4",
+  "model_sha256": "3f6448419b5df757ddba1800a4892f4a763b99980d5d15a32dc0a5ced94c534b",
+  "grader_sha256": "c1a875b643afce2d9fa33ca09866f04f11d2a84a6ea72d92f700901f2a47d807",
+  "inspect_robots": "1.0.0",
+  "yam_arena": "0.1.0",
+  "seed": 0,
+  "final_grade": {
+   "score": 1.0,
+   "pad_is_a_roll": true,
+   "band_on_roll": true,
+   "roll_square": true,
+   "grippers_clear_2s": true,
+   "turns": 1.086,
+   "back_bend_deg": 0.0,
+   "share_of_band_on_roll": 1.0,
+   "roll_out_of_band_mm": 22.6,
+   "outside_bore_mm": 0.9,
+   "turns_offset_mm": 4.2,
+   "gripper_to_band_or_pad_mm": [
+    653.9,
+    176.6
+   ]
+  },
+  "two_hands": {
+   "loaded_means_n": 1.0,
+   "steps": 1429,
+   "left_loaded_steps": 741,
+   "right_loaded_steps": 800,
+   "both_loaded_steps": 287,
+   "by_phase": [
+    {
+     "phase": "reach the pad's near edge",
+     "steps": 122,
+     "both_loaded_steps": 0,
+     "left_median_n": 0.0,
+     "right_median_n": 0.0
+    },
+    {
+     "phase": "lay the edge over",
+     "steps": 50,
+     "both_loaded_steps": 0,
+     "left_median_n": 0.0,
+     "right_median_n": 14.29
+    },
+    {
+     "phase": "holding gripper comes down on the curl",
+     "steps": 94,
+     "both_loaded_steps": 2,
+     "left_median_n": 0.0,
+     "right_median_n": 13.48
+    },
+    {
+     "phase": "winding gripper shifts its grip (after stroke 1)",
+     "steps": 102,
+     "both_loaded_steps": 15,
+     "left_median_n": 6.19,
+     "right_median_n": 0.0
+    },
+    {
+     "phase": "turn the roll (stroke 2)",
+     "steps": 57,
+     "both_loaded_steps": 5,
+     "left_median_n": 0.0,
+     "right_median_n": 14.84
+    },
+    {
+     "phase": "winding gripper shifts its grip (after stroke 2)",
+     "steps": 168,
+     "both_loaded_steps": 41,
+     "left_median_n": 3.9,
+     "right_median_n": 0.0
+    },
+    {
+     "phase": "roll on (stroke 3)",
+     "steps": 62,
+     "both_loaded_steps": 5,
+     "left_median_n": 0.29,
+     "right_median_n": 15.04
+    },
+    {
+     "phase": "winding gripper leaves the roll",
+     "steps": 50,
+     "both_loaded_steps": 2,
+     "left_median_n": 5.93,
+     "right_median_n": 0.0
+    },
+    {
+     "phase": "slide the roll out over the carton's edge",
+     "steps": 106,
+     "both_loaded_steps": 0,
+     "left_median_n": 5.08,
+     "right_median_n": 0.0
+    },
+    {
+     "phase": "take the band from its cradle",
+     "steps": 102,
+     "both_loaded_steps": 16,
+     "left_median_n": 5.29,
+     "right_median_n": 0.0
+    },
+    {
+     "phase": "bring the band to the roll's end",
+     "steps": 120,
+     "both_loaded_steps": 120,
+     "left_median_n": 5.29,
+     "right_median_n": 80.15
+    },
+    {
+     "phase": "slide the band over the roll",
+     "steps": 81,
+     "both_loaded_steps": 81,
+     "left_median_n": 5.29,
+     "right_median_n": 79.6
+    },
+    {
+     "phase": "hand over: holding gripper lets go",
+     "steps": 64,
+     "both_loaded_steps": 0,
+     "left_median_n": 0.0,
+     "right_median_n": 90.64
+    },
+    {
+     "phase": "lay the banded roll in the cradle",
+     "steps": 186,
+     "both_loaded_steps": 0,
+     "left_median_n": 0.0,
+     "right_median_n": 75.06
+    },
+    {
+     "phase": "away",
+     "steps": 52,
+     "both_loaded_steps": 0,
+     "left_median_n": 0.0,
+     "right_median_n": 0.0
+    },
+    {
+     "phase": "done",
+     "steps": 13,
+     "both_loaded_steps": 0,
+     "left_median_n": 0.0,
+     "right_median_n": 0.0
+    }
+   ]
+  },
+  "phases": [
+   [
+    0,
+    "reach the pad's near edge"
+   ],
+   [
+    122,
+    "lay the edge over"
+   ],
+   [
+    172,
+    "holding gripper comes down on the curl"
+   ],
+   [
+    266,
+    "winding gripper shifts its grip (after stroke 1)"
+   ],
+   [
+    368,
+    "turn the roll (stroke 2)"
+   ],
+   [
+    425,
+    "winding gripper shifts its grip (after stroke 2)"
+   ],
+   [
+    593,
+    "roll on (stroke 3)"
+   ],
+   [
+    655,
+    "winding gripper leaves the roll"
+   ],
+   [
+    705,
+    "slide the roll out over the carton's edge"
+   ],
+   [
+    811,
+    "take the band from its cradle"
+   ],
+   [
+    913,
+    "bring the band to the roll's end"
+   ],
+   [
+    1033,
+    "slide the band over the roll"
+   ],
+   [
+    1114,
+    "hand over: holding gripper lets go"
+   ],
+   [
+    1178,
+    "lay the banded roll in the cradle"
+   ],
+   [
+    1364,
+    "away"
+   ],
+   [
+    1416,
+    "done"
+   ]
+  ],
+  "demo_events": [
+   {
+    "tick": 74,
+    "event": "trim right",
+    "offset": [
+     -0.001,
+     0.0003,
+     0.0012
+    ],
+    "left_over": [
+     -0.0004,
+     0.0001,
+     -0.0015
+    ]
+   },
+   {
+    "tick": 106,
+    "event": "trim right",
+    "offset": [
+     0.0007,
+     0.0002,
+     -0.0
+    ],
+    "left_over": [
+     -0.0009,
+     0.0006,
+     -0.0002
+    ]
+   },
+   {
+    "tick": 122,
+    "event": "edge pinch",
+    "attempt": 0.0,
+    "opening_mm": 2.531,
+    "held": true,
+    "fingertips_from_edge_mm": [
+     0.8893,
+     -0.5796,
+     0.1434
+    ]
+   },
+   {
+    "tick": 172,
+    "event": "edge laid over",
+    "turned_deg": 200.0,
+    "first_strip_mm": [
+     325.4761,
+     144.4422,
+     149.9224
+    ],
+    "folds_deg": [
+     0.2591,
+     28.4416,
+     39.3775,
+     41.845,
+     36.7157,
+     26.9887,
+     16.3129,
+     5.9757
+    ],
+    "strips_rolled": 7.0
+   },
+   {
+    "tick": 224,
+    "event": "trim left",
+    "offset": [
+     -0.0003,
+     0.0009,
+     -0.0008
+    ],
+    "left_over": [
+     0.0005,
+     -0.0009,
+     0.0015
+    ]
+   },
+   {
+    "tick": 252,
+    "event": "trim left",
+    "offset": [
+     0.0008,
+     0.0005,
+     0.0006
+    ],
+    "left_over": [
+     -0.0002,
+     -0.0002,
+     -0.001
+    ]
+   },
+   {
+    "tick": 282,
+    "event": "fingers drawn out",
+    "stroke": 1.0,
+    "dragged_out_mm": 1.6979,
+    "strip": 0.0
+   },
+   {
+    "tick": 324,
+    "event": "trim right",
+    "offset": [
+     -0.0001,
+     0.0004,
+     0.0006
+    ],
+    "left_over": [
+     0.0004,
+     0.0001,
+     0.0007
+    ]
+   },
+   {
+    "tick": 336,
+    "event": "trim right",
+    "offset": [
+     0.0003,
+     0.0004,
+     0.0011
+    ],
+    "left_over": [
+     -0.0002,
+     -0.0002,
+     -0.0013
+    ]
+   },
+   {
+    "tick": 368,
+    "event": "taken again",
+    "after_stroke": 1.0,
+    "attempt": 0.0,
+    "taken": "the pad's edge",
+    "wrist_turn_deg": 34.7219,
+    "thickness_mm": 3.0,
+    "opening_mm": 2.9557,
+    "fingertips_short_mm": [
+     1.9222,
+     -0.6046,
+     -0.9991
+    ],
+    "held": true,
+    "strips_rolled": 8.0,
+    "layers": "[]"
+   },
+   {
+    "tick": 411,
+    "event": "first turn closed",
+    "stroke": 2.0,
+    "turned_deg": 375.5,
+    "wrist_turn_deg": 210.2219,
+    "strips_rolled": 16.0,
+    "ring_mm": [
+     374.0947,
+     149.914,
+     26.7892
+    ],
+    "tight_mm": 38.0,
+    "turns": 1.0752,
+    "turns_offset_mm": 9.1562,
+    "all_on": false
+   },
+   {
+    "tick": 453,
+    "event": "fingers drawn out",
+    "stroke": 2.0,
+    "dragged_out_mm": 5.6804,
+    "strip": 0.0
+   },
+   {
+    "tick": 493,
+    "event": "patted back",
+    "strip": 0.0,
+    "out_mm": 4.2537,
+    "left_mm": 0.7387
+   },
+   {
+    "tick": 537,
+    "event": "trim right",
+    "offset": [
+     -0.001,
+     0.0004,
+     0.0001
+    ],
+    "left_over": [
+     -0.0,
+     0.0003,
+     -0.0004
+    ]
+   },
+   {
+    "tick": 549,
+    "event": "trim right",
+    "offset": [
+     -0.0012,
+     0.0006,
+     -0.0005
+    ],
+    "left_over": [
+     -0.0003,
+     0.0002,
+     -0.0007
+    ]
+   },
+   {
+    "tick": 581,
+    "event": "taken again",
+    "after_stroke": 2.0,
+    "attempt": 0.0,
+    "taken": "the pad's edge",
+    "wrist_turn_deg": -10.8652,
+    "thickness_mm": 3.0,
+    "opening_mm": 2.8301,
+    "fingertips_short_mm": [
+     3.5121,
+     -1.3388,
+     -0.0656
+    ],
+    "held": true,
+    "strips_rolled": 18.0,
+    "layers": "[]"
+   },
+   {
+    "tick": 655,
+    "event": "stroke done",
+    "stroke": 3.0,
+    "turned_deg": 591.5,
+    "wrist_turn_deg": 205.1348,
+    "strips_rolled": 25.0,
+    "ring_mm": [
+     418.4382,
+     148.8327,
+     30.2751
+    ],
+    "tight_mm": 44.75,
+    "turns": 1.4239,
+    "turns_offset_mm": 14.4771,
+    "all_on": true,
+    "far_edge_short_deg": 47.3798
+   },
+   {
+    "tick": 671,
+    "event": "fingers drawn out",
+    "stroke": 3.0,
+    "dragged_out_mm": 0.9859,
+    "strip": 15.0
+   },
+   {
+    "tick": 705,
+    "event": "roll finished",
+    "stroke": 3.0,
+    "turned_deg": 591.5,
+    "wrist_turn_deg": 205.1348,
+    "strips_rolled": 25.0,
+    "ring_mm": [
+     419.4138,
+     149.5268,
+     31.4485
+    ],
+    "tight_mm": 44.75,
+    "turns": 1.4219,
+    "turns_offset_mm": 14.6261,
+    "all_on": true,
+    "across_mm": 62.897,
+    "strokes": 3.0,
+    "far_edge_short_deg": 44.9672,
+    "opening_mm": 53.6575
+   },
+   {
+    "tick": 811,
+    "event": "roll held for the band",
+    "axis_mm": [
+     419.2535,
+     149.1309
+    ],
+    "ends_y_mm": [
+     -65.1323,
+     168.3609
+    ],
+    "over_the_edge_mm": 115.1323,
+    "across_mm": 67.4961,
+    "turns_offset_mm": 23.4932,
+    "opening_mm": 54.98,
+    "turns": 1.3424,
+    "far_edge_short_deg": 34.0189,
+    "droop_deg": 0.0001
+   },
+   {
+    "tick": 863,
+    "event": "trim right",
+    "offset": [
+     0.0004,
+     0.0009,
+     0.0005
+    ],
+    "left_over": [
+     0.0002,
+     -0.0004,
+     0.0006
+    ]
+   },
+   {
+    "tick": 895,
+    "event": "trim right",
+    "offset": [
+     0.0004,
+     -0.0,
+     0.0005
+    ],
+    "left_over": [
+     0.0013,
+     0.0001,
+     0.0016
+    ]
+   },
+   {
+    "tick": 913,
+    "event": "band gripped",
+    "opening_mm": 75.9595,
+    "band_from_gripper_mm": [
+     21.4476,
+     -7.8831,
+     -2.4674
+    ]
+   },
+   {
+    "tick": 1033,
+    "event": "band lined up",
+    "band_mm": [
+     419.2658,
+     -120.8313,
+     149.1855
+    ],
+    "off_mm": [
+     0.2352,
+     0.2096,
+     -0.0758
+    ],
+    "band_axis": [
+     -0.0265,
+     0.9996,
+     -0.0017
+    ]
+   },
+   {
+    "tick": 1114,
+    "event": "band on the roll",
+    "band_left_rim_y_mm": 47.0767,
+    "stop_y_mm": 47.0,
+    "roll_out_of_band_mm": [
+     32.707,
+     120.6262
+    ],
+    "band_off_axis_mm": [
+     0.4972,
+     0.1772
+    ],
+    "roll_across_mm": 67.5785,
+    "bore_mm": 70.0
+   },
+   {
+    "tick": 1178,
+    "event": "roll held by the band alone",
+    "across_mm": 70.3597,
+    "turns_offset_mm": 10.7628,
+    "roll_tilt_in_band_deg": 1.5646
+   },
+   {
+    "tick": 1364,
+    "event": "banded roll laid down",
+    "band_mm": [
+     358.2444,
+     -350.8498,
+     57.1961
+    ],
+    "from_cradle_mm": [
+     18.2444,
+     9.1502,
+     7.1961
+    ],
+    "band_axis": [
+     0.954,
+     -0.2509,
+     -0.1639
+    ]
+   }
+  ],
+  "peaks": {
+   "fold_deg": 50.062,
+   "slide_mm": 1.616,
+   "turns": 1.466,
+   "turns_offset_mm": 24.4
+  },
+  "worst_ik_mm": 0.095
+ },
+ "dream": {
+  "score": 0.0,
+  "executed_steps": 2400,
+  "step_limit": 2400,
+  "elapsed_s": 1358.95,
+  "termination_reason": "max_steps",
+  "peak_interarm_contact_n": 0.0,
+  "scene_sha256": "a24483fb673de0f55d9a1a0bee60e4920fb0a87187eb944f2fa9f1d59ee0a9b4",
+  "asset_sha256": "f6c4d01d1ad0d01f1ad5d518809ae8bee38db71536ff75876cbe6fd7caf1f1b4",
+  "model_sha256": "3f6448419b5df757ddba1800a4892f4a763b99980d5d15a32dc0a5ced94c534b",
+  "grader_sha256": "c1a875b643afce2d9fa33ca09866f04f11d2a84a6ea72d92f700901f2a47d807",
+  "inspect_robots": "1.0.0",
+  "yam_arena": "0.1.0",
+  "seed": 0,
+  "final_grade": {
+   "score": 0.0,
+   "pad_is_a_roll": false,
+   "band_on_roll": false,
+   "roll_square": true,
+   "grippers_clear_2s": true,
+   "turns": 0.002,
+   "back_bend_deg": 0.1,
+   "share_of_band_on_roll": 0.0,
+   "roll_out_of_band_mm": -9999.0,
+   "outside_bore_mm": 579.2,
+   "turns_offset_mm": 0.0,
+   "gripper_to_band_or_pad_mm": [
+    254.0,
+    313.6
+   ]
+  },
+  "action_requests": 99,
+  "request_cap": 128,
+  "peaks": {
+   "fold_deg": 0.465,
+   "slide_mm": 0.003,
+   "turns": 0.002,
+   "turns_offset_mm": 0.0
+  }
+ }
+}
